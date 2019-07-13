@@ -55,7 +55,8 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
   - A kódolt videó képarányának hibája nem haladhatja meg a 3%-ot (aspect ratio error).
   - A video felskálázása SZIGORÚAN TILOS!
   - A video szélességének és magasságának 2-vel oszthatónak kell lennie.
-  - 1080p esetén a szélesség 1920-crop értéke kell legyen. 720p esetén a szélességnek 1280 px-nek kell lennie.
+  - 1080p forrású 1080p encode esetén csak cropolni szabad, resize-olni nem.
+  - Resizeoláshoz `z_Spline36Resize` vagy `Spline36ResizeMod` ajánlott, az `Spline36Resize` tartalmaz egy apró chroma shifting bugot, kerülendő. (VapourSynth-et nem érinti.)
   - ColorMatrixot, amennyiben a forrás tartalmaz erre vonatkozó információt kötelező flaggelni (tipikusan `BT.709`), amennyiben nem, úgy `undef`-en kell hagyni.
   - ColorPrimaries és Transfer function flaggelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod mit csinálsz).
     - Bővebb infó: https://mod16.org/hurfdurf/?p=116
@@ -132,9 +133,10 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
     - bitstarved = alacsony bitráta
     - bloated = feleslegesen magas bitráta
     - upscaled = felskálázott kép/hang
-      - példák ellenőrzésre:
-        - `Interleave(last,last.z_Spline36Resize(1280,720).z_Spline36Resize(1920,1080).Subtitle("1080 -> 720 -> 1080"))` (720p upscale)
-        - `Interleave(last,last.z_AutoResize("480").AutoResize("1080").Subtitle("1080 -> 480 -> 1080"))` (480p upscale)
+      példák ellenőrzésre:
+      `Interleave(last,last.AutoResize("720").AutoResize("1080").Subtitle("1080 -> 720 -> 1080"))` (720p upscale)
+      `Interleave(last,last.AutoResize("480").AutoResize("1080").Subtitle("1080 -> 480 -> 1080"))` (480p upscale)
+      (AutoResize z_Spline36Resize-t használ)
     - audio.oos = hang csúszik a képhez képest
     - sub.oos = felirat csúszik a képhez képest
     - nfo.wtf = NFO érthetetlen vagy értelmezhetetlen
