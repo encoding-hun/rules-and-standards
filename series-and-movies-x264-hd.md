@@ -77,7 +77,9 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
   - AAC esetében elfogadott encoderek: QAAC, FDK, Nero (csak stereo hangnál használható)
   - 720p releasek esetén `DTS`, `TrueHD`, `DTS-HD.MA` és `DTS:X` hang használata TILOS!
   - 1080p releasek esetén `TrueHD`, `DTS-HD.MA` és `DTS:X` használata TILOS! Ilyen esetekben a core-t használjuk vagy master audio-ból kódolunk `DD@640` vagy `DDP@1024` hangot.
-  - DTS hang esetén DD+ vagy AC3 compatibility track használata ajánlott.
+  - Amennyiben az érintetlen forráson DTS core található csak:
+    - `DDP@1024` kódolása (ajánlott)
+    - DTS meghagyása, mellé `DD@640` compatibility track készítése.
   - Lossy hangot csak master audioból (lossless) szabad kódolni. Ez alól kivétel ha csak DTS hang elérhető és compatibility track-et készítünk.
   - Maximum +/- 100 ms hangcsúszás megengedett.
   - Commentary track maximum 2.0 lehet, AC3 esetében maximum 192kbps, AAC esetében `-V 80` - `-V -100` (QAAC) ~ 80-136 kbps
