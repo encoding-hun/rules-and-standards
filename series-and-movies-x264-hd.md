@@ -19,8 +19,10 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
 ## Taggelés
   - Sorozatok és filmek ajánlott tagelése (a sorrendtől el lehet térni):
     Sorozatok:
+    
     `[series.name].[season].[resolution].[source].[audio codec].[video codec].[language]-[group]`
     Filmek:
+    
     `[movie title].[year].[resolution].[source].[audio codec].[video codec].[language]-[group]`
   - A könyvtár és fájlok nevének maximális hossza 252 karakter lehet.
   - `[audio codec]` a film/sorozat eredeti nyelvére vonatkozik.
@@ -38,8 +40,8 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
    - HDR -> SDR tonemapping tilos, ekkor x265 encode készítendő (lást oda vonatkozó szabályzat).
 
 ## Video
-  - Minimum r2800-as x264-as használata kötelező; kivétel, ha korábbi, minőségi encodera (pl. DON, TayTo, VietHD, egyéb HDB internalok) muxolunk.
-  - TILOS minden olyan x264 használata, amely az alábbi commitot tartalmazza (praktikusan r2969, r2970 és ami erre épül): https://code.videolan.org/videolan/x264/commit/92d36908cbafd2a6edf7e61d69f341027b57f6f8
+  - Minimum r2800-as x264-as használata kötelező; kivétel, ha korábbi, minőségi encodera (pl. `DON`, `TayTo`, `VietHD` és egyéb HDB internalok) muxolunk.
+  - TILOS minden olyan x264 használata, amely az alábbi commitot tartalmazza (praktikusan `r2969`, `r2970` és ami erre épül): https://code.videolan.org/videolan/x264/commit/92d36908cbafd2a6edf7e61d69f341027b57f6f8
   - Elfogadott x264 variánsok: vanilla, tMod, Yuuki, kMod, saiclabs féle r2970+1 és tmod r2970+3.
   - Házibarkács encoderek használata TILOS!
   - Kizárólag 8 bites YUV420 (YV12) video megengedett.
@@ -47,11 +49,12 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
   - A video eredeti FPS értékét meg kell tartani.
 
 ## Audio
-  - Megengedett hangformátumok: AC3, E-AC3, DTS, AAC, FLAC. MP3, MP2 és egyéb vicces formátumok használata TILOS!
-  - AC3 esetében Dolby Certified encodert kell használni (pl. Sound Forge, Minnetonka, Sonic Foundry)
+  - Megengedett hangformátumok: `AC3`, `E-AC3`, `DTS`, `AAC`, `FLAC`. `MP3`, `MP2` és egyéb vicces formátumok használata TILOS!
+  - AC3 esetében Dolby Certified encodert kell használni (pl. `Sound Forge`, `Minnetonka`, `Sonic Foundry`)
   - AAC esetében elfogadott encoderek: QAAC, FDK, Nero (csak stereo hangnál használható)
   - 720p releasek esetén DTS hang használata TILOS!
-  - 1080p releasek esetén TrueHD és DTS-HD MA és DTS:X használata TILOS! Ilyen esetekben a core-t használjuk vagy master audio-ból kódolunk `DD@640` vagy `DDP@1024` hangot.
+  - 1080p releasek esetén `TrueHD`, `DTS-HD.MA` és `DTS:X` használata TILOS! Ilyen esetekben a core-t használjuk vagy master audio-ból kódolunk `DD@640` vagy `DDP@1024` hangot.
+  - Lossy hangot csak master audioból (lossless) szabad kódolni.
   - Maximum +/- 100 ms hangcsúszás megengedett.
   - Commentary track maximum 2.0 lehet, AC3 esetében maximum 192kbps, AAC esetében `-V 80` - `-V -100` (qaac)
   
