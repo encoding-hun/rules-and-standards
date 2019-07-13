@@ -56,8 +56,10 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
   - A video szélességének és magasságának 2-vel oszthatónak kell lennie.
   - 1080p esetén a szélesség 1920-crop értéke kell legyen. 720p esetén a szélességnek 1280 px-nek kell lennie.
   - ColorMatrixot, amennyiben a forrás tartalmaz erre vonatkozó információt kötelező flaggelni (tipikusan `BT.709`), amennyiben nem, úgy `undef`-en kell hagyni.
-  - ColorPrimaries és Transfer function flaggelése opcionális.
+  - ColorPrimaries és Transfer function flaggelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod mit csinálsz).
+    - Bővebb infó: https://mod16.org/hurfdurf/?p=116
   - A maximálisan engedett referencia képek számának használata kötelező (`--ref`).
+    - `--preset slow`/`veryslow`/`placebo` magától kiszámolja a legnagyobbat, ami még nem töri meg a kompatibilitást, érdemes nem piszkálni manuálisan.
   - B framek használata kötelező.
   - A készült videónak `Level 4.1@High` kompatibilisnek kell lennie.
   - `CABAC` használata kötelező.
