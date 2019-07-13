@@ -2,7 +2,7 @@ HD felbontású (1080p, 720p), x264-es kódolású filmekre vonatkozó szabályo
 
 Érvényes: 2019-??-??-től
 
-Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján nem készíthető proper. Amennyiben bizonyítottan jobb minőségű release készült (video és/vagy hang és/vagy felirat), ezt READ.NFO taggal készítsük. Minden egyéb DUPE-nak minősül.
+Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján nem készíthető proper. Amennyiben bizonyítottan jobb minőségű release készült (video és/vagy hang és/vagy felirat), ezt READ.NFO taggal készítsük. Minden egyéb DUPE-nak minősül. Ez alól kivétel, ha a korábbi release súlyos hibával rendelkezik, pl. hangcsúszás, képhiba, stb., ekkor PROPER-elhető.
 
 ## Intro
   Alapul a 2009.04.15, 2009.06.08-as magyar és 2011.01.29-es nemzetközi scene szabályzatok szolgáltak, nyilván a kornak megfelelően modernizálva és átdolgozva.
@@ -16,12 +16,12 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
  - A fő MKV mellé ajánlott SFV ellenőrzőösszeg készítése, de nem kötelező.
 
 ## Taggelés
-  - Sorozatok és filmek tagelése:
+  - Sorozatok és filmek ajánlott tagelése (a sorrenddel el lehet térni):
     Sorozatok: `[series.name].[season].[resolution].[source].[audio codec].[video codec].[language]-[group]`
     Filmek: `[movie title].[year].[resolution].[source].[audio codec].[video codec].[language]-[group]`
   - WEB-DL és WEBRip forrás esetén meg kell jelölni, hogy pontosan melyik oldalról való (pl. `NF.WEB-DL`, `AMZN.WEB-DL`)
-  - A fájlok elérési útjának maximális hossza 255 karakter lehet.
-  - `[audio codec]` az eredeti nyelvű hangra vonatkozik.
+  - A könyvtár és fájlok nevének maximális hossza 252 karakter lehet.
+  - `[audio codec]` a film/sorozat eredeti nyelvére vonatkozik.
 
 ## Források
    - Csak jobb forrásból készített új release megengedett, minden egyéb DUPE.
@@ -33,12 +33,12 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
 ## Video
  - Minimum r2800-as x264-as használata kötelező; kivétel, ha korábbi, minőségi encodera (pl. DON, TayTo, VietHD, egyéb HDB internalok) muxolunk.
   - Elfogadott x264 variánsok: vanilla, tMod, Yuuki, kMod. Házibarkács encoderek használata TILOS!
-  - Kizárólag 8 bites YUV420 video megengedett.
+  - Kizárólag 8 bites YUV420 (YV12) video megengedett.
   - Kizárólag 2pass és CRF kódolások megengedettek.
   - A video eredeti FPS értékét meg kell tartani.
 
 ## Audio
-  - AC3 esetében Dolby certified encodert kell használni (pl. Sound Forge)
+  - AC3 esetében Dolby Certified encodert kell használni (pl. Sound Forge, Minnetonka, Sonic Foundry)
   - AAC esetében qaac-t kell használni (csak stereo hangnál használható)
   - Nem lehet bloated a hang, bloatednak minősülnek:
       - 720p-n DTS@1509
