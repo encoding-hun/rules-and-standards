@@ -33,6 +33,7 @@ Ez a szabályzat nem vonatkozik a korábbi releasekre, az alábbiak alapján nem
  - A video eredeti FPS értékét meg kell tartani.
 
 [Audio]
+  - Maximum +/- 100 ms hangcsúszás megengedett.
 
 [Feliratok]
  - A feliratok kizárólag SRT formátumú és UTF8-BOM vagy Windows-1250 kódolásúak lehetnek.
@@ -59,3 +60,13 @@ Ez a szabályzat nem vonatkozik a korábbi releasekre, az alábbiak alapján nem
   * Audio sávok bitrátája
   * Audio mintavételezési rátája (Sampling rate)
   * Feliratok nyelve
+  
+[NUKE]
+ - A szabályzat nem követése, figyelmen kívül hagyása NUKE-ot eredményez.
+ - Indokok taggelése:
+    - bad.res = hibás felbontás
+    - bitstarved = alacsony bitráta
+    - oversized = feleslegesen magas bitráta
+    - audio.oos vagy oos vagy out.of.sync = hang csúszik a képhez képest
+
+[Aláírták és tudomásul vették]
