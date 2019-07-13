@@ -9,7 +9,7 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
 
 ## Általános
  - Tilos a DUPE, azaz a korábbival megegyező (vagy közel azonos) minőségű release készítése.
- - Kizárólag MKV konténer használata elfogadott.
+ - Kizárólag `.mkv` konténer használata elfogadott.
  - A film csonkítása, trimmelése TILOS.
  - A stáblista amennyiben nem tartalmaz extra jelenetet kódolható alacsonyabb bitrátával.
  - A film tömörítése és darabolása TILOS.
