@@ -27,7 +27,7 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
   - WEB-DL és WEBRip forrás esetén meg kell jelölni, hogy pontosan melyik oldalról való (pl. `NF.WEB-DL`, `AMZN.WEB-DL`)
   - WEB-hez további guide:
     - Az minősül WEB-DL-nek, ami nem lett újrakódolva az oldalról való leszedés után.
-    - Ha x264 settings-t látsz, az nem garancia arra, hogy `WEBRip˙`, `NF` és `AMZN` maga is `x264`-t használ.
+    - Ha x264 settings-t látsz, az nem garancia arra, hogy `WEBRip`, `NF` és `AMZN` maga is `x264`-t használ.
     - Egy WEB-DL nem feltétlenül jobb mint egy WEBRip (pl. `2160p.WEB-DL`-ből kódolt `720p.WEBRip` vs `720p.WEB-DL`)
 
 ## Források
