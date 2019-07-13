@@ -35,20 +35,20 @@ Ez a szabályzat nem vonatkozik a korábbi releasekre, az alábbiak alapján nem
 [NFO]
  - NFO használata kötelező.
  - Az NFO-nak a következő információkat kötelező feltüntetni:
-  - Release címe
-  - Release készítésének ideje
-  - Magyar cím
-  - Angol cím
-  - iMDb URL
-  - Video és hang forrása (feliratnál jelölni kell, amennyiben fansub)
-  - Az release mérete (csak a fő mkv, B, kB, MB, GB, kiB, MiB és GiB elfogadott)
-  - Videóhoz használt encoder
-  - Video felbontása
-  - Video bitrátája
-  - Video FPS-e
-  - Audio sávok nyelvei
-  - Audio sávok típusai
-  - Audio sávok csatornaszáma
-  - Audio sávok bitrátája
-  - Audio mintavételezési rátája (Sampling rate)
-  - Feliratok nyelve
+  * Release címe
+  * Release készítésének ideje
+  * Magyar cím
+  * Angol cím
+  * iMDb URL
+  * Video és hang forrása (feliratnál jelölni kell, amennyiben fansub)
+  * Az release mérete (csak a fő mkv, B, kB, MB, GB, kiB, MiB és GiB elfogadott)
+  * Videóhoz használt encoder
+  * Video felbontása
+  * Video bitrátája
+  * Video FPS-e
+  * Audio sávok nyelvei
+  * Audio sávok típusai
+  * Audio sávok csatornaszáma
+  * Audio sávok bitrátája
+  * Audio mintavételezési rátája (Sampling rate)
+  * Feliratok nyelve
