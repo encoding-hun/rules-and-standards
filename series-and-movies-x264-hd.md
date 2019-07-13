@@ -17,9 +17,11 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
  - Sample opcionális, amennyiben van, 60-120mp közötti kell, hogy legyen és nem az epizód/film legelejéről.
 
 ## Taggelés
-  - Sorozatok és filmek ajánlott tagelése (a sorrenddel el lehet térni):
-    Sorozatok: `[series.name].[season].[resolution].[source].[audio codec].[video codec].[language]-[group]`
-    Filmek: `[movie title].[year].[resolution].[source].[audio codec].[video codec].[language]-[group]`
+  - Sorozatok és filmek ajánlott tagelése (a sorrendtől el lehet térni):
+    Sorozatok:
+    `[series.name].[season].[resolution].[source].[audio codec].[video codec].[language]-[group]`
+    Filmek:
+    `[movie title].[year].[resolution].[source].[audio codec].[video codec].[language]-[group]`
   - A könyvtár és fájlok nevének maximális hossza 252 karakter lehet.
   - `[audio codec]` a film/sorozat eredeti nyelvére vonatkozik.
   - WEB-DL és WEBRip forrás esetén meg kell jelölni, hogy pontosan melyik oldalról való (pl. `NF.WEB-DL`, `AMZN.WEB-DL`)
