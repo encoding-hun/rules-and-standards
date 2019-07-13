@@ -31,9 +31,9 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
 ## Források
    - Csak jobb forrásból készített új release megengedett, minden egyéb DUPE.
    - Források prioritása: BD > HDDVD > WEB-DL/WEBRiP > HDTV
-   - Amennyiben jobb minőségű BD elérhető, mint amiből a korábbi release készült, ezt READ.NFO taggel jelezni kell.
+   - Amennyiben jobb minőségű BD/stb. elérhető, mint amiből a korábbi release készült, az új releaset READ.NFO taggel kell ellátni.
    - UHD forrás kizárólag akkor használható, ha SDR forrásról van szó.
-   - HDR -> SDR tonemapping tilos, készíts x265 encode-ot helyette.
+   - HDR -> SDR tonemapping tilos, ekkor x265 encode készítendő (lást oda vonatkozó szabályzat).
 
 ## Video
   - Minimum r2800-as x264-as használata kötelező; kivétel, ha korábbi, minőségi encodera (pl. DON, TayTo, VietHD, egyéb HDB internalok) muxolunk.
@@ -44,15 +44,17 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
   - A video eredeti FPS értékét meg kell tartani.
 
 ## Audio
+  - Megengedett hangformátumok: AC3, E-AC3, DTS, AAC, FLAC. MP3, MP2 és egyéb vicces formátumok használata TILOS!
   - AC3 esetében Dolby Certified encodert kell használni (pl. Sound Forge, Minnetonka, Sonic Foundry)
-  - AAC esetében qaac-t kell használni (csak stereo hangnál használható)
-  - Nem lehet bloated a hang, bloatednak minősülnek:
-      - 720p-n DTS@1509
-      - 1080p-n DTS-HD.MA
+  - AC3 és DTS butítása alacsonyabb bitrátára TILOS!
+  - AAC esetében elfogadott encoderek: QAAC, FDK, Nero (csak stereo hangnál használható)
+  - 720p releasek esetén DTS hang használata TILOS!
+  - 1080p releasek esetén TrueHD és DTS-HD MA és DTS:X használata TILOS! Ilyen esetekben a core-t használjuk.
   - Maximum +/- 100 ms hangcsúszás megengedett.
   - Commentary track maximum 2.0 lehet, AC3 esetében maximum 192kbps, AAC esetében `-V 80` - `-V -100` (qaac)
   
 ## Feliratok
+ - A feliratok kizárólag SRT formátumú és UTF8(-BOM) vagy Windows-1250 kódolásúak lehetnek.
  - A feliratokat tartalmaznia kell az mkv-nak, opcionálisan mellette is meghagyható.
  - A muxolt feliratokat megfelelő karakterkódolással kell muxolni (UTF8 vagy beállítani, hogy mi a forrás)
  - Az opcionálisan mellékelt feliratok kizárólag SRT formátumú és UTF8-BOM vagy ANSI kódolásúak lehetnek.
