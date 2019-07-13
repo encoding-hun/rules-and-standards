@@ -34,7 +34,7 @@ Ez a szabályzat nem vonatkozik a korábbi releasekre, az alábbiak alapján nem
 
 [NFO]
  - NFO használata kötelező.
- - Az NFO-nak a következő információkat kötelező feltüntetni:
+ - Az NFO-ban kötelező a következő információkat feltüntetni:
   * Release címe
   * Release készítésének ideje
   * Magyar cím
