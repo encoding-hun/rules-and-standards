@@ -26,7 +26,7 @@
     - Ha x264 settings-t látsz, az nem garancia arra, hogy `WEBRip`, `NF` és `AMZN` maga is `x264`-t használ.
     - Egy WEB-DL nem feltétlenül jobb mint egy WEBRip (pl. `2160p.WEB-DL`-ből kódolt `720p.WEBRip` vs `720p.WEB-DL`)
     - `Rip` és `RiP` megjelölés is elfogadott.
-    - `WEB-DLRip` megjelölés kerülendő, WEB-DL-ből kódolt Rip = `WEBRip`
+    - `WEB-DLRip` megjelölés kerülendő, `WEB-DL`-ből kódolt Rip = `WEBRip`
 
 ## Források
    - Csak jobb forrásból készített új release megengedett, minden egyéb DUPE.
@@ -38,7 +38,7 @@
 ## Video
   - Minimum r2800-as x264-as használata kötelező; kivétel, ha korábbi, minőségi encodera (pl. `DON`, `TayTo`, `VietHD` és egyéb HDB internalok) muxolunk.
   - TILOS minden olyan x264 használata, amely az alábbi commitot tartalmazza (praktikusan `r2969`, `r2970` és ami erre épül): https://code.videolan.org/videolan/x264/commit/92d36908cbafd2a6edf7e61d69f341027b57f6f8
-  - Elfogadott x264 variánsok: vanilla, tMod, Yuuki, kMod, saiclabs féle `r2970+1` és tmod `r2970+3`.
+  - Elfogadott x264 variánsok: vanilla, tMod, Yuuki, kMod, saiclabs féle vanilla `r2970+1` és tMod `r2970+3`.
   - Házibarkács encoderek használata TILOS!
   - Kizárólag 8 bites YUV420 (YV12) video megengedett.
   - Kizárólag 2pass és CRF kódolások megengedettek.
