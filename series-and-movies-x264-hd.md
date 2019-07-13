@@ -20,11 +20,9 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
   - Sorozatok és filmek ajánlott tagelése (a sorrendtől el lehet térni):
     
     Sorozatok:
-    
     `[series.name].[season].[resolution].[source].[audio codec].[video codec].[language]-[group]`
     
     Filmek:
-    
     `[movie title].[year].[resolution].[source].[audio codec].[video codec].[language]-[group]`
   - A könyvtár és fájlok nevének maximális hossza 252 karakter lehet.
   - `[audio codec]` a film/sorozat eredeti nyelvére vonatkozik.
