@@ -128,10 +128,13 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
  - Indokok taggelése:
     - bad.res = hibás felbontás
     - bad.crop = hibás croppolás
-    - bad.colorimetry = hibás ColorMatrix/Primaries/Transfer használata
+    - bad.colorimetry = `--colormatrix` hibás használata
     - bitstarved = alacsony bitráta
     - bloated = feleslegesen magas bitráta
     - upscaled = felskálázott kép/hang
+      - példák ellenőrzésre:
+        - `Interleave(last,last.z_Spline36Resize(1280,720).z_Spline36Resize(1920,1080).Subtitle("1080 -> 720 -> 1080"))` (720p upscale)
+        - `Interleave(last,last.z_AutoResize("480").AutoResize("1080").Subtitle("1080 -> 480 -> 1080"))` (480p upscale)
     - audio.oos = hang csúszik a képhez képest
     - sub.oos = felirat csúszik a képhez képest
     - nfo.wtf = NFO érthetetlen vagy értelmezhetetlen
