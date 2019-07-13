@@ -43,7 +43,6 @@ Ez a szabályzat nem vonatkozik a korábbi releasekre, az alábbiak alapján nem
       - 1080p-n DTS-HD.MA
   - Maximum +/- 100 ms hangcsúszás megengedett.
   - Commentary track maximum 2.0 lehet, AC3 esetében maximum 192kbps, AAC esetében -V 80-100 (qaac)
-  -
   
 [Feliratok]
  - A feliratok kizárólag SRT formátumú és UTF8-BOM vagy Windows-1250 kódolásúak lehetnek.
