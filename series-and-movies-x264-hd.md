@@ -2,7 +2,8 @@ HD felbontású (1080p, 720p), x264-es kódolású filmekre vonatkozó szabályo
 
 Érvényes: 2019-??-??-től
 
-Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján nem készíthető proper. Amennyiben jobb minőségű BD/stb. elérhető, mint amiből a korábbi release készült, az új releaset READ.NFO taggel kell ellátni. Minden egyéb DUPE-nak minősül. Ez alól kivétel, ha a korábbi release súlyos hibával rendelkezik, pl. hangcsúszás, képhiba, stb., ekkor PROPER-elhető.
+## Hungarian Release Standards
+  Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján nem készíthető proper. Amennyiben jobb minőségű BD/stb. elérhető, mint amiből a korábbi release készült, az új releaset READ.NFO taggel kell ellátni. Minden egyéb DUPE-nak minősül. Ez alól kivétel, ha a korábbi release súlyos hibával rendelkezik, pl. hangcsúszás, képhiba, stb., ekkor PROPER-elhető.
 
 ## Intro
   Alapul a 2009.04.15, 2009.06.08-as magyar és 2011.01.29-es nemzetközi scene szabályzatok szolgáltak, nyilván a kornak megfelelően modernizálva és átdolgozva.
@@ -74,9 +75,8 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
   - Kizárólag 1:1 oldalarányú pixelek használhatóak (`--sar 1:1`)
   - Kizárólag Limited, TV rangeű release készíthető (`16-235`)
   - `--vbv-maxrate` maximum `62500`, `--vbv-bufsize` maximum `78125` lehet.
-  - `deblock` filter használata kötelező.
-  - Beállítás példák:
-  
+  - `--deblock` kikapcsolása tilos.
+    - Ajánlott beállítás: `-3;-3`.
 
 ## Audio
   - Megengedett hangformátumok: `AC3`, `E-AC3`, `DTS`, `AAC`, `FLAC`. `MP3`, `MP2` és egyéb vicces formátumok használata TILOS!
