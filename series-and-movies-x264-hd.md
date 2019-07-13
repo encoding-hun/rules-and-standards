@@ -21,6 +21,7 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
     Filmek: `[movie title].[year].[resolution].[source].[audio codec].[video codec].[language]-[group]`
   - WEB-DL és WEBRip forrás esetén meg kell jelölni, hogy pontosan melyik oldalról való (pl. `NF.WEB-DL`, `AMZN.WEB-DL`)
   - A fájlok elérési útjának maximális hossza 255 karakter lehet.
+  - `[audio codec]` az eredeti nyelvű hangra vonatkozik.
 
 ## Források
    - Csak jobb forrásból készített új release megengedett, minden egyéb DUPE.
