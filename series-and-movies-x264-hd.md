@@ -16,9 +16,10 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
  - A fő MKV mellé ajánlott SFV ellenőrzőösszeg készítése, de nem kötelező.
 
 ## Taggelés
-  - [movie title].[year].[resolution].[source].[audio codec].[video codec].[language]-[group]
-  - [series.name].[season].[resolution].[source].[audio codec].[video codec].[language]-[group]
-  - WEB-DL és WEBRip forrás esetén meg kell jelölni, hogy pontosan melyik oldalról való (pl. NF.WEB-DL, AMZN.WEB-DL)
+  - Sorozatok és filmek tagelése:
+    Sorozatok: `[series.name].[season].[resolution].[source].[audio codec].[video codec].[language]-[group]`
+    Filmek: `[movie title].[year].[resolution].[source].[audio codec].[video codec].[language]-[group]`
+  - WEB-DL és WEBRip forrás esetén meg kell jelölni, hogy pontosan melyik oldalról való (pl. `NF.WEB-DL`, `AMZN.WEB-DL`)
   - A fájlok elérési útjának maximális hossza 255 karakter lehet.
 
 ## Források
@@ -42,7 +43,7 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
       - 720p-n DTS@1509
       - 1080p-n DTS-HD.MA
   - Maximum +/- 100 ms hangcsúszás megengedett.
-  - Commentary track maximum 2.0 lehet, AC3 esetében maximum 192kbps, AAC esetében -V 80-100 (qaac)
+  - Commentary track maximum 2.0 lehet, AC3 esetében maximum 192kbps, AAC esetében `-V 80` - `-V -100` (qaac)
   
 ## Feliratok
  - A feliratok kizárólag SRT formátumú és UTF8-BOM vagy Windows-1250 kódolásúak lehetnek.
