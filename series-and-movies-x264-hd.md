@@ -51,6 +51,8 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
   - A video eredeti FPS értékét meg kell tartani.
   - A videot croppolni kell addíg amíg maximum 1-1 px fekete sáv marad.
   - Az 1 px fekete sávok (widow line) és dirty line-ok javítása ajánlott.
+    - widow line javítása: `FillMargins`/`FillBorder`
+    - dirty line: `bbmod`/`FixColorBrightness`/`BalanceBorders`
   - A kódolt videó képarányának hibája nem haladhatja meg a 3%-ot (aspect ratio error).
   - A video felskálázása SZIGORÚAN TILOS!
   - A video szélességének és magasságának 2-vel oszthatónak kell lennie.
