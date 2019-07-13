@@ -31,6 +31,7 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
     - Ha x264 settings-t látsz, az nem garancia arra, hogy `WEBRip`, `NF` és `AMZN` maga is `x264`-t használ.
     - Egy WEB-DL nem feltétlenül jobb mint egy WEBRip (pl. `2160p.WEB-DL`-ből kódolt `720p.WEBRip` vs `720p.WEB-DL`)
     - `Rip` és `RiP` megjelölés is elfogadott.
+    - `WEB-DLRip` megjelölés kerülendő, WEB-DL-ből kódolt Rip = `WEBRip`
 
 ## Források
    - Csak jobb forrásból készített új release megengedett, minden egyéb DUPE.
