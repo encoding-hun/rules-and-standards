@@ -19,9 +19,16 @@ Ez a szabályzat nem vonatkozik a korábbi releasekre, az alábbiak alapján nem
 [Taggelés]
  - A könyvtárnév maximális hossza 256 karakter kell legyen.
 
+[Források]
+ - Csak jobb forrásból készített új release megengedett, minden egyéb DUPE.
+ - Források prioritása: BD > HDDVD > WEB-DL/WEBRiP > HDTV
+ - Amennyiben jobb minőségű BD elérhető, mint amiből a korábbi release készült, ezt READ.NFO taggel jelezni kell.
+ - UHD forrás kizárólag megfelelő színkonverzió mellett használható, ezt az NFO-ban jelölni kell és a releaset READ.NFO vagy iNT taggal kell ellátni
+
 [Video]
  - Minimum r2800-as x264-as használata kötelező; kivétel, ha korábbi, minőségi encodera (pl. DON, TayTo, VietHD, stb.) muxolunk.
  - Elfogadott x264 variánsok: vanilla, tMod, Yuuki, kMod. Házibarkács fordítások használata TILOS!
+ - Kizárólag 8 bites YUV420 video megengedett.
  - Kizárólag 2pass és CRF kódolások megengedettek.
  - A video eredeti FPS értékét meg kell tartani.
 
