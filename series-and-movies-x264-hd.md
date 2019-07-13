@@ -2,7 +2,7 @@ HD felbontású (1080p, 720p), x264-es kódolású filmekre vonatkozó szabályo
 
 Érvényes: 2019-??-??-től
 
-Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján nem készíthető proper. Amennyiben bizonyítottan jobb minőségű release készült (video és/vagy hang és/vagy felirat), ezt READ.NFO taggal készítsük. Minden egyéb DUPE-nak minősül. Ez alól kivétel, ha a korábbi release súlyos hibával rendelkezik, pl. hangcsúszás, képhiba, stb., ekkor PROPER-elhető.
+Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján nem készíthető proper. Amennyiben jobb minőségű BD/stb. elérhető, mint amiből a korábbi release készült, az új releaset READ.NFO taggel kell ellátni. Minden egyéb DUPE-nak minősül. Ez alól kivétel, ha a korábbi release súlyos hibával rendelkezik, pl. hangcsúszás, képhiba, stb., ekkor PROPER-elhető.
 
 ## Intro
   Alapul a 2009.04.15, 2009.06.08-as magyar és 2011.01.29-es nemzetközi scene szabályzatok szolgáltak, nyilván a kornak megfelelően modernizálva és átdolgozva.
@@ -35,7 +35,7 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
    - Források prioritása: BD > HDDVD > WEB-DL/WEBRiP > HDTV
    - Amennyiben jobb minőségű BD elérhető, mint amiből a korábbi release készült, ezt READ.NFO taggel jelezni kell.
    - UHD forrás kizárólag akkor használható, ha SDR forrásról van szó.
-   - HDR -> SDR tonemapping tilos, készíts x265 encode-ot helyette.
+   - HDR -> SDR tonemapping tilos, ekkor x265 encode készítendő (lást oda vonatkozó szabályzat).
 
 ## Video
   - Minimum r2800-as x264-as használata kötelező; kivétel, ha korábbi, minőségi encodera (pl. DON, TayTo, VietHD, egyéb HDB internalok) muxolunk.
@@ -47,11 +47,11 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
   - A video eredeti FPS értékét meg kell tartani.
 
 ## Audio
+  - Megengedett hangformátumok: AC3, E-AC3, DTS, AAC, FLAC. MP3, MP2 és egyéb vicces formátumok használata TILOS!
   - AC3 esetében Dolby Certified encodert kell használni (pl. Sound Forge, Minnetonka, Sonic Foundry)
-  - AAC esetében qaac-t kell használni (csak stereo hangnál használható)
-  - Nem lehet bloated a hang, bloatednak minősülnek:
-      - 720p-n DTS@1509
-      - 1080p-n DTS-HD.MA
+  - AAC esetében elfogadott encoderek: QAAC, FDK, Nero (csak stereo hangnál használható)
+  - 720p releasek esetén DTS hang használata TILOS!
+  - 1080p releasek esetén TrueHD és DTS-HD MA és DTS:X használata TILOS! Ilyen esetekben a core-t használjuk vagy master audio-ból kódolunk `DD@640` vagy `DDP@1024` hangot.
   - Maximum +/- 100 ms hangcsúszás megengedett.
   - Commentary track maximum 2.0 lehet, AC3 esetében maximum 192kbps, AAC esetében `-V 80` - `-V -100` (qaac)
   
