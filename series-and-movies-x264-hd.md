@@ -58,7 +58,7 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
       * Eredeti cím
       * IMDb URL
       * Video és hang forrása (feliratnál jelölni kell, amennyiben fansub)
-      * A release mérete (csak a fő mkv, B, kB, MB, GB, kiB, MiB és GiB elfogadott)
+      * A release mérete (csak a fő mkv, B, kB, MB, GB, KiB, MiB és GiB elfogadott)
       * Videóhoz használt encoder
       * Video felbontása
       * Video bitrátája
