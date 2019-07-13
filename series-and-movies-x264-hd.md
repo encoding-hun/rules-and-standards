@@ -14,9 +14,10 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
  - A stáblista amennyiben nem tartalmaz extra jelenetet kódolható alacsonyabb bitrátával.
  - A film tömörítése és darabolása TILOS.
  - A fő MKV mellé ajánlott SFV ellenőrzőösszeg készítése, de nem kötelező.
- - Sample opcionális, amennyiben van, 60-120mp közötti kell, hogy legyen és nem az epizód/film legelejéről.
+ - Sample opcionális, amennyiben van, 60-120 másodperc közötti kell, hogy legyen és nem az epizód/film legelejéről.
 
 ## Taggelés
+  - Ékezetes karakterek használata könyvtárnevekben TILOS!
   - Sorozatok és filmek ajánlott tagelése (a sorrendtől el lehet térni):
     
     - Sorozatok:
@@ -24,13 +25,14 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
     
     - Filmek:
     `[movie title].[year].[resolution].[source].[audio codec].[video codec].[language]-[group]`
-  - A könyvtár és fájlok nevének maximális hossza 252 karakter lehet.
+  - A könyvtár és fájlok nevének maximális hossza 255 karakter lehet, de ajánlott 250 alatt megállni.
   - `[audio codec]` a film/sorozat eredeti nyelvére vonatkozik.
   - WEB-DL és WEBRip forrás esetén meg kell jelölni, hogy pontosan melyik oldalról való (pl. `NF.WEB-DL`, `AMZN.WEB-DL`)
   - WEB-hez további guide:
     - Az minősül WEB-DL-nek, ami nem lett újrakódolva az oldalról való leszedés után.
     - Ha x264 settings-t látsz, az nem garancia arra, hogy `WEBRip`, `NF` és `AMZN` maga is `x264`-t használ.
     - Egy WEB-DL nem feltétlenül jobb mint egy WEBRip (pl. `2160p.WEB-DL`-ből kódolt `720p.WEBRip` vs `720p.WEB-DL`)
+    - `Rip` és `RiP` megjelölés is elfogadott.
 
 ## Források
    - Csak jobb forrásból készített új release megengedett, minden egyéb DUPE.
@@ -42,21 +44,43 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
 ## Video
   - Minimum r2800-as x264-as használata kötelező; kivétel, ha korábbi, minőségi encodera (pl. `DON`, `TayTo`, `VietHD` és egyéb HDB internalok) muxolunk.
   - TILOS minden olyan x264 használata, amely az alábbi commitot tartalmazza (praktikusan `r2969`, `r2970` és ami erre épül): https://code.videolan.org/videolan/x264/commit/92d36908cbafd2a6edf7e61d69f341027b57f6f8
-  - Elfogadott x264 variánsok: vanilla, tMod, Yuuki, kMod, saiclabs féle r2970+1 és tmod r2970+3.
+  - Elfogadott x264 variánsok: vanilla, tMod, Yuuki, kMod, saiclabs féle `r2970+1` és tmod `r2970+3`.
   - Házibarkács encoderek használata TILOS!
   - Kizárólag 8 bites YUV420 (YV12) video megengedett.
   - Kizárólag 2pass és CRF kódolások megengedettek.
   - A video eredeti FPS értékét meg kell tartani.
+  - A videot croppolni kell addíg amíg maximum 1-1 px fekete sáv marad.
+  - Az 1 px fekete sávok (widow line) és dirty line-ok javítása ajánlott.
+  - A kódolt videó képarányának hibája nem haladhatja meg a 3%-ot (aspect ratio error).
+  - A video felskálázása SZIGORÚAN TILOS!
+  - A video szélességének és magasságának 2-vel oszthatónak kell lennie.
+  - 1080p esetén a szélesség 1920-crop értéke kell legyen. 720p esetén a szélességnek 1280 px-nek kell lennie.
+  - ColorMatrixot, amennyiben a forrás tartalmaz erre vonatkozó információt kötelező flaggelni (tipikusan `BT.709`), amennyiben nem, úgy `undef`-en kell hagyni.
+  - ColorPrimaries és Transfer function flaggelése opcionális.
+  - A maximálisan engedett referencia képek számának használata kötelező (`--ref`).
+  - B framek használata kötelező.
+  - A készült videónak `Level 4.1@High` kompatibilisnek kell lennie.
+  - `CABAC` használata kötelező.
+  - 8x8dct használata kötelező.
+  - Kötelezően használandó partíciók: i4x4,i8x8,p8x8,b8x8; p4x4 használata opcionális
+  - `merange` értéke nem lehet 24-nél kisebb
+  - `subme` értéke nem lehet 10-nél kisebb
+  - Kizárólag 1:1 oldalarányú pixelek használhatóak (`--sar 1:1`)
+  - Kizárólag Limited, TV rangeű release készíthető (`16-235`)
+  - `--vbv-maxrate` maximum `62500`, `--vbv-bufsize` maximum `78125` lehet.
+  - `deblock` filter használata kötelező.
 
 ## Audio
   - Megengedett hangformátumok: `AC3`, `E-AC3`, `DTS`, `AAC`, `FLAC`. `MP3`, `MP2` és egyéb vicces formátumok használata TILOS!
+  - LPCM hangot kötelező FLAC-be (film esetén) vagy AAC-be (kommentár esetén) konvertálni
   - AC3 esetében Dolby Certified encodert kell használni (pl. `Sound Forge`, `Minnetonka`, `Sonic Foundry`)
   - AAC esetében elfogadott encoderek: QAAC, FDK, Nero (csak stereo hangnál használható)
-  - 720p releasek esetén DTS hang használata TILOS!
+  - 720p releasek esetén `DTS`, `TrueHD`, `DTS-HD.MA` és `DTS:X` hang használata TILOS!
   - 1080p releasek esetén `TrueHD`, `DTS-HD.MA` és `DTS:X` használata TILOS! Ilyen esetekben a core-t használjuk vagy master audio-ból kódolunk `DD@640` vagy `DDP@1024` hangot.
-  - Lossy hangot csak master audioból (lossless) szabad kódolni.
+  - DTS hang esetén DD+ vagy AC3 compatibility track használata ajánlott.
+  - Lossy hangot csak master audioból (lossless) szabad kódolni. Ez alól kivétel ha csak DTS hang elérhető és compatibility track-et készítünk.
   - Maximum +/- 100 ms hangcsúszás megengedett.
-  - Commentary track maximum 2.0 lehet, AC3 esetében maximum 192kbps, AAC esetében `-V 80` - `-V -100` (qaac)
+  - Commentary track maximum 2.0 lehet, AC3 esetében maximum 192kbps, AAC esetében `-V 80` - `-V -100` (QAAC) ~ 80-136 kbps
   
 ## Feliratok
  - A feliratokat tartalmaznia kell az mkv-nak, opcionálisan mellette is meghagyható.
@@ -69,7 +93,7 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
     - magyar full
     - eredeti forced (ha van)
     - eredeti full
-    - eredeti full sdh
+    - eredeti full SDH
 
 ## NFO
  - NFO használata kötelező.
@@ -98,8 +122,11 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
  - NUKE requestet bárki kérhet, a jogosság megvizsgálása a NUKE Council feladata
  - Indokok taggelése:
     - bad.res = hibás felbontás
+    - bad.crop = hibás croppolás
+    - bad.colorimetry = hibás ColorMatrix/Primaries/Transfer használata
     - bitstarved = alacsony bitráta
     - bloated = feleslegesen magas bitráta
+    - upscaled = felskálázott kép/hang
     - audio.oos = hang csúszik a képhez képest
     - sub.oos = felirat csúszik a képhez képest
     - nfo.wtf = NFO érthetetlen vagy értelmezhetetlen
