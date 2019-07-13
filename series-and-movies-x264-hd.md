@@ -36,8 +36,9 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
    - HDR -> SDR tonemapping tilos, készíts x265 encode-ot helyette.
 
 ## Video
- - Minimum r2800-as x264-as használata kötelező; kivétel, ha korábbi, minőségi encodera (pl. DON, TayTo, VietHD, egyéb HDB internalok) muxolunk.
-  - Elfogadott x264 variánsok: vanilla, tMod, Yuuki, kMod. Házibarkács encoderek használata TILOS!
+  - Minimum r2800-as x264-as használata kötelező; kivétel, ha korábbi, minőségi encodera (pl. DON, TayTo, VietHD, egyéb HDB internalok) muxolunk.
+  - TILOS minden olyan x264 használata, amely az alábbi commitot tartalmazza (praktikusan r2969, r2970 és ami erre épül): https://code.videolan.org/videolan/x264/commit/92d36908cbafd2a6edf7e61d69f341027b57f6f8
+  - Elfogadott x264 variánsok: vanilla, tMod, Yuuki, kMod, saiclabs féle r2970+1 és tmod r2970+3. Házibarkács encoderek használata TILOS!
   - Kizárólag 8 bites YUV420 (YV12) video megengedett.
   - Kizárólag 2pass és CRF kódolások megengedettek.
   - A video eredeti FPS értékét meg kell tartani.
@@ -66,6 +67,8 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
 
 ## NFO
  - NFO használata kötelező.
+ - Az NFO nyelve angol és/vagy magyar.
+ - Magyar nyelvű NFO esetén az angol kifejezések szakszerű fordításának használata kötelező (ebben segít a Wikipedia).
  - Az NFO-ban kötelező a következő információkat feltüntetni:
       * Release címe
       * Release készítésének ideje
@@ -86,12 +89,16 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
   
 ## NUKE
  - A szabályzat nem követése, figyelmen kívül hagyása NUKE-ot eredményez.
+ - NUKE requestet bárki kérhet, a jogosság megvizsgálása a NUKE Council feladata
  - Indokok taggelése:
     - bad.res = hibás felbontás
     - bitstarved = alacsony bitráta
     - bloated = feleslegesen magas bitráta
     - audio.oos = hang csúszik a képhez képest
     - sub.oos = felirat csúszik a képhez képest
+    - nfo.wtf = NFO érthetetlen vagy értelmezhetetlen
     - A READ.NFO-khoz és a PROPER-ekhez kötelező proof. Jobb kép esetén comparison, oos esetén kép a csúszásról.
 
 ## Aláírták és tudomásul vették
+
+## Oldalak, akik elfogadták
