@@ -60,19 +60,23 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
   - ColorMatrixot, amennyiben a forrás tartalmaz erre vonatkozó információt kötelező flaggelni (tipikusan `BT.709`), amennyiben nem, úgy `undef`-en kell hagyni.
   - ColorPrimaries és Transfer function flaggelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod mit csinálsz).
     - Bővebb infó: https://mod16.org/hurfdurf/?p=116
-  - A maximálisan megengedett referencia képek számának használata kötelező (`--ref`).
-    - `--preset slow`/`veryslow`/`placebo` magától kiszámolja a legnagyobbat, ami még nem töri meg a kompatibilitást, érdemes nem piszkálni manuálisan.
+  - A maximálisan megengedett referencia képek számának használata kötelező (--ref).
+    - `--preset veryslow`/`placebo` magától kiszámolja a legnagyobbat, ami még nem töri meg a kompatibilitást. (Érdemes így csinálni, és akkor nem kell manuálisan számolni.)
+    - Kiszámolása: `8388608/(végső szélesség*végső magasság) -> lefele kerekítés.
+    Pl.: `8388608/(1280*640)=10,24`, `10.24` -> `10`
   - B framek használata kötelező.
   - A készült videónak `Level 4.1@High` kompatibilisnek kell lennie.
-  - `CABAC` használata kötelező.
-  - 8x8dct használata kötelező.
-  - Kötelezően használandó partíciók: i4x4,i8x8,p8x8,b8x8; p4x4 használata opcionális
+  - `CABAC` kikapcsolás tilos.
+  - `8x8dct` kikapcsolása tilos.
+  - Kötelezően használandó partíciók: `i4x4,i8x8,p8x8,b8x8` (default), `p4x4` használata opcionális
   - `merange` értéke nem lehet 24-nél kisebb
   - `subme` értéke nem lehet 10-nél kisebb
   - Kizárólag 1:1 oldalarányú pixelek használhatóak (`--sar 1:1`)
   - Kizárólag Limited, TV rangeű release készíthető (`16-235`)
   - `--vbv-maxrate` maximum `62500`, `--vbv-bufsize` maximum `78125` lehet.
   - `deblock` filter használata kötelező.
+  - Beállítás példák:
+  
 
 ## Audio
   - Megengedett hangformátumok: `AC3`, `E-AC3`, `DTS`, `AAC`, `FLAC`. `MP3`, `MP2` és egyéb vicces formátumok használata TILOS!
