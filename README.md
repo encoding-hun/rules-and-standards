@@ -1,1 +1,1 @@
-# Hungarian-encoding-rules-and-standards
+# Hungarian encoding rules and standards
