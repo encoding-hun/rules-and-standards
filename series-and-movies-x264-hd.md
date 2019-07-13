@@ -14,14 +14,19 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
  - A stáblista amennyiben nem tartalmaz extra jelenetet kódolható alacsonyabb bitrátával.
  - A film tömörítése és darabolása TILOS.
  - A fő MKV mellé ajánlott SFV ellenőrzőösszeg készítése, de nem kötelező.
+ - Sample opcionális, amennyiben van, 60-120mp közötti kell, hogy legyen és nem az epizód/film legelejéről.
 
 ## Taggelés
   - Sorozatok és filmek ajánlott tagelése (a sorrenddel el lehet térni):
     Sorozatok: `[series.name].[season].[resolution].[source].[audio codec].[video codec].[language]-[group]`
     Filmek: `[movie title].[year].[resolution].[source].[audio codec].[video codec].[language]-[group]`
-  - WEB-DL és WEBRip forrás esetén meg kell jelölni, hogy pontosan melyik oldalról való (pl. `NF.WEB-DL`, `AMZN.WEB-DL`)
   - A könyvtár és fájlok nevének maximális hossza 252 karakter lehet.
   - `[audio codec]` a film/sorozat eredeti nyelvére vonatkozik.
+  - WEB-DL és WEBRip forrás esetén meg kell jelölni, hogy pontosan melyik oldalról való (pl. `NF.WEB-DL`, `AMZN.WEB-DL`)
+  - WEB-hez további guide:
+    - Az minősül WEB-DL-nek, ami nem lett újrakódolva az oldalról való leszedés után.
+    - Ha x264 settings-t látsz, az nem garancia arra, hogy `WEBRip˙`, `NF` és `AMZN` maga is `x264`-t használ.
+    - Egy WEB-DL nem feltétlenül jobb mint egy WEBRip (pl. `2160p.WEB-DL`-ből kódolt `720p.WEBRip` vs `720p.WEB-DL`)
 
 ## Források
    - Csak jobb forrásból készített új release megengedett, minden egyéb DUPE.
@@ -47,9 +52,17 @@ Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján n
   - Commentary track maximum 2.0 lehet, AC3 esetében maximum 192kbps, AAC esetében `-V 80` - `-V -100` (qaac)
   
 ## Feliratok
- - A feliratok kizárólag SRT formátumú és UTF8-BOM vagy Windows-1250 kódolásúak lehetnek.
+ - A feliratokat tartalmaznia kell az mkv-nak, opcionálisan mellette is meghagyható.
+ - A muxolt feliratokat megfelelő karakterkódolással kell muxolni (UTF8 vagy beállítani, hogy mi a forrás)
+ - Az opcionálisan mellékelt feliratok kizárólag SRT formátumú és UTF8-BOM vagy ANSI kódolásúak lehetnek.
  - A feliratok nyelvét kötelező Language tag-ként beállítani.
  - Title tag használata opcionális.
+ - Feliratok sorrendje:
+    - magyar forced (ha van)
+    - magyar full
+    - eredeti forced (ha van)
+    - eredeti full
+    - eredeti full sdh
 
 ## NFO
  - NFO használata kötelező.
