@@ -59,8 +59,9 @@
     - `--preset veryslow`/`placebo` magától kiszámolja a legnagyobbat, ami még nem töri meg a kompatibilitást. (Érdemes így csinálni, és akkor nem kell manuálisan számolni.)
     - Kiszámolása: `8388608/(végső szélesség*végső magasság) -> lefele kerekítés.
     Pl.: `8388608/(1280*640)=10,24`, `10.24` -> `10`
-  - B framek használata kötelező.
-  - A készült videónak `Level 4.1@High` kompatibilisnek kell lennie.
+    (8388608 = 32768*16*16) [32768 a MaxDpbMbs High@4.1-nél, 16*16 egy macroblock]
+  - B framek kikapcsolása TILOS.
+  - A készült videónak `High@4.1` kompatibilisnek kell lennie.
   - `CABAC` kikapcsolása TILOS.
   - `8x8dct` kikapcsolása TILOS.
   - Kötelezően használandó partíciók: `i4x4,i8x8,p8x8,b8x8` (default), `p4x4` használata opcionális
