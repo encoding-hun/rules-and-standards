@@ -33,7 +33,7 @@
    - Források prioritása: BD > HDDVD > WEB-DL/WEBRiP > HDTV
    - Amennyiben jobb minőségű BD elérhető, mint amiből a korábbi release készült, ezt READ.NFO taggel jelezni kell.
    - UHD forrás kizárólag akkor használható, ha SDR forrásról van szó.
-   - HDR -> SDR tonemapping tilos, ekkor x265 encode készítendő (lást oda vonatkozó szabályzat).
+   - HDR -> SDR tonemapping TILOS, ekkor x265 encode készítendő (lást oda vonatkozó szabályzat).
 
 ## Video
   - Minimum r2800-as x264-as használata kötelező; kivétel, ha korábbi, minőségi encodera (pl. `DON`, `TayTo`, `VietHD` és egyéb HDB internalok) muxolunk.
@@ -61,16 +61,15 @@
     Pl.: `8388608/(1280*640)=10,24`, `10.24` -> `10`
   - B framek használata kötelező.
   - A készült videónak `Level 4.1@High` kompatibilisnek kell lennie.
-  - `CABAC` kikapcsolás tilos.
-  - `8x8dct` kikapcsolása tilos.
+  - `CABAC` kikapcsolása TILOS.
+  - `8x8dct` kikapcsolása TILOS.
   - Kötelezően használandó partíciók: `i4x4,i8x8,p8x8,b8x8` (default), `p4x4` használata opcionális
-  - `merange` értéke nem lehet 24-nél kisebb
-  - `subme` értéke nem lehet 10-nél kisebb
-  - Kizárólag 1:1 oldalarányú pixelek használhatóak (`--sar 1:1`)
-  - Kizárólag Limited, TV rangeű release készíthető (`16-235`)
+  - `merange` értéke nem lehet 24-nél kisebb.
+  - `subme` értéke nem lehet 10-nél kisebb.
+  - Kizárólag 1:1 oldalarányú pixelek használhatóak (`--sar 1:1`).
+  - Kizárólag Limited, TV rangeű release készíthető (`16-235`).
   - `--vbv-maxrate` maximum `62500`, `--vbv-bufsize` maximum `78125` lehet.
-  - `--deblock` kikapcsolása tilos.
-    - Ajánlott beállítás: `-3;-3`.
+  - `--deblock` kikapcsolása TILOS. Ajánlott beállítás: `-3;-3`.
 
 ## Audio
   - Megengedett hangformátumok: `AC3`, `E-AC3`, `DTS`, `AAC`, `FLAC`. `MP3`, `MP2` és egyéb vicces formátumok használata TILOS!
