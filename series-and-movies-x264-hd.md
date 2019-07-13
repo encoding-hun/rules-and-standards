@@ -1,8 +1,4 @@
-HD felbontású (1080p, 720p), x264-es kódolású filmekre vonatkozó szabályok és előírások
-
-Érvényes: 2019-??-??-től
-
-## Hungarian Release Standards
+## Hungarian HD x264 Release Standards
   Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján nem készíthető proper. Amennyiben jobb minőségű BD/stb. elérhető, mint amiből a korábbi release készült, az új releaset READ.NFO taggel kell ellátni. Minden egyéb DUPE-nak minősül. Ez alól kivétel, ha a korábbi release súlyos hibával rendelkezik, pl. hangcsúszás, képhiba, stb., ekkor PROPER-elhető.
 
 ## Intro
@@ -149,3 +145,8 @@ HD felbontású (1080p, 720p), x264-es kódolású filmekre vonatkozó szabályo
 ## Aláírták és tudomásul vették
 
 ## Oldalak, akik elfogadták
+
+## Érvényes
+  2019-??-??-től
+
+
