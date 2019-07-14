@@ -96,11 +96,12 @@
   - A keyframe-ek közötti maximális távolság `FPS*20` lehet.
   - A készített release bitrátája nem lehet nagyobb, mint a forrásé.
   - Ajánlott frameserverek: AviSynth+ és VapourSynth.
-  - HDTV forrás esetén logók maszkolása megengedett.
+  - HDTV forrás esetén logók maszkolása megengedett. (`InpaintFunc`)
 
 ## Audio
   - Megengedett hangformátumok: `AC3`, `E-AC3`, `DTS`, `AAC`, `FLAC`. `MP3`, `MP2` és egyéb vicces formátumok használata TILOS!
-  - Filmek esetén DTS és AC3 encodeolása AAC-be kizárólag a kommentár sáv esetén megengedett.
+  - DTS és AC3 encodeolása AAC-be kizárólag a kommentár sáv esetén megengedett.
+    - Ha nyújtani és/vagy vágni kell, akkor lehet AAC.
   - LPCM hangot kötelező FLAC-be (film esetén) vagy AAC-be (kommentár esetén) konvertálni
   - A hangsávok eredeti csatornaszámát meg kell tartani! Kivétel kommentár sávok.
   - AC3 esetében Dolby Certified encodert kell használni (pl. `Sound Forge`, `Minnetonka`, `Sonic Foundry`)
