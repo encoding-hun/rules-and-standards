@@ -104,7 +104,7 @@
     - Ha nyújtani és/vagy vágni kell, akkor lehet AAC.
   - LPCM hangot kötelező FLAC-be (film esetén) vagy AAC-be (kommentár esetén) konvertálni
   - A hangsávok eredeti csatornaszámát meg kell tartani! Kivétel kommentár sávok.
-  - AC3 esetében Dolby Certified encodert kell használni (pl. `Sound Forge`, `Minnetonka SurCode`, `Sonic Foundry`)
+  - AC3 esetében Dolby Certified encodert kell használni (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry`)
   - A készített AC3 nem tartalmazhat Copyright Protected flag-et.
   - AAC esetében elfogadott encoderek: QAAC, FDK, Nero
     - Csak stereo hangnál használható AAC.
