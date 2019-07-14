@@ -16,7 +16,7 @@
 
 ## Taggelés
   - Ékezetes karakterek használata TILOS!
-  - Lefoglalt karaktereket (`<`,`>`,`:`,`"`,`/`,`\`,`|`,`?`,`*`) könyvátrnévben és filenevekben is TILOS használni!
+  - Lefoglalt karaktereket (`<`,`>`,`:`,`"`,`/`,`\`,`|`,`?`,`*`) könyvtárnévben és filenevekben is TILOS használni!
   - TILOS két azonos nevű file létrehozása, amelyek kizárólag kis és nagy betűben térnek el (pl. film-release és Film-release)!
   - TILOS a következő könyvárnevek használata: `CON`, `PRN`, `AUX`, `NUL`, `COM1`, `COM2`, `COM3`, `COM4`, `COM5`, `COM6`, `COM7`, `COM8`, `COM9`, `LPT1`, `LPT2`, `LPT3`, `LPT4`, `LPT5`, `LPT6`, `LPT7`, `LPT8` és `LPT9`.
   - Sorozatok és filmek ajánlott tagelése (a sorrendtől el lehet térni):
