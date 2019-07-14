@@ -51,7 +51,7 @@
   - A video felskálázása SZIGORÚAN TILOS!
   - A video szélességének és magasságának 2-vel oszthatónak kell lennie.
   - 1080p forrású 1080p encode esetén csak cropolni szabad, resize-olni nem.
-  - Resizeoláshoz `z_Spline36Resize` vagy `Spline36ResizeMod` ajánlott, az `Spline36Resize` tartalmaz egy apró chroma shifting bugot, kerülendő. (VapourSynth-et nem érinti.)
+  - Resizeoláshoz `z_Spline36Resize` vagy `Spline36ResizeMod` ajánlott, a `Spline36Resize` tartalmaz egy apró chroma shifting bugot, kerülendő. (VapourSynth-et nem érinti.) VapourSynth esetén Spline64 is ajánlott.
   - ColorMatrixot, amennyiben a forrás tartalmaz erre vonatkozó információt kötelező flaggelni (tipikusan `BT.709`), amennyiben nem, úgy `undef`-en kell hagyni.
   - ColorPrimaries és Transfer function flaggelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod mit csinálsz).
     - Bővebb infó: https://mod16.org/hurfdurf/?p=116
