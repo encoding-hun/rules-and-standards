@@ -75,7 +75,7 @@
     Pl.: `8388608/(1280*640) = 10,24`, `10.24` -> `10`
     `(8388608 = 32768*16*16)` `[32768 a MaxDpbMbs High@4.1-nél, 16*16 egy macroblock]`
   - B framek kikapcsolása TILOS.
-  - A készült videónak DXVA-kompatibilisnek kell lennie (max. `High@4.1`).
+  - A készült videónak DXVA-kompatibilisnek kell lennie (max. `High@L4.1`).
   - `CABAC` kikapcsolása TILOS.
   - `8x8dct` kikapcsolása TILOS.
   - Kötelezően használandó partíciók: `i4x4,i8x8,p8x8,b8x8` (default), `p4x4` használata opcionális
