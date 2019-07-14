@@ -70,10 +70,11 @@
   - Kizárólag 1:1 oldalarányú pixelek használhatóak (`--sar 1:1`).
   - Kizárólag Limited, TV rangeű release készíthető (`16-235`).
   - `--vbv-maxrate` maximum `62500`, `--vbv-bufsize` maximum `78125` lehet.
-  - `--deblock` kikapcsolása TILOS. Ajánlott beállítás: `-3;-3`.
+  - `--deblock` kikapcsolása TILOS. Ajánlott beállítás filmek esetén: `-3;-3`.
 
 ## Audio
   - Megengedett hangformátumok: `AC3`, `E-AC3`, `DTS`, `AAC`, `FLAC`. `MP3`, `MP2` és egyéb vicces formátumok használata TILOS!
+  - Filmek esetén DTS és AC3 encodeolása AAC-be kizárólag a kommentár sáv esetén megengedett.
   - LPCM hangot kötelező FLAC-be (film esetén) vagy AAC-be (kommentár esetén) konvertálni
   - AC3 esetében Dolby Certified encodert kell használni (pl. `Sound Forge`, `Minnetonka`, `Sonic Foundry`)
   - AAC esetében elfogadott encoderek: QAAC, FDK, Nero (csak stereo hangnál használható)
@@ -85,6 +86,9 @@
   - Lossy hangot csak master audioból (lossless) szabad kódolni. Ez alól kivétel ha csak DTS hang elérhető és compatibility track-et készítünk.
   - Maximum +/- 100 ms hangcsúszás megengedett.
   - Commentary track maximum 2.0 lehet, AC3 esetében maximum 192kbps, AAC esetében `-V 80` - `-V -100` (QAAC) ~ 80-136 kbps
+  - Ha a hangot nyújtani kell előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. hdtools compare)
+  - Resampling-re használható programok: hdtools resample, eac3to, Sound Forge, Audacity
+  - TimeStretchingre használható programok: hdtools tstretch, Prosoniq TimeFactory II, Sound Forge és SONAR `élastique TimeStretch`, Audacity
   
 ## Feliratok
  - A feliratokat tartalmaznia kell az mkv-nak, opcionálisan mellette is meghagyható.
@@ -125,6 +129,10 @@
  - A szabályzat nem követése, figyelmen kívül hagyása NUKE-ot eredményez.
  - NUKE requestet bárki kérhet, a jogosság megvizsgálása a NUKE Council feladata
  - Indokok taggelése:
+    - dupe = DUPE release, azaz egy korábbival megegyezik, vagy közel azonos
+    - grp.req = csapat kérése
+    - get.repack, get.rerip = van új, javított változat azonos csapattól
+    - get.proper = van javított változat másik csapattól
     - bad.res = hibás felbontás
     - bad.crop = hibás croppolás
     - bad.colorimetry = `--colormatrix` hibás használata
