@@ -159,6 +159,7 @@
       * Audio sávok bitrátája
       * Audio mintavételezési rátája (Sample rate)
       * Feliratok nyelve
+  - Más csapatok sértegetése, személyeskedés TILOS!
   
 ## NUKE
  - A szabályzat nem követése, figyelmen kívül hagyása NUKE-ot eredményez.
@@ -173,8 +174,8 @@
     - bad.colorimetry = `--colormatrix` hibás használata
     - bad.deinterlace = hibás deinterlacelés, általában sávozódó videó és/vagy egyéb képi artifactek
     - dupe.frames = duplázott képkockák, általában hibás deinterlacelés/IVTC eredménye
-    - bitstarved = alacsony bitráta
-    - bloated = feleslegesen magas bitráta
+    - bitstarved = szükségesnél szignifikánsabban alacsony bitráta
+    - bloated = szükségesnél szignifikánsabban magasabb bitráta
     - upscaled = felskálázott kép/hang
       példák kép felskálázottság ellenőrzésére:
       `Interleave(last,last.AutoResize("720").AutoResize("1080").Subtitle("1080 -> 720 -> 1080"))` (720p upscale)
