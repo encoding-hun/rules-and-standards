@@ -9,9 +9,9 @@
  - A film csonkítása, trimmelése TILOS.
  - A stáblista amennyiben nem tartalmaz extra jelenetet kódolható alacsonyabb bitrátával.
  - A film tömörítése és darabolása TILOS.
- - A fő MKV mellé ajánlott SFV ellenőrzőösszeg készítése, de nem kötelező.
- - Sample opcionális, amennyiben van, 60-120 másodperc közötti kell, hogy legyen és nem az epizód/film legelejéről. A Sample-t újrakódolás nélkül, a végső encode-ból kell kivágni.
- - mHD, HDLight és egyéb vicces baromságok készítése TILOS!
+ - A fő MKV mellé SFV ellenőrzőösszeg készítése ajánlott, de nem kötelező.
+ - Sample opcionális, amennyiben van, 60-120 másodperc közötti kell, hogy legyen és nem az epizód/film legelejéről. A Sample-t újrakódolás nélkül, a végső encode-ból kell kivágni és egy `Sample` nevű mappába vagy a fő MKV mellé kell helyezni.
+ - mHD, HDLight és egyéb vicces baromságok készítése és felhasználása TILOS!
  - Chapterlist használata UHD BD, BD és HDDVD források esetén KÖTELEZŐ!
 
 ## Taggelés
@@ -36,8 +36,8 @@
     - Az minősül WEB-DL-nek, ami nem lett újrakódolva az oldalról való leszedés után.
     - Ha x264 settings-t látsz, az nem garancia arra, hogy `WEBRip`, `NF` és `AMZN` maga is `x264`-t használ.
     - Egy WEB-DL nem feltétlenül jobb mint egy WEBRip (pl. `2160p.WEB-DL`-ből kódolt `720p.WEBRip` vs `720p.WEB-DL`)
-    - `Rip` és `RiP` megjelölés is elfogadott.
     - `WEB-DLRip` megjelölés kerülendő, `WEB-DL`-ből kódolt Rip = `WEBRip`
+   - `Rip` és `RiP` megjelölés is elfogadott.
    - `REPACK` és `RERip` tagok használata kötelező, ha saját releaset javít valaki.
    - `iNT` vagy `iNTERNAL` tag használata DUPE elkerülésére TILOS!
    - TV-ből származó hangok esetén `CUSTOM` tag használata opcionális.
@@ -72,9 +72,8 @@
   - Tilos `Nearest Neighbor`, `Bilinear` és `Bicubic` resizer használata.
   - 720p release maximális felbontása `1280x720` lehet.
   - 1080p release maximális felbontása `1920x1080` lehet.
-  - ColorMatrixot, amennyiben a forrás tartalmaz erre vonatkozó információt kötelező flaggelni (tipikusan `BT.709`), amennyiben nem, úgy `undef`-en kell hagyni.
-  - ColorPrimaries és Transfer function flaggelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod mit csinálsz).
-    - Bővebb infó: https://mod16.org/hurfdurf/?p=116
+  - ColorMatrixot, amennyiben a forrás tartalmaz erre vonatkozó információt KÖTELEZŐ flaggelni (tipikusan `BT.709`), amennyiben nem, úgy `undef`-en kell hagyni.
+  - ColorPrimaries és Transfer function flaggelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod mit csinálsz). Bővebb infó: https://mod16.org/hurfdurf/?p=116
   - A maximálisan megengedett referencia képek számának használata kötelező (--ref).
     - `--preset veryslow`/`placebo` magától kiszámolja a legnagyobbat, ami még nem töri meg a kompatibilitást. (Érdemes így csinálni, és akkor nem kell manuálisan számolni.)
     - Kiszámolása: `8388608/(végső szélesség*végső magasság)` -> lefele kerekítés.
@@ -99,24 +98,26 @@
   - HDTV forrás esetén logók maszkolása megengedett. (`InpaintFunc`)
 
 ## Audio
-  - Megengedett hangformátumok: `AC3`, `E-AC3`, `DTS`, `AAC`, `FLAC`. `MP3`, `MP2` és egyéb vicces formátumok használata TILOS!
-  - DTS és AC3 encodeolása AAC-be kizárólag a kommentár sáv esetén megengedett.
-    - Ha nyújtani és/vagy vágni kell, akkor lehet AAC.
+  - Megengedett hangformátumok: `AC3`, `E-AC3`, `DTS`, `AAC`, `FLAC`.
+  - `MP3`, `MP2` és egyéb vicces formátumok használata TILOS!
+  - DTS és AC3 encodeolása AAC-be kizárólag a kommentár sáv esetén megengedett. Kivétel, ha nyújtani és/vagy vágni kell, ekkor lehet AAC.
   - LPCM hangot kötelező FLAC-be (film esetén) vagy AAC-be (kommentár esetén) konvertálni
-  - A hangsávok eredeti csatornaszámát meg kell tartani! Kivétel kommentár sávok.
-  - AC3 esetében Dolby Certified encodert kell használni (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry`)
+  - A hangsávok eredeti csatornaszámát meg kell tartani! Kivétel 8 csatornás hangok és kommentár sávok.
+  - 8 csatornás hang esetén vagy DD+ formátumot kell használni vagy a core-t kell meghagyni.
+  - AC3 esetében Dolby Certified encodert kell használni (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry`, `Dolby Media Encoder`)
   - A készített AC3 nem tartalmazhat Copyright Protected flag-et.
   - AAC esetében elfogadott encoderek: QAAC, FDK, Nero
     - Csak stereo hangnál használható AAC.
     - QAAC: `-V 100` - `-V 127`
     - FDK: `-m 4` vagy `-m 5`
     - Nero: `-q 50` - `-q 75`
-  - 720p release-ek esetén `DTS`, `TrueHD`, `DTS-HD.MA` és `DTS:X` hang használata TILOS!
-  - 1080p release-ek esetén `TrueHD`, `DTS-HD.MA` és `DTS:X` használata TILOS! Ilyen esetekben a core-t használjuk vagy lossless audio-ból kódolunk `DD@640` vagy `DDP@1024` hangot.
-  - Amennyiben az érintetlen forráson DTS core található csak:
-    - `DDP@1024` kódolása (ajánlott),
-    - DTS meghagyása, mellé `DD@640` compatibility track készítése.
+  - 720p release-ek esetén `DTS`, `TrueHD`, `DTS-HD.MA` és `DTS-X` hang használata TILOS!
+  - 1080p release-ek esetén `TrueHD`, `DTS-HD.MA` és `DTS-X` használata TILOS! Ilyen esetekben a core-t használjuk vagy lossless audio-ból kódolunk `DD@640`, `DDP@1024` 6 csatornás vagy `DDP@1536` 8 csatornás hangot.
+  - Amennyiben az érintetlen forráson DTS található csak:
+    - `DDP@1024` kódolása (ajánlott, kivéve ha 768 kbps vagy kisebb a DTS bitrátája),
+    - DTS meghagyása, mellé `DD@640` (2 csatorna esetén `DD@256`) compatibility track készítése.
   - Lossy hangot csak losslessből szabad kódolni. (Ez alól kivétel ha csak DTS hang elérhető és compatibility track-et készítünk vagy 1080p-re `DDP@1024`-et.)
+  - Compatibility AC3 track készület FFmpeg vagy Aften (2009-12-26 vagy újabb) segítségével is.
   - Maximum +/- 100 ms hangcsúszás megengedett.
   - A hangok nyelvét kötelező Language tagben jelezni!
   - Commentary track maximum 2.0 lehet, AC3 esetében maximum 192kbps, AAC esetében 80-160 kbps.
