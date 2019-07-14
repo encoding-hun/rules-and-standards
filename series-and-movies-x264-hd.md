@@ -45,7 +45,7 @@
 
 ## Források
    - Csak jobb forrásból készített új release megengedett, minden egyéb DUPE.
-   - Források prioritása: BD > HDDVD/D-VHS > WEB-DL/WEBRiP > HDTV
+   - Források prioritása: BD > HDDVD/D-VHS > WEB-DL > HDTV
    - Amennyiben jobb minőségű BD elérhető, mint amiből a korábbi release készült, ezt READ.NFO taggel jelezni kell.
    - UHD forrás kizárólag akkor használható, ha SDR forrásról van szó.
    - HDR -> SDR tonemapping TILOS, ekkor x265 encode készítendő (lást oda vonatkozó szabályzat).
@@ -71,6 +71,7 @@
   - Resizeoláshoz `z_Spline36Resize` vagy `Spline36ResizeMod` ajánlott, a `Spline36Resize` tartalmaz egy apró chroma shifting bugot, kerülendő. (VapourSynth-et nem érinti.) VapourSynth esetén `Spline64` is ajánlott.
   - Tilos `Nearest Neighbor`, `Bilinear` és `Bicubic` resizer használata.
   - 720p release maximális felbontása `1280x720` lehet.
+  - 1080p release maximális felbontása `1920x1080` lehet.
   - ColorMatrixot, amennyiben a forrás tartalmaz erre vonatkozó információt kötelező flaggelni (tipikusan `BT.709`), amennyiben nem, úgy `undef`-en kell hagyni.
   - ColorPrimaries és Transfer function flaggelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod mit csinálsz).
     - Bővebb infó: https://mod16.org/hurfdurf/?p=116
@@ -172,7 +173,6 @@
     - bad.colorimetry = `--colormatrix` hibás használata
     - bad.deinterlace = hibás deinterlacelés, általában sávozódó videó és/vagy egyéb képi artifactek
     - dupe.frames = duplázott képkockák, általában hibás deinterlacelés/IVTC eredménye
-    - mislabeled.custom = `CUSTOM` tag elhagyása (opcionális)
     - bitstarved = alacsony bitráta
     - bloated = feleslegesen magas bitráta
     - upscaled = felskálázott kép/hang
@@ -183,7 +183,7 @@
     - audio.oos = hang csúszik a képhez képest
     - sub.oos = felirat csúszik a képhez képest
     - nfo.wtf = NFO érthetetlen vagy értelmezhetetlen
-    - Tobb ok `_` karakterrel fűzendő össze. pl. `bad.res_bad.crop`.
+    - Több ok `_` karakterrel fűzendő össze. pl. `bad.res_bad.crop`.
     - A READ.NFO-khoz és a PROPER-ekhez kötelező proof. Jobb kép esetén comparison, oos esetén kép a csúszásról.
     - A szabályzattól notorikusan eltérő csapatok permanens bant kapnak.
 
