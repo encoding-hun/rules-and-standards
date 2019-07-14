@@ -10,9 +10,14 @@
  - A film tömörítése és darabolása TILOS.
  - A fő MKV mellé ajánlott SFV ellenőrzőösszeg készítése, de nem kötelező.
  - Sample opcionális, amennyiben van, 60-120 másodperc közötti kell, hogy legyen és nem az epizód/film legelejéről.
+ - mHD, HDLight és egyéb vicces baromságok készítése TILOS!
+ - Chapterlist használata UHD BD, BD és HDDVD források esetén KÖTELEZŐ!
 
 ## Taggelés
   - Ékezetes karakterek használata könyvtárnevekben TILOS!
+  - Lefoglalt karaktereket (`<`,`>`,`:`,`"`,`/`,`\`,`|`,`?`,`*`) könyvátrnévben és filenevekben is TILOS használni!
+  - TILOS két azonos nevű file létrehozása, amelyek kizárólag kis és nagy betűben térnek el (pl. film-release és Film-release)!
+  - TILOS a következő könyvárnevek használata: `CON`, `PRN`, `AUX`, `NUL`, `COM1`, `COM2`, `COM3`, `COM4`, `COM5`, `COM6`, `COM7`, `COM8`, `COM9`, `LPT1`, `LPT2`, `LPT3`, `LPT4`, `LPT5`, `LPT6`, `LPT7`, `LPT8` és `LPT9`.
   - Sorozatok és filmek ajánlott tagelése (a sorrendtől el lehet térni):
     - Sorozatok:
     `[series.name].[season].[resolution].[source].[audio codec].[video codec].[language]-[group]`
@@ -36,13 +41,15 @@
    - HDR -> SDR tonemapping TILOS, ekkor x265 encode készítendő (lást oda vonatkozó szabályzat).
 
 ## Video
-  - Minimum r2800-as x264-as használata kötelező; kivétel, ha korábbi, minőségi encodera (pl. `DON`, `TayTo`, `VietHD` és egyéb HDB internalok) muxolunk.
+  - Minimum `r2800`-as x264-as használata kötelező; kivétel, ha korábbi, minőségi encodera (pl. `DON`, `TayTo`, `VietHD` és egyéb HDB internalok) muxolunk.
   - TILOS minden olyan x264 használata, amely az alábbi commitot tartalmazza (praktikusan `r2969`, `r2970` és ami erre épül): https://code.videolan.org/videolan/x264/commit/92d36908cbafd2a6edf7e61d69f341027b57f6f8
   - Elfogadott x264 variánsok: vanilla, tMod, Yuuki, kMod, saiclabs féle vanilla `r2970+1` és tMod `r2970+3`.
   - Házibarkács encoderek használata TILOS!
+  - Már kész release alacsonyabb felbontással való újrakódolása (pl. BRRip) SZIGORÚAN TILOS!
   - Kizárólag 8 bites YUV420 (YV12) video megengedett.
   - Kizárólag 2pass és CRF kódolások megengedettek.
-  - A video eredeti FPS értékét meg kell tartani.
+  - Kizárólag progresszív kép megengedett. Amennyiben szükséges deinterlacer vagy ITVC használata kötelező.
+  - A video eredeti FPS értékét meg kell tartani. Interlacelt forrás esetén 2 félképből 1-et kell képezni (értsd `50i`-ből `25p`-t kell készíteni). Ez alól kivétel lehet a sportfelvétel, ahol indokolt lehet az `50p`. Ekkor kizárólag QTGMC deinterlacer használható!
   - A videot croppolni kell addíg amíg maximum 1-1 px fekete sáv marad.
   - Az 1 px fekete sávok (widow line) és dirty line-ok javítása ajánlott.
     - widow line javítása: `FillMargins`/`FillBorder`
@@ -51,26 +58,28 @@
   - A video felskálázása SZIGORÚAN TILOS!
   - A video szélességének és magasságának 2-vel oszthatónak kell lennie.
   - 1080p forrású 1080p encode esetén csak cropolni szabad, resize-olni nem.
-  - Resizeoláshoz `z_Spline36Resize` vagy `Spline36ResizeMod` ajánlott, a `Spline36Resize` tartalmaz egy apró chroma shifting bugot, kerülendő. (VapourSynth-et nem érinti.) VapourSynth esetén Spline64 is ajánlott.
+  - Resizeoláshoz `z_Spline36Resize` vagy `Spline36ResizeMod` ajánlott, a `Spline36Resize` tartalmaz egy apró chroma shifting bugot, kerülendő. (VapourSynth-et nem érinti.) VapourSynth esetén `Spline64` is ajánlott.
+  - Tilos Nearest Neighbor, Bilinear és Bicubic resizer használata.
   - ColorMatrixot, amennyiben a forrás tartalmaz erre vonatkozó információt kötelező flaggelni (tipikusan `BT.709`), amennyiben nem, úgy `undef`-en kell hagyni.
   - ColorPrimaries és Transfer function flaggelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod mit csinálsz).
     - Bővebb infó: https://mod16.org/hurfdurf/?p=116
   - A maximálisan megengedett referencia képek számának használata kötelező (--ref).
     - `--preset veryslow`/`placebo` magától kiszámolja a legnagyobbat, ami még nem töri meg a kompatibilitást. (Érdemes így csinálni, és akkor nem kell manuálisan számolni.)
     - Kiszámolása: `8388608/(végső szélesség*végső magasság) -> lefele kerekítés.
-    Pl.: `8388608/(1280*640)=10,24`, `10.24` -> `10`
+    Pl.: `8388608/(1280*640) = 10,24`, `10.24` -> `10`
     (8388608 = 32768*16*16) [32768 a MaxDpbMbs High@4.1-nél, 16*16 egy macroblock]
   - B framek kikapcsolása TILOS.
   - A készült videónak `High@4.1` kompatibilisnek kell lennie.
   - `CABAC` kikapcsolása TILOS.
   - `8x8dct` kikapcsolása TILOS.
   - Kötelezően használandó partíciók: `i4x4,i8x8,p8x8,b8x8` (default), `p4x4` használata opcionális
+  - `me` értéke KIZÁRÓLAG `umh`, `esa` vagy `tesa` lehet.
   - `merange` értéke nem lehet 24-nél kisebb.
   - `subme` értéke nem lehet 10-nél kisebb.
   - Kizárólag 1:1 oldalarányú pixelek használhatóak (`--sar 1:1`).
   - Kizárólag Limited, TV rangeű release készíthető (`16-235`).
   - `--vbv-maxrate` maximum `62500`, `--vbv-bufsize` maximum `78125` lehet.
-  - `--deblock` kikapcsolása TILOS. Ajánlott beállítás filmek esetén: `-3;-3`.
+  - `--deblock` kikapcsolása TILOS. Ajánlott beállítás filmek esetén: `-3:-3`.
 
 ## Audio
   - Megengedett hangformátumok: `AC3`, `E-AC3`, `DTS`, `AAC`, `FLAC`. `MP3`, `MP2` és egyéb vicces formátumok használata TILOS!
@@ -81,19 +90,20 @@
   - 720p releasek esetén `DTS`, `TrueHD`, `DTS-HD.MA` és `DTS:X` hang használata TILOS!
   - 1080p releasek esetén `TrueHD`, `DTS-HD.MA` és `DTS:X` használata TILOS! Ilyen esetekben a core-t használjuk vagy master audio-ból kódolunk `DD@640` vagy `DDP@1024` hangot.
   - Amennyiben az érintetlen forráson DTS core található csak:
-    - `DDP@1024` kódolása (ajánlott)
+    - `DDP@1024` kódolása (ajánlott),
     - DTS meghagyása, mellé `DD@640` compatibility track készítése.
   - Lossy hangot csak master audioból (lossless) szabad kódolni. Ez alól kivétel ha csak DTS hang elérhető és compatibility track-et készítünk.
   - Maximum +/- 100 ms hangcsúszás megengedett.
-  - Commentary track maximum 2.0 lehet, AC3 esetében maximum 192kbps, AAC esetében `-V 80` - `-V -100` (QAAC) ~ 80-136 kbps
+  - A hangok nyelvét kötelező Language tagben jelezni!
+  - Commentary track maximum 2.0 lehet, AC3 esetében maximum 192kbps, AAC esetében `-V 80` - `-V -100` (QAAC) ~ 80-136 kbps.
   - Ha a hangot nyújtani kell előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. hdtools compare)
-  - Resampling-re használható programok: hdtools resample, eac3to, Sound Forge, Audacity
-  - TimeStretchingre használható programok: hdtools tstretch, Prosoniq TimeFactory II, Sound Forge és SONAR `élastique TimeStretch`, Audacity
+  - Resampling-re használható programok: hdtools resample, eac3to, Sound Forge, Audacity.
+  - TimeStretchingre használható programok: hdtools tstretch, Prosoniq TimeFactory II, Sound Forge és SONAR `élastique TimeStretch`, Audacity.
   
 ## Feliratok
  - A feliratokat tartalmaznia kell az mkv-nak, opcionálisan mellette is meghagyható.
  - A muxolt feliratokat megfelelő karakterkódolással kell muxolni (UTF8 vagy beállítani, hogy mi a forrás)
- - Az opcionálisan mellékelt feliratok kizárólag SRT formátumú és UTF8-BOM vagy ANSI kódolásúak lehetnek.
+ - Az opcionálisan mellékelt feliratok kizárólag SRT formátumú és UTF8(-BOM) vagy ANSI kódolásúak lehetnek.
  - A feliratok nyelvét kötelező Language tag-ként beállítani.
  - Title tag használata opcionális.
  - Feliratok sorrendje:
@@ -102,6 +112,8 @@
     - eredeti forced (ha van)
     - eredeti full
     - eredeti full SDH
+  - Forced feliratoknál a Forced flag használata ajánlott.
+  - További feliratok opcionálisan muxolhatóak vagy mellékelhetőek. FIGYELEM: bizonyos lejátszók nem képesek mind az MKV specifikációban leírt 127 sáv kezelésére, így ajánlott 16 sáv alatt maradni (ebbe a video és hangsávok is beletartoznak).
 
 ## NFO
  - NFO használata kötelező.
@@ -136,6 +148,8 @@
     - bad.res = hibás felbontás
     - bad.crop = hibás croppolás
     - bad.colorimetry = `--colormatrix` hibás használata
+    - bad.deinterlace = hibás deinterlacelés, általában sávozódó videó és/vagy egyéb képi artifactek
+    - dupe.frames = duplázott képkockák, általában hibás deinterlacelés/IVTC eredménye
     - bitstarved = alacsony bitráta
     - bloated = feleslegesen magas bitráta
     - upscaled = felskálázott kép/hang
