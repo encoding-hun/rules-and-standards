@@ -10,7 +10,7 @@
  - A stáblista amennyiben nem tartalmaz extra jelenetet kódolható alacsonyabb bitrátával.
  - A film tömörítése és darabolása TILOS.
  - A fő MKV mellé ajánlott SFV ellenőrzőösszeg készítése, de nem kötelező.
- - Sample opcionális, amennyiben van, 60-120 másodperc közötti kell, hogy legyen és nem az epizód/film legelejéről vagy legvégéről. A Sample-t újrakódolás nélkül, a végső encode-ból kell kivágni.
+ - Sample opcionális, amennyiben van, 60-120 másodperc közötti kell, hogy legyen és nem az epizód/film legelejéről. A Sample-t újrakódolás nélkül, a végső encode-ból kell kivágni.
  - mHD, HDLight és egyéb vicces baromságok készítése TILOS!
  - Chapterlist használata UHD BD, BD és HDDVD források esetén KÖTELEZŐ!
 
@@ -59,14 +59,14 @@
   - Kizárólag 8 bites YUV420 (YV12) video megengedett.
   - Kizárólag 2pass és CRF kódolások megengedettek.
   - Kizárólag progresszív kép megengedett. Amennyiben szükséges deinterlacer vagy ITVC használata kötelező.
-  - A video eredeti FPS értékét meg kell tartani. Interlacelt forrás esetén 2 félképből 1-et kell képezni (értsd `50i`-ből `25p`-t kell készíteni). Ez alól kivétel lehet a sportfelvétel, ahol indokolt lehet az `50p`. Ekkor kizárólag QTGMC deinterlacer használható!
+  - A video eredeti FPS értékét meg kell tartani. Interlacelt forrás esetén 2 félképből 1-et kell képezni (értsd `50i`-ből `25p`-t kell készíteni). Ez alól kivétel lehet a sportfelvétel, ahol indokolt lehet az `50p`. Ekkor kizárólag `QTGMC` deinterlacer használható!
   - A videot croppolni kell addig amíg maximum 1-1 px fekete sáv marad.
   - Az 1 px fekete sávok (widow line) és dirty line-ok javítása ajánlott.
     - widow line javítása pl.: `FillMargins`/`FillBorder`
     - dirty line pl.: `bbmod`/`FixColorBrightness`/`BalanceBorders`/`EdgeFixer`
   - A kódolt videó képarányának hibája nem haladhatja meg a 3%-ot (aspect ratio error).
   - A video felskálázása SZIGORÚAN TILOS!
-  - A video szélességének és magasságának 2-vel oszthatónak kell lennie.
+  - A video felbontása mod2 kell legyen. (Nem mod16, ez nem XviD.)
   - 1080p forrású 1080p encode esetén csak cropolni szabad, resize-olni nem.
   - Resizeoláshoz `z_Spline36Resize` vagy `Spline36ResizeMod` ajánlott, a `Spline36Resize` tartalmaz egy apró chroma shifting bugot, kerülendő. (VapourSynth-et nem érinti.) VapourSynth esetén `Spline64` is ajánlott.
   - Tilos `Nearest Neighbor`, `Bilinear` és `Bicubic` resizer használata.
@@ -104,8 +104,12 @@
     - Ha nyújtani és/vagy vágni kell, akkor lehet AAC.
   - LPCM hangot kötelező FLAC-be (film esetén) vagy AAC-be (kommentár esetén) konvertálni
   - A hangsávok eredeti csatornaszámát meg kell tartani! Kivétel kommentár sávok.
-  - AC3 esetében Dolby Certified encodert kell használni (pl. `Sound Forge`, `Minnetonka`, `Sonic Foundry`)
-  - AAC esetében elfogadott encoderek: QAAC, FDK, Nero (csak stereo hangnál használható)
+  - AC3 esetében Dolby Certified encodert kell használni (pl. `Sound Forge`, `Minnetonka SurCode`, `Sonic Foundry`)
+  - AAC esetében elfogadott encoderek: QAAC, FDK, Nero
+    - Csak stereo hangnál használható AAC.
+    - QAAC: `-V 100` - `-V 127`
+    - FDK: `-m 4` vagy `-m 5`
+    - Nero: `-q 50` - `-q 75`
   - 720p release-ek esetén `DTS`, `TrueHD`, `DTS-HD.MA` és `DTS:X` hang használata TILOS!
   - 1080p release-ek esetén `TrueHD`, `DTS-HD.MA` és `DTS:X` használata TILOS! Ilyen esetekben a core-t használjuk vagy lossless audio-ból kódolunk `DD@640` vagy `DDP@1024` hangot.
   - Amennyiben az érintetlen forráson DTS core található csak:
@@ -114,7 +118,7 @@
   - Lossy hangot csak losslessből szabad kódolni. (Ez alól kivétel ha csak DTS hang elérhető és compatibility track-et készítünk vagy 1080p-re `DDP@1024`-et.)
   - Maximum +/- 100 ms hangcsúszás megengedett.
   - A hangok nyelvét kötelező Language tagben jelezni!
-  - Commentary track maximum 2.0 lehet, AC3 esetében maximum 192kbps, AAC esetében `-V 80` - `-V -100` (QAAC) ~ 80-136 kbps.
+  - Commentary track maximum 2.0 lehet, AC3 esetében maximum 192kbps, AAC esetében 80-160 kbps.
   - Ha a hangot nyújtani kell előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. hdtools compare)
   - Resampling-re használható programok: hdtools resample, eac3to, Sound Forge, Audacity.
   - TimeStretchingre használható programok: hdtools tstretch, Prosoniq TimeFactory II, Sound Forge és SONAR `élastique TimeStretch`, Audacity.
