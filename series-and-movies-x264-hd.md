@@ -57,17 +57,17 @@
   - Elfogadott x264 variánsok: vanilla, tMod, Yuuki, kMod, saiclabs féle vanilla `r2970+1` és tMod `r2970+3`.
   - Házibarkács encoderek használata TILOS!
   - Már kész release alacsonyabb felbontással való újrakódolása (pl. BRRip) SZIGORÚAN TILOS!
-  - Kizárólag 8 bites YUV420 (YV12) video megengedett.
+  - Kizárólag 8 bites YUV420 (YV12) videó megengedett.
   - Kizárólag 2pass és CRF kódolások megengedettek.
   - Kizárólag progresszív kép megengedett. Amennyiben szükséges deinterlacer vagy ITVC használata kötelező.
-  - A video eredeti FPS értékét meg kell tartani. Interlacelt forrás esetén 2 félképből 1-et kell képezni (értsd `50i`-ből `25p`-t kell készíteni). Ez alól kivétel lehet a sportfelvétel, ahol indokolt lehet az `50p`. Ekkor kizárólag `QTGMC` deinterlacer használható!
-  - A videot croppolni kell addig amíg maximum 1-1 px fekete sáv marad.
+  - A videó eredeti FPS értékét meg kell tartani. Interlacelt forrás esetén 2 félképből 1-et kell képezni (értsd `50i`-ből `25p`-t kell készíteni). Ez alól kivétel lehet a sportfelvétel, ahol indokolt lehet az `50p`. Ekkor kizárólag `QTGMC` deinterlacer használható!
+  - A videót cropolni kell addig amíg maximum 1-1 px fekete sáv marad.
   - Az 1 px fekete sávok (widow line) és dirty line-ok javítása ajánlott.
     - widow line javítása pl.: `FillMargins`/`FillBorder`
     - dirty line pl.: `bbmod`/`FixColorBrightness`/`BalanceBorders`/`EdgeFixer`
   - A kódolt videó képarányának hibája nem haladhatja meg a 3%-ot (aspect ratio error).
-  - A video felskálázása SZIGORÚAN TILOS!
-  - A video felbontása mod2 kell legyen. (Nem mod16, ez nem XviD.)
+  - A videó felskálázása SZIGORÚAN TILOS!
+  - A videó felbontása mod2 kell legyen. (Nem mod16, ez nem XviD.)
   - 1080p forrású 1080p encode esetén csak cropolni szabad, resize-olni nem.
   - Resizeoláshoz `z_Spline36Resize` vagy `Spline36ResizeMod` ajánlott, a `Spline36Resize` tartalmaz egy apró chroma shifting bugot, kerülendő. (VapourSynth-et nem érinti.) VapourSynth esetén `Spline64` is ajánlott.
   - Tilos `Nearest Neighbor`, `Bilinear` és `Bicubic` resizer használata.
@@ -89,7 +89,7 @@
   - `merange` értéke nem lehet 24-nél kisebb.
   - `subme` értéke nem lehet 8-nál kisebb.
   - Kizárólag 1:1 oldalarányú pixelek használata megengedett (`--sar 1:1`).
-  - Kizárólag Limited, TV rangeű release készíthető (`16-235`).
+  - Kizárólag Limited, TV range-ű release készíthető (`16-235`).
   - `--vbv-maxrate` maximum `62500`, `--vbv-bufsize` maximum `78125` lehet.
   - `--deblock` kikapcsolása TILOS. Ajánlott beállítás filmek esetén: `-3:-3`.
   - Adaptív kvantálás használata kötelező! `--aq-mode>=1`
@@ -141,7 +141,7 @@
     - eredeti full
     - eredeti full SDH
   - Forced feliratoknál a Forced flag használata ajánlott.
-  - További feliratok opcionálisan muxolhatóak vagy mellékelhetőek. FIGYELEM: bizonyos lejátszók nem képesek mind az MKV specifikációban leírt 127 sáv kezelésére, így ajánlott 16 sáv alatt maradni (ebbe a video és hangsávok is beletartoznak).
+  - További feliratok opcionálisan muxolhatóak vagy mellékelhetőek. FIGYELEM: bizonyos lejátszók nem képesek mind az MKV specifikációban leírt 127 sáv kezelésére, így ajánlott 16 sáv alatt maradni (ebbe a videó- és hangsávok is beletartoznak).
   - Fansub kizárólag akkor használható, ha nem érhető el retail.
 
 ## NFO
