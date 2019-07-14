@@ -28,8 +28,9 @@
     - Sorozatok:
     `[series.name].[season].[resolution].[source].[audio codec].[video codec].[language]-[group]`
     - Filmek:
-    `[movie title].[year].[resolution].[source].[audio codec].[video codec].[language]-[group]`
+    `[movie.title].[year].[resolution].[source].[audio codec].[video codec].[language]-[group]`
   - A könyvtár és fájlok nevének maximális hossza 255 karakter lehet, de ajánlott 250 alatt megállni.
+  - `[series.name]` és `[movie.title]` KIZÁRÓLAG eredeti vagy angol nyelvű lehet.
   - `[audio codec]` a film/sorozat eredeti nyelvére vonatkozik.
   - WEB-DL és WEBRip forrás esetén meg kell jelölni, hogy pontosan melyik oldalról való (pl. `NF.WEB-DL`, `AMZN.WEB-DL`)
   - WEB-hez további guide:
