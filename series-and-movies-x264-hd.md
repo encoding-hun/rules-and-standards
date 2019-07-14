@@ -94,8 +94,6 @@
   - `--deblock` kikapcsolása TILOS. Ajánlott beállítás filmek esetén: `-3:-3`.
   - Adaptív kvantálás használata kötelező! `--aq-mode>=1`
   - A keyframe-ek közötti maximális távolság `FPS*20` lehet.
-  - A video bitrátája UHD BD, BD és HDDVD forrás esetén 1080p-re minimum 8000 kbps, maximum 20 000 kbps lehet, 720p esetén minimum 4000 kbps és maximum 9000 kbps. Ez alól kivétel az anime, ahol a minimum 5000 kbps és 2000 kbps, rendre.
-  - WEB-DL, WEBRip és HDTV release-ek bitrátája ennél lehet kisebb, de magasabb nem.
   - A készített release bitrátája nem lehet nagyobb, mint a forrásé.
   - Ajánlott frameserverek: AviSynth+ és VapourSynth.
   - HDTV forrás esetén logók maszkolása megengedett.
