@@ -18,7 +18,12 @@
   - Ékezetes karakterek használata TILOS!
   - Lefoglalt karaktereket (`<`,`>`,`:`,`"`,`/`,`\`,`|`,`?`,`*`) könyvtárnévben és filenevekben is TILOS használni!
   - TILOS két azonos nevű file létrehozása, amelyek kizárólag kis és nagy betűben térnek el (pl. film-release és Film-release)!
-  - TILOS a következő könyvárnevek használata: `CON`, `PRN`, `AUX`, `NUL`, `COM1`, `COM2`, `COM3`, `COM4`, `COM5`, `COM6`, `COM7`, `COM8`, `COM9`, `LPT1`, `LPT2`, `LPT3`, `LPT4`, `LPT5`, `LPT6`, `LPT7`, `LPT8` és `LPT9`.
+  - A következő nevek nem használhatók könyvtár- és fájlnevek elején ponttal elválasztva: `CON`, `PRN`, `AUX`, `NUL`, `COM*`, `LPT*` (ahol `*` egy számot jelöl).
+    - TILOS: `Con.Man.2018.720p.BluRay.DD5.1.x264.HUN-XYZ`
+      - OK: `Con_Man.2018.720p.BluRay.DD5.1.x264.HUN-XYZ`
+    - TILOS: `con.man.mkv`, `con.mkv`
+      - OK: `con_man.mkv`, `conman.mkv`
+    - OK: `The.Con.Is.On.2018.720p.BluRay.DD5.1.x264.HUN-XYZ`
   - Sorozatok és filmek ajánlott tagelése (a sorrendtől el lehet térni):
     - Sorozatok:
     `[series.name].[season].[resolution].[source].[audio codec].[video codec].[language]-[group]`
