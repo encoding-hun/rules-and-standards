@@ -74,7 +74,7 @@
     - Kiszámolása: `8388608/(végső szélesség*végső magasság)` -> lefele kerekítés.
     Pl.: `8388608/(1280*640) = 10,24`, `10.24` -> `10`
     `(8388608 = 32768*16*16)` `[32768 a MaxDpbMbs High@4.1-nél, 16*16 egy macroblock]`
-  - B framek kikapcsolása TILOS.
+  - B frame-ek kikapcsolása TILOS.
   - A készült videónak DXVA-kompatibilisnek kell lennie (max. `High@L4.1`).
   - `CABAC` kikapcsolása TILOS.
   - `8x8dct` kikapcsolása TILOS.
@@ -87,9 +87,9 @@
   - `--vbv-maxrate` maximum `62500`, `--vbv-bufsize` maximum `78125` lehet.
   - `--deblock` kikapcsolása TILOS. Ajánlott beállítás filmek esetén: `-3:-3`.
   - Adaptív kvantálás használata kötelező! `--aq-mode>=1`
-  - A keyframek közötti maximális távolság `FPS*20` lehet.
+  - A keyframe-ek közötti maximális távolság `FPS*20` lehet.
   - A video bitrátája UHD BD, BD és HDDVD forrás esetén 1080p-re minimum 8000 kbps, maximum 20 000 kbps lehet, 720p esetén minimum 4000 kbps és maximum 9000 kbps. Ez alól kivétel az anime, ahol a minimum 5000 kbps és 2000 kbps, rendre.
-  - WEB-DL, WEBRip és HDTV releasek bitrátája ennél lehet kisebb, de magasabb nem.
+  - WEB-DL, WEBRip és HDTV release-ek bitrátája ennél lehet kisebb, de magasabb nem.
   - A készített release bitrátája nem lehet nagyobb, mint a forrásé.
   - Ajánlott frameserverek: AviSynth+ és VapourSynth.
   - HDTV forrás esetén logók maszkolása megengedett.
