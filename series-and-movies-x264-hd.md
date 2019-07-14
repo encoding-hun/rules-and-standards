@@ -71,9 +71,9 @@
     - Bővebb infó: https://mod16.org/hurfdurf/?p=116
   - A maximálisan megengedett referencia képek számának használata kötelező (--ref).
     - `--preset veryslow`/`placebo` magától kiszámolja a legnagyobbat, ami még nem töri meg a kompatibilitást. (Érdemes így csinálni, és akkor nem kell manuálisan számolni.)
-    - Kiszámolása: `8388608/(végső szélesség*végső magasság) -> lefele kerekítés.
+    - Kiszámolása: `8388608/(végső szélesség*végső magasság)` -> lefele kerekítés.
     Pl.: `8388608/(1280*640) = 10,24`, `10.24` -> `10`
-    (8388608 = 32768*16*16) [32768 a MaxDpbMbs High@4.1-nél, 16*16 egy macroblock]
+    `(8388608 = 32768*16*16)` `[32768 a MaxDpbMbs High@4.1-nél, 16*16 egy macroblock]`
   - B framek kikapcsolása TILOS.
   - A készült videónak `High@4.1` kompatibilisnek kell lennie.
   - `CABAC` kikapcsolása TILOS.
