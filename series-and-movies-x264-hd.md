@@ -45,7 +45,7 @@
 
 ## Források
    - Csak jobb forrásból készített új release megengedett, minden egyéb DUPE.
-   - Források prioritása: BD > HDDVD > WEB-DL/WEBRiP > HDTV
+   - Források prioritása: BD > HDDVD/D-VHS > WEB-DL/WEBRiP > HDTV
    - Amennyiben jobb minőségű BD elérhető, mint amiből a korábbi release készült, ezt READ.NFO taggel jelezni kell.
    - UHD forrás kizárólag akkor használható, ha SDR forrásról van szó.
    - HDR -> SDR tonemapping TILOS, ekkor x265 encode készítendő (lást oda vonatkozó szabályzat).
@@ -172,7 +172,7 @@
     - bad.colorimetry = `--colormatrix` hibás használata
     - bad.deinterlace = hibás deinterlacelés, általában sávozódó videó és/vagy egyéb képi artifactek
     - dupe.frames = duplázott képkockák, általában hibás deinterlacelés/IVTC eredménye
-    - mislabeled.custom = `CUSTOM` tag elhagyása
+    - mislabeled.custom = `CUSTOM` tag elhagyása (opcionális)
     - bitstarved = alacsony bitráta
     - bloated = feleslegesen magas bitráta
     - upscaled = felskálázott kép/hang
