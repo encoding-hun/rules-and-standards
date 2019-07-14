@@ -64,7 +64,7 @@
   - A video szélességének és magasságának 2-vel oszthatónak kell lennie.
   - 1080p forrású 1080p encode esetén csak cropolni szabad, resize-olni nem.
   - Resizeoláshoz `z_Spline36Resize` vagy `Spline36ResizeMod` ajánlott, a `Spline36Resize` tartalmaz egy apró chroma shifting bugot, kerülendő. (VapourSynth-et nem érinti.) VapourSynth esetén `Spline64` is ajánlott.
-  - Tilos Nearest Neighbor, Bilinear és Bicubic resizer használata.
+  - Tilos `Nearest Neighbor`, `Bilinear` és `Bicubic` resizer használata.
   - 720p release maximális felbontása `1280x720` lehet.
   - ColorMatrixot, amennyiben a forrás tartalmaz erre vonatkozó információt kötelező flaggelni (tipikusan `BT.709`), amennyiben nem, úgy `undef`-en kell hagyni.
   - ColorPrimaries és Transfer function flaggelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod mit csinálsz).
@@ -82,14 +82,14 @@
   - `me` értéke KIZÁRÓLAG `umh`, `esa` vagy `tesa` lehet.
   - `merange` értéke nem lehet 24-nél kisebb.
   - `subme` értéke nem lehet 8-nál kisebb.
-  - Kizárólag 1:1 oldalarányú pixelek használhatóak (`--sar 1:1`).
+  - Kizárólag 1:1 oldalarányú pixelek használata megengedett (`--sar 1:1`).
   - Kizárólag Limited, TV rangeű release készíthető (`16-235`).
   - `--vbv-maxrate` maximum `62500`, `--vbv-bufsize` maximum `78125` lehet.
   - `--deblock` kikapcsolása TILOS. Ajánlott beállítás filmek esetén: `-3:-3`.
   - Adaptív kvantálás használata kötelező! `--aq-mode>=1`
   - A keyframek közötti maximális távolság `FPS*20` lehet.
-  - A video bitrátája UHD BD, BD és HDDVD forrás esetén minimum 8000 kbps, maximum 20 000 kbps lehet, 720p esetén minimum 4000 kbps és maximum 9000 kbps. Ez alól kivétel az anime, ahol a minimum 5000 kbps és 2000 kbps, rendre.
-  - WEB-DL, WEBRip és HDTV release-ek bitrátája ennél lehet kisebb, de magasabb nem.
+  - A video bitrátája UHD BD, BD és HDDVD forrás esetén 1080p-re minimum 8000 kbps, maximum 20 000 kbps lehet, 720p esetén minimum 4000 kbps és maximum 9000 kbps. Ez alól kivétel az anime, ahol a minimum 5000 kbps és 2000 kbps, rendre.
+  - WEB-DL, WEBRip és HDTV releasek bitrátája ennél lehet kisebb, de magasabb nem.
   - A készített release bitrátája nem lehet nagyobb, mint a forrásé.
   - Ajánlott frameserverek: AviSynth+ és VapourSynth.
   - HDTV forrás esetén logók maszkolása megengedett.
@@ -113,6 +113,7 @@
   - Ha a hangot nyújtani kell előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. hdtools compare)
   - Resampling-re használható programok: hdtools resample, eac3to, Sound Forge, Audacity.
   - TimeStretchingre használható programok: hdtools tstretch, Prosoniq TimeFactory II, Sound Forge és SONAR `élastique TimeStretch`, Audacity.
+  - Belső konverziók esetén meg kell tartani (vagy jobbat kell használni), mint az eredeti hang bitmélysége és mintavételezési rátája.
   
 ## Feliratok
  - A feliratokat tartalmaznia kell az mkv-nak, opcionálisan mellette is meghagyható.
