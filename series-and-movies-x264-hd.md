@@ -174,8 +174,8 @@
     - bad.colorimetry = `--colormatrix` hibás használata
     - bad.deinterlace = hibás deinterlacelés, általában sávozódó videó és/vagy egyéb képi artifactek
     - dupe.frames = duplázott képkockák, általában hibás deinterlacelés/IVTC eredménye
-    - bitstarved = szükségesnél szignifikánsabban alacsonyabb bitráta
-    - bloated = szükségesnél szignifikánsabban magasabb bitráta
+    - bitstarved = szükségesnél jelentősen alacsonyabb bitráta
+    - bloated = szükségesnél jelentősen magasabb bitráta
     - upscaled = felskálázott kép/hang
       példák kép felskálázottság ellenőrzésére:
       `Interleave(last,last.AutoResize("720").AutoResize("1080").Subtitle("1080 -> 720 -> 1080"))` (720p upscale)
