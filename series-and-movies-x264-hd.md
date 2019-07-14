@@ -1,4 +1,4 @@
-## Hungarian HD x264 Release Rules and Standards
+# Hungarian HD x264 Release Rules and Standards
   - Célunk egy olyan lefektetett és átlátható szabályrendszer létrehozása, mely kizárólag minőségi szempontokat vesz figyelembe.
   - Alapul a 2009.04.15, 2009.06.08-as magyar és 2011.01.29-es nemzetközi scene szabályzatok szolgáltak, nyilván a kornak megfelelően modernizálva és átdolgozva.
   - Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján nem készíthető proper. Amennyiben jobb minőségű BD/stb. elérhető, mint amiből a korábbi release készült, az új releaset READ.NFO taggel kell ellátni. Minden egyéb DUPE-nak minősül. Ez alól kivétel, ha a korábbi release súlyos hibával rendelkezik, pl. hangcsúszás, képhiba, stb., ekkor PROPER-elhető.
@@ -75,7 +75,7 @@
     Pl.: `8388608/(1280*640) = 10,24`, `10.24` -> `10`
     `(8388608 = 32768*16*16)` `[32768 a MaxDpbMbs High@4.1-nél, 16*16 egy macroblock]`
   - B framek kikapcsolása TILOS.
-  - A készült videónak `High@4.1` kompatibilisnek kell lennie.
+  - A készült videónak DXVA-kompatibilisnek kell lennie (max. `High@4.1`).
   - `CABAC` kikapcsolása TILOS.
   - `8x8dct` kikapcsolása TILOS.
   - Kötelezően használandó partíciók: `i4x4,i8x8,p8x8,b8x8` (default), `p4x4` használata opcionális
