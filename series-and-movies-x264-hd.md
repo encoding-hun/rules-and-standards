@@ -174,7 +174,7 @@
     - bad.colorimetry = `--colormatrix` hibás használata
     - bad.deinterlace = hibás deinterlacelés, általában sávozódó videó és/vagy egyéb képi artifactek
     - dupe.frames = duplázott képkockák, általában hibás deinterlacelés/IVTC eredménye
-    - bitstarved = szükségesnél szignifikánsabban alacsony bitráta
+    - bitstarved = szükségesnél szignifikánsabban alacsonyabb bitráta
     - bloated = szükségesnél szignifikánsabban magasabb bitráta
     - upscaled = felskálázott kép/hang
       példák kép felskálázottság ellenőrzésére:
