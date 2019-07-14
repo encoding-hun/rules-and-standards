@@ -16,7 +16,7 @@
 
 ## Taggelés
   - Ékezetes karakterek használata TILOS!
-  - Engedélyezett karakterek: `a-z`, `A-Z`, `0-9`, `_`, `-`, `.`, `+`
+  - Engedélyezett karakterek: `a-z` `A-Z` `0-9` `.` `-` `_` `+`
   - TILOS két azonos nevű file létrehozása, amelyek kizárólag kis és nagy betűben térnek el (pl. film-release és Film-release)!
   - A következő nevek nem használhatók könyvtár- és fájlnevek elején ponttal elválasztva: `CON`, `PRN`, `AUX`, `NUL`, `COM*`, `LPT*` (ahol `*` egy számot jelöl).
     - TILOS: `Con.Man.2018.720p.BluRay.DD5.1.x264.HUN-XYZ`
