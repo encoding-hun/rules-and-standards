@@ -92,7 +92,7 @@
   - WEB-DL, WEBRip és HDTV releasek bitrátája ennél lehet kisebb, de magasabb nem.
   - A készített release bitrátája nem lehet nagyobb, mint a forrásé.
   - Ajánlott frameserverek: AviSynth+ és VapourSynth.
-  - HDTV forrás esetén logok maszkolása megengedett.
+  - HDTV forrás esetén logók maszkolása megengedett.
 
 ## Audio
   - Megengedett hangformátumok: `AC3`, `E-AC3`, `DTS`, `AAC`, `FLAC`. `MP3`, `MP2` és egyéb vicces formátumok használata TILOS!
