@@ -40,7 +40,7 @@
     - `WEB-DLRip` megjelölés kerülendő, `WEB-DL`-ből kódolt Rip = `WEBRip`
    - `REPACK` és `RERip` tagok használata kötelező, ha saját releaset javít valaki.
    - `iNT` vagy `iNTERNAL` tag használata DUPE elkerülésére TILOS!
-   - TV-ből származó hangok esetén `CUSTOM` tag használata kötelező!
+   - TV-ből származó hangok esetén `CUSTOM` tag használata opcionális.
    - `RETAiL` tag használata ajánlott, ha korábban készült olyan release, ahol a hang nem a BD/HDDVD lemezről származik.
 
 ## Források
