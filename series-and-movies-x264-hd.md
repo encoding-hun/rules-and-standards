@@ -89,7 +89,7 @@
   - Adaptív kvantálás használata kötelező! `--aq-mode>=1`
   - A keyframek közötti maximális távolság `FPS*20` lehet.
   - A video bitrátája UHD BD, BD és HDDVD forrás esetén minimum 8000 kbps, maximum 20 000 kbps lehet, 720p esetén minimum 4000 kbps és maximum 9000 kbps. Ez alól kivétel az anime, ahol a minimum 5000 kbps és 2000 kbps, rendre.
-  - WEB-DL, WEBRip és HDTV releasek bitrátája ennél lehet kisebb, de magasabb nem.
+  - WEB-DL, WEBRip és HDTV release-ek bitrátája ennél lehet kisebb, de magasabb nem.
   - A készített release bitrátája nem lehet nagyobb, mint a forrásé.
   - Ajánlott frameserverek: AviSynth+ és VapourSynth.
   - HDTV forrás esetén logók maszkolása megengedett.
@@ -101,8 +101,8 @@
   - A hangsávok eredeti csatornaszámát meg kell tartani! Kivétel kommentár sávok.
   - AC3 esetében Dolby Certified encodert kell használni (pl. `Sound Forge`, `Minnetonka`, `Sonic Foundry`)
   - AAC esetében elfogadott encoderek: QAAC, FDK, Nero (csak stereo hangnál használható)
-  - 720p releasek esetén `DTS`, `TrueHD`, `DTS-HD.MA` és `DTS:X` hang használata TILOS!
-  - 1080p releasek esetén `TrueHD`, `DTS-HD.MA` és `DTS:X` használata TILOS! Ilyen esetekben a core-t használjuk vagy lossless audio-ból kódolunk `DD@640` vagy `DDP@1024` hangot.
+  - 720p release-ek esetén `DTS`, `TrueHD`, `DTS-HD.MA` és `DTS:X` hang használata TILOS!
+  - 1080p release-ek esetén `TrueHD`, `DTS-HD.MA` és `DTS:X` használata TILOS! Ilyen esetekben a core-t használjuk vagy lossless audio-ból kódolunk `DD@640` vagy `DDP@1024` hangot.
   - Amennyiben az érintetlen forráson DTS core található csak:
     - `DDP@1024` kódolása (ajánlott),
     - DTS meghagyása, mellé `DD@640` compatibility track készítése.
