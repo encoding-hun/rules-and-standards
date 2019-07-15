@@ -111,7 +111,7 @@
     - Csak stereo hangnál használható AAC.
     - QAAC: `-V 90` - `-V 127`
     - FDK: `-m 4` vagy `-m 5`
-    - Nero: `-q 50` - `-q 75`
+    - Nero: `-q 40` - `-q 75`
   - 720p release-ek esetén `DTS`, `TrueHD`, `DTS-HD.MA` és `DTS-X` hang használata TILOS!
   - 1080p release-ek esetén `TrueHD`, `DTS-HD.MA` és `DTS-X` használata TILOS! Ilyen esetekben a core-t használjuk vagy lossless audio-ból kódolunk `DD@640`, `DDP@1024` 6 csatornás vagy `DDP@1536` 8 csatornás hangot.
   - Amennyiben az érintetlen forráson DTS található csak:
