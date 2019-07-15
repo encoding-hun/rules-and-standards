@@ -90,7 +90,7 @@
   - A készített release bitrátája nem lehet nagyobb, mint a forrásé. Kivéve Hybrid releasek, melyek több forrás felhasználásával készülnek.
   - Ajánlott frameserverek: AviSynth+ és VapourSynth.
   - HDTV/PDTV forrás esetén logók maszkolása megengedett. (`InpaintFunc`)
-  - Muxolni kizárólag olyan már kész releasere szabad, amely megfelel ezen szabályzatban rögzített pontokban. Saját encodeok készítése ajánlott.
+  - Muxolni kizárólag olyan már kész releasere szabad, amely megfelel ezen szabályzatban rögzített pontoknak. Saját encodeok készítése ajánlott.
 
 ## Audio
   - Megengedett hangformátumok: `AC3`, `AAC`.
