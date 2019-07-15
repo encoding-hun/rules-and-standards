@@ -46,7 +46,8 @@
 
 ## Források
    - Csak jobb forrásból készített új release megengedett, minden egyéb DUPE.
-   - Források prioritása: (UHD) BD > HDDVD/D-VHS > WEB-DL > HDTV
+   - Források prioritása: `(UHD)` `BluRay` > `HDDVD`/`D-VHS` > `WEB-DL` > `HDTV`
+   720p esetén: `WEBRip` 1080p `WEB-DL`-ből kódolva > 720p `WEB-DL`
    - Amennyiben jobb minőségű BD elérhető, mint amiből a korábbi release készült, ezt READ.NFO taggel jelezni kell.
    - UHD forrás kizárólag akkor használható, ha SDR forrásról van szó.
    - HDR -> SDR tonemapping TILOS, ekkor x265 encode készítendő (lást oda vonatkozó szabályzat).
@@ -71,8 +72,8 @@
   - 1080p forrású 1080p encode esetén csak cropolni szabad, resize-olni nem.
   - Resizeoláshoz `z_Spline36Resize` vagy `Spline36ResizeMod` ajánlott, a `Spline36Resize` tartalmaz egy apró chroma shifting bugot, kerülendő. (VapourSynth-et nem érinti.) VapourSynth esetén `Spline64` is ajánlott.
   - Tilos `Nearest Neighbor`, `Bilinear` és `Bicubic` resizer használata.
-  - 720p release maximális felbontása `1280x720` lehet.
-  - 1080p release maximális felbontása `1920x1080` lehet.
+  - 720p release maximális felbontása `1280x720` lehet. (`AutoResize("720")`)
+  - 1080p release maximális felbontása `1920x1080` lehet. (`AutoResize("1080")`)
   - ColorMatrixot, amennyiben a forrás tartalmaz erre vonatkozó információt KÖTELEZŐ flaggelni (tipikusan `BT.709`), amennyiben nem, úgy `undef`-en kell hagyni.
   - ColorPrimaries és Transfer function flaggelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod mit csinálsz). Bővebb infó: https://mod16.org/hurfdurf/?p=116
   - A maximálisan megengedett referencia képek számának használata kötelező (--ref).
@@ -92,8 +93,8 @@
   - Kizárólag Limited, TV range-ű release készíthető (`16-235`).
   - `--vbv-maxrate` maximum `62500`, `--vbv-bufsize` maximum `78125` lehet.
   - `--deblock` kikapcsolása TILOS. Ajánlott beállítás filmek esetén: `-3:-3`.
-  - Adaptív kvantálás használata kötelező! `--aq-mode>=1`
-  - A keyframe-ek közötti maximális távolság `FPS*20` lehet.
+  - Adaptív kvantálás használata kötelező! `--aq-mode=2`/`3`
+  - A keyframe-ek közötti maximális távolság `FPS*20` lehet. (FPS*10 ajánlott)
   - A készített release bitrátája nem lehet nagyobb, mint a forrásé. Kivéve Hybrid releasek, melyek több forrás felhasználásával készülnek.
   - Ajánlott frameserverek: AviSynth+ és VapourSynth.
   - HDTV forrás esetén logók maszkolása megengedett. (`InpaintFunc`)
