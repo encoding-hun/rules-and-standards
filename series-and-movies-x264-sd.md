@@ -58,7 +58,7 @@
   - Már kész release alacsonyabb felbontással való újrakódolása (pl. BRRip) SZIGORÚAN TILOS!
   - Kizárólag 8 bites YUV420 (YV12) videó megengedett.
   - Kizárólag 2pass és CRF kódolások megengedettek.
-  - Kizárólag progresszív kép megengedett. Amennyiben szükséges deinterlacer vagy ITVC használata kötelező.
+  - Kizárólag progresszív kép megengedett. Amennyiben szükséges deinterlacer vagy IVTC használata kötelező.
   - A videó eredeti FPS értékét meg kell tartani. Interlacelt forrás esetén 2 félképből 1-et kell képezni (értsd `50i`-ből `25p`-t kell készíteni). Ez alól kivétel lehet a sportfelvétel, ahol indokolt lehet az `50p`. Ekkor kizárólag `QTGMC` deinterlacer használható!
   - A videót cropolni kell addig amíg maximum 1-1 px fekete sáv marad.
   - Az 1 px fekete sávok (widow line) és dirty line-ok javítása ajánlott.
