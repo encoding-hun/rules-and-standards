@@ -109,7 +109,7 @@
   - A készített AC3 nem tartalmazhat Copyright Protected flag-et.
   - AAC esetében elfogadott encoderek: QAAC, FDK, Nero
     - Csak stereo hangnál használható AAC.
-    - QAAC: `-V 100` - `-V 127`
+    - QAAC: `-V 90` - `-V 127`
     - FDK: `-m 4` vagy `-m 5`
     - Nero: `-q 50` - `-q 75`
   - 720p release-ek esetén `DTS`, `TrueHD`, `DTS-HD.MA` és `DTS-X` hang használata TILOS!
