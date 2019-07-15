@@ -12,6 +12,7 @@
  - A fő MKV mellé SFV ellenőrzőösszeg készítése ajánlott, de nem kötelező.
  - Sample opcionális, amennyiben van, 60-120 másodperc közötti kell, hogy legyen és nem az epizód/film legelejéről. A Sample-t újrakódolás nélkül, a végső encode-ból kell kivágni és egy `Sample` nevű mappába vagy a fő MKV mellé kell helyezni.
  - Chapterlist használata UHD BD, BD, HDDVD és DVD források esetén KÖTELEZŐ!
+ - `480p` és `SD` encode nem sak felbo
 
 ## Taggelés
   - Ékezetes karakterek használata TILOS!
@@ -25,9 +26,11 @@
     - OK: `The.Con.Is.On.2018.DVDRip.x264.HUN-XYZ`
   - Sorozatok és filmek ajánlott tagelése (a sorrendtől el lehet térni):
     - Sorozatok:
-    `[series.name].[season].[source].[video.codec].[language]-[group]`
+    `[series.name].[season].[source].[audio.codec].[video.codec].[language]-[group]`
     - Filmek:
-    `[movie.title].[year].[source].[video.codec].[language]-[group]`
+    `[movie.title].[year].[source].[audio.codec].[video.codec].[language]-[group]`
+    - `[audio.codec]` opcionális.
+    - 480p release esetén `480p` tag is kell.
   - A könyvtár és fájlok nevének maximális hossza 255 karakter lehet, de ajánlott 250 alatt megállni.
   - `[series.name]` és `[movie.title]` KIZÁRÓLAG eredeti vagy angol nyelvű lehet.
   - WEB-DL és WEBRip forrás esetén meg kell jelölni, hogy pontosan melyik oldalról való (pl. `NF.WEBRip`, `AMZN.WEBRip`)
@@ -44,8 +47,8 @@
 
 ## Források
    - Csak jobb forrásból készített új release megengedett, minden egyéb DUPE.
-   - Források prioritása: (UHD) BD > HDDVD/D-VHS > WEB-DL ~ DVD > HDTV > PDTV ~ VHS
-   - WEB-DL, vagy arról készített Rip DUPEolja a DVD-t (és vice versa), amennyiben nem jobb minőségű. Hasonlóan PDTV és VHS is.
+   - Források prioritása: `(UHD)` `BluRay` > `HDDVD`/`D-VHS` > `WEBRip` (HD `WEB-DL`-ből) > `DVD` > `WEB-DL` > `HDTV` > `PDTV` > `TVRip` `VHS`
+   `P2P` > `Scene`
    - Amennyiben jobb minőségű BD elérhető, mint amiből a korábbi release készült, ezt READ.NFO taggel jelezni kell.
    - UHD forrás kizárólag akkor használható, ha SDR forrásról van szó.
    - HDR -> SDR tonemapping TILOS, ekkor x265 encode készítendő (lást oda vonatkozó szabályzat).
@@ -69,7 +72,8 @@
   - A videó felbontása mod2 kell legyen. (Nem mod16, ez nem XviD.)
   - Resizeoláshoz `z_Spline36Resize` vagy `Spline36ResizeMod` ajánlott, a `Spline36Resize` tartalmaz egy apró chroma shifting bugot, kerülendő. (VapourSynth-et nem érinti.) VapourSynth esetén `Spline64` is ajánlott.
   - Tilos `Nearest Neighbor`, `Bilinear` és `Bicubic` resizer használata.
-  - Croppolás után 720 px vagy annál szélesebb forrás esetén a release szélessége 720 px kell legyen, alatta a croppolás után kapott szélesség.
+  - SD release maximális szélessége `720px` lehet (`AutoResize("SD")`)
+  - 480p release maximális felbontása `854x480` lehet. (`AutoResize("480")`)
   - ColorMatrixot, amennyiben a forrás tartalmaz erre vonatkozó információt KÖTELEZŐ flaggelni (tipikusan `BT.709` BD esetén vagy `BT.470B/G` PAL DVD esetén), amennyiben nem, úgy `undef`-en kell hagyni.
   - ColorPrimaries és Transfer function flaggelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod mit csinálsz). Bővebb infó: https://mod16.org/hurfdurf/?p=116
   - Kötelező 16 referenciaképet használni (`--ref 16`).
@@ -85,8 +89,8 @@
   - Kizárólag Limited, TV range-ű release készíthető (`16-235`).
   - `--vbv-maxrate` maximum `62500`, `--vbv-bufsize` maximum `78125` lehet.
   - `--deblock` kikapcsolása TILOS. Ajánlott beállítás filmek esetén: `-3:-3`.
-  - Adaptív kvantálás használata kötelező! `--aq-mode>=1`
-  - A keyframe-ek közötti maximális távolság `FPS*20` lehet.
+  - Adaptív kvantálás használata kötelező! `--aq-mode=2`/`3`
+  - A keyframe-ek közötti maximális távolság `FPS*20` lehet. (FPS*10 ajánlott)
   - A készített release bitrátája nem lehet nagyobb, mint a forrásé. Kivéve Hybrid releasek, melyek több forrás felhasználásával készülnek.
   - Ajánlott frameserverek: AviSynth+ és VapourSynth.
   - HDTV/PDTV forrás esetén logók maszkolása megengedett. (`InpaintFunc`)
