@@ -12,7 +12,7 @@
  - A fő MKV mellé SFV ellenőrzőösszeg készítése ajánlott, de nem kötelező.
  - Sample opcionális, amennyiben van, 60-120 másodperc közötti kell, hogy legyen és nem az epizód/film legelejéről. A Sample-t újrakódolás nélkül, a végső encode-ból kell kivágni és egy `Sample` nevű mappába vagy a fő MKV mellé kell helyezni.
  - Chapterlist használata UHD BD, BD, HDDVD és DVD források esetén KÖTELEZŐ!
- - `480p` és `SD` encode nem sak felbo
+ - `480p` és `SD` release DUPE-olja egymást. Ha már van `SD` encode, az nem cserélhető `480p`-re csak a felbontás miatt, sem fordítva. `PROPER` vagy `READ.NFO` esetén lehet `SD`-t lehet `480p`-vel javítani/upgrade-elni, és fordítva.
 
 ## Taggelés
   - Ékezetes karakterek használata TILOS!
@@ -30,7 +30,7 @@
     - Filmek:
     `[movie.title].[year].[source].[audio.codec].[video.codec].[language]-[group]`
     - `[audio.codec]` opcionális.
-    - 480p release esetén `480p` tag is kell.
+    - 480p release esetén `480p` tag is kell `[source]` előtt.
   - A könyvtár és fájlok nevének maximális hossza 255 karakter lehet, de ajánlott 250 alatt megállni.
   - `[series.name]` és `[movie.title]` KIZÁRÓLAG eredeti vagy angol nyelvű lehet.
   - WEB-DL és WEBRip forrás esetén meg kell jelölni, hogy pontosan melyik oldalról való (pl. `NF.WEBRip`, `AMZN.WEBRip`)
