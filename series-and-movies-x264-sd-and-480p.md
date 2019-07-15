@@ -12,7 +12,7 @@
  - A fő MKV mellé SFV ellenőrzőösszeg készítése ajánlott, de nem kötelező.
  - Sample opcionális, amennyiben van, 60-120 másodperc közötti kell, hogy legyen és nem az epizód/film legelejéről. A Sample-t újrakódolás nélkül, a végső encode-ból kell kivágni és egy `Sample` nevű mappába vagy a fő MKV mellé kell helyezni.
  - Chapterlist használata UHD BD, BD, HDDVD és DVD források esetén KÖTELEZŐ!
- - `480p` és `SD` release DUPE-olja egymást. Ha már van `SD` encode, az nem cserélhető `480p`-re csak a felbontás miatt, sem fordítva. `PROPER` vagy `READ.NFO` esetén lehet `SD`-t lehet `480p`-vel javítani/upgrade-elni, és fordítva.
+ - `480p` és `SD` release DUPE-olja egymást. Ha már van `SD` encode, az nem cserélhető `480p`-re csak a felbontás miatt, sem fordítva. `PROPER` vagy `READ.NFO` esetén lehet `SD`-t `480p`-vel javítani/upgrade-elni, és fordítva.
 
 ## Taggelés
   - Ékezetes karakterek használata TILOS!
