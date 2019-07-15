@@ -184,7 +184,7 @@
     - bitstarved = szükségesnél jelentősen alacsonyabb bitráta
     - bloated = szükségesnél jelentősen magasabb bitráta
     - upscaled = felskálázott kép/hang
-      példák kép felskálázottság ellenőrzésére:
+      > példák kép felskálázottság ellenőrzésére:
       `Interleave(last,last.AutoResize("720").AutoResize("1080").Subtitle("1080 -> 720 -> 1080"))` (720p upscale)
       `Interleave(last,last.AutoResize("480").AutoResize("1080").Subtitle("1080 -> 480 -> 1080"))` (480p upscale)
       (AutoResize z_Spline36Resize-t használ)
