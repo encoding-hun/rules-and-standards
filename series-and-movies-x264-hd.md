@@ -46,7 +46,7 @@
 
 ## Források
    - Csak jobb forrásból készített új release megengedett, minden egyéb DUPE.
-   - Források prioritása: BD > HDDVD/D-VHS > WEB-DL > HDTV
+   - Források prioritása: (UHD) BD > HDDVD/D-VHS > WEB-DL > HDTV
    - Amennyiben jobb minőségű BD elérhető, mint amiből a korábbi release készült, ezt READ.NFO taggel jelezni kell.
    - UHD forrás kizárólag akkor használható, ha SDR forrásról van szó.
    - HDR -> SDR tonemapping TILOS, ekkor x265 encode készítendő (lást oda vonatkozó szabályzat).
@@ -94,7 +94,7 @@
   - `--deblock` kikapcsolása TILOS. Ajánlott beállítás filmek esetén: `-3:-3`.
   - Adaptív kvantálás használata kötelező! `--aq-mode>=1`
   - A keyframe-ek közötti maximális távolság `FPS*20` lehet.
-  - A készített release bitrátája nem lehet nagyobb, mint a forrásé.
+  - A készített release bitrátája nem lehet nagyobb, mint a forrásé. Kivéve Hybrid releasek, melyek több forrás felhasználásával készülnek.
   - Ajánlott frameserverek: AviSynth+ és VapourSynth.
   - HDTV forrás esetén logók maszkolása megengedett. (`InpaintFunc`)
 
