@@ -44,8 +44,8 @@
 
 ## Források
    - Csak jobb forrásból készített új release megengedett, minden egyéb DUPE.
-   - Források prioritása: (UHD) BD > HDDVD/D-VHS > WEB-DL ~ DVD > HDTV
-   - WEB-DL, vagy arról készített Rip DUPEolja a DVD-t (és vice versa), amennyiben nem jobb minőségű.
+   - Források prioritása: (UHD) BD > HDDVD/D-VHS > WEB-DL ~ DVD > HDTV > PDTV ~ VHS
+   - WEB-DL, vagy arról készített Rip DUPEolja a DVD-t (és vice versa), amennyiben nem jobb minőségű. Hasonlóan PDTV és VHS is.
    - Amennyiben jobb minőségű BD elérhető, mint amiből a korábbi release készült, ezt READ.NFO taggel jelezni kell.
    - UHD forrás kizárólag akkor használható, ha SDR forrásról van szó.
    - HDR -> SDR tonemapping TILOS, ekkor x265 encode készítendő (lást oda vonatkozó szabályzat).
