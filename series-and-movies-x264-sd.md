@@ -89,7 +89,8 @@
   - A keyframe-ek közötti maximális távolság `FPS*20` lehet.
   - A készített release bitrátája nem lehet nagyobb, mint a forrásé. Kivéve Hybrid releasek, melyek több forrás felhasználásával készülnek.
   - Ajánlott frameserverek: AviSynth+ és VapourSynth.
-  - HDTV forrás esetén logók maszkolása megengedett. (`InpaintFunc`)
+  - HDTV/PDTV forrás esetén logók maszkolása megengedett. (`InpaintFunc`)
+  - Muxolni kizárólag olyan már kész releasere szabad, amely megfelel ezen szabályzatban rögzített pontokban. Saját encodeok készítése ajánlott.
 
 ## Audio
   - Megengedett hangformátumok: `AC3`, `AAC`.
