@@ -108,7 +108,7 @@
   - AC3 esetében Dolby Certified encodert kell használni (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry`, `Dolby Media Encoder`)
   - A készített AC3 nem tartalmazhat Copyright Protected flag-et.
   - AAC esetében elfogadott encoderek: QAAC, FDK, Nero
-    - Csak stereo hangnál használható AAC.
+    - Csak stereo/mono hangnál használható AAC.
     - QAAC: `-V 90` - `-V 127`
     - FDK: `-m 4` vagy `-m 5`
     - Nero: `-q 40` - `-q 75`
