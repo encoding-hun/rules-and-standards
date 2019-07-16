@@ -31,6 +31,7 @@
     `[movie.title].[year].[source].[audio.codec].[video.codec].[language]-[group]`
     - `[audio.codec]` opcionális.
     - 480p release esetén `480p` tag is kell `[source]` előtt.
+    - SD és RETAiL forrás esetén `[source]`-t a forrás milyensége + `Rip` taggal képezzük, pl. `BDRip`, `DVDRip`.
   - A könyvtár és fájlok nevének maximális hossza 255 karakter lehet, de ajánlott 250 alatt megállni.
   - `[series.name]` és `[movie.title]` KIZÁRÓLAG eredeti vagy angol nyelvű lehet.
   - WEB-DL és WEBRip forrás esetén meg kell jelölni, hogy pontosan melyik oldalról való (pl. `NF.WEBRip`, `AMZN.WEBRip`)
@@ -43,7 +44,7 @@
    - `REPACK` és `RERip` tagok használata kötelező, ha saját releaset javít valaki.
    - `iNT` vagy `iNTERNAL` tag használata DUPE elkerülésére TILOS!
    - TV-ből származó hangok esetén `CUSTOM` tag használata opcionális.
-   - `RETAiL` tag használata ajánlott, ha korábban készült olyan release, ahol a hang nem a BD/HDDVD/DVD lemezről származik.
+   - `RETAiL` (eredeti lemezről készült) tag használata ajánlott, ha korábban készült olyan release, ahol a hang nem a BD/HDDVD/DVD lemezről származik.
 
 ## Források
    - Csak jobb forrásból készített új release megengedett, minden egyéb DUPE.
@@ -76,11 +77,11 @@
   - Resizeoláshoz `z_Spline36Resize` vagy `Spline36ResizeMod` ajánlott, a `Spline36Resize` tartalmaz egy apró chroma shifting bugot, kerülendő. (VapourSynth-et nem érinti.) VapourSynth esetén `Spline64` is ajánlott.
   - Tilos `Nearest Neighbor`, `Bilinear` és `Bicubic` resizer használata.
   - SD release maximális szélessége `720 px` lehet (`AutoResize("SD")`)
-  - Amennyiben a forrás szélessége kevesebb, mint `720 px` széles, úgy a kész encodenak a forrás-crop szélesnek kell lennie.
+  - Amennyiben a forrás szélessége kevesebb, mint `720 px` széles, úgy a kész encodenak a `forrás-crop` szélesnek kell lennie.
   - Alacsonyabb felbontás kizárólag akkor megengedett, ha irreálisan magas bitrátát kapnánk a fentebb említett szélességek esetén.
   - 480p release maximális felbontása `854x480` lehet. (`AutoResize("480")`)
   - ColorMatrixot, amennyiben a forrás tartalmaz erre vonatkozó információt KÖTELEZŐ flaggelni (tipikusan `BT.709` BD esetén vagy `BT.470B/G` PAL DVD esetén), amennyiben nem, úgy `undef`-en kell hagyni.
-  - ColorPrimaries és Transfer function flaggelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod mit csinálsz). Bővebb infó: https://mod16.org/hurfdurf/?p=116
+  - ColorPrimaries és TransferFunction flaggelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod mit csinálsz). Bővebb infó: https://mod16.org/hurfdurf/?p=116
   - Kötelező 16 referenciaképet használni (`--ref 16`).
   - B frame-ek kikapcsolása TILOS.
   - A készült videónak DXVA-kompatibilisnek kell lennie (max. `High@L4.1`).
