@@ -197,6 +197,7 @@
       (AutoResize z_Spline36Resize-t használ)
     - audio.oos = hang csúszik a képhez képest
     - sub.oos = felirat csúszik a képhez képest
+    - poor.quality = gyatra minőség
     - nfo.wtf = NFO érthetetlen vagy értelmezhetetlen
     - Több ok `_` vagy `,` karakterrel fűzendő össze. pl. `bad.res_bad.crop` vagy `bad.res, bad.crop`.
     - A READ.NFO-khoz és a PROPER-ekhez kötelező proof. Jobb kép esetén comparison, oos esetén kép a csúszásról.
