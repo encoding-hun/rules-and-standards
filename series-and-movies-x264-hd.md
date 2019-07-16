@@ -79,7 +79,7 @@
   - 720p release maximális felbontása `1280x720` lehet. (`AutoResize("720")`)
   - 1080p release maximális felbontása `1920x1080` lehet. (`AutoResize("1080")`)
   - ColorMatrixot, amennyiben a forrás tartalmaz erre vonatkozó információt KÖTELEZŐ flaggelni (tipikusan `BT.709`), amennyiben nem, úgy `undef`-en kell hagyni.
-  - ColorPrimaries és Transfer function flaggelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod mit csinálsz). Bővebb infó: https://mod16.org/hurfdurf/?p=116
+  - ColorPrimaries és TransferFunction flaggelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod mit csinálsz). Bővebb infó: https://mod16.org/hurfdurf/?p=116
   - A maximálisan megengedett referencia képek számának használata kötelező (--ref).
     - `--preset veryslow`/`placebo` magától kiszámolja a legnagyobbat, ami még nem töri meg a kompatibilitást. (Érdemes így csinálni, és akkor nem kell manuálisan számolni.)
     - Kiszámolása: `8388608/(végső szélesség*végső magasság)` -> lefele kerekítés.
@@ -93,6 +93,7 @@
   - `me` értéke KIZÁRÓLAG `umh`, `esa` vagy `tesa` lehet.
   - `merange` értéke nem lehet 24-nél kisebb.
   - `subme` értéke nem lehet 8-nál kisebb.
+  - `rc-lookahead` értéke nem lehet 50-nél kisebb.
   - Kizárólag 1:1 oldalarányú pixelek használata megengedett (`--sar 1:1`).
   - Kizárólag Limited, TV range-ű release készíthető (`16-235`).
   - `--vbv-maxrate` maximum `62500`, `--vbv-bufsize` maximum `78125` lehet.
