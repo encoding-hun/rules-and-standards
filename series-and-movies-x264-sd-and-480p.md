@@ -71,9 +71,9 @@
   - Az 1 px fekete sávok (widow line) és dirty line-ok javítása ajánlott.
     - widow line javítása pl.: `FillMargins`/`FillBorder`
     - dirty line pl.: `bbmod`/`FixColorBrightness`/`BalanceBorders`/`EdgeFixer`
-  - A kódolt videó képarányának hibája nem haladhatja meg a 3%-ot (aspect ratio error).
-  - A videó felskálázása SZIGORÚAN TILOS!
+  - A kódolt videó felbontása 1px-et térhet el a forrás alapján számolt felbontástól, pl. 720x405 helyett 720x404 (mod2).
   - A videó felbontása mod2 kell legyen. (Nem mod16, ez nem XviD.)
+  - A videó felskálázása SZIGORÚAN TILOS!
   - Resizeoláshoz `z_Spline36Resize` vagy `Spline36ResizeMod` ajánlott, a `Spline36Resize` tartalmaz egy apró chroma shifting bugot, kerülendő. (VapourSynth-et nem érinti.) VapourSynth esetén `Spline64` is ajánlott.
   - Tilos `Nearest Neighbor`, `Bilinear` és `Bicubic` resizer használata.
   - SD release maximális szélessége `720 px` lehet (`AutoResize("SD")`)
