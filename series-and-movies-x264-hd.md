@@ -48,11 +48,13 @@
    - Csak jobb forrásból készített új release megengedett, minden egyéb DUPE.
    - Források prioritása:<br />
    `(UHD)` `BluRay` > `HDDVD`, `D-VHS` > `WEB-DL` > `HDTV`<br />
-   `P2P` > `Scene`<br />
-   720p esetén: `WEBRip` 1080p `WEB-DL`-ből kódolva > 720p `WEB-DL`
+   `P2P` > `Scene` (kivétel RETAiL lemezek)<br />
+   720p esetén: `WEBRip` 2160p `WEB-DL`-ből kódolva > `WEBRip` 1080p `WEB-DL`-ből kódolva > 720p `WEB-DL`
+   - `WEBRip` alacsonyabb felbontással való újratömörítése TILOS!
    - Amennyiben jobb minőségű BD elérhető, mint amiből a korábbi release készült, ezt READ.NFO taggel jelezni kell.
    - UHD forrás kizárólag akkor használható, ha SDR forrásról van szó.
    - HDR -> SDR tonemapping TILOS, ekkor x265 encode készítendő (lást oda vonatkozó szabályzat).
+   - Muxolni kizárólag olyan már kész releasere szabad, amely megfelel ezen szabályzatban rögzített pontoknak (kivéve az x264 verziójára vonatkozó szabálypont HDB internalok esetén). Törekedni kell az elérhető legjobb minőségű release felhasználására! Gyatra minőségű release-re való muxolás helyett saját encode készítése ERŐSEN AJÁNLOTT!
 
 ## Video
   - Minimum `r2800`-as x264-as használata kötelező; kivétel, ha korábbi, minőségi encodera (pl. `DON`, `TayTo`, `VietHD` és egyéb HDB internalok) muxolunk.
@@ -96,11 +98,10 @@
   - `--vbv-maxrate` maximum `62500`, `--vbv-bufsize` maximum `78125` lehet.
   - `--deblock` kikapcsolása TILOS. Ajánlott beállítás filmek esetén: `-3:-3`.
   - Adaptív kvantálás használata kötelező! `--aq-mode=2`/`3`
-  - A keyframe-ek közötti maximális távolság `FPS*20` lehet. (FPS*10 ajánlott)
+  - A keyframe-ek közötti maximális távolság `FPS*20` lehet. (`FPS*10` ajánlott)
   - A készített release bitrátája nem lehet nagyobb, mint a forrásé. Kivéve Hybrid releasek, melyek több forrás felhasználásával készülnek.
   - Ajánlott frameserverek: AviSynth+ és VapourSynth.
   - HDTV forrás esetén logók maszkolása megengedett. (`InpaintFunc`)
-  - Muxolni kizárólag olyan már kész releasere szabad, amely megfelel ezen szabályzatban rögzített pontoknak (kivéve az x264 verziójára vonatkozó szabálypont HDB internalok esetén). Törekedni kell az elérhető legjobb minőségű release felhasználására! Gyatra minőségű release-re való muxolás helyett saját encode készítése ERŐSEN AJÁNLOTT!
 
 ## Audio
   - Megengedett hangformátumok: `AC3`, `E-AC3`, `DTS`, `AAC`, `FLAC`.
@@ -133,6 +134,7 @@
   
 ## Feliratok
  - A feliratokat tartalmaznia kell az mkv-nak, opcionálisan mellette is meghagyható.
+ - Kötelező feliratok, amennyiben elérhetőek a forráson: magyar forced, magyar, eredeti nyelv forced, eredeti nyelv.
  - A muxolt feliratokat megfelelő karakterkódolással kell muxolni (UTF8 vagy beállítani, hogy mi a forrás)
  - Az opcionálisan mellékelt feliratok kizárólag SRT formátumú és UTF8(-BOM) vagy ANSI kódolásúak lehetnek.
  - Feliratok képre égetése, hardcodeolása SZIGORÚAN TILOS!
@@ -183,6 +185,7 @@
     - bad.crop = hibás cropolás
     - bad.colorimetry = `--colormatrix` hibás használata
     - bad.deinterlace = hibás deinterlacelés, általában sávozódó videó és/vagy egyéb képi artifactek
+    - bad.IVTC = vegyes félképek hibás eltávolítása
     - dupe.frames = duplázott képkockák, általában hibás deinterlacelés/IVTC eredménye
     - bitstarved = szükségesnél jelentősen alacsonyabb bitráta
     - bloated = szükségesnél jelentősen magasabb bitráta
