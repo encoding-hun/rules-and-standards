@@ -42,7 +42,7 @@
    - `REPACK` és `RERip` tagok használata kötelező, ha saját releaset javít valaki.
    - `iNT` vagy `iNTERNAL` tag használata DUPE elkerülésére TILOS!
    - TV-ből származó hangok esetén `CUSTOM` tag használata opcionális.
-   - `RETAiL` tag használata ajánlott, ha korábban készült olyan release, ahol a hang nem a BD/HDDVD lemezről származik.
+   - `RETAiL` (eredeti lemezről készült) tag használata ajánlott, ha korábban készült olyan release, ahol a hang nem a BD/HDDVD lemezről származik.
 
 ## Források
    - Csak jobb forrásból készített új release megengedett, minden egyéb DUPE.
