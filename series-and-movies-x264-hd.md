@@ -69,7 +69,7 @@
   - Az 1 px fekete sávok (widow line) és dirty line-ok javítása ajánlott.
     - widow line javítása pl.: `FillMargins`/`FillBorder`
     - dirty line pl.: `bbmod`/`FixColorBrightness`/`BalanceBorders`/`EdgeFixer`
-  - A kódolt videó felbontása 1 pixellel térhet el a forrás alapján számolttól, pl. 1280x539 helyett 1280x538 (mod2).
+  - A kódolt videó felbontása 1 pixellel térhet el a forrás alapján (cropolás után) számolttól, pl. 1280x539 helyett 1280x538 (mod2).
   - A videó felbontása mod2 kell legyen. (Nem mod16, ez nem XviD.)
   - A videó felskálázása SZIGORÚAN TILOS!
   - 1080p forrású 1080p encode esetén csak cropolni szabad, resize-olni nem.
