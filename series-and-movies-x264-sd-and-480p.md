@@ -49,7 +49,7 @@
 ## Források
    - Csak jobb forrásból készített új release megengedett, minden egyéb DUPE.
    - Források prioritása:<br />
-   `(UHD)` `BluRay` > `HDDVD`, `D-VHS` > `WEBRip` ((U)HD `WEB-DL`-ből) > `DVD` > `WEB-DL` > `HDTV` > `PDTV` > `Analog TV`, `VHS`<br />
+   `(UHD)` `BluRay` > `HDDVD`, `D-VHS` > `WEBRip` `((U)HD WEB-DL`-ből) > `DVD` > `WEB-DL` > `HDTV` > `PDTV` > `Analog TV`, `VHS`<br />
    `P2P` > `Scene` (kivétel RETAiL lemezek esetén)
    - `WEBRip` alacsonyabb felbontással való újratömörítése TILOS!
    - Amennyiben jobb minőségű BD elérhető, mint amiből a korábbi release készült, ezt READ.NFO taggel jelezni kell.
