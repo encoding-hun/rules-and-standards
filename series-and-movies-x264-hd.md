@@ -93,7 +93,7 @@
   - `me` értéke KIZÁRÓLAG `umh`, `esa` vagy `tesa` lehet.
   - `merange` értéke nem lehet 24-nél kisebb.
   - `subme` értéke nem lehet 8-nál kisebb.
-  - `rc-lookahead` értéke nem lehet 50-nél kisebb.
+  - `rc-lookahead` értéke nem lehet `FPS*2`-nél kisebb.
   - Kizárólag 1:1 oldalarányú pixelek használata megengedett (`--sar 1:1`).
   - Kizárólag Limited, TV range-ű release készíthető (`16-235`).
   - `--vbv-maxrate` maximum `62500`, `--vbv-bufsize` maximum `78125` lehet.
