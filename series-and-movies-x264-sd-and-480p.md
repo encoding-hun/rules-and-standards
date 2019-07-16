@@ -48,11 +48,13 @@
 ## Források
    - Csak jobb forrásból készített új release megengedett, minden egyéb DUPE.
    - Források prioritása:<br />
-   `(UHD)` `BluRay` > `HDDVD`, `D-VHS` > `WEBRip` (HD `WEB-DL`-ből) > `DVD` > `WEB-DL` > `HDTV` > `PDTV` > `TVRip` `VHS`
-   `P2P` > `Scene`
+   `(UHD)` `BluRay` > `HDDVD`, `D-VHS` > `WEBRip` ((U)HD `WEB-DL`-ből) > `DVD` > `WEB-DL` > `HDTV` > `PDTV` > `Analog TV`, `VHS`
+   `P2P` > `Scene` (kivétel RETAiL lemezek esetén)
+   - `WEBRip` alacsonyabb felbontással való újratömörítése TILOS!
    - Amennyiben jobb minőségű BD elérhető, mint amiből a korábbi release készült, ezt READ.NFO taggel jelezni kell.
    - UHD forrás kizárólag akkor használható, ha SDR forrásról van szó.
    - HDR -> SDR tonemapping TILOS, ekkor x265 encode készítendő (lást oda vonatkozó szabályzat).
+   - Muxolni kizárólag olyan már kész releasere szabad, amely megfelel ezen szabályzatban rögzített pontoknak. Saját encodeok készítése ajánlott.
 
 ## Video
   - Minimum `r2800`-as x264-as használata kötelező.
@@ -73,7 +75,9 @@
   - A videó felbontása mod2 kell legyen. (Nem mod16, ez nem XviD.)
   - Resizeoláshoz `z_Spline36Resize` vagy `Spline36ResizeMod` ajánlott, a `Spline36Resize` tartalmaz egy apró chroma shifting bugot, kerülendő. (VapourSynth-et nem érinti.) VapourSynth esetén `Spline64` is ajánlott.
   - Tilos `Nearest Neighbor`, `Bilinear` és `Bicubic` resizer használata.
-  - SD release maximális szélessége `720px` lehet (`AutoResize("SD")`)
+  - SD release maximális szélessége `720 px` lehet (`AutoResize("SD")`)
+  - Amennyiben a forrás szélessége kevesebb, mint `720 px` széles, úgy a kész encodenak a forrás-crop szélesnek kell lennie.
+  - Alacsonyabb felbontás kizárólag akkor megengedett, ha irreálisan magas bitrátát kapnánk a fentebb említett szélességek esetén.
   - 480p release maximális felbontása `854x480` lehet. (`AutoResize("480")`)
   - ColorMatrixot, amennyiben a forrás tartalmaz erre vonatkozó információt KÖTELEZŐ flaggelni (tipikusan `BT.709` BD esetén vagy `BT.470B/G` PAL DVD esetén), amennyiben nem, úgy `undef`-en kell hagyni.
   - ColorPrimaries és Transfer function flaggelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod mit csinálsz). Bővebb infó: https://mod16.org/hurfdurf/?p=116
@@ -91,11 +95,10 @@
   - `--vbv-maxrate` maximum `62500`, `--vbv-bufsize` maximum `78125` lehet.
   - `--deblock` kikapcsolása TILOS. Ajánlott beállítás filmek esetén: `-3:-3`.
   - Adaptív kvantálás használata kötelező! `--aq-mode=2`/`3`
-  - A keyframe-ek közötti maximális távolság `FPS*20` lehet. (FPS*10 ajánlott)
+  - A keyframe-ek közötti maximális távolság `FPS*20` lehet. (`FPS*10` ajánlott)
   - A készített release bitrátája nem lehet nagyobb, mint a forrásé. Kivéve Hybrid releasek, melyek több forrás felhasználásával készülnek.
   - Ajánlott frameserverek: AviSynth+ és VapourSynth.
   - HDTV/PDTV forrás esetén logók maszkolása megengedett. (`InpaintFunc`)
-  - Muxolni kizárólag olyan már kész releasere szabad, amely megfelel ezen szabályzatban rögzített pontoknak. Saját encodeok készítése ajánlott.
 
 ## Audio
   - Megengedett hangformátumok: `AC3`, `AAC`.
@@ -121,7 +124,7 @@
   - Belső konverziók esetén meg kell tartani (vagy jobbat kell használni), mint az eredeti hang bitmélysége és mintavételezési rátája.
   
 ## Feliratok
- - Kizárólag a magyar Forced felirat megtartása kötelező, a többi opcionális. Magyar filmek esetén ajánlott az angol nyelvű felirat (ha van) megtartása is.
+ - Kizárólag a magyar forced felirat megtartása kötelező, a többi opcionális. Magyar filmek esetén ajánlott az angol nyelvű felirat (ha van) megtartása is.
  - A feliratokat tartalmaznia kell az mkv-nak, opcionálisan mellette is meghagyható.
  - A muxolt feliratokat megfelelő karakterkódolással kell muxolni (UTF8 vagy beállítani, hogy mi a forrás)
  - Az opcionálisan mellékelt feliratok kizárólag SRT formátumú és UTF8(-BOM) vagy ANSI kódolásúak lehetnek.
@@ -173,6 +176,7 @@
     - bad.crop = hibás cropolás
     - bad.colorimetry = `--colormatrix` hibás használata
     - bad.deinterlace = hibás deinterlacelés, általában sávozódó videó és/vagy egyéb képi artifactek
+    - bad.IVTC = vegyes félképek hibás eltávolítása
     - dupe.frames = duplázott képkockák, általában hibás deinterlacelés/IVTC eredménye
     - bitstarved = szükségesnél jelentősen alacsonyabb bitráta
     - bloated = szükségesnél jelentősen magasabb bitráta
