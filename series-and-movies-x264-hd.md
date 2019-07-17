@@ -185,7 +185,7 @@
     - bad.crop = hibás cropolás
     - bad.colorimetry = `--colormatrix` hibás használata
     - bad.deinterlace = hibás deinterlace-elés, általában sávozódó videó és/vagy egyéb képi artifactek
-    - bad.IVTC = vegyes félképek hibás eltávolítása
+    - bad.ivtc = vegyes félképek hibás eltávolítása
     - dupe.frames = duplázott képkockák, általában hibás deinterlacelés/IVTC eredménye
     - bitstarved = szükségesnél jelentősen alacsonyabb bitráta
     - bloated = szükségesnél jelentősen magasabb bitráta
