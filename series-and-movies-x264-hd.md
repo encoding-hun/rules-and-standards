@@ -162,9 +162,9 @@
       * Video és hang forrása (feliratnál jelölni kell, amennyiben fansub)
       * A release mérete (csak a fő mkv, B, kB, MB, GB, KiB, MiB és GiB elfogadott)
       * Videóhoz használt encoder
-      * Video felbontása
-      * Video bitrátája
-      * Video FPS-e
+      * Videó felbontása
+      * Videó bitrátája
+      * Videó FPS-e
       * Audiósávok nyelvei
       * Audiósávok típusai
       * Audiósávok csatornaszáma
