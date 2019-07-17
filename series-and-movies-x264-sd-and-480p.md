@@ -1,7 +1,7 @@
 # Hungarian SD x264 Release Rules and Standards
   - Célunk egy olyan lefektetett és átlátható szabályrendszer létrehozása, mely kizárólag minőségi szempontokat vesz figyelembe.
-  - Alapul a 2009.04.15, 2009.06.08-as magyar és 2011.01.29-es nemzetközi scene szabályzatok szolgáltak, nyilván a kornak megfelelően modernizálva és átdolgozva.
-  - Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján nem készíthető proper. Amennyiben jobb minőségű BD/stb. elérhető, mint amiből a korábbi release készült, az új releaset READ.NFO taggel kell ellátni. Minden egyéb DUPE-nak minősül. Ez alól kivétel, ha a korábbi release súlyos hibával rendelkezik, pl. hangcsúszás, képhiba stb., ekkor PROPER-elhető.
+  - Alapjául a 2009.04.15, 2009.06.08-as magyar és 2011.01.29-es nemzetközi scene szabályzatok szolgáltak, nyilván a kornak megfelelően modernizálva és átdolgozva.
+  - Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján nem készíthető proper. Amennyiben jobb minőségű BD/stb. elérhető, mint amiből a korábbi release készült, az új release-t READ.NFO taggel kell ellátni. Minden egyéb DUPE-nak minősül. Ez alól kivétel, ha a korábbi release súlyos hibával rendelkezik, pl. hangcsúszás, képhiba stb., ekkor PROPER-elhető.
 
 ## Általános
  - Tilos a DUPE, azaz a korábbival megegyező (vagy közel azonos) minőségű release készítése.
@@ -10,7 +10,7 @@
  - A stáblista amennyiben nem tartalmaz extra jelenetet kódolható alacsonyabb bitrátával.
  - A film tömörítése és darabolása TILOS.
  - A fő MKV mellé SFV ellenőrzőösszeg készítése ajánlott, de nem kötelező.
- - Sample opcionális, amennyiben van, 60-120 másodperc közötti kell, hogy legyen és nem az epizód/film legelejéről. A Sample-t újrakódolás nélkül, a végső encode-ból kell kivágni és egy `Sample` nevű mappába vagy a fő MKV mellé kell helyezni.
+ - Sample opcionális, amennyiben van, 60-120 másodperc közöttinek kell lennie és nem az epizód/film legelejéről. A sample-t újrakódolás nélkül, a végső encode-ból kell kivágni és egy `Sample` nevű mappába vagy a fő MKV mellé kell helyezni.
  - Chapterlist használata UHD BD, BD, HDDVD és DVD források esetén KÖTELEZŐ!
  - `480p` és `SD` release DUPE-olja egymást. Ha már van `SD` encode, az nem cserélhető `480p`-re csak a felbontás miatt, sem fordítva. `PROPER` vagy `READ.NFO` esetén lehet `SD`-t `480p`-vel javítani/upgrade-elni, és fordítva.
 
@@ -37,7 +37,7 @@
   - WEB-DL és WEBRip forrás esetén meg kell jelölni, hogy pontosan melyik oldalról való (pl. `NF.WEBRip`, `AMZN.WEBRip`)
   - WEB-hez további guide:
     - Az minősül WEB-DL-nek, ami nem lett újrakódolva az oldalról való leszedés után.
-    - Ha x264 settings-t látsz, az nem garancia arra, hogy `WEBRip`, `NF` és `AMZN` maga is `x264`-t használ.
+    - Ha x264 settingst látsz, az nem garancia arra, hogy `WEBRip`, `NF` és `AMZN` maga is `x264`-t használ.
     - Egy WEB-DL nem feltétlenül jobb mint egy WEBRip (pl. `2160p.WEB-DL`-ből kódolt SD `WEBRip` vs SD `WEB-DL`)
     - `WEB-DLRip` megjelölés kerülendő, `WEB-DL`-ből kódolt Rip = `WEBRip`
    - `Rip` és `RiP` megjelölés is elfogadott.
@@ -54,8 +54,8 @@
    - `WEBRip` alacsonyabb felbontással való újratömörítése TILOS!
    - Amennyiben jobb minőségű BD elérhető, mint amiből a korábbi release készült, ezt READ.NFO taggel jelezni kell.
    - UHD forrás kizárólag akkor használható, ha SDR forrásról van szó.
-   - HDR -> SDR tonemapping TILOS, ekkor x265 encode készítendő (lást oda vonatkozó szabályzat).
-   - Muxolni kizárólag olyan már kész releasere szabad, amely megfelel ezen szabályzatban rögzített pontoknak. Saját encodeok készítése ajánlott.
+   - HDR -> SDR tonemapping TILOS, ekkor x265 encode készítendő (lásd: oda vonatkozó szabályzat).
+   - Muxolni kizárólag olyan már kész release-re szabad, amely megfelel ezen szabályzatban rögzített pontoknak. Saját encode-ok készítése ajánlott.
 
 ## Video
   - Minimum `r2800`-as x264-as használata kötelező.
@@ -66,22 +66,22 @@
   - Kizárólag 8 bites YUV420 (YV12) videó megengedett.
   - Kizárólag 2pass és CRF kódolások megengedettek.
   - Kizárólag progresszív kép megengedett. Amennyiben szükséges deinterlacer vagy IVTC használata kötelező.
-  - A videó eredeti FPS értékét meg kell tartani. Interlacelt forrás esetén 2 félképből 1-et kell képezni (értsd `50i`-ből `25p`-t kell készíteni). Ez alól kivétel lehet a sportfelvétel, ahol indokolt lehet az `50p`. Ekkor kizárólag `QTGMC` deinterlacer használható!
-  - A videót cropolni kell addig amíg maximum 1-1 px fekete sáv marad.
+  - A videó eredeti FPS értékét meg kell tartani. Interlace-elt forrás esetén 2 félképből 1-et kell képezni (értsd `50i`-ből `25p`-t kell készíteni). Ez alól kivétel lehet a sportfelvétel, ahol indokolt lehet az `50p`. Ekkor kizárólag `QTGMC` deinterlacer használható!
+  - A videót cropolni kell addig, amíg maximum 1-1 px fekete sáv marad.
   - Az 1 px fekete sávok (widow line) és dirty line-ok javítása ajánlott.
     - widow line javítása pl.: `FillMargins`/`FillBorder`
     - dirty line pl.: `bbmod`/`FixColorBrightness`/`BalanceBorders`/`EdgeFixer`
   - A kódolt videó felbontása 1 pixellel térhet el a forrás alapján (cropolás után) számolttól, pl. 720x405 helyett 720x404 (mod2).
   - A videó felbontása mod2 kell legyen. (Nem mod16, ez nem XviD.)
   - A videó felskálázása SZIGORÚAN TILOS!
-  - Resizeoláshoz `z_Spline36Resize` vagy `Spline36ResizeMod` ajánlott, a `Spline36Resize` tartalmaz egy apró chroma shifting bugot, kerülendő. (VapourSynth-et nem érinti.) VapourSynth esetén `Spline64` is ajánlott.
+  - Resize-oláshoz `z_Spline36Resize` vagy `Spline36ResizeMod` ajánlott, a `Spline36Resize` tartalmaz egy apró chroma shifting bugot, kerülendő. (VapourSynth-et nem érinti.) VapourSynth esetén `Spline64` is ajánlott.
   - Tilos `Nearest Neighbor`, `Bilinear` és `Bicubic` resizer használata.
   - SD release maximális szélessége `720 px` lehet (`AutoResize("SD")`)
-  - Amennyiben a forrás szélessége kevesebb, mint `720 px` széles, úgy a kész encodenak a `forrás-crop` szélesnek kell lennie.
+  - Amennyiben a forrás szélessége kevesebb, mint `720 px` széles, úgy a kész encode-nak a `forrás-crop` szélesnek kell lennie.
   - Alacsonyabb felbontás kizárólag akkor megengedett, ha irreálisan magas bitrátát kapnánk a fentebb említett szélességek esetén.
   - 480p release maximális felbontása `854x480` lehet. (`AutoResize("480")`)
   - ColorMatrixot, amennyiben a forrás tartalmaz erre vonatkozó információt KÖTELEZŐ flaggelni (tipikusan `BT.709` BD esetén vagy `BT.470B/G` PAL DVD esetén), amennyiben nem, úgy `undef`-en kell hagyni.
-  - ColorPrimaries és TransferFunction flaggelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod mit csinálsz). Bővebb infó: https://mod16.org/hurfdurf/?p=116
+  - ColorPrimaries és TransferFunction flaggelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod, mit csinálsz). Bővebb infó: https://mod16.org/hurfdurf/?p=116
   - Kötelező 16 referenciaképet használni (`--ref 16`).
   - B frame-ek kikapcsolása TILOS.
   - A készült videónak DXVA-kompatibilisnek kell lennie (max. `High@L4.1`).
@@ -98,7 +98,7 @@
   - `--deblock` kikapcsolása TILOS. Ajánlott beállítás filmek esetén: `-3:-3`.
   - Adaptív kvantálás használata kötelező! `--aq-mode=2`/`3`
   - A keyframe-ek közötti maximális távolság `FPS*20` lehet. (`FPS*10` ajánlott)
-  - A készített release bitrátája nem lehet nagyobb, mint a forrásé. Kivéve Hybrid releasek, melyek több forrás felhasználásával készülnek.
+  - A készített release bitrátája nem lehet nagyobb, mint a forrásé. Kivéve Hybrid release-ek, melyek több forrás felhasználásával készülnek.
   - Ajánlott frameserverek: AviSynth+ és VapourSynth.
   - HDTV/PDTV forrás esetén logók maszkolása megengedett. (`InpaintFunc`)
 
@@ -112,7 +112,7 @@
   - 2 csatornás CUSTOM hang (TV-ből felvett) KIZÁRÓLAG `AAC` lehet, CUSTOM `AC3` TILOS!
   - Mono hang KIZÁRÓLAG `AAC` lehet.
   - AC3 esetében Dolby Certified encodert kell használni (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry`, `Dolby Media Encoder`)
-  - A készített AC3 nem tartalmazhat Copyright Protected flag-et.
+  - A készített AC3 nem tartalmazhat Copyright Protected flaget.
   - AAC esetében elfogadott encoderek: QAAC, FDK, Nero
     - Csak mono/stereo hangnál használható AAC.
     - QAAC: `-V 90` - `-V 127`
@@ -121,7 +121,7 @@
   - Maximum +/- 100 ms hangcsúszás megengedett.
   - A hangok nyelvét kötelező Language tagben jelezni!
   - Ha a hangot nyújtani kell előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. hdtools compare)
-  - Resampling-re használható programok: hdtools resample, eac3to, Sound Forge, Audacity.
+  - Resamplingre használható programok: hdtools resample, eac3to, Sound Forge, Audacity.
   - TimeStretchingre használható programok: hdtools tstretch, Prosoniq TimeFactory II, Sound Forge és SONAR `élastique TimeStretch`, Audacity.
   - Belső konverziók esetén meg kell tartani (vagy jobbat kell használni), mint az eredeti hang bitmélysége és mintavételezési rátája.
   
@@ -130,8 +130,8 @@
  - A feliratokat tartalmaznia kell az mkv-nak, opcionálisan mellette is meghagyható.
  - A muxolt feliratokat megfelelő karakterkódolással kell muxolni (UTF8 vagy beállítani, hogy mi a forrás)
  - Az opcionálisan mellékelt feliratok kizárólag SRT formátumú és UTF8(-BOM) vagy ANSI kódolásúak lehetnek.
- - Feliratok képre égetése, hardcodeolása SZIGORÚAN TILOS!
- - A feliratok nyelvét KÖTELEZŐ Language tag-ként beállítani.
+ - Feliratok képre égetése, hardcode-olása SZIGORÚAN TILOS!
+ - A feliratok nyelvét KÖTELEZŐ Language tagként beállítani.
  - Title tag használata opcionális.
  - Feliratok sorrendje:
     - magyar forced (ha van)
@@ -155,14 +155,14 @@
       * Video és hang forrása (feliratnál jelölni kell, amennyiben fansub)
       * A release mérete (csak a fő mkv, B, kB, MB, GB, KiB, MiB és GiB elfogadott)
       * Videóhoz használt encoder
-      * Video felbontása
-      * Video bitrátája
-      * Video FPS-e
-      * Audio sávok nyelvei
-      * Audio sávok típusai
-      * Audio sávok csatornaszáma
-      * Audio sávok bitrátája
-      * Audio mintavételezési rátája (Sample rate)
+      * Videó felbontása
+      * Videó bitrátája
+      * Videó FPS-e
+      * Audiósávok nyelvei
+      * Audiósávok típusai
+      * Audiósávok csatornaszáma
+      * Audiósávok bitrátája
+      * Audió mintavételezési rátája (Sample rate)
       * Feliratok nyelve
   - Más csapatok sértegetése, személyeskedés TILOS!
   
@@ -178,7 +178,7 @@
     - bad.crop = hibás cropolás
     - bad.colorimetry = `--colormatrix` hibás használata
     - bad.deinterlace = hibás deinterlacelés, általában sávozódó videó és/vagy egyéb képi artifactek
-    - bad.IVTC = vegyes félképek hibás eltávolítása
+    - bad.ivtc = vegyes félképek hibás eltávolítása
     - dupe.frames = duplázott képkockák, általában hibás deinterlacelés/IVTC eredménye
     - bitstarved = szükségesnél jelentősen alacsonyabb bitráta
     - bloated = szükségesnél jelentősen magasabb bitráta
