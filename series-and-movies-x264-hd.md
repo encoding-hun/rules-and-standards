@@ -10,7 +10,7 @@
  - A stáblista, amennyiben nem tartalmaz extra jelenetet, kódolható alacsonyabb bitrátával.
  - A film tömörítése és darabolása TILOS.
  - A fő MKV mellé SFV ellenőrzőösszeg készítése ajánlott, de nem kötelező.
- - A sample opcionális, amennyiben van, 60-120 másodperc közötti kell lennie és nem az epizód/film legelejéről. A sample-t újrakódolás nélkül, a végső encode-ból kell kivágni és egy `Sample` nevű mappába vagy a fő MKV mellé kell helyezni.
+ - A sample opcionális, amennyiben van, 60-120 másodperc közöttinek kell lennie és nem az epizód/film legelejéről. A sample-t újrakódolás nélkül, a végső encode-ból kell kivágni és egy `Sample` nevű mappába vagy a fő MKV mellé kell helyezni.
  - mHD, HDLight és egyéb vicces baromságok készítése és felhasználása TILOS!
  - Chapterlist használata UHD BD, BD és HDDVD források esetén KÖTELEZŐ!
 
