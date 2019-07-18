@@ -111,7 +111,7 @@
   - 2 csatornás RETAiL hang lehet `AC3` vagy `AAC` is. `AC3` esetén a forrással megegyező bitráta vagy jobb forrás esetén 192-256 kbps elfogadott.
   - 2 csatornás CUSTOM hang (TV-ből felvett) KIZÁRÓLAG `AAC` lehet, CUSTOM `AC3` TILOS!
   - Mono hang KIZÁRÓLAG `AAC` lehet.
-  - AC3 esetében Dolby Certified encodert kell használni (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry`, `Dolby Media Encoder`)
+  - AC3 esetében Dolby Certified encodert kell használni (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`)
   - A készített AC3 nem tartalmazhat Copyright Protected flaget.
   - AAC esetében elfogadott encoderek: QAAC, FDK, Nero
     - Csak mono/stereo hangnál használható AAC.
@@ -120,9 +120,9 @@
     - Nero: `-q 40` - `-q 75`
   - Maximum +/- 100 ms hangcsúszás megengedett.
   - A hangok nyelvét kötelező Language tagben jelezni!
-  - Ha a hangot nyújtani kell előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. hdtools compare)
-  - Resamplingre használható programok: hdtools resample, eac3to, Sound Forge, Audacity.
-  - TimeStretchingre használható programok: hdtools tstretch, Prosoniq TimeFactory II, Sound Forge és SONAR `élastique TimeStretch`, Audacity.
+  - Ha a hangot nyújtani kell előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. `hdtools compare`)
+  - Resamplingre használható programok: `hdtools resample`, `eac3to`, `Sound Forge`, `Audacity`.
+  - TimeStretchingre használható programok: `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge` és `SONAR` `élastique TimeStretch`, `Audacity`.
   - Belső konverziók esetén meg kell tartani (vagy jobbat kell használni), mint az eredeti hang bitmélysége és mintavételezési rátája.
   
 ## Feliratok
