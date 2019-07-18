@@ -204,6 +204,7 @@
     - A szabályzattól notorikusan eltérő csapatok permanens bant kapnak.
 
 ## Aláírták és tudomásul vették
+`Legacy`, `NaGa`, `pcroland`, `prldm`
 
 ## Oldalak, akik elfogadták
 
