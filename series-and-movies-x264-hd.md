@@ -82,7 +82,7 @@
   - A maximálisan megengedett referencia képek számának használata kötelező (--ref).
     - `--preset veryslow`/`placebo` magától kiszámolja a legnagyobbat, ami még nem töri meg a kompatibilitást. (Érdemes így csinálni, és akkor nem kell manuálisan számolni.)
     - Kiszámolása: `8388608/(végső szélesség*végső magasság)` -> lefele kerekítés.
-    Pl.: `8388608/(1280*640) = 10,24`, `10.24` -> `10`
+    Pl.: `8388608/(1280*640) = 10.24`, `10.24` -> `10`
     `(8388608 = 32768*16*16)` `[32768 a MaxDpbMbs High@4.1-nél, 16*16 egy macroblock]`
   - B frame-ek kikapcsolása TILOS.
   - A készült videónak DXVA-kompatibilisnek kell lennie (max. `High@L4.1`).
@@ -97,7 +97,7 @@
   - Kizárólag Limited, TV range-ű release készíthető (`16-235`).
   - `--vbv-maxrate` maximum `62500`, `--vbv-bufsize` maximum `78125` lehet.
   - `--deblock` kikapcsolása TILOS. Ajánlott beállítás filmek esetén: `-3:-3`.
-  - Adaptív kvantálás használata kötelező! `--aq-mode=2`/`3`
+  - Adaptív kvantálás használata kötelező! `--aq-mode=`1`/`2`/`3`
   - A keyframe-ek közötti maximális távolság `FPS*20` lehet. (`FPS*10` ajánlott)
   - A készített release bitrátája nem lehet nagyobb, mint a forrásé. Kivéve Hybrid release-ek, melyek több forrás felhasználásával készülnek.
   - Ajánlott frameserverek: AviSynth+ és VapourSynth.
