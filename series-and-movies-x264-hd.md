@@ -126,10 +126,10 @@
   - Compatibility AC3 track készület FFmpeg (4.1 vagy újabb) vagy Aften (2009-12-26 vagy újabb) segítségével is.
   - Maximum +/- 100 ms hangcsúszás megengedett.
   - A hangok nyelvét kötelező Language tagben jelezni!
-  - Commentary track maximum 2.0 lehet, AC3 esetében maximum 192kbps, AAC esetében 80-160 kbps.
-  - Ha a hangot nyújtani kell előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. hdtools compare)
-  - Resamplingre használható programok: hdtools resample, eac3to, Sound Forge, Audacity.
-  - TimeStretchingre használható programok: hdtools tstretch, Prosoniq TimeFactory II, Sound Forge és SONAR `élastique TimeStretch`, Audacity.
+  - Commentary track maximum 2.0 lehet, AC3 esetében maximum 192 kbps, AAC esetében 80-160 kbps.
+  - Ha a hangot nyújtani kell előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. `hdtools compare`)
+  - Resamplingre használható programok: `hdtools resample`, `eac3to`, `Sound Forge`, `Audacity`.
+  - TimeStretchingre használható programok: `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge` és `SONAR` `élastique TimeStretch`, `Audacity`.
   - Belső konverziók esetén meg kell tartani (vagy jobbat kell használni), mint az eredeti hang bitmélysége és mintavételezési rátája.
   
 ## Feliratok
