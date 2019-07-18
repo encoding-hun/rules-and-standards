@@ -1,4 +1,4 @@
-# Hungarian SD x264 Release Rules and Standards
+# Hungarian SD and 480p x264 Release Rules and Standards
   - Célunk egy olyan lefektetett és átlátható szabályrendszer létrehozása, mely kizárólag minőségi szempontokat vesz figyelembe.
   - Alapjául a 2009.04.15, 2009.06.08-as magyar és 2011.01.29-es nemzetközi scene szabályzatok szolgáltak, nyilván a kornak megfelelően modernizálva és átdolgozva.
   - Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján nem készíthető proper. Amennyiben jobb minőségű BD/stb. elérhető, mint amiből a korábbi release készült, az új release-t READ.NFO taggel kell ellátni. Minden egyéb DUPE-nak minősül. Ez alól kivétel, ha a korábbi release súlyos hibával rendelkezik, pl. hangcsúszás, képhiba stb., ekkor PROPER-elhető.
@@ -49,8 +49,8 @@
 ## Források
    - Csak jobb forrásból készített új release megengedett, minden egyéb DUPE.
    - Források prioritása:<br />
-   `(UHD)` `BluRay` > `HDDVD`, `D-VHS` > `WEBRip` `((U)HD WEB-DL`-ből) > `DVD` > `WEB-DL` > `HDTV` > `PDTV` > `Analog TV`, `VHS`<br />
-   `P2P` > `Scene` (kivétel RETAiL lemezek esetén)
+   `(UHD)` `BluRay` > `HDDVD`, `DTheater` > `WEBRip` `((U)HD WEB-DL`-ből) > `DVDRip` > `WEB-DL` > `HDTV` > `PDTV` > `Analog TVRip`, `VHSRip`<br />
+   `P2P` > `Scene` (kivétel retail lemezek esetén)
    - `WEBRip` alacsonyabb felbontással való újratömörítése TILOS!
    - Amennyiben jobb minőségű BD elérhető, mint amiből a korábbi release készült, ezt READ.NFO taggel jelezni kell.
    - UHD forrás kizárólag akkor használható, ha SDR forrásról van szó.
