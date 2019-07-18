@@ -8,7 +8,7 @@
  - Kizárólag `.mkv` konténer használata elfogadott.
  - A film csonkítása, trimmelése TILOS.
  - A stáblista amennyiben nem tartalmaz extra jelenetet kódolható alacsonyabb bitrátával.
- - A film tömörítése és darabolása TILOS.
+ - A film tömörítése (pl. rar, zip stb.) és darabolása TILOS.
  - A fő MKV mellé SFV ellenőrzőösszeg készítése ajánlott, de nem kötelező.
  - Sample opcionális, amennyiben van, 60-120 másodperc közöttinek kell lennie és nem az epizód/film legelejéről. A sample-t újrakódolás nélkül, a végső encode-ból kell kivágni és egy `Sample` nevű mappába vagy a fő MKV mellé kell helyezni.
  - Chapterlist használata UHD BD, BD, HDDVD és DVD források esetén KÖTELEZŐ!
