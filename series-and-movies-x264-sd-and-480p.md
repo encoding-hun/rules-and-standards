@@ -96,7 +96,7 @@
   - Kizárólag Limited, TV range-ű release készíthető (`16-235`).
   - `--vbv-maxrate` maximum `62500`, `--vbv-bufsize` maximum `78125` lehet.
   - `--deblock` kikapcsolása TILOS. Ajánlott beállítás filmek esetén: `-3:-3`.
-  - Adaptív kvantálás használata kötelező! `--aq-mode=1`/`2`/`3`
+  - Adaptív kvantálás használata kötelező! `--aq-mode=1`/`2`/`3` (`3` ajánlott)
   - A keyframe-ek közötti maximális távolság `FPS*20` lehet. (`FPS*10` ajánlott)
   - A készített release bitrátája nem lehet nagyobb, mint a forrásé. Kivéve Hybrid release-ek, melyek több forrás felhasználásával készülnek.
   - Ajánlott frameserverek: AviSynth+ és VapourSynth.
