@@ -83,7 +83,7 @@
   - ColorMatrixot, amennyiben a forrás tartalmaz erre vonatkozó információt KÖTELEZŐ flaggelni (tipikusan `BT.709` BD esetén vagy `BT.470B/G` PAL DVD esetén), amennyiben nem, úgy `undef`-en kell hagyni.
   - ColorPrimaries és TransferFunction flaggelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod, mit csinálsz). Bővebb infó: https://mod16.org/hurfdurf/?p=116
   - Kötelező 16 referenciaképet használni (`--ref 16`).
-  - B frame-ek kikapcsolása TILOS. Minimum `3` egymás utáni B frame-t kell engedni (`--bframes 3`).
+  - B frame-ek kikapcsolása TILOS. Minimum `3` egymás utáni B frame-t kell engedni (`--bframes 3` vagy több).
   - A készült videónak DXVA-kompatibilisnek kell lennie (max. `High@L4.1`).
   - `CABAC` kikapcsolása TILOS.
   - `8x8dct` kikapcsolása TILOS.
