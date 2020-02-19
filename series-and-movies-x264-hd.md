@@ -126,6 +126,7 @@
   - Lossy hangot csak losslessből szabad kódolni. (Ez alól kivétel ha csak DTS hang elérhető és compatibility tracket készítünk vagy 1080p-re `DDP@1024`-et.)
   - Compatibility AC3 track készület FFmpeg (4.1 vagy újabb) vagy Aften (2009-12-26 vagy újabb) segítségével is.
   - Maximum +/- 100 ms hangcsúszás megengedett.
+  - A hangok mintavételezését (sampling rate) tilos megváltoztatni!
   - A hangok nyelvét kötelező Language tagben jelezni!
   - Commentary track maximum 2.0 lehet, AC3 esetében maximum 192 kbps, AAC esetében 80-160 kbps.
   - Ha a hangot nyújtani kell előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. `hdtools compare`)
