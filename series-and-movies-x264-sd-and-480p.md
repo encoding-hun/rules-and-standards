@@ -120,6 +120,7 @@
     - FDK: `-m 4` vagy `-m 5`
     - Nero: `-q 40` - `-q 75`
   - Maximum +/- 100 ms hangcsúszás megengedett.
+  - A hangok mintavételezését (sampling rate) tilos megváltoztatni!
   - A hangok nyelvét kötelező Language tagben jelezni!
   - Ha a hangot nyújtani kell előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. `hdtools compare`)
   - Resamplingre használható programok: `hdtools resample`, `eac3to`, `Sound Forge`, `Audacity`, `SoX`, `Adobe Audition`.
@@ -167,35 +168,6 @@
       * Feliratok nyelve
   - Más csapatok sértegetése, személyeskedés TILOS!
   
-## NUKE
- - A szabályzat nem követése, figyelmen kívül hagyása NUKE-ot eredményez.
- - NUKE requestet bárki kérhet, a jogosság megvizsgálása a NUKE Council feladata
- - Indokok taggelése:
-    - dupe = DUPE release, azaz egy korábbival megegyezik, vagy közel azonos
-    - grp.req = csapat kérése
-    - get.repack, get.rerip = van új, javított változat azonos csapattól
-    - get.proper = van javított változat másik csapattól
-    - bad.res = hibás felbontás
-    - bad.crop = hibás cropolás
-    - bad.colorimetry = `--colormatrix` hibás használata
-    - bad.deinterlace = hibás deinterlacelés, általában sávozódó videó és/vagy egyéb képi artifactek
-    - bad.ivtc = vegyes félképek hibás eltávolítása
-    - dupe.frames = duplázott képkockák, általában hibás deinterlacelés/IVTC eredménye
-    - bitstarved = szükségesnél jelentősen alacsonyabb bitráta
-    - bloated = szükségesnél jelentősen magasabb bitráta
-    - upscaled = felskálázott kép/hang<br />
-      példák kép felskálázottság ellenőrzésére:
-      `Interleave(last,last.AutoResize("720").AutoResize("1080").Subtitle("1080 -> 720 -> 1080"))` (720p upscale)<br />
-      `Interleave(last,last.AutoResize("480").AutoResize("1080").Subtitle("1080 -> 480 -> 1080"))` (480p upscale)<br />
-      (AutoResize z_Spline36Resize-t használ)
-    - audio.oos = hang csúszik a képhez képest
-    - sub.oos = felirat csúszik a képhez képest
-    - poor.quality = gyatra minőség
-    - nfo.wtf = NFO érthetetlen vagy értelmezhetetlen
-    - Több ok `_` vagy `,` karakterrel fűzendő össze. pl. `bad.res_bad.crop` vagy `bad.res, bad.crop`.
-    - A READ.NFO-khoz és a PROPER-ekhez kötelező proof. Jobb kép esetén comparison, oos esetén kép a csúszásról.
-    - A szabályzattól notorikusan eltérő csapatok permanens bant kapnak.
-
 ## Aláírták és tudomásul vették
 `Legacy`, `NaGa`, `NFC`, `pcroland`, `prldm`
 
