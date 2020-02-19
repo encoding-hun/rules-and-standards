@@ -1,7 +1,7 @@
 ## Általános
  - A szabályzatok nem követése, figyelmen kívül hagyása NUKE-ot eredményez.
  - NUKE requestet bárki kérhet, a jogosság megvizsgálása a NUKE Council feladata
- - Több ok `_` vagy `,` karakterrel fűzendő össze. pl. `bad.res_bad.crop` vagy `bad.res, bad.crop`.
+ - Több ok `_` karakterrel fűzendő össze. pl. `bad.res_bad.crop`.
  - A NUKE reason kizárólag kisbetűket tartalmazhat.
  - A `READ.NFO`-khoz és a `PROPER`-ekhez kötelező proof. Jobb kép esetén comparison, `oos` esetén kép a csúszásról. Kivétel ha az ok egyértelmű (pl. jobb forrású hang).
  - A szabályzattól notorikusan eltérő csapatok permanens bant kapnak.
