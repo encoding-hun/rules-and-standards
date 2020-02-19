@@ -57,8 +57,9 @@
 
 ## Video
   - Minimum `r2800`-as x264-as használata kötelező; kivétel, ha korábbi, minőségi encodera (pl. `DON`, `TayTo`, `VietHD` és egyéb HDB internalok) muxolunk.
-  - TILOS minden olyan x264 használata, amely az alábbi bugos commitot tartalmazza (praktikusan `r2969`-`r2979`): https://code.videolan.org/videolan/x264/commit/92d36908cbafd2a6edf7e61d69f341027b57f6f8
+  - TILOS minden olyan x264 használata, amely az alábbi bugos commitot tartalmazza (`r2969`-`r2979`): https://code.videolan.org/videolan/x264/commit/92d36908cbafd2a6edf7e61d69f341027b57f6f8
   - Elfogadott x264 variánsok: vanilla, tMod, Yuuki, kMod, saiclabs féle vanilla `r2970+1` és tMod `r2970+3`.
+  - Törekedjünk a minél újabb encoder használatára!
   - Házibarkács encoderek használata TILOS!
   - Már kész release alacsonyabb felbontással való újrakódolása (pl. BRRip) SZIGORÚAN TILOS!
   - Kizárólag 8 bites YUV420 (YV12) videó megengedett.
@@ -88,7 +89,7 @@
   - A készült videónak DXVA-kompatibilisnek kell lennie (max. `High@L4.1`).
   - `CABAC` kikapcsolása TILOS.
   - `8x8dct` kikapcsolása TILOS.
-  - Kötelezően használandó partíciók: `i4x4,i8x8,p8x8,b8x8` (default), `p4x4` használata opcionális
+  - Kötelezően használandó partíciók: `i4x4,i8x8,p8x8,b8x8` (default), `p4x4` használata opcionális, de ajánlott
   - `me` értéke KIZÁRÓLAG `umh`, `esa` vagy `tesa` lehet.
   - `merange` értéke nem lehet 24-nél kisebb.
   - `subme` értéke nem lehet 8-nál kisebb.
@@ -128,8 +129,8 @@
   - A hangok nyelvét kötelező Language tagben jelezni!
   - Commentary track maximum 2.0 lehet, AC3 esetében maximum 192 kbps, AAC esetében 80-160 kbps.
   - Ha a hangot nyújtani kell előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. `hdtools compare`)
-  - Resamplingre használható programok: `hdtools resample`, `eac3to`, `Sound Forge`, `Audacity`.
-  - TimeStretchingre használható programok: `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge` és `SONAR` `élastique TimeStretch`, `Audacity`.
+  - Resamplingre használható programok: `hdtools resample`, `eac3to`, `Sound Forge`, `Audacity`, `SoX`, `Adobe Audition`.
+  - TimeStretchingre használható programok: `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge` és `SONAR` `élastique TimeStretch`, `Audacity`, `SoX`, `Adobe Audition`.
   - Belső konverziók esetén meg kell tartani (vagy jobbat kell használni), mint az eredeti hang bitmélysége és mintavételezési rátája.
   
 ## Feliratok
@@ -209,6 +210,9 @@
 ## Oldalak, akik elfogadták
 
 ## Érvényes
-  2019-??-??-től
+  2020-??-??-től
+
+## Utolsó frissítés
+  2020-02-18
 
 ## Banned grps
