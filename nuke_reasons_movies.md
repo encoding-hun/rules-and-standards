@@ -68,6 +68,7 @@
     - `invalid.proper` = indokolatlan proper
     - `invalid.repack` = indokolatlan repack
     - `invalid.int` = dupe elkerülésére használt `iNT` tag
+    - `missing.proof` = hiányzó proof
     - `bad.container` = MP4 (kivétel Dolby Vision esetén) és hasonló vicces konténer használata
     - `incomplete` = a forrással nem azonos hosszúságú, vágott tartalom
     - `missing.chapterlist` = hiányzó chapterlist
