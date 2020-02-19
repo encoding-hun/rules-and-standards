@@ -61,6 +61,7 @@
   - Minimum `r2800`-as x264-as használata kötelező.
   - TILOS minden olyan x264 használata, amely az alábbi bugos commitot tartalmazza (praktikusan `r2969`-`r2979`): https://code.videolan.org/videolan/x264/commit/92d36908cbafd2a6edf7e61d69f341027b57f6f8
   - Elfogadott x264 variánsok: vanilla, tMod, Yuuki, kMod, saiclabs féle vanilla `r2970+1` és tMod `r2970+3`.
+  - Törekedjünk a minél újabb encoder használatára!
   - Házibarkács encoderek használata TILOS!
   - Már kész release alacsonyabb felbontással való újrakódolása (pl. BRRip) SZIGORÚAN TILOS!
   - Kizárólag 8 bites YUV420 (YV12) videó megengedett.
@@ -121,8 +122,8 @@
   - Maximum +/- 100 ms hangcsúszás megengedett.
   - A hangok nyelvét kötelező Language tagben jelezni!
   - Ha a hangot nyújtani kell előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. `hdtools compare`)
-  - Resamplingre használható programok: `hdtools resample`, `eac3to`, `Sound Forge`, `Audacity`.
-  - TimeStretchingre használható programok: `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge` és `SONAR` `élastique TimeStretch`, `Audacity`.
+  - Resamplingre használható programok: `hdtools resample`, `eac3to`, `Sound Forge`, `Audacity`, `SoX`, `Adobe Audition`.
+  - TimeStretchingre használható programok: `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge` és `SONAR` `élastique TimeStretch`, `Audacity`, `SoX`, `Adobe Audition`.
   - Belső konverziók esetén meg kell tartani (vagy jobbat kell használni), mint az eredeti hang bitmélysége és mintavételezési rátája.
   
 ## Feliratok
@@ -201,6 +202,9 @@
 ## Oldalak, akik elfogadták
 
 ## Érvényes
-  2019-??-??-től
+  2020-??-??-től
+  
+## Utolsó frissítés
+  2020-02-18
 
 ## Banned grps
