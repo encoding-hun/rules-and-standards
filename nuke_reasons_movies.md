@@ -26,7 +26,8 @@
     - `obsolete.encoder` = túl régi encoder használata
     - `forbidden.encoder` = tiltott encoder használata
     - `compressed.src` = már tömörített forrás használata
-    - `bad.video` = a kész encode tömörítési hibákat tartalmaz; nem YUV420 formátumú; ABR kódolással készült
+    - `bad.video` = a kész encode tömörítési hibákat tartalmaz; nem YUV420 formátumú
+    - `abr.forbidden` = 1 pass ABR encode tiltott
     - `interlaced` = deinterlacing elmulasztása
     - `wrong.fps` = hibás FPS használata
     - `wrong.resizer` = nem megfelelő resizer használata (pl. `Nearest Neighbor`, `Bilinear`, `Bicubic`)
