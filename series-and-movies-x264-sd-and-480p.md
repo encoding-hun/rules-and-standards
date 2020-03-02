@@ -170,7 +170,7 @@
   - Más csapatok sértegetése, személyeskedés TILOS!
   
 ## Aláírták és tudomásul vették
-`Legacy`, `NaGa`, `NFC`, `pcroland`, `prldm`
+`boOk`, `Legacy`, `NaGa`, `NFC`, `pcroland`, `prldm`
 
 ## Oldalak, akik elfogadták
 
@@ -178,6 +178,6 @@
   2020-02-19-től
   
 ## Utolsó frissítés
-  2020-02-19
+  2020-03-02
 
 ## Banned grps
