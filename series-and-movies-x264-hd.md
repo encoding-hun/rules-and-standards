@@ -50,7 +50,7 @@
    `(UHD)` `BluRay` > `HDDVD`, `DTheater` > `WEBRip` nagyobb felbontású WEB-DL-ből kódolva > `WEB-DL` > `HDTV`<br />
    `P2P` > `Scene` (kivétel retail lemezek esetén)
    - `WEBRip` alacsonyabb felbontással való újratömörítése TILOS!
-   - Amennyiben jobb minőségű BD elérhető, mint amiből a korábbi release készült, ezt READ.NFO taggel jelezni kell.
+   - Amennyiben jobb minőségű BD elérhető, mint amiből a korábbi release készült, ezt `READ.NFO` taggel jelezni kell.
    - UHD forrás kizárólag akkor használható, ha SDR forrásról van szó.
    - HDR -> SDR tonemapping TILOS, ekkor x265 encode készítendő (lásd: oda vonatkozó szabályzat).
    - Muxolni kizárólag olyan már kész releasere szabad, amely megfelel ezen szabályzatban rögzített pontoknak (kivéve az x264 verziójára vonatkozó szabálypont HDB internalok esetén). Törekedni kell az elérhető legjobb minőségű release felhasználására! Gyatra minőségű release-re való muxolás helyett saját encode készítése ERŐSEN AJÁNLOTT!
