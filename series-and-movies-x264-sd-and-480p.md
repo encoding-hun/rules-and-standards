@@ -52,7 +52,7 @@
    `(UHD)` `BluRay` > `HDDVD`, `DTheater` > `WEBRip` `((U)HD WEB-DL`-ből) > `DVDRip` > `WEB-DL` > `HDTV` > `PDTV` > `Analog TVRip`, `VHSRip`<br />
    `P2P` > `Scene` (kivétel retail lemezek esetén)
    - `WEBRip` alacsonyabb felbontással való újratömörítése TILOS!
-   - Amennyiben jobb minőségű BD elérhető, mint amiből a korábbi release készült, ezt READ.NFO taggel jelezni kell.
+   - Amennyiben jobb minőségű BD elérhető, mint amiből a korábbi release készült, ezt `READ.NFO` taggel jelezni kell.
    - UHD forrás kizárólag akkor használható, ha SDR forrásról van szó.
    - HDR -> SDR tonemapping TILOS, ekkor x265 encode készítendő (lásd: oda vonatkozó szabályzat).
    - Muxolni kizárólag olyan már kész release-re szabad, amely megfelel ezen szabályzatban rögzített pontoknak. Saját encode-ok készítése ajánlott.
@@ -178,6 +178,6 @@
   2020-02-19-től
   
 ## Utolsó frissítés
-  2020-03-02
+  2020-03-03
 
 ## Banned grps
