@@ -36,7 +36,7 @@
   - `[series.name]` és `[movie.title]` KIZÁRÓLAG eredeti vagy angol nyelvű lehet.
   - WEB-DL és WEBRip forrás esetén meg kell jelölni, hogy pontosan melyik oldalról való (pl. `NF.WEBRip`, `AMZN.WEBRip`)
   - WEB-hez további guide:
-    - Az minősül WEB-DL-nek, ami nem lett újrakódolva az oldalról való leszedés után.
+    - Az minősül WEB-DL-nek, ami nem lett újrakódolva az oldalról való leszedés után (vagy közben).
     - Ha x264 settingst látsz, az nem garancia arra, hogy `WEBRip`, `NF` és `AMZN` maga is `x264`-t használ.
     - Egy WEB-DL nem feltétlenül jobb mint egy WEBRip (pl. `2160p.WEB-DL`-ből kódolt SD `WEBRip` vs SD `WEB-DL`)
     - `WEB-DLRip` megjelölés kerülendő, `WEB-DL`-ből kódolt Rip = `WEBRip`
