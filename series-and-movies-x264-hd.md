@@ -117,6 +117,7 @@
   - 8 csatornás hang esetén vagy DD+ formátumot kell használni (`DDP@1536`) vagy a core-t kell meghagyni.
   - AC3 esetében Dolby Certified encodert kell használni (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`, `Sonic Audio Transcoder`)
   - A készített AC3 nem tartalmazhat Copyright Protected flaget.
+  - 2 csatornás `CUSTOM` hangnál (TV-ből felvett) JAVASOLT az `AAC` használata.
   - AAC esetében elfogadott encoderek: QAAC, FDK, Nero
     - Csak stereo/mono hangnál használható AAC.
     - QAAC: `-V 90` - `-V 127`
