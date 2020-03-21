@@ -71,7 +71,7 @@
   - A videót cropolni kell addig, amíg maximum 1-1 px fekete sáv marad.
   - Az 1 px fekete sávok (widow line) és dirty line-ok javítása ajánlott.
     - widow line javítása pl.: `FillMargins`/`FillBorder`
-    - dirty line pl.: `bbmod`/`FixColorBrightness`/`BalanceBorders`/`EdgeFixer`
+    - dirty line pl.: `bbmod`/`FixRowBrightness`/`BalanceBorders`/`EdgeFixer`
   - A kódolt videó felbontása 1 pixellel térhet el a forrás alapján (cropolás után) számolttól, pl. 720x405 helyett 720x404 (mod2).
   - A videó felbontása mod2 kell legyen. (Nem mod16, ez nem XviD.)
   - A videó felskálázása SZIGORÚAN TILOS!
