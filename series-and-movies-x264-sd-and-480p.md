@@ -105,15 +105,19 @@
   - HDTV/PDTV forrás esetén logók maszkolása megengedett. (`InpaintFunc`)
 
 ## Audio
-  - Megengedett hangformátumok: `AC3`, `AAC`.
+  - Magyar hangsávot tartalmazó release esetén kötelező a `HUN` (`Hun`) tag használata. Amennyiben a release nem tartalmaz magyar hangsávot, úgy nem kell nyelvi tag-ot megadni.
+  - Az eredeti hangsáv megtartása opcionális.
+  - Nem angol nyelvű, eredeti hangsáv esetén az angol hang (már amennyiben létezik) megtartása opcionális.
+  - Egyéb nyelvű hangok megtartása TILOS!
+  - Megengedett hangformátumok: `AC3` (`DD`), `AAC`. Amennyiben a forrás hang `E-AC3` (`DD+`/`DDP`) formátumú és maximum 6 csatornát tartalmaz, ez is engedélyezett; egyéb esetekben TILOS!
   - `DTS`, `MP3`, `MP2` és egyéb vicces formátumok használata TILOS!
   - A hangsávok eredeti csatornaszámát meg kell tartani! Kivétel 8 csatornás hangok.
   - 8 csatornás hang esetén vagy a core-t kell megtartani vagy egy 6 csatornás `DD@640`-et kell készíteni.
   - 6 csatornás hang esetén kizárólag `AC3` elfogadott, melynek bitrátája 640 kbps, ha jobb forrásból készül, vagy az eredetivel megegyező (pl. DVD esetén).
-  - 2 csatornás RETAiL hang lehet `AC3` vagy `AAC` is. `AC3` esetén a forrással megegyező bitráta vagy jobb forrás esetén 192-256 kbps elfogadott.
-  - 2 csatornás CUSTOM hang (TV-ből felvett) KIZÁRÓLAG `AAC` lehet, CUSTOM `AC3` TILOS!
+  - 2 csatornás `RETAiL` hang lehet `AC3` vagy `AAC` is. `AC3` esetén a forrással megegyező bitráta vagy jobb forrás esetén 192-256 kbps elfogadott. Amennyiben a forrás hang 2 csatornás `E-AC3`-at tartalmaz, megtarthatjuk. Törekedjünk a felesleges újrakódolások elkerülésére.
+  - 2 csatornás CUSTOM hangnál (TV-ből felvett) JAVASOLT az `AAC` használata.
   - Mono hang KIZÁRÓLAG `AAC` lehet.
-  - AC3 esetében Dolby Certified encodert kell használni (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`)
+  - AC3 esetében Dolby Certified encodert kell használni (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`, `Sonic Audio Transcoder`)
   - A készített AC3 nem tartalmazhat Copyright Protected flaget.
   - AAC esetében elfogadott encoderek: QAAC, FDK, Nero
     - Csak mono/stereo hangnál használható AAC.
@@ -178,6 +182,6 @@
   2020-02-19-től
   
 ## Utolsó frissítés
-  2020-03-03
+  2020-03-21
 
 ## Banned grps
