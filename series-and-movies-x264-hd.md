@@ -111,11 +111,11 @@
   - Egyéb nyelvű hangok megtartása TILOS!
   - Megengedett hangformátumok: `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`), `DTS`, `AAC`, `FLAC`.
   - `MP3`, `MP2` és egyéb vicces formátumok használata TILOS!
-  - DTS és AC3 encodeolása AAC-be kizárólag a kommentár sáv esetén megengedett. Kivétel, ha nyújtani és/vagy vágni kell, ekkor lehet AAC.
+  - `DTS` és `AC3` encodeolása `AAC`-be kizárólag a kommentár sáv esetén megengedett. Kivétel, ha nyújtani és/vagy vágni kell, ekkor lehet AAC.
   - LPCM hangot kötelező FLAC-be (film esetén) vagy AAC-be (kommentár esetén) konvertálni
   - A hangsávok eredeti csatornaszámát meg kell tartani! Kivétel 8 csatornás hangok és kommentár sávok.
   - 8 csatornás hang esetén vagy DD+ formátumot kell használni (`DDP@1536`) vagy a core-t kell meghagyni.
-  - AC3 esetében Dolby Certified encodert kell használni (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`)
+  - AC3 esetében Dolby Certified encodert kell használni (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`, `Sonic Audio Transcoder`)
   - A készített AC3 nem tartalmazhat Copyright Protected flaget.
   - AAC esetében elfogadott encoderek: QAAC, FDK, Nero
     - Csak stereo/mono hangnál használható AAC.
