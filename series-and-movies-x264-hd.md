@@ -105,7 +105,11 @@
   - HDTV forrás esetén logók maszkolása megengedett. (`InpaintFunc`)
 
 ## Audio
-  - Megengedett hangformátumok: `AC3`, `E-AC3`, `DTS`, `AAC`, `FLAC`.
+  - Magyar hangsávot tartalmazó release esetén kötelező a `HUN` (`Hun`) tag használata. Amennyiben a release nem tartalmaz magyar hangsávot, úgy nem kell nyelvi tag-ot megadni.
+  - Az eredeti nyelvű hangsáv megtartása KÖTELEZŐ!
+  - Nem angol nyelvű, eredeti hangsáv esetén az angol hang (már amennyiben létezik) megtartása opcionális.
+  - Egyéb nyelvű hangok megtartása TILOS!
+  - Megengedett hangformátumok: `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`), `DTS`, `AAC`, `FLAC`.
   - `MP3`, `MP2` és egyéb vicces formátumok használata TILOS!
   - DTS és AC3 encodeolása AAC-be kizárólag a kommentár sáv esetén megengedett. Kivétel, ha nyújtani és/vagy vágni kell, ekkor lehet AAC.
   - LPCM hangot kötelező FLAC-be (film esetén) vagy AAC-be (kommentár esetén) konvertálni
@@ -185,6 +189,6 @@
   2020-02-19-től
 
 ## Utolsó frissítés
-  2020-03-03
+  2020-03-21
 
 ## Banned grps
