@@ -67,7 +67,7 @@
      - 2.15.2) Az UHD Blu-ray forrásokat `UHD.BluRay`-nek kell taggelni.
      - 2.15.3) A HD-DVD forrásokat `HDDVD`-nek kell taggelni.
   - 2.16) Nem Retail és nem WEB forrás esetén NFO-ban jelölni kell, hogy milyen forrás és esetlegesen miben tér el a Retail változattól. `READ.NFO` tag használata KÖTELEZŐ!
-  - 2.17) `PROPER` = más hibás munkájának javítása, `REPACK` = muxolási hiba, hiányzó hang/felirat, `RERiP` = hibás videó/hang
+  - 2.17) `PROPER` = más hibás munkájának javítása; `REPACK` = muxolási hiba, hiányzó hang/felirat; `RERiP` = hibás videó/hang
      - 2.17.1) `PROPER` releasere érkező `PROPER`-t `REAL.PROPER`-nek kell taggelni (és így tovább a későbbieket).
   - 2.18) `READ.NFO` és `PROPER`/`REPACK`/`RERiP` tagek együttes használata TILOS!
   - 2.19) Zavaró és felesleges tagek használata TILOS!
@@ -182,7 +182,7 @@
   - 8.25) `subme` értéke nem lehet 8-nál kisebb.
   - 8.26) `rc-lookahead` értéke nem lehet `FPS*2`-nél kisebb.
   - 8.27) Kizárólag Limited, TV range-ű release készíthető (`16-235`).
-  - 8.28) `--vbv-maxrate` maximum `62500`, `--vbv-bufsize` maximum `78125` lehet, de nem lehet kevesebb, mint `50000`.
+  - 8.28) `--vbv-maxrate` maximum `62500`, `--vbv-bufsize` maximum `78125` lehet, de egyik sem lehet kevesebb, mint `50000`.
   - 8.29) `--deblock` kikapcsolása TILOS. Ajánlott beállítás filmek esetén: `-3:-3`.
   - 8.30) Adaptív kvantálás használata kötelező! `--aq-mode=1`/`2`/`3` (`3` ajánlott)
   - 8.31) A készített release bitrátája nem lehet nagyobb, mint a forrásé.
