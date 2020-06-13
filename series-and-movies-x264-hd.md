@@ -230,6 +230,7 @@
   - 10.8) Resamplingre használható programok: `hdtools resample`, `eac3to`, `Sound Forge`, `Audacity`, `SoX`, `Adobe Audition`.
   - 10.9) TimeStretchingre használható programok: `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge` és `SONAR` `élastique TimeStretch`, `Audacity`, `SoX`, `Adobe Audition`.
   - 10.10) Commentary track maximum 2.0 lehet, AC3 esetében maximum 192 kbps, AAC esetében 80-160 kbps.
+  - 10.11) Szegmentált kódolás használata TILOS!
 
 ## 11) Feliratok
  - 11.1) Kizárólag srt (SubRip) formátumú feliratok megengettek!
