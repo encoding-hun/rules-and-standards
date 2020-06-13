@@ -191,6 +191,7 @@
   - 8.33) Ajánlott frameserverek: AviSynth+ és VapourSynth.
   - 8.34) HDTV forrás esetén logók maszkolása megengedett. (pl. `InpaintFunc`)
   - 8.35) A stáblista, amennyiben nem tartalmaz extra jelenetet, kódolható alacsonyabb bitrátával.
+  - 8.36) A `WEB-DL`-ek felmentést élveznek az összes 8-as pontbeli szabály alól, kivéve a 8.8-ast.
 
 ## 9) Audio
   - 9.1) Magyar hangsávot tartalmazó release esetén kötelező a `HUN` (`Hun`) tag használata. Amennyiben a release nem tartalmaz magyar hangsávot, úgy nem kell nyelvi tag-ot megadni.
