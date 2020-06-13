@@ -114,7 +114,7 @@
   - 5.3) 2D-s releasehez nem használható 3D-s film bal vagy jobb szeméhez tartozó kép, kivéve, ha a filmből nem létezik 2D-s kiadás.
   - 5.4) Egybefüggő videó darabolása TILOS! Egy lemezen található több rész (melyeket stáblista választ el) darabolása részekre KÖTELEZŐ!
      - 5.4.1) Ha a film több lemezen található és nincs a lemez végén stáblista, akkor össze kell a szegmenseket fűzni.
-  - 5.5) Az előző rész tartalmából-t, a bevető introkat, és a stáblistát kötelező teljes hosszukban megtartani és a főcímmel együtt kódolni.
+  - 5.5) Az előző rész tartalmából-t, a bevezető introkat, és a stáblistát kötelező teljes hosszukban megtartani és a főcímmel együtt kódolni.
   - 5.6) A zavaró bevágásokat: műsorszám hirdetést tartalmaz, reklámok, FBI Warning, stb. el kell távolítani.
      - 5.6.1) Kivéve, amikor ez a videó/hang (közel) teljes újrakódolásával járna.
   - 5.7) Égetett felirattal rendelkező forrásokat lehetőleg kerüljük, kivéve ha szignifikánsan jobb a minősége.
