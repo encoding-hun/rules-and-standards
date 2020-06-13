@@ -6,6 +6,7 @@
  - A `READ.NFO`-khoz és a `PROPER`-ekhez kötelező proof. Jobb kép esetén comparison, `oos` esetén kép a csúszásról. Kivétel ha az ok egyértelmű (pl. jobb forrású hang).
  - A szabályzattól notorikusan eltérő csapatok permanens bant kapnak.
  - Egyéb értelmező tag-ek kizárólag angol nyelven használhatóak: pl. `wrong.format_mono.audio.should.be.aac`
+ - Nuke indoknak használhatóak a szabályzatban található pontok említése is. Ekkor az említett pont sérül valameny módon.
 
 ## Indokok
  - Video:
