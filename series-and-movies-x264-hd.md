@@ -187,9 +187,10 @@
   - 8.30) Adaptív kvantálás használata kötelező! `--aq-mode=1`/`2`/`3` (`3` ajánlott)
   - 8.31) A készített release bitrátája nem lehet nagyobb, mint a forrásé.
      - 8.31.1) Kivételt képeznek Hybrid release-ek, melyek több forrás felhasználásával készülnek.
-  - 8.32) Ajánlott frameserverek: AviSynth+ és VapourSynth.
-  - 8.33) HDTV forrás esetén logók maszkolása megengedett. (pl. `InpaintFunc`)
-  - 8.34) A stáblista, amennyiben nem tartalmaz extra jelenetet, kódolható alacsonyabb bitrátával.
+  - 8.32) A videó bitrátáját vagy CRF értékét úgy kell megválasztani, hogy a képminőség transzparens legyen (amennyire lehet) a forráshoz képest.
+  - 8.33) Ajánlott frameserverek: AviSynth+ és VapourSynth.
+  - 8.34) HDTV forrás esetén logók maszkolása megengedett. (pl. `InpaintFunc`)
+  - 8.35) A stáblista, amennyiben nem tartalmaz extra jelenetet, kódolható alacsonyabb bitrátával.
 
 ## 9) Audio
   - 9.1) Magyar hangsávot tartalmazó release esetén kötelező a `HUN` (`Hun`) tag használata. Amennyiben a release nem tartalmaz magyar hangsávot, úgy nem kell nyelvi tag-ot megadni.
