@@ -244,7 +244,7 @@
   - 10.4) `AAC` esetében elfogadott encoderek: `qaac` (`Apple AAC`), `FDK`, `Nero`.
     - 10.4.1) Csak stereo/mono hangnál használható AAC.
     - 10.3.2) Javasolt beállítások:
-       - 10.3.2.1) qaac: `-V 90` - `-V 127`, `-q 2` és `--no-delay --ignorelength`
+       - 10.3.2.1) qaac: `-V 90` - `-V 127` és `--no-delay --ignorelength` (egyéb kapcsolók használata tilos)
        - 10.3.2.2) FDK: `-m 4` vagy `-m 5` (és `-cutoff 20000` ffmpeg-es libfdk_aac használata esetén)
        - 10.3.2.3) Nero: `-q 40` - `-q 75`
   - 10.5) Compatibility `AC3` track készület FFmpeg (4.1 vagy újabb) vagy Aften (2009-12-26 vagy újabb) segítségével is.
