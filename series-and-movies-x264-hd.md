@@ -7,7 +7,7 @@
   2020-02-19-től
 
 ## Utolsó frissítés
-  2020-06-13
+  2020-06-14
 
 ## 1) Általános
  - 1.1) Tilos a DUPE, azaz a korábbival megegyező (vagy közel azonos) minőségű release készítése.
@@ -95,6 +95,7 @@
       * Feliratok nyelve
   - 3.5) Más csapatok sértegetése, személyeskedés TILOS!
   - 3.6) `PROPER`/`REPACK`/`RERiP` releasek esetén fel kell tüntetni a korábbi release problémáit. Képi vagy hangi `PROPER` esetén csatolni kell Proof-ot, hogy valóban jobb az új release.
+  - 3.7) Felesleges, zavaró dolgokat az NFO-ba elhelyezni TILOS!
 
 ## 4) Források
    - 4.1) Csak jobb forrásból készített új release megengedett, minden egyéb DUPE.
@@ -233,6 +234,8 @@
   - 10.9) TimeStretchingre használható programok: `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge` és `SONAR` `élastique TimeStretch`, `Audacity`, `SoX`, `Adobe Audition`.
   - 10.10) Commentary track maximum 2.0 lehet, AC3 esetében maximum 192 kbps, AAC esetében 80-160 kbps.
   - 10.11) Szegmentált kódolás használata TILOS!
+  - 10.12) A hangok normalizálása kizárólag akkor megengedett, ha másik fileból kell pótolni.
+  - 10.13) AC3 és E-AC3 esetén a `dialnorm` értéket meg kell tartani!
 
 ## 11) Feliratok
  - 11.1) Kizárólag srt (SubRip) formátumú feliratok megengettek!
