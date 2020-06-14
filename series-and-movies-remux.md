@@ -60,7 +60,7 @@
      - 2.12.1) A Blu-ray forrásokat `BluRay`-nek kell taggelni.
      - 2.12.2) Az UHD Blu-ray forrásokat `UHD.BluRay`-nek kell taggelni.
      - 2.12.3) A HD-DVD forrásokat `HDDVD`-nek kell taggelni.
-  - 2.13) UHD formátum esetén fel kell tüntetni, hogy `SDR`, `HDR` vagy `HDR10Plus` a kép.
+  - 2.13) UHD formátum esetén fel kell tüntetni, hogy `SDR`, `HDR` vagy `HDR10Plus` (`HDR10+`) a kép.
   - 2.14) Dolby Vision-re elfogadott tag-ek: `DV`, `Dolby.Vision`.
   - 2.15) Dolby Vision esetén fel kell tüntetni, hogy single (`SL`) vagy dual layer (`DL`) a kép.
   - 2.16) Ha a hangsáv tartalmaz Atmos kiegészítést, úgy azt `Atmos` taggel jelölni kell.
@@ -146,7 +146,7 @@
   - 7.4) AAC esetében elfogadott encoderek: QAAC, FDK, Nero
     - 7.4.1) Csak stereo/mono hangnál használható AAC.
     - 7.4.2) Javasolt beállítások:
-       - 7.4.2.1) QAAC: `-V 90` - `-V 127`
+       - 7.4.2.1) QAAC: `-V 90` - `-V 127` és `-q 2`
        - 7.4.2.2) FDK: `-m 4` vagy `-m 5`
        - 7.4.2.3) Nero: `-q 40` - `-q 75`
   - 7.5) A hangok mintavételezését (sampling rate) tilos megváltoztatni!
