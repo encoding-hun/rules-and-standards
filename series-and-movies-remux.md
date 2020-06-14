@@ -90,6 +90,7 @@
       * Audiósávok bitrátája
       * Audió mintavételezési rátája (Sample rate)
       * Feliratok nyelve
+      * Feliratok formátuma
   - 3.5) Más csapatok sértegetése, személyeskedés TILOS!
   - 3.6) `PROPER`/`REPACK` release-ek esetén fel kell tüntetni a korábbi release problémáit. Képi vagy hangi `PROPER` esetén csatolni kell proofot, hogy valóban jobb az új release.
   - 3.7) Felesleges, zavaró dolgokat az NFO-ba elhelyezni TILOS!
