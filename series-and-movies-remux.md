@@ -145,7 +145,7 @@
   - 7.2) Egyéb esetben kizárólag FFmpeg (4.1 vagy újabb) vagy Aften (2009-12-26 vagy újabb) használható.
   - 7.3) `DTS-HD.MA` hang készítéséhez kizárólag `DTS-HD Master Audio Suite` használható.
   - 7.4) A készített `AC3` nem tartalmazhat Copyright Protected flaget.
-  - 7.5) `AAC` esetében elfogadott encoderek: QAAC, FDK, Nero
+  - 7.5) `AAC` esetében elfogadott encoderek: QAAC (Apple AAC), FDK, Nero
     - 7.5.1) Csak stereo/mono hangnál használható AAC.
     - 7.5.2) Javasolt beállítások:
        - 7.5.2.1) QAAC: `-V 90` - `-V 127` és `-q 2`
