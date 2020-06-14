@@ -63,10 +63,11 @@
   - 2.13) UHD formátum esetén fel kell tüntetni, hogy `SDR`, `HDR` vagy `HDR10Plus` a kép.
   - 2.14) Dolby Vision-re elfogadott tag-ek: `DV`, `Dolby.Vision`.
   - 2.15) Dolby Vision esetén fel kell tüntetni, hogy single (`SL`) vagy dual layer (`DL`) a kép.
-  - 2.16) `PROPER` = más hibás munkájának javítása; `REPACK` = muxolási hiba, hiányzó hang/felirat; `RERiP` = hibás videó/hang
-     - 2.16.1) `PROPER` releasere érkező `PROPER`-t `REAL.PROPER`-nek kell taggelni (és így tovább a későbbieket).
-  - 2.17) `READ.NFO` és `PROPER`/`REPACK`/`RERiP` tagek együttes használata TILOS!
-  - 2.18) Zavaró és felesleges tagek használata TILOS!
+  - 2.16) Ha a hangsáv tartalmaz Atmos kiegészítést, úgy azt `Atmos` taggel jelölni kell.
+  - 2.17) `PROPER` = más hibás munkájának javítása; `REPACK` = muxolási hiba, hiányzó hang/felirat; `RERiP` = hibás videó/hang
+     - 2.17.1) `PROPER` releasere érkező `PROPER`-t `REAL.PROPER`-nek kell taggelni (és így tovább a későbbieket).
+  - 2.18) `READ.NFO` és `PROPER`/`REPACK`/`RERiP` tagek együttes használata TILOS!
+  - 2.19) Zavaró és felesleges tagek használata TILOS!
   
 ## 3) NFO
  - 3.1) NFO használata kötelező.
