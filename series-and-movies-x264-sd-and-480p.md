@@ -276,6 +276,4 @@
 ## Aláírták és tudomásul vették
 `boOk`, `Legacy`, `NaGa`, `NFC`, `pcroland`, `prldm`
 
-## Oldalak, akik elfogadták
-
 ## Banned grps
