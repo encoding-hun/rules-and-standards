@@ -200,4 +200,8 @@
   - 8.21) Fansub kizárólag akkor használható, ha nem érhető el retail.
      - 8.21.1) Fansub használatát az NFO-ban kötelező jelezni.
   - 8.21) A feliratok nem csúszhatnak zavaró mértékben a képhez képest (max. ~600 ms).
-  
+
+## Aláírták és tudomásul vették
+`boOk`, `Legacy`, `NaGa`, `NFC`, `pcroland`, `prldm`
+
+## Banned grps
