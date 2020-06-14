@@ -69,7 +69,7 @@
      - 2.15.3) A HD-DVD forrásokat `HDDVD`-nek kell taggelni.
   - 2.16) Nem Retail és nem WEB forrás esetén NFO-ban jelölni kell, hogy milyen forrás és esetlegesen miben tér el a Retail változattól. `READ.NFO` tag használata KÖTELEZŐ!
   - 2.17) `PROPER` = más hibás munkájának javítása; `REPACK` = muxolási hiba, hiányzó hang/felirat; `RERiP` = hibás videó/hang
-     - 2.17.1) `PROPER` releasere érkező `PROPER`-t `REAL.PROPER`-nek kell taggelni (és így tovább a későbbieket).
+     - 2.17.1) `PROPER` release-re érkező `PROPER`-t `REAL.PROPER`-nek kell taggelni (és így tovább a későbbieket, pl. `REAL.REAL.PROPER`)).
   - 2.18) `READ.NFO` és `PROPER`/`REPACK`/`RERiP` tagek együttes használata TILOS!
   - 2.19) Zavaró és felesleges tagek használata TILOS!
   
@@ -95,7 +95,7 @@
       * Audió mintavételezési rátája (Sample rate)
       * Feliratok nyelve
   - 3.5) Más csapatok sértegetése, személyeskedés TILOS!
-  - 3.6) `PROPER`/`REPACK`/`RERiP` release-ek esetén fel kell tüntetni a korábbi release problémáit. Képi vagy hangi `PROPER` esetén csatolni kell Proof-ot, hogy valóban jobb az új release.
+  - 3.6) `PROPER`/`REPACK`/`RERiP` release-ek esetén fel kell tüntetni a korábbi release problémáit. Képi vagy hangi `PROPER` esetén csatolni kell proofot, hogy valóban jobb az új release.
   - 3.7) Felesleges, zavaró dolgokat az NFO-ba elhelyezni TILOS!
 
 ## 4) Források
@@ -108,7 +108,7 @@
    - 4.4) Amennyiben jobb minőségű BD elérhető, mint amiből a korábbi release készült, ezt `READ.NFO` taggel jelezni kell.
    - 4.5) UHD forrás kizárólag akkor használható, ha SDR forrásról van szó.
      - 4.5.1) HDR -> SDR tonemapping TILOS, ekkor x265 encode készítendő (lásd: oda vonatkozó szabályzat).
-   - 4.6) Muxolni kizárólag olyan már kész releasere szabad, amely megfelel ezen szabályzatban rögzített pontoknak (kivéve az x264 verziójára vonatkozó szabálypont HDB internalok esetén). Törekedni kell az elérhető legjobb minőségű release felhasználására! Gyatra minőségű release-re való muxolás helyett saját encode készítése ERŐSEN AJÁNLOTT!
+   - 4.6) Muxolni kizárólag olyan már kész release-re szabad, amely megfelel ezen szabályzatban rögzített pontoknak (kivéve az x264 verziójára vonatkozó szabálypont HDB internalok esetén). Törekedni kell az elérhető legjobb minőségű release felhasználására! Gyatra minőségű release-re való muxolás helyett saját encode készítése ERŐSEN AJÁNLOTT!
 
 ## 5) Video
   - 5.1) Már kész release alacsonyabb felbontással való újrakódolása (pl. BRRip) SZIGORÚAN TILOS!
