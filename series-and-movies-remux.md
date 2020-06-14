@@ -52,7 +52,7 @@
   - 2.6) A könyvtár és fájlok nevének maximális hossza 255 karakter lehet, de ajánlott 250 alatt megállni.
   - 2.7) `[series.name]` és `[movie.title]` KIZÁRÓLAG eredeti vagy angol nyelvű lehet.
   - 2.8) Elfogadott `[video.codec]` tagek: `AVC`, `VC1`, `MPEG2`, `HEVC`, `AV1`.
-  - 2.9) `REPACK` (`Repack`) és `RERiP` (`Rerip`) tagok használata kötelező, ha saját release-t javít valaki.
+  - 2.9) `REPACK` (`Repack`) tag használata kötelező, ha saját release-t javít valaki.
   - 2.10) `iNT` vagy `iNTERNAL` tag használata DUPE elkerülésére TILOS!
      - 2.10.1) `iNTERNAL`-ként kell feltütnetni minden olyan release-t, amely ellentmond a szabályzat bármely pontjának, de nem érhető el olyan forrás, amely teljesítené.
   - 2.11) TV-ből származó hangok esetén `CUSTOM` tag használata opcionális.
@@ -64,8 +64,8 @@
   - 2.14) Dolby Vision-re elfogadott tag-ek: `DV`, `Dolby.Vision`.
   - 2.15) Dolby Vision esetén fel kell tüntetni, hogy single (`SL`) vagy dual layer (`DL`) a kép.
   - 2.16) Ha a hangsáv tartalmaz Atmos kiegészítést, úgy azt `Atmos` taggel jelölni kell.
-  - 2.17) `PROPER` = más hibás munkájának javítása; `REPACK` = muxolási hiba, hiányzó hang/felirat; `RERiP` = hibás videó/hang
-     - 2.17.1) `PROPER` releasere érkező `PROPER`-t `REAL.PROPER`-nek kell taggelni (és így tovább a későbbieket).
+  - 2.17) `PROPER` = más hibás munkájának javítása; `REPACK` = saját hiba javítása
+     - 2.17.1) `PROPER` release-re érkező `PROPER`-t `REAL.PROPER`-nek kell taggelni (és így tovább a későbbieket, pl. `REAL.REAL.PROPER`).
   - 2.18) `READ.NFO` és `PROPER`/`REPACK`/`RERiP` tagek együttes használata TILOS!
   - 2.19) Zavaró és felesleges tagek használata TILOS!
   
@@ -91,7 +91,7 @@
       * Audió mintavételezési rátája (Sample rate)
       * Feliratok nyelve
   - 3.5) Más csapatok sértegetése, személyeskedés TILOS!
-  - 3.6) `PROPER`/`REPACK`/`RERiP` release-ek esetén fel kell tüntetni a korábbi release problémáit. Képi vagy hangi `PROPER` esetén csatolni kell Proof-ot, hogy valóban jobb az új release.
+  - 3.6) `PROPER`/`REPACK` release-ek esetén fel kell tüntetni a korábbi release problémáit. Képi vagy hangi `PROPER` esetén csatolni kell proofot, hogy valóban jobb az új release.
   - 3.7) Felesleges, zavaró dolgokat az NFO-ba elhelyezni TILOS!
   
 ## 4) Források
@@ -100,7 +100,7 @@
    - 4.2) Források prioritása:<br />
    `(UHD)` `BluRay` > `HDDVD`, `DTheater`
    - 4.3) Amennyiben jobb minőségű BD elérhető, mint amiből a korábbi release készült, ezt `READ.NFO` taggel jelezni kell.
-   - 4.4) Muxolni kizárólag olyan már kész releasere szabad, amely megfelel ezen szabályzatban rögzített pontoknak. Törekedni kell az elérhető legjobb minőségű release felhasználására!
+   - 4.4) Muxolni kizárólag olyan már kész release-re szabad, amely megfelel ezen szabályzatban rögzített pontoknak. Törekedni kell az elérhető legjobb minőségű release felhasználására!
    
 ## 5) Video
   - 5.1) A videó újrakódolása SZIGORÚAN TILOS!
