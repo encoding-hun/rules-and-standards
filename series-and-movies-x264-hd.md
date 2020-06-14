@@ -273,5 +273,3 @@
 `boOk`, `Legacy`, `NaGa`, `NFC`, `pcroland`, `prldm`
 
 ## Banned grps
-
-## Oldalak, akik elfogadták
