@@ -122,11 +122,13 @@
   - 5.3) 2D-s releasehez nem használható 3D-s film bal vagy jobb szeméhez tartozó kép, kivéve, ha a filmből nem létezik 2D-s kiadás.
   - 5.4) Egybefüggő videó darabolása TILOS! Egy lemezen található több rész (melyeket stáblista választ el) darabolása részekre KÖTELEZŐ!
      - 5.4.1) Ha a film több lemezen található és nincs a lemez végén stáblista, akkor össze kell a szegmenseket fűzni.
-  - 5.5) Az előző rész tartalmából-t, a bevezető introkat, és a stáblistát kötelező teljes hosszukban megtartani és a főcímmel együtt kódolni.
+  - 5.5) Az előző rész tartalmából-t, a bevezető intrókat, és a stáblistát kötelező teljes hosszukban megtartani és a főcímmel együtt kódolni.
   - 5.6) A zavaró bevágásokat: műsorszám hirdetést tartalmaz, reklámok, FBI Warning, stb. el kell távolítani.
      - 5.6.1) Kivéve, amikor ez a videó/hang (közel) teljes újrakódolásával járna.
   - 5.7) Égetett felirattal rendelkező forrásokat lehetőleg kerüljük, kivéve ha szignifikánsan jobb a minősége.
   - 5.8) Hybrid encodeok megengedettek, ha ezzel jobb minőség érhető el.
+  - 5.9) A konténerben felbontásra és croppolásra extra metaadatokat megadni TILOS!
+  - 5.10) A video sáv Language tagjának beállítása opcionális: vagy magyar vagy az eredeti nyelv.
   
 ## 6) Felbontás
   - 6.1) SD release maximális szélessége `720 px` lehet (`AutoResize("SD")`)
@@ -226,7 +228,7 @@
   - 9.14) A hangok nyelvét kötelező Language tagben jelezni!
   
 ## 10) Audio kódolás
-  - 10.1) AC3 esetében Dolby Certified encodert kell használni (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`, `Sonic Audio Transcoder`)
+  - 10.1) AC3 esetében Dolby Certified encodert kell használni (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`, `Sonic Audio Transcoder`).
   - 10.2) A készített AC3 nem tartalmazhat Copyright Protected flaget.
   - 10.3) AAC esetében elfogadott encoderek: QAAC, FDK, Nero
     - 10.3.1) Csak stereo/mono hangnál használható AAC.
@@ -245,9 +247,9 @@
     - 10.11.2) (UHD) BluRay, HDDVD, (UHD) WEB-DL források esetén Commentary trackek használata TILOS (erre ott vannak a HD formátumok)!
   
 ## 11) Feliratok
- - 11.1) Kizárólag srt (SubRip) formátumú feliratok megengettek!
+ - 11.1) Kizárólag SRT (SubRip) formátumú feliratok megengedettek!
      - 11.1.1) Az OCR karakterfelismerést a lehető legpontosabban kell elvégezni.
-    - 11.1.2) A kész felirat lehetőleg kevés, érthetőséget nem zavaró helyesírási hibát tartalmazhat, de töreketdjünk, hogy ne legyen benne hiba.
+    - 11.1.2) A kész felirat lehetőleg kevés, érthetőséget nem zavaró helyesírási hibát tartalmazhat, de törekedjünk, hogy ne legyen benne hiba.
     - 11.1.3) A felismertetett feliraton javasolt egy spellchecker lefuttatása.
  - 11.2) A feliratokat tartalmaznia kell az mkv-nak, opcionálisan mellette is meghagyható.
  - 11.3) Kizárólag a magyar forced felirat megtartása kötelező, a többi opcionális.
