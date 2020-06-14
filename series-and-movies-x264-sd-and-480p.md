@@ -233,7 +233,7 @@
   - 10.3) AAC esetében elfogadott encoderek: QAAC, FDK, Nero
     - 10.3.1) Csak stereo/mono hangnál használható AAC.
     - 10.3.2) Javasolt beállítások:
-       - 10.3.2.1) QAAC: `-V 90` - `-V 127`
+       - 10.3.2.1) QAAC: `-V 90` - `-V 127` és `-q 2`
        - 10.3.2.2) FDK: `-m 4` vagy `-m 5`
        - 10.3.2.3) Nero: `-q 40` - `-q 75`
   - 10.5) A hangok mintavételezését (sampling rate) tilos megváltoztatni!
