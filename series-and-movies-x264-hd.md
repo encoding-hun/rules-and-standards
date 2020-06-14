@@ -133,13 +133,13 @@
   - 6.8) Az 1 px fekete sávok (widow line) és dirty line-ok javítása ajánlott.
     - widow line javítása pl.: `FillMargins`/`FillBorder`
     - dirty line/faded line pl.: `bbmod`/`FixRowBrightness`/`BalanceBorders`/`EdgeFixer`
-  - 6.9) Javítás után a widow lineok (eredetileg fekete sávok) 1080p esetén eltávolíthatóak (resize vagy overlay), 720p esetén kötelezően eltávolítandóak.
+  - 6.9) Javítás után a widow lineok (eredetileg fekete sávok) 1080p esetén eltávolíthatóak (resize vagy overlay), 720p esetén kötelezően eltávolítandóak (resize).
   - 6.10) A kódolt videó felbontása 1 pixellel térhet el a forrás alapján (cropolás után) számolttól, pl. 1280x539 helyett 1280x538 (mod2).
   
 ## 7) Filterek
   - 7.1) Kizárólag progresszív kép megengedett. Amennyiben szükséges deinterlacer vagy IVTC használata kötelező.
-  - 7.2) Resize-oláshoz `z_Spline36Resize` vagy `Spline36ResizeMod` ajánlott, a `Spline36Resize` tartalmaz egy apró chroma shifting bugot, használata kerülendő. (VapourSynth-et nem érinti.) További engedett resizerek: `z_Spline64Resize` (`resize.Spline64`), `BlackmanResize`.
-     - 7.2.1) Tilos `Nearest Neighbor`, `Bilinear`, `Bicubic`, és egyéb gyenge resizer használata.
+  - 7.2) Resize-oláshoz `z_Spline36Resize` (`resize.Spline36`) vagy `Spline36ResizeMod` ajánlott, a `Spline36Resize` tartalmaz egy apró chroma shifting bugot, használata kerülendő. (VapourSynth-et nem érinti.) További engedett resizerek: `z_Spline64Resize` (`resize.Spline64`), `BlackmanResize`.
+     - 7.2.1) Tilos `Nearest Neighbor`, `Bilinear`, `Bicubic`, és egyéb gyenge resizerek használata.
   - 7.3) Kizárólag frame pontos forrásfilterek használhatóak (pl. `FFMS2`, `LSMASH`, `DGDecNV`, `DGIndex`).
      - 7.3.1) Pontatlan forrásfilterek használata TILOS (pl. `DirectShowSource`)!
   - 7.4) A kép minőségét jelentősen befolyásoló filterek használata (pl. grain eltávolítása, warp sharping, stb.) TILOS!
