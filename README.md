@@ -6,7 +6,7 @@ A magyar releasek készítésénél követendő szabályok.
 :+1: [**x265 UHD-HD**](https://github.com/encoding-hun/rules-and-standards/blob/master/series-and-movies-x265-hd-uhd.md); utolsó frissítés: 2020-06-14; érvényben: 2020-02-14<br />
 
 
-:confused: **DVD és MP3**: előkészületben; korábbi rules és nemzetközi szabályok érvényben
+:confused: **DVD, MP3 és lossless audio**: előkészületben; korábbi rules és nemzetközi szabályok érvényben
 
 
 :scream: [**Nuke okok**](https://github.com/encoding-hun/rules-and-standards/blob/master/nuke_reasons_movies.md)
