@@ -142,21 +142,22 @@
 ## 7) Audio kódolás
   - 7.1) AC3 esetében erősen ajánlott Dolby Certified encodert (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`, `Sonic Audio Transcoder`).
   - 7.2) Egyéb esetben kizárólag FFmpeg (4.1 vagy újabb) vagy Aften (2009-12-26 vagy újabb) használható.
-  - 7.3) A készített AC3 nem tartalmazhat Copyright Protected flaget.
-  - 7.4) AAC esetében elfogadott encoderek: QAAC, FDK, Nero
-    - 7.4.1) Csak stereo/mono hangnál használható AAC.
-    - 7.4.2) Javasolt beállítások:
-       - 7.4.2.1) QAAC: `-V 90` - `-V 127` és `-q 2`
-       - 7.4.2.2) FDK: `-m 4` vagy `-m 5`
-       - 7.4.2.3) Nero: `-q 40` - `-q 75`
-  - 7.5) A hangok mintavételezését (sampling rate) tilos megváltoztatni!
-  - 7.6) Belső konverziók esetén meg kell tartani (vagy jobbat kell használni), mint az eredeti hang bitmélysége és mintavételezési rátája.
-  - 7.7) Ha a hangot nyújtani kell előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. `hdtools compare`)
-  - 7.8) Resamplingre használható programok: `hdtools resample`, `eac3to`, `Sound Forge`, `Audacity`, `SoX`, és `Adobe Audition`.
-  - 7.9) TimeStretchingre használható programok: `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge`, `SONAR` `élastique TimeStretch`, `Audacity`, `SoX`, és `Adobe Audition`.
-  - 7.10) Commentary track maximum 2.0 lehet, AC3 esetében maximum 192 kbps, AAC esetében 80-160 kbps.
-  - 7.11) Szegmentált kódolás használata TILOS!
-  - 7.12) AC3 és E-AC3 esetén a `dialnorm` értéket meg kell tartani!
+  - 7.3) `DTS-HD.MA` hang készítéséhez kizárólag `DTS-HD Master Audio Suite` használható.
+  - 7.4) A készített `AC3` nem tartalmazhat Copyright Protected flaget.
+  - 7.5) `AAC` esetében elfogadott encoderek: QAAC, FDK, Nero
+    - 7.5.1) Csak stereo/mono hangnál használható AAC.
+    - 7.5.2) Javasolt beállítások:
+       - 7.5.2.1) QAAC: `-V 90` - `-V 127` és `-q 2`
+       - 7.5.2.2) FDK: `-m 4` vagy `-m 5`
+       - 7.5.2.3) Nero: `-q 40` - `-q 75`
+  - 7.6) A hangok mintavételezését (sampling rate) tilos megváltoztatni!
+  - 7.7) Belső konverziók esetén meg kell tartani (vagy jobbat kell használni), mint az eredeti hang bitmélysége és mintavételezési rátája.
+  - 7.8) Ha a hangot nyújtani kell előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. `hdtools compare`)
+  - 7.9) Resamplingre használható programok: `hdtools resample`, `eac3to`, `Sound Forge`, `Audacity`, `SoX`, és `Adobe Audition`.
+  - 7.10) TimeStretchingre használható programok: `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge`, `SONAR` `élastique TimeStretch`, `Audacity`, `SoX`, és `Adobe Audition`.
+  - 7.11) Commentary track maximum 2.0 lehet, AC3 esetében maximum 192 kbps, AAC esetében 80-160 kbps.
+  - 7.12) Szegmentált kódolás használata TILOS!
+  - 7.13) `AC3`, `E-AC3`, `DTS`, `DTS-HD.MA`, és `DTS:X` esetén a `dialnorm` értéket meg kell tartani!
 
 ## 8) Feliratok
  - 8.1) Kizárólag SRT (SubRip) és PGS-SUP formátumú feliratok megengedettek!
