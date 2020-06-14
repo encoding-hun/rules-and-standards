@@ -158,7 +158,7 @@
   - 7.10) TimeStretchingre használható programok: `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge`, `SONAR` `élastique TimeStretch`, `Audacity`, `SoX`, és `Adobe Audition`.
   - 7.11) Commentary track maximum 2.0 lehet, AC3 esetében maximum 192 kbps, AAC esetében 80-160 kbps.
   - 7.12) Szegmentált kódolás használata TILOS!
-  - 7.13) `AC3`, `E-AC3`, `DTS`, `DTS-HD.MA`, és `DTS:X` esetén a `dialnorm` értéket meg kell tartani!
+  - 7.13) `AC3`, `E-AC3`, `DTS`, `DTS-HD.MA`, és `DTS-X` esetén a `dialnorm` értéket meg kell tartani!
 
 ## 8) Feliratok
  - 8.1) Kizárólag SRT (SubRip) és PGS-SUP formátumú feliratok megengedettek!
