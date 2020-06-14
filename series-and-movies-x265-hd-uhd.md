@@ -241,10 +241,10 @@
   - 10.1) AC3 esetében Dolby Certified encodert kell használni (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`, `Sonic Audio Transcoder`).
   - 10.2) A készített `AC3` nem tartalmazhat Copyright Protected flaget.
   - 10.3) `DTS-HD.MA` hang készítéséhez kizárólag `DTS-HD Master Audio Suite` használható.
-  - 10.4) `AAC` esetében elfogadott encoderek: QAAC (Apple AAC), FDK, Nero
+  - 10.4) `AAC` esetében elfogadott encoderek: qaac (Apple AAC), FDK, Nero
     - 10.4.1) Csak stereo/mono hangnál használható AAC.
     - 10.4.2) Javasolt beállítások:
-       - 10.4.2.1) QAAC: `-V 90` - `-V 127` és `-q 2`
+       - 10.4.2.1) qaac: `-V 90` - `-V 127` és `-q 2`
        - 10.4.2.2) FDK: `-m 4` vagy `-m 5`
        - 10.4.2.3) Nero: `-q 40` - `-q 75`
   - 10.5) Compatibility `AC3` track készület FFmpeg (4.1 vagy újabb) vagy Aften (2009-12-26 vagy újabb) segítségével is.
