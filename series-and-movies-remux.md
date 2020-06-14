@@ -178,24 +178,25 @@
     - 8.11.2) Kommentár feliratokat elegendő PGS-SUP vagy SRT formátumban muxolni.
  - 8.12) A muxolt `.srt` feliratokat megfelelő karakterkódolással kell muxolni (UTF8 vagy beállítani a forrással egyezőt)
  - 8.13) Az opcionálisan mellékelt `.srt` feliratok kizárólag UTF8(-BOM) vagy ANSI kódolásúak lehetnek.
- - 8.14) A feliratok nyelvét KÖTELEZŐ Language tagként beállítani.
- - 8.15) Title tag használata opcionális.
- - 8.16) Feliratok sorrendje:
-    - 8.16.1) magyar forced (ha van), srt
-    - 8.16.2) magyar full, srt
-    - 8.16.3) eredeti forced (ha van), srt
-    - 8.16.4) eredeti full, srt
-    - 8.16.5) eredeti full SDH, srt
-    - 8.16.6) kommentárok (opcionális), srt
-    - 8.16.7) magyar forced (ha van), sup
-    - 8.16.8) magyar full, sup
-    - 8.16.9) eredeti forced (ha van), sup
-    - 8.16.10) eredeti full, sup
-    - 8.16.11) eredeti full SDH, sup
-    - 8.16.12) kommentárok (opcionális), sup
-  - 8.17) Forced feliratoknál a Forced flag használata ajánlott.
-  - 8.18) További feliratok opcionálisan muxolhatóak vagy mellékelhetőek. FIGYELEM: bizonyos lejátszók nem képesek mind az MKV specifikációban leírt 127 sáv kezelésére, így ajánlott 16 sáv alatt maradni (ebbe a videó- és hangsávok is beletartoznak).
-  - 8.19) Fansub kizárólag akkor használható, ha nem érhető el retail.
-     - 8.19.1) Fansub használatát az NFO-ban kötelező jelezni.
-  - 8.20) A feliratok nem csúszhatnak zavaró mértékben a képhez képest (max. ~600 ms).
+ - 8.14) PGS-SUP feliratoknál ajánlott a `zlib` tömörítés kikapcsolása.
+ - 8.15) A feliratok nyelvét KÖTELEZŐ Language tagként beállítani.
+ - 8.16) Title tag használata opcionális.
+ - 8.17) Feliratok sorrendje:
+    - 8.17.1) magyar forced (ha van), srt
+    - 8.17.2) magyar full, srt
+    - 8.17.3) eredeti forced (ha van), srt
+    - 8.17.4) eredeti full, srt
+    - 8.17.5) eredeti full SDH, srt
+    - 8.17.6) kommentárok (opcionális), srt
+    - 8.17.7) magyar forced (ha van), sup
+    - 8.17.8) magyar full, sup
+    - 8.17.9) eredeti forced (ha van), sup
+    - 8.17.10) eredeti full, sup
+    - 8.17.11) eredeti full SDH, sup
+    - 8.17.12) kommentárok (opcionális), sup
+  - 8.18) Forced feliratoknál a Forced flag használata ajánlott.
+  - 8.19) További feliratok opcionálisan muxolhatóak vagy mellékelhetőek. FIGYELEM: bizonyos lejátszók nem képesek mind az MKV specifikációban leírt 127 sáv kezelésére, így ajánlott 16 sáv alatt maradni (ebbe a videó- és hangsávok is beletartoznak).
+  - 8.21) Fansub kizárólag akkor használható, ha nem érhető el retail.
+     - 8.21.1) Fansub használatát az NFO-ban kötelező jelezni.
+  - 8.21) A feliratok nem csúszhatnak zavaró mértékben a képhez képest (max. ~600 ms).
   
