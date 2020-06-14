@@ -56,7 +56,7 @@
   - 2.10) WEB-hez további guide:
     - 2.10.1) Az minősül `WEB-DL`-nek, ami nem lett újrakódolva az oldalról való leszedés után (vagy közben).
     - 2.10.2) Ha x264 settings-t látsz, az nem garancia arra, hogy `WEBRip`, `NF` és `AMZN` maga is `x264`-et használ.
-    - 2.10.3) Egy `WEB-DL` nem feltétlenül jobb, mint egy WEBRip (pl. `2160p.WEB-DL`-ből kódolt `720p.WEBRip` vs `720p.WEB-DL`)
+    - 2.10.3) Egy `WEB-DL` nem feltétlenül jobb, mint egy `WEBRip` (pl. `2160p.WEB-DL`-ből kódolt `720p.WEBRip` vs `720p.WEB-DL`)
     - 2.10.4) `WEB-DLRip` megjelölés TILTOTT, `WEB-DL`-ből kódolt Rip = `WEBRip`
   - 2.11) `Rip`, `RiP` és `RIP` megjelölés is elfogadott.
   - 2.12) `REPACK` (`Repack`) és `RERiP` (`Rerip`) tagok használata kötelező, ha saját release-t javít valaki.
@@ -169,34 +169,35 @@
   - 8.12) Zónák használata megengedett.
   - 8.13) GPU encoding minden formája TILTOTT!
   - 8.14) Kizárólag 1:1 oldalarányú pixelek használata megengedett (`--sar 1:1`).
-  - 8.15) A keyframe-ek közötti maximális távolság `FPS*20` lehet. (`FPS*10` ajánlott)
-  - 8.16) ColorMatrixot, amennyiben a forrás tartalmaz erre vonatkozó információt KÖTELEZŐ flaggelni (tipikusan `BT.709`), amennyiben nem, úgy `undef`-en kell hagyni.
-  - 8.17) ColorPrimaries és TransferFunction flaggelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod, mit csinálsz). Használata esetén a forrással egyezőre kell állítani. Bővebb infó: https://mod16.org/hurfdurf/?p=116
-  - 8.18) A maximálisan megengedett referencia képek számának használata kötelező (--ref).
-    - 8.18.1) `--preset veryslow`/`placebo` magától kiszámolja a legnagyobbat, ami még nem töri meg a kompatibilitást. (Érdemes így csinálni, és akkor nem kell manuálisan számolni.)
-    - 8.18.2) Kiszámolása: `8388608/(végső szélesség*végső magasság)` -> lefele kerekítés.
+  - 8.15) A keyframe-ek közötti maximális távolság (`--keyint`) `FPS*20` lehet (`FPS*10` ajánlott, default).
+  - 8.16) `--min-keyint` értéke legalább `FPS/2`, maximum `FPS*2` lehet (`floor(FPS)` ajánlott, default).
+  - 8.17) ColorMatrixot, amennyiben a forrás tartalmaz erre vonatkozó információt KÖTELEZŐ flaggelni (tipikusan `BT.709`), amennyiben nem, úgy `undef`-en kell hagyni.
+  - 8.18) ColorPrimaries és TransferFunction flaggelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod, mit csinálsz). Használata esetén a forrással egyezőre kell állítani. Bővebb infó: https://mod16.org/hurfdurf/?p=116
+  - 8.19) A maximálisan megengedett referencia képek számának használata kötelező (--ref).
+    - 8.19.1) `--preset veryslow`/`placebo` magától kiszámolja a legnagyobbat, ami még nem töri meg a kompatibilitást. (Érdemes így csinálni, és akkor nem kell manuálisan számolni.)
+    - 8.19.2) Kiszámolása: `8388608/(végső szélesség*végső magasság)` -> lefele kerekítés.
     Pl.: `8388608/(1280*640) = 10.24`, `10.24` -> `10`
     `(8388608 = 32768*16*16)` `[32768 a MaxDpbMbs High@4.1-nél, 16*16 egy macroblock]`
-  - 8.19) B frame-ek kikapcsolása TILOS. Minimum `3` egymás utáni B frame-t kell engedni (`--bframes 3` vagy több).
-  - 8.20) A készült videónak DXVA-kompatibilisnek kell lennie (max. `High@L4.1`).
-  - 8.21) `CABAC` kikapcsolása TILOS.
-  - 8.22) `8x8dct` kikapcsolása TILOS.
-  - 8.23) Kötelezően használandó partíciók: `i4x4,i8x8,p8x8,b8x8` (default), `p4x4` használata opcionális, de ajánlott
-  - 8.24) `me` értéke KIZÁRÓLAG `umh`, `esa` vagy `tesa` lehet.
-  - 8.25) `merange` értéke nem lehet 24-nél kisebb.
-  - 8.26) `subme` értéke nem lehet 8-nál kisebb.
-  - 8.27) `rc-lookahead` értéke nem lehet `FPS*2`-nél kisebb.
-  - 8.28) Kizárólag Limited, TV range-ű release készíthető (`16-235`).
-  - 8.29) `--vbv-maxrate` maximum `62500`, `--vbv-bufsize` maximum `78125` lehet, de egyik sem lehet kevesebb, mint `50000`.
-  - 8.30) `--deblock` kikapcsolása TILOS. Ajánlott beállítás filmek esetén: `-3:-3`.
-  - 8.31) Adaptív kvantálás használata kötelező! `--aq-mode=1`/`2`/`3` (`3` ajánlott)
-  - 8.32) A készített release bitrátája nem lehet nagyobb, mint a forrásé.
+  - 8.20) B frame-ek kikapcsolása TILOS. Minimum `3` egymás utáni B frame-t kell engedni (`--bframes 3` vagy több).
+  - 8.21) A készült videónak DXVA-kompatibilisnek kell lennie (max. `High@L4.1`).
+  - 8.22) `CABAC` kikapcsolása TILOS.
+  - 8.23) `8x8dct` kikapcsolása TILOS.
+  - 8.24) Kötelezően használandó partíciók: `i4x4,i8x8,p8x8,b8x8` (default), `p4x4` használata opcionális, de ajánlott
+  - 8.25) `me` értéke KIZÁRÓLAG `umh`, `esa` vagy `tesa` lehet.
+  - 8.26) `merange` értéke nem lehet 24-nél kisebb.
+  - 8.27) `subme` értéke nem lehet 8-nál kisebb.
+  - 8.28) `rc-lookahead` értéke nem lehet `FPS*2`-nél kisebb.
+  - 8.29) Kizárólag Limited, TV range-ű release készíthető (`16-235`).
+  - 8.30) `--vbv-maxrate` maximum `62500`, `--vbv-bufsize` maximum `78125` lehet, de egyik sem lehet kevesebb, mint `50000`.
+  - 8.31) `--deblock` kikapcsolása TILOS. Ajánlott beállítás filmek esetén: `-3:-3`.
+  - 8.32) Adaptív kvantálás használata kötelező! `--aq-mode=1`/`2`/`3` (`3` ajánlott).
+  - 8.33) A készített release bitrátája nem lehet nagyobb, mint a forrásé.
      - 8.32.1) Kivételt képeznek Hybrid release-ek, melyek több forrás felhasználásával készülnek.
-  - 8.33) A videó bitrátáját vagy CRF értékét úgy kell megválasztani, hogy a képminőség transzparens legyen (amennyire lehet) a forráshoz képest.
-  - 8.34) Ajánlott frameserverek: AviSynth+ és VapourSynth.
-  - 8.35) HDTV forrás esetén logók maszkolása megengedett (pl. `InpaintFunc`).
-  - 8.36) A stáblista, amennyiben nem tartalmaz extra jelenetet, kódolható alacsonyabb bitrátával.
-  - 8.37) A `WEB-DL`-ek felmentést élveznek az összes 8-as pontbeli szabály alól, kivéve a 8.8-ast.
+  - 8.34) A videó bitrátáját vagy CRF értékét úgy kell megválasztani, hogy a képminőség transzparens legyen (amennyire lehet) a forráshoz képest.
+  - 8.35) Ajánlott frameserverek: AviSynth+ és VapourSynth.
+  - 8.36) HDTV forrás esetén logók maszkolása megengedett (pl. `InpaintFunc`).
+  - 8.37) A stáblista, amennyiben nem tartalmaz extra jelenetet, kódolható alacsonyabb bitrátával.
+  - 8.38) A `WEB-DL`-ek felmentést élveznek az összes 8-as pontbeli szabály alól, kivéve a 8.8-ast.
 
 ## 9) Audio
   - 9.1) Magyar hangsávot tartalmazó release esetén kötelező a `HUN` (`Hun`) tag használata. Amennyiben a release nem tartalmaz magyar hangsávot, úgy nem kell nyelvi tag-ot megadni.
@@ -204,7 +205,7 @@
   - 9.3) Nem angol nyelvű, eredeti hangsáv esetén az angol hang (már amennyiben létezik) megtartása opcionális.
   - 9.4) Egyéb nyelvű hangok megtartása TILOS!
   - 9.5) Megengedett hangformátumok: `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`), `DTS`, `AAC`, `FLAC`.
-  - 9.6) `MP3`, `MP2` és egyéb vicces formátumok használata TILOS!
+  - 9.6) `MP3`, `MP2`, és egyéb vicces formátumok használata TILOS!
   - 9.7) `DTS` és `AC3` encodeolása `AAC`-be kizárólag a kommentár sáv esetén megengedett.
      - 9.7.1) Kivétel, ha nyújtani és/vagy vágni kell, ekkor lehet AAC, amennyiben stereo vagy mono.
   - 9.8) LPCM hangot kötelező FLAC-be (film esetén) vagy AAC-be (kommentár esetén) konvertálni.
@@ -224,8 +225,8 @@
   
 ## 10) Audio kódolás
   - 10.1) AC3 esetében Dolby Certified encodert kell használni (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`, `Sonic Audio Transcoder`).
-  - 10.2) A készített AC3 nem tartalmazhat Copyright Protected flaget.
-  - 10.3) AAC esetében elfogadott encoderek: QAAC, FDK, Nero
+  - 10.2) A készített `AC3` nem tartalmazhat Copyright Protected flaget.
+  - 10.3) `AAC` esetében elfogadott encoderek: QAAC, FDK, Nero
     - 10.3.1) Csak stereo/mono hangnál használható AAC.
     - 10.3.2) Javasolt beállítások:
        - 10.3.2.1) QAAC: `-V 90` - `-V 127` és `-q 2`
@@ -239,7 +240,7 @@
   - 10.9) TimeStretchingre használható programok: `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge`, `SONAR` `élastique TimeStretch`, `Audacity`, `SoX`, és `Adobe Audition`.
   - 10.10) Commentary track maximum 2.0 lehet, AC3 esetében maximum 192 kbps, AAC esetében 80-160 kbps.
   - 10.11) Szegmentált kódolás használata TILOS!
-  - 10.12) AC3 és E-AC3 esetén a `dialnorm` értéket meg kell tartani!
+  - 10.12) `AC3`, `E-AC3`, és `DTS` esetén a `dialnorm` értéket meg kell tartani!
 
 ## 11) Feliratok
  - 11.1) Kizárólag SRT (SubRip) formátumú feliratok megengedettek!
