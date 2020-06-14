@@ -14,7 +14,7 @@
    - 1.2.1) Ajánlott muxer: MKVToolNix (mkvmerge).
       - 1.2.1.1) Törekedjünk a lehető legfrissebb változat használatára.
    - 1.2.2) Header compression használata TILOS.
-   - 1.2.3) HDR kép esetén a Dolby Vision sáv megtartása TILOS! Dolby Vision release az 1.3-as pontnak megfelelően készíthető.
+   - 1.2.3) HDR kép és `.mkv` konténer esetén a Dolby Vision sáv megtartása TILOS! Dolby Vision release az 1.3-as pontnak megfelelően készíthető.
  - 1.3) Dolby Vision esetén kizárólag `.mp4` és `.m2ts` konténer elfogadott.
  - 1.4) A film csonkítása, trimmelése TILOS.
  - 1.5) A film tömörítése (pl. rar, zip stb.) és darabolása TILOS.
