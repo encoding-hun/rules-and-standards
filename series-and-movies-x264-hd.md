@@ -18,7 +18,7 @@
  - 1.4) A film tömörítése (pl. rar, zip stb.) és darabolása TILOS.
  - 1.5) A fő MKV mellé `SFV` vagy `MD5` ellenőrzőösszeg készítése ajánlott, de nem kötelező.
  - 1.6) Sample készítése opcionális.
-    - 1.6.1) Hossza 60-120 másodperc közötti legyen.
+    - 1.6.1) Hossza 50-120 másodperc közötti legyen.
     - 1.6.2) A Sample nem származhat az epizód/film legelejéről, valamint legvégéről.
     - 1.6.3) A Sample-t újrakódolás nélkül, a végső encode-ból kell kivágni.
     - 1.6.4) A Sample-t egy `Sample` nevű mappába vagy a fő MKV mellé kell helyezni. Utóbbi esetben a filenévben kell jelölni, hogy melyik a sample.
@@ -127,7 +127,7 @@
   - 6.3) A videó felbontása mod2 kell legyen.
   - 6.4) A videó felskálázása SZIGORÚAN TILOS! (pl. ha croppolás után 1916 széles a kép, tilos 1920-ra felnagyítani)
      - 6.4.1) Upscaled forrás esetén az eredeti, upscale előtti (vagy annál kisebb) felbontáson készíthető release. Ennek megkeresésésére jó pl. az UpscaleCheck és a getnative kódok. Köztes felbontások esetén a kerekítés szabályai érvényesek (pl. 900p és felette készíthető 1080p).
-  - 6.5) Eltérő képarányú release (pl. `OM`) nem dupeolja a korábbit és vica versa.
+  - 6.5) Eltérő képarányú release (pl. `OM`) nem dupeolja a korábbit és *vica versa*.
   - 6.6) A videót cropolni kell addig amíg maximum 1-1 px fekete sáv marad. A cropot a főcímnél kell meghatározni.
   - 6.7) A dirty lineok, dirty pixelek és faded lineok eltávolítása TILOS!
   - 6.8) Az 1 px fekete sávok (widow line) és dirty line-ok javítása ajánlott.
