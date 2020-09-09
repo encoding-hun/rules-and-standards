@@ -296,6 +296,6 @@
   - 11.18) A feliratok nem csúszhatnak zavaró mértékben a képhez képest (max. ~600 ms).
   
 ## Aláírták és tudomásul vették
-`boOk`, `Legacy`, `NaGa`, `NFC`, `pcroland`, `prldm`
+`boOk`, `Legacy`, `NaGa`, `NFC`, `pcroland`, `prldm`, `SFY`
 
 ## Banned grps
