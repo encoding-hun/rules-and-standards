@@ -7,7 +7,7 @@
   2020-02-19-től
 
 ## Utolsó frissítés
-  2020-10-04
+  2020-11-04
 
 ## 1) Általános
  - 1.1) Tilos a DUPE, azaz a korábbival megegyező (vagy közel azonos) minőségű release készítése.
