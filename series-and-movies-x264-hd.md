@@ -7,11 +7,11 @@
   2020-02-19-től
 
 ## Utolsó frissítés
-  2020-11-04
+  2020-11-27
 
 ## 1) Általános
  - 1.1) Tilos a DUPE, azaz a korábbival megegyező (vagy közel azonos) minőségű release készítése.
- - 1.2) Kizárólag `.mkv` konténer használata elfogadott.
+ - 1.2) Kizárólag `.mkv` konténer használata elfogadott; kivétel Dolby Vision-t tartalmazó encodeok.
    - 1.2.1) Ajánlott muxer: MKVToolNix (mkvmerge).
       - 1.2.1.1) Törekedjünk a lehető legfrissebb változat használatára.
    - 1.2.2) Header compression használata TILOS.
