@@ -9,7 +9,7 @@
 
 [**Nuke okok**](https://github.com/encoding-hun/rules-and-standards/blob/master/nuke_reasons_movies.md)
 
-## Aláírták és tudomásul vették
+## Aláírták és tudomásul vették:
 `boOk`, `Legacy`, `NaGa`, `NFC`, `pcroland`, `prldm`, `SFY`
 
 ## Banned grps
