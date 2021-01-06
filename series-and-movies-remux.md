@@ -2,12 +2,6 @@
   - Célunk egy olyan lefektetett és átlátható szabályrendszer létrehozása, mely kizárólag minőségi szempontokat vesz figyelembe.
   - Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján nem készíthető proper. Amennyiben jobb minőségű BD/stb. elérhető, mint amiből a korábbi release készült, az új release-t `READ.NFO` taggel kell ellátni. Minden egyéb `DUPE`-nak minősül. Ez alól kivétel, ha a korábbi release súlyos hibával rendelkezik, pl. hangcsúszás, képhiba stb., ekkor `PROPER`-elhető.
 
-## Érvényes
-  2020-06-14-től
-
-## Utolsó frissítés
-  2020-06-14
-
 ## 1) Általános
  - 1.1) Tilos a DUPE, azaz a korábbival megegyező (vagy közel azonos) minőségű release készítése.
  - 1.2) SDR és HDR (ide értve a `HDR10Plus`-t is) tartalmakra kizárólag `.mkv` konténer használata elfogadott.
