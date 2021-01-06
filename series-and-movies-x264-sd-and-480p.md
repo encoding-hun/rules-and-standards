@@ -12,8 +12,7 @@
 ## 1) Általános
  - 1.1) Tilos a DUPE, azaz a korábbival megegyező (vagy közel azonos) minőségű release készítése.
  - 1.2) Kizárólag `.mkv` konténer használata elfogadott.
-   - 1.2.1) Ajánlott muxer: MKVToolNix (mkvmerge).
-      - 1.2.1.1) Törekedjünk a lehető legfrissebb változat használatára.
+   - 1.2.1) Ajánlott muxer: MKVToolNix (mkvmerge). Törekedjünk a lehető legfrissebb változat használatára.
    - 1.2.2) Header compression használata TILOS.
  - 1.3) A film csonkítása, trimmelése TILOS.
  - 1.4) A film tömörítése (pl. rar, zip stb.) és darabolása TILOS.
@@ -28,8 +27,6 @@
    - 1.8.1) Chapterek elnevezése opcionális, kizárólag magyar vagy angol fejezetcímek használhatóak.
  - 1.9) Vízjelek használata TILOS!
  - 1.10) `480p` és `SD` release DUPE-olja egymást. Ha már van `SD` encode, az nem cserélhető `480p`-re csak a felbontás miatt, sem fordítva. `PROPER` vagy `READ.NFO` esetén lehet `SD`-t `480p`-vel javítani/upgrade-elni, és fordítva.
-    
- - A stáblista amennyiben nem tartalmaz extra jelenetet kódolható alacsonyabb bitrátával.
 
 ## 2) Taggelés - könyvtárnév
   - 2.1) Ékezetes karakterek használata TILOS!
@@ -58,11 +55,12 @@
   - 2.6) A könyvtár és fájlok nevének maximális hossza 255 karakter lehet, de ajánlott 250 alatt megállni.
   - 2.7) `[series.name]` és `[movie.title]` KIZÁRÓLAG eredeti vagy angol nyelvű lehet.
   - 2.8) `[audio.codec]` a film/sorozat eredeti nyelvére vonatkozik.
-  - 2.9) `WEB-DL` és `WEBRip` forrás esetén meg kell jelölni, hogy pontosan melyik oldalról való (pl. `NF.WEB-DL`, `AMZN.WEB-DL`)
+  - 2.9) `WEB-DL` és `WEBRip` forrás esetén meg kell jelölni, hogy pontosan melyik oldalról való (pl. `NF.WEB-DL`, `AMZN.WEB-DL`).
+    - 2.9.1) A használandó hazai és nemzetközi rövidítések itt érhetőek el: [LINK](https://github.com/encoding-hun/rules-and-standards/blob/master/web-abbrevation.md).
   - 2.10) WEB-hez további guide:
     - 2.10.1) Az minősül `WEB-DL`-nek, ami nem lett újrakódolva az oldalról való leszedés után (vagy közben).
     - 2.10.2) Ha x264 settings-t látsz, az nem garancia arra, hogy `WEBRip`, `NF` és `AMZN` maga is `x264`-et használ.
-    - 2.10.3) Egy `WEB-DL` nem feltétlenül jobb, mint egy `WEBRip` (pl. `2160p.WEB-DL`-ből kódolt `720p.WEBRip` vs `720p.WEB-DL`)
+    - 2.10.3) Egy `WEB-DL` nem feltétlenül jobb, mint egy `WEBRip` (pl. `2160p.WEB-DL`-ből kódolt `720p.WEBRip` vs. `720p.WEB-DL`)
     - 2.10.4) `WEB-DLRip` megjelölés TILTOTT, `WEB-DL`-ből kódolt Rip = `WEBRip`
   - 2.11) `Rip`, `RiP` és `RIP` megjelölés is elfogadott.
   - 2.12) `REPACK` (`Repack`) és `RERiP` (`Rerip`) tagok használata kötelező, ha saját release-t javít valaki.
@@ -129,7 +127,7 @@
   - 5.8) Hybrid encodeok megengedettek, ha ezzel jobb minőség érhető el.
   - 5.9) A konténerben felbontásra és croppolásra extra metaadatokat megadni TILOS!
   - 5.10) A video sáv Language tagjának beállítása opcionális: vagy magyar vagy az eredeti nyelv.
-  
+
 ## 6) Felbontás
   - 6.1) SD release maximális szélessége `720 px` lehet (`AutoResize("SD")`)
      - 6.1.1) DVD-ből kizárólag SD release készíthető.
@@ -146,7 +144,7 @@
   - 6.9) Javítás után a widow lineok (eredetileg fekete sávok) eltávolítandóak (resize).
   - 6.10) A kódolt videó felbontása 1 pixellel térhet el a forrás alapján (cropolás után) számolttól, pl. 720x405 helyett 720x404 (mod2).
   - 6.11) Alacsonyabb felbontás kizárólag akkor megengedett, ha irreálisan magas bitrátát kapnánk a fentebb említett szélességek esetén.
-  
+
 ## 7) Filterek
   - 7.1) Kizárólag progresszív kép megengedett. Amennyiben szükséges deinterlacer vagy IVTC használata kötelező.
   - 7.2) Resize-oláshoz `z_Spline36Resize` (`resize.Spline36`) vagy `Spline36ResizeMod` ajánlott, a `Spline36Resize` tartalmaz egy apró chroma shifting bugot, használata kerülendő. (VapourSynth-et nem érinti.) További engedett resizerek: `z_Spline64Resize` (`resize.Spline64`), `BlackmanResize`.
@@ -160,7 +158,7 @@
   - 7.6) A videó eredeti FPS értékét meg kell tartani. Interlace-elt forrás esetén 2 félképből 1-et kell képezni (értsd `50i`-ből `25p`-t kell készíteni). Ez alól kivétel lehet a sportfelvétel, ahol indokolt lehet az `50p`. Ekkor kizárólag `QTGMC` (`preset slow` vagy jobb) deinterlacer használható!
   - 7.7) Kizárólag CFR (constant framerate) mód használható! Amennyiben a forrás VFR-el rendelkezik, úgy ez felülírja az 7.6-os pontot.
   - 7.8) A dupe framek eltávolítása kötelező!
-  
+
 ## 8) Videó kódolás
   - 8.1) Kizárólag x264 használható.
   - 8.2) Minimum `r2800`-as x264-as használata kötelező; kivétel, ha korábbi, minőségi encodera (pl. `DON`, `TayTo`, `VietHD` és egyéb HDB internalok; megbízható források) muxolunk.
@@ -227,7 +225,7 @@
      - 9.12.1) Ez alól kivétel ha csak DTS hang érhető el.
   - 9.13) Maximum +/- 100 ms hangcsúszás megengedett.
   - 9.14) A hangok nyelvét kötelező Language tagben jelezni!
-  
+
 ## 10) Audio kódolás
   - 10.1) `AC3` esetében Dolby Certified encodert kell használni (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`, `Sonic Audio Transcoder`).
   - 10.2) A készített `AC3` nem tartalmazhat Copyright Protected flaget.
@@ -247,7 +245,7 @@
     - 10.11.1) Commentary track kizárólag `AAC` 2.0 (vagy mono) lehet és 80-160 kbps bitrátával rendelkezhet (mono esetén 40-80 kbps).
     - 10.11.2) (UHD) BluRay, HDDVD, (UHD) WEB-DL források esetén Commentary trackek használata TILOS (erre ott vannak a HD formátumok)!
   - 10.12) `AC3` és `E-AC3` esetén a `dialnorm` értéket meg kell tartani!
-  
+
 ## 11) Feliratok
  - 11.1) Kizárólag SRT (SubRip) formátumú feliratok megengedettek!
      - 11.1.1) Az OCR karakterfelismerést a lehető legpontosabban kell elvégezni.
@@ -271,8 +269,8 @@
   - 11.12) További feliratok opcionálisan muxolhatóak vagy mellékelhetőek. FIGYELEM: bizonyos lejátszók nem képesek mind az MKV specifikációban leírt 127 sáv kezelésére, így ajánlott 16 sáv alatt maradni (ebbe a videó- és hangsávok is beletartoznak).
   - 11.13) Fansub kizárólag akkor használható, ha nem érhető el retail.
      - 11.13.1) Fansub használatát az NFO-ban kötelező jelezni.
-  - 11.14) A feliratok nem csúszhatnak zavaró mértékben a képhez képest (max. ~600 ms).
- 
+  - 11.14) A feliratok nem csúszhatnak zavaró mértékben a képhez képest (max. ~400 ms).
+
 ## Aláírták és tudomásul vették
 `boOk`, `Legacy`, `NaGa`, `NFC`, `pcroland`, `prldm`, `SFY`
 
