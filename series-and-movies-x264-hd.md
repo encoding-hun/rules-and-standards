@@ -52,7 +52,7 @@
   - 2.7) `[series.name]` és `[movie.title]` KIZÁRÓLAG eredeti vagy angol nyelvű lehet.
   - 2.8) `[audio.codec]` a film/sorozat eredeti nyelvére vonatkozik.
   - 2.9) `WEB-DL` és `WEBRip` forrás esetén meg kell jelölni, hogy pontosan melyik oldalról való (pl. `NF.WEB-DL`, `AMZN.WEB-DL`).
-    - 2.9.1) A használandó hazai és nemzetközi rövidítések itt érhetőek el: [LINK](https://github.com/encoding-hun/rules-and-standards/blob/master/web-abbrevation.md).
+    - 2.9.1) A használandó hazai és nemzetközi rövidítések itt érhetőek el: [**LINK**](https://github.com/encoding-hun/rules-and-standards/blob/master/web-abbrevation.md).
   - 2.10) WEB-hez további guide:
     - 2.10.1) Az minősül `WEB-DL`-nek, ami nem lett újrakódolva az oldalról való leszedés után (vagy közben).
     - 2.10.2) Ha x264 settings-t látsz, az nem garancia arra, hogy `WEBRip`, `NF` és `AMZN` maga is `x264`-et használ.
