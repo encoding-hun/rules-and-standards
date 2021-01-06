@@ -1,4 +1,4 @@
-## A magyar releasek készítésénél követendő szabályok.
+## A magyar release-ek készítésénél követendő szabályok.
 | kategória                                                                                                                    | utolsó frissítés | érvényben   |
 | :-                                                                                                                           | :-               | :-          |
 | [**x264 SD és 480p**](https://github.com/encoding-hun/rules-and-standards/blob/master/series-and-movies-x264-sd-and-480p.md) | 2021.01.06.      | 2020.02.19. |
