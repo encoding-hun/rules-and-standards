@@ -6,4 +6,5 @@
 | [**REMUX**](https://github.com/encoding-hun/rules-and-standards/blob/master/series-and-movies-remux.md)                      | 2020.09.09.      | 2020.06.14. |
 | [**x265 UHD-HD**](https://github.com/encoding-hun/rules-and-standards/blob/master/series-and-movies-x265-hd-uhd.md)          | 2020.11.27.      | 2020.06.14. |
 | **DVD, MP3 és lossless audio** (előkészületben)                                                                              |                  |             |
+
 [**Nuke okok**](https://github.com/encoding-hun/rules-and-standards/blob/master/nuke_reasons_movies.md)
