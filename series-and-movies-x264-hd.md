@@ -125,8 +125,8 @@
   - 5.10) A video sáv Language tagjának beállítása opcionális: vagy magyar vagy az eredeti nyelv.
 
 ## 6) Felbontás
-  - 6.1) 720p release maximális felbontása `1280x720` lehet. (`AutoResize("720")`)
-  - 6.2) 1080p release maximális felbontása `1920x1080` lehet. (`AutoResize("1080")`)
+  - 6.1) 720p release maximális felbontása `1280x720` lehet. (`AutoResize(720)`)
+  - 6.2) 1080p release maximális felbontása `1920x1080` lehet. (`AutoResize(1080)`)
      - 6.2.1) 3D-s release kizárólag 1080p felbontással készülhet.
   - 6.3) A videó felbontása mod2 kell legyen.
   - 6.4) A videó felskálázása SZIGORÚAN TILOS (pl. ha croppolás után 1916 széles a kép, tilos 1920-ra felnagyítani)!
@@ -232,7 +232,7 @@
        - 10.3.2.1) `qaac`: `-V 90` - `-V 127` és `--no-delay --ignorelength` (egyéb kapcsolók használata tilos)
        - 10.3.2.2) `FDK`: `-m 4` vagy `-m 5` (és `-cutoff 20000` ffmpeg-es libfdk_aac használata esetén)
        - 10.3.2.3) `Nero`: `-q 40` - `-q 75`
-  - 10.4) Compatibility `AC3` track készület FFmpeg (4.1 vagy újabb) vagy Aften (2009-12-26 vagy újabb) segítségével is.
+  - 10.4) Compatibility `AC3` track készülhet FFmpeg (4.1 vagy újabb) vagy Aften (2009-12-26 vagy újabb) segítségével is.
   - 10.5) A hangok mintavételezését (sampling rate) tilos megváltoztatni!
   - 10.6) Belső konverziók esetén meg kell tartani (vagy jobbat kell használni), mint az eredeti hang bitmélysége és mintavételezési rátája.
   - 10.7) Ha a hangot nyújtani kell előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. `hdtools compare`).
