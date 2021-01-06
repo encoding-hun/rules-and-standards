@@ -260,15 +260,16 @@
  - 11.8) A feliratok nyelvét KÖTELEZŐ Language tagként beállítani.
  - 11.9) Title tag használata opcionális.
  - 11.10) Feliratok sorrendje:
-    - 11.10.1) magyar forced (ha van)
-    - 11.10.2) magyar full
-    - 11.10.3) eredeti forced (ha van)
-    - 11.10.4) eredeti full
-    - 11.10.5) eredeti full SDH
+    - magyar forced (ha van)
+    - magyar full
+    - eredeti forced (ha van)
+    - eredeti full
+    - eredeti full SDH
   - 11.11) Forced feliratoknál a Forced flag használata ajánlott.
   - 11.12) További feliratok opcionálisan muxolhatóak vagy mellékelhetőek. FIGYELEM: bizonyos lejátszók nem képesek mind az MKV specifikációban leírt 127 sáv kezelésére, így ajánlott 16 sáv alatt maradni (ebbe a videó- és hangsávok is beletartoznak).
-  - 11.13) Fansub kizárólag akkor használható, ha nem érhető el retail.
-     - 11.13.1) Fansub használatát az NFO-ban kötelező jelezni.
+  - 11.13) Retail felirat használata kötelező, amennyiben elérhető.
+     - 11.13.1) Fansub használható Retail felirat mellett is.
+     - 11.13.2) Fansub és Retail együttes használatánál `--track-name`-ben kötelező megadni a nevüket.
   - 11.14) A feliratok nem csúszhatnak zavaró mértékben a képhez képest (max. ~400 ms).
 
 ## Aláírták és tudomásul vették
