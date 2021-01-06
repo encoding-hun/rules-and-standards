@@ -2,13 +2,13 @@
   - Célunk egy olyan lefektetett és átlátható szabályrendszer létrehozása, mely kizárólag minőségi szempontokat vesz figyelembe.
   - Alapjául a 2020.04.15-ös nemzetközi scene szabályzatok szolgáltak, melyek a magyar helyzetre át lettek dolgozva.
   - Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján nem készíthető proper. Amennyiben jobb minőségű BD/stb. elérhető, mint amiből a korábbi release készült, az új release-t `READ.NFO` taggel kell ellátni. Minden egyéb `DUPE`-nak minősül. Ez alól kivétel, ha a korábbi release súlyos hibával rendelkezik, pl. hangcsúszás, képhiba stb., ekkor `PROPER`-elhető.
-  
+
 ## Érvényes
   2020-06-14-től
 
 ## Utolsó frissítés
   2020-11-27
-  
+
 ## 1) Általános
  - 1.1) Tilos a DUPE, azaz a korábbival megegyező (vagy közel azonos) minőségű release készítése.
  - 1.2) Kizárólag `.mkv` konténer használata elfogadott; kivétel Dolby Vision-t tartalmazó encodeok (itt `.mp4` és `.ts` konténer is megengedett).
@@ -26,7 +26,7 @@
  - 1.8) Chapterlist használata KÖTELEZŐ, amennyiben a forrás tartalmaz ilyet!
    - 1.8.1) Chapterek elnevezése opcionális, kizárólag magyar vagy angol fejezetcímek használhatóak.
  - 1.9) Vízjelek használata TILOS!
- 
+
 ## 2) Taggelés - könyvtárnév
   - 2.1) Ékezetes karakterek használata TILOS!
   - 2.2) Engedélyezett karakterek: `a-z` `A-Z` `0-9` `.` `-` `_` `+`.
@@ -69,7 +69,7 @@
      - 2.18.1) `PROPER` release-re érkező `PROPER`-t `REAL.PROPER`-nek kell taggelni (és így tovább a későbbieket, pl. `REAL.REAL.PROPER`)).
   - 2.19) `READ.NFO` és `PROPER`/`REPACK`/`RERiP` tagek együttes használata TILOS!
   - 2.20) Zavaró és felesleges tagek használata TILOS!
-  
+
 ## 3) NFO
  - 3.1) NFO használata kötelező.
  - 3.2) Az NFO nyelve angol és/vagy magyar.
@@ -109,7 +109,7 @@
    - 4.4) Amennyiben jobb minőségű UHD BD elérhető, mint amiből a korábbi release készült, ezt `READ.NFO` taggel jelezni kell.
    - 4.5) Ha az UHD forrás SDR, akkor kizárólag 2160p készíthető x265-tel, az 1080p-t x264-el kell elkészíteni (lásd másik szabályzat).
    - 4.6) Muxolni kizárólag olyan már kész release-re szabad, amely megfelel ezen szabályzatban rögzített pontoknak (kivéve az x265 verziójára vonatkozó szabálypont HDB internalok esetén). Törekedni kell az elérhető legjobb minőségű release felhasználására! Gyatra minőségű release-re való muxolás helyett saját encode készítése ERŐSEN AJÁNLOTT!
-   
+
 ## 5) Video
   - 5.1) Már kész release alacsonyabb felbontással való újrakódolása SZIGORÚAN TILOS!
   - 5.2) Kizárólag egy videósáv használata megengedett.
@@ -123,7 +123,7 @@
      - 5.7.1) SDR és HDR források nem keverhetőek!
   - 5.8) A konténerben felbontásra és croppolásra extra metaadatokat megadni TILOS!
   - 5.10) A video sáv Language tagjának beállítása opcionális: vagy magyar vagy az eredeti nyelv.
-  
+
 ## 6) Felbontás
   - 6.1) 1080p release maximális felbontása `1920x1080` lehet.
      - 6.1.1) 720p release készítése UHD forrásból kizárólag SDR esetén megengedett és kizárólag x264 segítségével (lásd másik szabályzat).
@@ -139,7 +139,7 @@
     - dirty line/faded line pl.: `bbmod`/`FixRowBrightness`/`BalanceBorders`/`EdgeFixer`
   - 6.9) Javítás után a widow lineok (eredetileg fekete sávok) 2160p esetén eltávolíthatóak (resize vagy overlay), 1080p esetén kötelezően eltávolítandóak (resize).
   - 6.10) A kódolt videó felbontása 1 pixellel térhet el a forrás alapján (cropolás után) számolttól (mod2).
-  
+
 ## 7) Filterek
   - 7.1) Kizárólag progresszív kép megengedett. Amennyiben szükséges deinterlacer vagy IVTC használata kötelező.
   - 7.2) Tonemapping SZIGORÚAN TILOS!
@@ -155,7 +155,7 @@
   - 7.7) A videó eredeti FPS értékét meg kell tartani. Interlace-elt forrás esetén 2 félképből 1-et kell képezni (értsd `50i`-ből `25p`-t kell készíteni). Ez alól kivétel lehet a sportfelvétel, ahol indokolt lehet az `50p`. Ekkor kizárólag `QTGMC` (`preset slow` vagy jobb) deinterlacer használható!
   - 7.8) Kizárólag CFR (constant framerate) mód használható! Amennyiben a forrás VFR-el rendelkezik, úgy ez felülírja az 7.6-os pontot.
   - 7.9) A dupe framek eltávolítása kötelező!
-  
+
 ## 8) Videó kódolás
   - 8.1) Kizárólag x265 használható.
   - 8.2) Minimum `2.9`-es x265-as használata kötelező; kivétel, ha korábbi, minőségi encodera (pl. `DON`, `TayTo`, `VietHD` és egyéb HDB internalok; megbízható források) muxolunk.
@@ -209,7 +209,7 @@
   - 8.46) UHDTV forrás esetén logók maszkolása megengedett (pl. `InpaintFunc`).
   - 8.47) A stáblista, amennyiben nem tartalmaz extra jelenetet, kódolható alacsonyabb bitrátával.
   - 8.48) A `WEB-DL`-ek felmentést élveznek az összes 8-as pontbeli szabály alól, kivéve a 8.7-est.
-  
+
 ## 9) Audio
   - 9.1) Magyar hangsávot tartalmazó release esetén kötelező a `HUN` (`Hun`) tag használata. Amennyiben a release nem tartalmaz magyar hangsávot, úgy nem kell nyelvi tag-ot megadni.
   - 9.2) Az eredeti nyelvű hangsáv megtartása KÖTELEZŐ!
@@ -235,7 +235,7 @@
      - 9.13.1) Ez alól kivétel ha csak DTS hang érhető el és compatibility tracket készítünk vagy 1080p-re `DDP@1024`-et.
   - 9.14) Maximum +/- 100 ms hangcsúszás megengedett.
   - 9.15) A hangok nyelvét kötelező Language tagben jelezni!
-  
+
 ## 10) Audio kódolás
   - 10.1) `AC3` esetében Dolby Certified encodert kell használni (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`, `Sonic Audio Transcoder`).
   - 10.2) A készített `AC3` nem tartalmazhat Copyright Protected flaget.
@@ -255,7 +255,7 @@
   - 10.11) Commentary track maximum 2.0 lehet, `AC3` esetében maximum 192 kbps, `AAC` esetében 80-160 kbps.
   - 10.12) Szegmentált kódolás használata TILOS!
   - 10.13) `AC3`, `E-AC3`, `DTS`, `DTS-HD.MA`, és `DTS-X` esetén a `dialnorm` értéket meg kell tartani!
-  
+
 ## 11) Feliratok
  - 11.1) Kizárólag SRT (SubRip) és PGS-SUP formátumú feliratok megengedettek!
     - 11.1.1) Az OCR karakterfelismerést a lehető legpontosabban kell elvégezni.
@@ -276,24 +276,25 @@
  - 11.12) A feliratok nyelvét KÖTELEZŐ Language tagként beállítani.
  - 11.13) Title tag használata opcionális.
  - 11.14) Feliratok sorrendje:
-    - 11.14.1) magyar forced (ha van), srt
-    - 11.14.2) magyar full, srt
-    - 11.14.3) eredeti forced (ha van), srt
-    - 11.14.4) eredeti full, srt
-    - 11.14.5) eredeti full SDH, srt
-    - 11.14.6) kommentárok (opcionális), srt
-    - 11.14.7) magyar forced (ha van), sup (opcionális)
-    - 11.14.8) magyar full, sup (opcionális)
-    - 11.14.9) eredeti forced (ha van), sup (opcionális)
-    - 11.14.10) eredeti full, sup (opcionális)
-    - 11.14.11) eredeti full SDH, sup (opcionális)
-    - 11.14.12) kommentárok, sup (opcionális)
+    - magyar forced (ha van), srt
+    - magyar full, srt
+    - eredeti forced (ha van), srt
+    - eredeti full, srt
+    - eredeti full SDH, srt
+    - kommentárok (opcionális), srt
+    - magyar forced (ha van), sup (opcionális)
+    - magyar full, sup (opcionális)
+    - eredeti forced (ha van), sup (opcionális)
+    - eredeti full, sup (opcionális)
+    - eredeti full SDH, sup (opcionális)
+    - kommentárok, sup (opcionális)
   - 11.15) Forced feliratoknál a Forced flag használata ajánlott.
   - 11.16) További feliratok opcionálisan muxolhatóak vagy mellékelhetőek. FIGYELEM: bizonyos lejátszók nem képesek mind az MKV specifikációban leírt 127 sáv kezelésére, így ajánlott 16 sáv alatt maradni (ebbe a videó- és hangsávok is beletartoznak).
-  - 11.17) Fansub kizárólag akkor használható, ha nem érhető el retail.
-     - 11.17.1) Fansub használatát az NFO-ban kötelező jelezni.
-  - 11.18) A feliratok nem csúszhatnak zavaró mértékben a képhez képest (max. ~600 ms).
-  
+  - 11.17) Retail felirat használata kötelező, amennyiben elérhető.
+     - 11.17.1) Fansub használható Retail felirat mellett is.
+     - 11.17.2) Fansub és Retail együttes használatánál `--track-name`-ben kötelező megadni a nevüket.
+  - 11.18) A feliratok nem csúszhatnak zavaró mértékben a képhez képest (max. ~400 ms).
+
 ## Aláírták és tudomásul vették
 `boOk`, `Legacy`, `NaGa`, `NFC`, `pcroland`, `prldm`, `SFY`
 
