@@ -1,13 +1,13 @@
 # Hungarian REMUX Release Rules and Standards
   - Célunk egy olyan lefektetett és átlátható szabályrendszer létrehozása, mely kizárólag minőségi szempontokat vesz figyelembe.
   - Ez a szabályzat nem vonatkozik a korábbi release-ekre, az alábbiak alapján nem készíthető proper. Amennyiben jobb minőségű BD/stb. elérhető, mint amiből a korábbi release készült, az új release-t `READ.NFO` taggel kell ellátni. Minden egyéb `DUPE`-nak minősül. Ez alól kivétel, ha a korábbi release súlyos hibával rendelkezik, pl. hangcsúszás, képhiba stb., ekkor `PROPER`-elhető.
-  
+
 ## Érvényes
   2020-06-14-től
 
 ## Utolsó frissítés
   2020-06-14
-  
+
 ## 1) Általános
  - 1.1) Tilos a DUPE, azaz a korábbival megegyező (vagy közel azonos) minőségű release készítése.
  - 1.2) SDR és HDR (ide értve a `HDR10Plus`-t is) tartalmakra kizárólag `.mkv` konténer használata elfogadott.
@@ -67,7 +67,7 @@
      - 2.17.1) `PROPER` release-re érkező `PROPER`-t `REAL.PROPER`-nek kell taggelni (és így tovább a későbbieket, pl. `REAL.REAL.PROPER`).
   - 2.18) `READ.NFO` és `PROPER`/`REPACK`/`RERiP` tagek együttes használata TILOS!
   - 2.19) Zavaró és felesleges tagek használata TILOS!
-  
+
 ## 3) NFO
  - 3.1) NFO használata kötelező.
  - 3.2) Az NFO nyelve angol és/vagy magyar.
@@ -93,7 +93,7 @@
   - 3.5) Más csapatok sértegetése, személyeskedés TILOS!
   - 3.6) `PROPER`/`REPACK` release-ek esetén fel kell tüntetni a korábbi release problémáit. Képi vagy hangi `PROPER` esetén csatolni kell proofot, hogy valóban jobb az új release.
   - 3.7) Felesleges, zavaró dolgokat az NFO-ba elhelyezni TILOS!
-  
+
 ## 4) Források
    - 4.1) Csak jobb forrásból készített új release megengedett, minden egyéb DUPE.
       - 4.1.1) Ez alól kivétel, ha eltérő vágással (`THETRICAL` vs. `EXTENDED`) rendelkezik a release.
@@ -101,7 +101,7 @@
    `(UHD)` `BluRay` > `HDDVD`, `DTheater`
    - 4.3) Amennyiben jobb minőségű BD elérhető, mint amiből a korábbi release készült, ezt `READ.NFO` taggel jelezni kell.
    - 4.4) Muxolni kizárólag olyan már kész release-re szabad, amely megfelel ezen szabályzatban rögzített pontoknak. Törekedni kell az elérhető legjobb minőségű release felhasználására!
-   
+
 ## 5) Video
   - 5.1) A videó újrakódolása SZIGORÚAN TILOS!
   - 5.2) Kizárólag egy videósáv használata megengedett.
@@ -118,7 +118,7 @@
   - 5.10) A video sáv Language tagjának beállítása opcionális: vagy magyar vagy az eredeti nyelv.
   - 5.11) Encoder által beírt header eltávolítása SZIGORÚAN TILOS!
   - 5.12) Színekre vonatkozó metaadatok (pl. ColorMatrix, ColorPrimaries, TransferFunction, Chroma Location, CLL, stb.) eltávolítása SZIGORÚAN TILOS!
-  
+
 ## 6) Audio
   - 6.1) Magyar hangsávot tartalmazó release esetén kötelező a `HUN` (`Hun`) tag használata. Amennyiben a release nem tartalmaz magyar hangsávot, úgy nem kell nyelvi tag-ot megadni.
   - 6.2) Az eredeti nyelvű hangsáv megtartása KÖTELEZŐ!
@@ -183,23 +183,24 @@
  - 8.15) A feliratok nyelvét KÖTELEZŐ Language tagként beállítani.
  - 8.16) Title tag használata opcionális.
  - 8.17) Feliratok sorrendje:
-    - 8.17.1) magyar forced (ha van), srt
-    - 8.17.2) magyar full, srt
-    - 8.17.3) eredeti forced (ha van), srt
-    - 8.17.4) eredeti full, srt
-    - 8.17.5) eredeti full SDH, srt
-    - 8.17.6) kommentárok (opcionális), srt
-    - 8.17.7) magyar forced (ha van), sup
-    - 8.17.8) magyar full, sup
-    - 8.17.9) eredeti forced (ha van), sup
-    - 8.17.10) eredeti full, sup
-    - 8.17.11) eredeti full SDH, sup
-    - 8.17.12) kommentárok (opcionális), sup
+    - magyar forced (ha van), srt
+    - magyar full, srt
+    - eredeti forced (ha van), srt
+    - eredeti full, srt
+    - eredeti full SDH, srt
+    - kommentárok (opcionális), srt
+    - magyar forced (ha van), sup
+    - magyar full, sup
+    - eredeti forced (ha van), sup
+    - eredeti full, sup
+    - eredeti full SDH, sup
+    - kommentárok (opcionális), sup
   - 8.18) Forced feliratoknál a Forced flag használata ajánlott.
   - 8.19) További feliratok opcionálisan muxolhatóak vagy mellékelhetőek. FIGYELEM: bizonyos lejátszók nem képesek mind az MKV specifikációban leírt 127 sáv kezelésére, így ajánlott 16 sáv alatt maradni (ebbe a videó- és hangsávok is beletartoznak).
-  - 8.21) Fansub kizárólag akkor használható, ha nem érhető el retail.
-     - 8.21.1) Fansub használatát az NFO-ban kötelező jelezni.
-  - 8.21) A feliratok nem csúszhatnak zavaró mértékben a képhez képest (max. ~600 ms).
+  - 8.20) Retail felirat használata kötelező, amennyiben elérhető.
+     - 8.20.1) Fansub használható Retail felirat mellett is.
+     - 8.20.2) Fansub és Retail együttes használatánál `--track-name`-ben kötelező megadni a nevüket.
+  - 8.21) A feliratok nem csúszhatnak zavaró mértékben a képhez képest (max. ~400 ms).
 
 ## Aláírták és tudomásul vették
 `boOk`, `Legacy`, `NaGa`, `NFC`, `pcroland`, `prldm`, `SFY`
