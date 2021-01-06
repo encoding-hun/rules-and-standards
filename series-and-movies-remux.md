@@ -11,8 +11,7 @@
 ## 1) Általános
  - 1.1) Tilos a DUPE, azaz a korábbival megegyező (vagy közel azonos) minőségű release készítése.
  - 1.2) SDR és HDR (ide értve a `HDR10Plus`-t is) tartalmakra kizárólag `.mkv` konténer használata elfogadott.
-   - 1.2.1) Ajánlott muxer: MKVToolNix (mkvmerge).
-      - 1.2.1.1) Törekedjünk a lehető legfrissebb változat használatára.
+   - 1.2.1) Ajánlott muxer: MKVToolNix (mkvmerge). Törekedjünk a lehető legfrissebb változat használatára.
    - 1.2.2) Header compression használata TILOS.
    - 1.2.3) HDR kép és `.mkv` konténer esetén a Dolby Vision sáv megtartása TILOS! Dolby Vision release az 1.3-as pontnak megfelelően készíthető.
  - 1.3) Dolby Vision esetén kizárólag `.mp4` és `.m2ts` konténer elfogadott.
