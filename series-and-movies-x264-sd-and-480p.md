@@ -131,7 +131,7 @@
 ## 6) Felbontás
   - 6.1) SD release maximális szélessége `720 px` lehet (`AutoResize("SD")`)
      - 6.1.1) DVD-ből kizárólag SD release készíthető.
-  - 6.2) 480p release maximális felbontása `854x480` lehet. (`AutoResize("480")`)
+  - 6.2) 480p release maximális felbontása `854x480` lehet. (`AutoResize(480)`)
   - 6.3) A videó felbontása mod2 kell legyen.
   - 6.4) A videó felskálázása SZIGORÚAN TILOS (pl. ha croppolás után 704 széles a kép, tilos 720-ra felnagyítani)!
      - 6.4.1) Amennyiben a forrás szélessége kevesebb, mint `720 px` széles, úgy a kész encode-nak a `forrás-crop` szélesnek kell lennie.
