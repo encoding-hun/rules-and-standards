@@ -9,3 +9,5 @@ More specifically:
 * **–TRANSFER** specifies the gamma curve used for the RGB. Like –colorprim, setting this correctly probably requires knowledge you don’t have, so don’t set it at all. Again, only people with calibrated studio monitors will ever notice or care.
 
 **TL;DR:** Use `--colormatrix bt709` if your source is a HD transport stream; `--colormatrix bt470bg` if it is an SD transport stream.
+
+mirrored from: [https://mod16.org/hurfdurf/?p=116](https://mod16.org/hurfdurf/?p=116)
