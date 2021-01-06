@@ -195,8 +195,3 @@
      - 8.20.1) Fansub használható Retail felirat mellett is.
      - 8.20.2) Fansub és Retail együttes használatánál `--track-name`-ben kötelező megadni a nevüket.
   - 8.21) A feliratok nem csúszhatnak zavaró mértékben a képhez képest (max. ~400 ms).
-
-## Aláírták és tudomásul vették
-`boOk`, `Legacy`, `NaGa`, `NFC`, `pcroland`, `prldm`, `SFY`
-
-## Banned grps
