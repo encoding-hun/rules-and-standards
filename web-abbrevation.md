@@ -9,6 +9,7 @@
 | sonymax.hu                      | `SMAX`    |
 | tvgo.hu                         | `TVGO`    |
 | tv2.hu                          | `TV2`     |
+| filmboxlive.com                 | `FBL`     |
 ## Nemzetközi:
 | oldal                           | rövidítés |
 | :-                              | :-        |
