@@ -5,11 +5,11 @@
 | [**x264 HD**](https://github.com/encoding-hun/rules-and-standards/blob/master/series-and-movies-x264-hd.md)                  | 2021.01.07.      | 2020.02.19. |
 | [**REMUX**](https://github.com/encoding-hun/rules-and-standards/blob/master/series-and-movies-remux.md)                      | 2021.01.07.      | 2020.06.14. |
 | [**x265 UHD-HD**](https://github.com/encoding-hun/rules-and-standards/blob/master/series-and-movies-x265-hd-uhd.md)          | 2021.01.07.      | 2020.06.14. |
-| **DVD, MP3 és lossless audio** (előkészületben)                                                                              |                  |             |
+| **DVD, MP3 és lossless audio** (előkészületben; korábbi szabályzat érvényben)                                                |                  |             |
 
 [**Nuke okok**](https://github.com/encoding-hun/rules-and-standards/blob/master/nuke_reasons_movies.md)
 
 ## Aláírták és tudomásul vették:
-`boOk`, `Legacy`, `NaGa`, `NFC`, `pcroland`, `prldm`, `SFY`
+`boOk`, `FULCRUM`, `Legacy`, `NaGa`, `NFC`, `pcroland`, `prldm`, `SFY`
 
 ## Banned grps
