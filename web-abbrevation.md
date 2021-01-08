@@ -10,6 +10,7 @@
 | tvgo.hu                         | `TVGO`    |
 | tv2.hu                          | `TV2`     |
 | filmboxlive.com                 | `FBL`     |
+| spilerextra.hu                  | `SPLR`     |
 ## Nemzetközi:
 | oldal                           | rövidítés |
 | :-                              | :-        |
