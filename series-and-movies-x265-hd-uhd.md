@@ -216,24 +216,25 @@
      - 9.5.3) Lossless formátumok kereszt-konvertálása TILOS (pl. `TrueHD`-> `FLAC`)!
   - 9.6) `MP3`, `MP2`, és egyéb vicces formátumok használata TILOS!
   - 9.7) Más hangok encodeolása `AAC`-be kizárólag a kommentár sáv esetén megengedett.
-     - 9.7.1) Kivétel, ha nyújtani és/vagy vágni kell, ekkor lehet AAC, amennyiben stereo vagy mono.
+     - 9.7.1) Kivétel, ha nyújtani és/vagy vágni kell, ekkor lehet `AAC`, amennyiben stereo vagy mono.
   - 9.8) LPCM hangot kötelező `TrueHD`, `DTS-HD.MA` vagy `FLAC` formátumba (film esetén) vagy AAC formátumba (kommentár esetén) konvertálni.
   - 9.9) A hangsávok eredeti csatornaszámát meg kell tartani!
   - 9.10) 1080p felbontás és 8 csatornás hang esetén DD+ formátumot kell használni (`DDP@1536`).
      - 9.10.1) Amennyiben a lemezen ilyen nem áll rendelkezésre, úgy a lossless hangból kell elkészíteni.
      - 9.10.2) 2160p felbontás esetén lásd 9.5.1 és 9.5.2-es pont.
-  - 9.11) 2 csatornás `CUSTOM` hangnál (TV-ből vagy WEB-ről felvett) JAVASOLT az `AAC` használata.
-  - 9.12) Amennyiben az érintetlen forráson kizárólag DTS található:
+  - 9.11) 2 csatornás `CUSTOM` hangnál (TV-ből vagy WEB-ről felvett) javasolt `AAC` használata.
+  - 9.12) Amennyiben az érintetlen forráson kizárólag `DTS` (vagy `DTS-HD MA`, `DTS:X`) található:
     - 9.12.1) `DDP@1024` kódolása (ajánlott, kivéve ha 768 kbps vagy kisebb a DTS bitrátája),
-    - 9.12.2) DTS meghagyása, mellé `DD@640` (2 csatorna esetén `DD@256`) compatibility track készítése.
+    - 9.12.2) DTS meghagyása, mellé KÖTELEZŐ `DD@640` (2 csatorna esetén `DD@256` vagy `AAC`) compatibility track készítése.
   - 9.13) Lossy hangot csak losslessből szabad kódolni.
      - 9.13.1) Ez alól kivétel ha csak DTS hang érhető el és compatibility tracket készítünk vagy 1080p-re `DDP@1024`-et.
   - 9.14) Maximum +/- 100 ms hangcsúszás megengedett.
   - 9.15) A hangok nyelvét kötelező Language tagben jelezni!
+  - 9.16) Kizárólag stúdió által készített surround hangok használhatóak fel, házilag felkevertek tilosak. TV-s surround hang esetén mindig győződjünk meg, hogy valódi surround-e, amennyiben nem, downmixeljük. Pl.: `ffmpeg -i input.ac3 -ac 2 -f sox - | sox -p -S -b 24 --norm=-1 output.wav`
 
 ## 10) Audio kódolás
-  - 10.1) `AC3` esetében Dolby Certified encodert kell használni (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`, `Sonic Audio Transcoder`).
-  - 10.2) A készített `AC3` nem tartalmazhat Copyright Protected flaget.
+  - 10.1) `AC3` (`DD`) esetében Dolby Certified encodert kell használni (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`, `Sonic Audio Transcoder`).
+  - 10.2) A készített `AC3` (`DD`) nem tartalmazhat Copyright Protected flaget.
   - 10.3) `DTS-HD.MA` hang készítéséhez kizárólag `DTS-HD Master Audio Suite` használható.
   - 10.4) `AAC` esetében elfogadott encoderek: `qaac` (`Apple AAC`), `FDK`, `Nero`.
     - 10.4.1) Csak stereo/mono hangnál használható AAC.
@@ -241,15 +242,15 @@
        - 10.3.2.1) `qaac`: `-V 90` - `-V 127` és `--no-delay --ignorelength` (egyéb kapcsolók használata tilos)
        - 10.3.2.2) `FDK`: `-m 4` vagy `-m 5` (és `-cutoff 20000` ffmpeg-es libfdk_aac használata esetén)
        - 10.3.2.3) `Nero`: `-q 40` - `-q 75`
-  - 10.5) Compatibility `AC3` track készület FFmpeg (4.1 vagy újabb) vagy Aften (2009-12-26 vagy újabb) segítségével is.
+  - 10.5) Compatibility `AC3` (`DD`) track készület FFmpeg (4.1 vagy újabb) vagy Aften (2009-12-26 vagy újabb) segítségével is.
   - 10.6) A hangok mintavételezését (sampling rate) tilos megváltoztatni!
   - 10.7) Belső konverziók esetén meg kell tartani (vagy jobbat kell használni), mint az eredeti hang bitmélysége és mintavételezési rátája.
   - 10.8) Ha a hangot nyújtani kell előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. `hdtools compare`).
   - 10.9) Resamplingre használható programok: `hdtools resample`, `eac3to`, `Sound Forge`, `Audacity`, `SoX`, és `Adobe Audition`.
   - 10.10) TimeStretchingre használható programok: `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge`, `SONAR` `élastique TimeStretch`, `Audacity`, `SoX`, és `Adobe Audition`.
-  - 10.11) Commentary track maximum 2.0 lehet, `AC3` esetében maximum 192 kbps, `AAC` esetében 80-160 kbps.
+  - 10.11) Commentary track maximum 2.0 lehet, `AC3` (`DD`) esetében maximum 192 kbps, `AAC` esetében 80-160 kbps.
   - 10.12) Szegmentált kódolás használata TILOS!
-  - 10.13) `AC3`, `E-AC3`, `DTS`, `DTS-HD.MA`, és `DTS-X` esetén a `dialnorm` értéket meg kell tartani!
+  - 10.13) `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`), `DTS`, `DTS-HD.MA`, és `DTS-X` esetén a `dialnorm` értéket meg kell tartani!
 
 ## 11) Feliratok
  - 11.1) Kizárólag SRT (SubRip) és PGS-SUP formátumú feliratok megengedettek!
