@@ -200,33 +200,33 @@
   - 9.4) Egyéb nyelvű hangok megtartása TILOS!
   - 9.5) Megengedett hangformátumok: `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`), `DTS`, `AAC`, `FLAC`.
   - 9.6) `MP3`, `MP2`, és egyéb vicces formátumok használata TILOS!
-  - 9.7) `DTS` és `AC3` encodeolása `AAC`-be kizárólag a kommentár sáv esetén megengedett.
-     - 9.7.1) Kivétel, ha nyújtani és/vagy vágni kell, ekkor lehet AAC, amennyiben stereo vagy mono.
+  - 9.7) `DTS` és `AC3` (`DD`) encodeolása `AAC`-be kizárólag a kommentár sáv esetén megengedett.
+     - 9.7.1) Kivétel, ha nyújtani és/vagy vágni kell, ekkor lehet `AAC`, amennyiben stereo vagy mono.
   - 9.8) LPCM hangot kötelező FLAC-be (film esetén) vagy AAC-be (kommentár esetén) konvertálni.
   - 9.9) A hangsávok eredeti csatornaszámát meg kell tartani! Kivétel 8 csatornás hangok és kommentár sávok.
   - 9.10) 8 csatornás hang esetén vagy DD+ formátumot kell használni (`DDP@1536`) vagy a core-t kell meghagyni.
-  - 9.11) 2 csatornás `CUSTOM` hangnál (TV-ből vagy WEB-ről felvett) JAVASOLT az `AAC` használata.
+  - 9.11) 2 csatornás `CUSTOM` hangnál (TV-ből vagy WEB-ről felvett) javasolt `AAC` használata.
   - 9.12) 720p release-ek esetén `DTS`, `TrueHD`, `DTS-HD.MA` és `DTS-X` hang használata TILOS!
   - 9.13) 1080p release-ek esetén `TrueHD`, `DTS-HD.MA` és `DTS-X` használata TILOS! Ilyen esetekben vagy a core-t használjuk vagy lossless audióból kódolunk `DD@640`, `DDP@1024` 6 csatornás vagy `DDP@1536` 8 csatornás hangot (9.9 és 9.10 figyelembevételével).
-  - 9.14) Amennyiben az érintetlen forráson kizárólag DTS található:
+  - 9.14) Amennyiben az érintetlen forráson kizárólag `DTS` (vagy `DTS-HD MA`, `DTS:X`) található:
     - 9.14.1) `DDP@1024` kódolása (ajánlott, kivéve ha 768 kbps vagy kisebb a DTS bitrátája),
-    - 9.14.2) DTS meghagyása, mellé `DD@640` (2 csatorna esetén `DD@256`) compatibility track készítése.
-  - 9.15) DTS használata esetén KÖTELEZŐ DD compatibility track készítése!
-  - 9.16) Lossy hangot csak losslessből szabad kódolni.
-     - 9.16.1) Ez alól kivétel ha csak DTS hang érhető el és compatibility tracket készítünk vagy 1080p-re `DDP@1024`-et.
-  - 9.17) Maximum +/- 100 ms hangcsúszás megengedett.
-  - 9.18) A hangok nyelvét kötelező Language tagben jelezni!
+    - 9.14.2) DTS meghagyása, mellé KÖTELEZŐ `DD@640` (2 csatorna esetén `DD@256` vagy `AAC`) compatibility track készítése.
+  - 9.15) Lossy hangot csak losslessből szabad kódolni.
+     - 9.15.1) Ez alól kivétel ha csak DTS hang érhető el és compatibility tracket készítünk vagy 1080p-re `DDP@1024`-et.
+  - 9.16) Maximum +/- 100 ms hangcsúszás megengedett.
+  - 9.17) A hangok nyelvét kötelező Language tagben jelezni!
+  - 9.18) Kizárólag stúdió által készített surround hangok használhatóak fel, házilag felkevertek tilosak. TV-s surround hang esetén mindig győződjünk meg, hogy valódi surround-e, amennyiben nem, downmixeljük. Pl.: `ffmpeg -i input.ac3 -ac 2 -f sox - | sox -p -S -b 24 --norm=-1 output.wav`
 
 ## 10) Audio kódolás
-  - 10.1) `AC3` esetében Dolby Certified encodert kell használni (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`, `Sonic Audio Transcoder`).
-  - 10.2) A készített `AC3` nem tartalmazhat Copyright Protected flaget.
+  - 10.1) `AC3` (`DD`) esetében Dolby Certified encodert kell használni (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`, `Sonic Audio Transcoder`).
+  - 10.2) A készített `AC3` (`DD`) nem tartalmazhat Copyright Protected flaget.
   - 10.3) `AAC` esetében elfogadott encoderek: `qaac` (`Apple AAC`), `FDK`, `Nero`.
     - 10.3.1) Csak stereo/mono hangnál használható `AAC`.
     - 10.3.2) Javasolt beállítások:
        - 10.3.2.1) `qaac`: `-V 90` - `-V 127` és `--no-delay --ignorelength` (egyéb kapcsolók használata tilos)
        - 10.3.2.2) `FDK`: `-m 4` vagy `-m 5` (és `-cutoff 20000` ffmpeg-es libfdk_aac használata esetén)
        - 10.3.2.3) `Nero`: `-q 40` - `-q 75`
-  - 10.4) Compatibility `AC3` track készülhet FFmpeg (4.1 vagy újabb) vagy Aften (2009-12-26 vagy újabb) segítségével is.
+  - 10.4) Compatibility `AC3` (`DD`) track készülhet FFmpeg (4.1 vagy újabb) segítségével is.
   - 10.5) A hangok mintavételezését (sampling rate) tilos megváltoztatni!
   - 10.6) Belső konverziók esetén meg kell tartani (vagy jobbat kell használni), mint az eredeti hang bitmélysége és mintavételezési rátája.
   - 10.7) Ha a hangot nyújtani kell előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. `hdtools compare`).
