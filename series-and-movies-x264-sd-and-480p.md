@@ -210,19 +210,20 @@
      - 9.7.1) Kivétel 8 csatornás hangok.
      - 9.7.2) 8 csatornás hang esetén vagy a core-t kell megtartani vagy egy 6 csatornás `DD@640`-et kell készíteni.
   - 9.8) 6 csatornás hang esetén kizárólag `AC3` (`DD`) elfogadott, melynek bitrátája 640 kbps, ha jobb forrásból készül, vagy az eredetivel megegyező (pl. DVD esetén).
-  - 9.9) 2 csatornás `RETAiL` hang lehet `AC3` vagy `AAC` is.
-     - 9.9.1)`AC3` esetén a forrással megegyező bitráta vagy jobb forrás esetén 192-256 kbps elfogadott.
-     - 9.9.2) Amennyiben a forrás hang 2 csatornás `E-AC3`-at tartalmaz, megtarthatjuk. Törekedjünk a felesleges újrakódolások elkerülésére.
-  - 9.10) 2 csatornás CUSTOM hangnál (TV-ből, WEB-ről felvett) JAVASOLT az `AAC` használata.
+  - 9.9) 2 csatornás `RETAiL` hang lehet `AC3` (`DD`) vagy `AAC` is.
+     - 9.9.1) `AC3` (`DD`) esetén a forrással megegyező bitráta vagy jobb forrás esetén 192-256 kbps elfogadott.
+     - 9.9.2) Amennyiben a forrás hang 2 csatornás `E-AC3` (`DD+`/`DDP`)-at tartalmaz, megtarthatjuk. Törekedjünk a felesleges újrakódolások elkerülésére.
+  - 9.10) 2 csatornás `CUSTOM` hangnál (TV-ből vagy WEB-ről felvett) javasolt `AAC` használata.
   - 9.11) Mono hang KIZÁRÓLAG `AAC` lehet.
   - 9.12) Lossy hangot csak losslessből szabad kódolni.
-     - 9.12.1) Ez alól kivétel ha csak DTS hang érhető el.
+     - 9.12.1) Ez alól kivétel ha csak `DTS` vagy `E-AC3` (`DD+`/`DDP`) hang érhető el.
   - 9.13) Maximum +/- 100 ms hangcsúszás megengedett.
   - 9.14) A hangok nyelvét kötelező Language tagben jelezni!
+  - 9.15) Kizárólag stúdió által készített surround hangok használhatóak fel, házilag felkevertek tilosak. TV-s surround hang esetén mindig győződjünk meg, hogy valódi surround-e, amennyiben nem, downmixeljük. Pl.: `ffmpeg -i input.ac3 -ac 2 -f sox - | sox -p -S -b 24 --norm=-1 output.wav`
 
 ## 10) Audio kódolás
-  - 10.1) `AC3` esetében Dolby Certified encodert kell használni (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`, `Sonic Audio Transcoder`).
-  - 10.2) A készített `AC3` nem tartalmazhat Copyright Protected flaget.
+  - 10.1) `AC3` (`DD`) esetében Dolby Certified encodert kell használni (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`, `Sonic Audio Transcoder`).
+  - 10.2) A készített `AC3` (`DD`) nem tartalmazhat Copyright Protected flaget.
   - 10.3) `AAC` esetében elfogadott encoderek: `qaac` (`Apple AAC`), `FDK`, `Nero`.
     - 10.3.1) Csak stereo/mono hangnál használható `AAC`.
     - 10.3.2) Javasolt beállítások:
@@ -238,7 +239,7 @@
   - 10.11) Commentary trackek használata csak akkor megengedett, ha kizárólag SD (DVD, PDTV, SD WEB-DL) forrás érhető el.
     - 10.11.1) Commentary track kizárólag `AAC` 2.0 (vagy mono) lehet és 80-160 kbps bitrátával rendelkezhet (mono esetén 40-80 kbps).
     - 10.11.2) (UHD) BluRay, HDDVD, (UHD) WEB-DL források esetén Commentary trackek használata TILOS (erre ott vannak a HD formátumok)!
-  - 10.12) `AC3` és `E-AC3` esetén a `dialnorm` értéket meg kell tartani!
+  - 10.12) `AC3` (`DD`) és `E-AC3` (`DD+`/`DDP`) esetén a `dialnorm` értéket meg kell tartani!
 
 ## 11) Feliratok
  - 11.1) Kizárólag SRT (SubRip) formátumú feliratok megengedettek!
