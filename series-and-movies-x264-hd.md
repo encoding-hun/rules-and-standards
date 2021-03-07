@@ -114,7 +114,7 @@
   - 5.6) A zavaró bevágásokat: műsorszám hirdetést tartalmaz, reklámok, FBI Warning, stb. el kell távolítani.
      - 5.6.1) Kivéve, amikor ez a videó/hang (közel) teljes újrakódolásával járna.
   - 5.7) Égetett felirattal rendelkező forrásokat lehetőleg kerüljük, kivéve ha szignifikánsan jobb a minősége.
-  - 5.8) Hybrid encodeok megengedettek, ha ezzel jobb minőség érhető el.
+  - 5.8) Hybrid encode-ok megengedettek, ha ezzel jobb minőség érhető el.
   - 5.9) A konténerben felbontásra és croppolásra extra metaadatokat megadni TILOS!
   - 5.10) A video sáv Language tagjának beállítása opcionális: vagy magyar vagy az eredeti nyelv.
 
@@ -241,7 +241,7 @@
     - 11.1.1) Az OCR karakterfelismerést a lehető legpontosabban kell elvégezni.
     - 11.1.2) A kész felirat lehetőleg kevés, érthetőséget nem zavaró helyesírási hibát tartalmazhat, de törekedjünk, hogy ne legyen benne hiba.
     - 11.1.3) A felismertetett feliraton javasolt egy spellchecker lefuttatása.
-    - 11.1.4) Kivételt képeznek a 3D-s encodeok, ahol megengedett a pgs/sup formátum is.
+    - 11.1.4) Kivételt képeznek a 3D-s encode-ok, ahol megengedett a pgs/sup formátum is.
  - 11.2) A feliratokat tartalmaznia kell az mkv-nak, opcionálisan mellette is meghagyható.
  - 11.3) Kötelező feliratok, amennyiben elérhetőek a forráson: magyar forced, magyar, eredeti nyelv forced, eredeti nyelv.
  - 11.4) Magyar filmek esetén ajánlott az angol nyelvű felirat (ha van) megtartása is.
