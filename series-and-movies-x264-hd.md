@@ -200,7 +200,7 @@
   - 9.4) Egyéb nyelvű hangok megtartása TILOS!
   - 9.5) Megengedett hangformátumok: `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`), `DTS`, `AAC`, `FLAC`.
   - 9.6) `MP3`, `MP2`, és egyéb vicces formátumok használata TILOS!
-  - 9.7) `DTS` és `AC3` (`DD`) encodeolása `AAC`-be kizárólag a kommentár sáv esetén megengedett.
+  - 9.7) `DTS` és `AC3` (`DD`) encode-olása `AAC`-be kizárólag a kommentár sáv esetén megengedett.
      - 9.7.1) Kivétel, ha nyújtani és/vagy vágni kell, ekkor lehet `AAC`, amennyiben stereo vagy mono.
   - 9.8) LPCM hangot kötelező FLAC-be (film esetén) vagy AAC-be (kommentár esetén) konvertálni.
   - 9.9) A hangsávok eredeti csatornaszámát meg kell tartani! Kivétel 8 csatornás hangok és kommentár sávok.
