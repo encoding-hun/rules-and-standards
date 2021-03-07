@@ -215,7 +215,7 @@
      - 9.5.2) `TrueHD`, `DTS`, `DTS-HD.MA`, és `DTS-X` hangokhoz KÖTELEZŐ `DD@640` compatibility track készítése.
      - 9.5.3) Lossless formátumok kereszt-konvertálása TILOS (pl. `TrueHD`-> `FLAC`)!
   - 9.6) `MP3`, `MP2`, és egyéb vicces formátumok használata TILOS!
-  - 9.7) Más hangok encodeolása `AAC`-be kizárólag a kommentár sáv esetén megengedett.
+  - 9.7) Más hangok encode-olása `AAC`-be kizárólag a kommentár sáv esetén megengedett.
      - 9.7.1) Kivétel, ha nyújtani és/vagy vágni kell, ekkor lehet `AAC`, amennyiben stereo vagy mono.
   - 9.8) LPCM hangot kötelező `TrueHD`, `DTS-HD.MA` vagy `FLAC` formátumba (film esetén) vagy AAC formátumba (kommentár esetén) konvertálni.
   - 9.9) A hangsávok eredeti csatornaszámát meg kell tartani!
