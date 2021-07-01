@@ -7,6 +7,7 @@
  - A szabályzattól notorikusan eltérő csapatok permanens bant kapnak.
  - Egyéb értelmező tag-ek kizárólag angol nyelven használhatóak: pl. `wrong.format_mono.audio.should.be.aac`
  - Nuke indoknak használhatóak a szabályzatban található pontok említése is. Ekkor az említett pont sérül valameny módon.
+ - A szabályzat adott pontjának létrejötte/módosítása előtt készült release nem NUKE-olható, ha csak a változtatott pontban hibás és a változtatást megelőző szabályzat szerint rendben volt.
 
 ## Indokok
  - Video:
