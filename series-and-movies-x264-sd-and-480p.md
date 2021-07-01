@@ -177,7 +177,7 @@
      - 8.17.3) `undef` flaggelése TILOS!
   - 8.18) ColorPrimaries és TransferFunction flaggelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod, mit csinálsz). Használata esetén a forrással egyezőre kell állítani. Bővebb infó: [**mod16.org**](https://mod16.org/hurfdurf/?p=116) | [**mirror**](https://github.com/encoding-hun/rules-and-standards/blob/master/files/color-coefficient.md)
   - 8.19) Kötelező 16 referenciaképet használni (`--ref 16`).
-  - 8.20) B frame-ek kikapcsolása TILOS. Minimum `3` egymás utáni B frame-t kell engedni (`--bframes 3` vagy több).
+  - 8.20) B frame-ek kikapcsolása TILOS. Minimum `8` egymás utáni B frame-t kell engedni (`--bframes 8` vagy több).
   - 8.21) A készült videónak DXVA-kompatibilisnek kell lennie (max. `High@L4.1`).
   - 8.22) `CABAC` kikapcsolása TILOS.
   - 8.23) `8x8dct` kikapcsolása TILOS.
