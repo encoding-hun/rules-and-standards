@@ -1,6 +1,6 @@
 ## 1) Általános
  - 1.1) A szabályzatok nem követése, figyelmen kívül hagyása NUKE-ot eredményez.
- - 1.2) NUKE requestet bárki kérhet, a jogosság megvizsgálása a NUKE Council feladata
+ - 1.2) NUKE requestet bárki kérhet, a jogosság megvizsgálása a NUKE Council feladata.
  - 1.3) A Council döntése nem felülbírálható. A hiba azonos csapat által való elhárítása után a release `unnuked` flaget kap.
  - 1.4) Több ok `_` (underscore) karakterrel fűzendő össze. pl. `bad.res_bad.crop`.
  - 1.5) A NUKE reason kizárólag kisbetűket tartalmazhat.
