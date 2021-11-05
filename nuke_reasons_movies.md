@@ -114,6 +114,6 @@
 
         
  - 2.3) Nem önálló tag-ek
-        - `poor.quality` = gyatra minőség, több technikai hiba esetén jelezhető, hogy abszolút rossz a release
-        - `p2p.shit` = bottom feeder csapatok jelölésére, több bármilyen nuke reason mellé adható
-        - `banned.grp` = folyamatosan silány munkát végző csapatok, akik kitiltásban részesültek
+   - `poor.quality` = gyatra minőség, több technikai hiba esetén jelezhető, hogy abszolút rossz a release
+   - `p2p.shit` = bottom feeder csapatok jelölésére, több bármilyen nuke reason mellé adható
+   - `banned.grp` = folyamatosan silány munkát végző csapatok, akik kitiltásban részesültek
