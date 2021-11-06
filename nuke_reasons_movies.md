@@ -64,6 +64,7 @@
         - `downsampled` = az eredeti hangnál alacsonyabb mintavételezés használata
         - `forbidden.audio.encoder` = tiltott hang encoder használata (pl. FFmpeg használata nem compatibility `AC3` és `E-AC3` hangokhoz)
         - `wrong.stretching.algo` = nem megfelelő hangnyújtás használata
+        - `missing.compatibility.track` = hiányzó compatibility track
     
     - 2.1.3) Felirat:
         - `sub.oos` = felirat csúszik a képhez képest
