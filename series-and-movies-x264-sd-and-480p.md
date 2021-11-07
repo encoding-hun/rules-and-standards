@@ -220,6 +220,10 @@
   - 9.13) Maximum +/- 100 ms hangcsúszás megengedett.
   - 9.14) A hangok nyelvét kötelező Language tagben jelezni!
   - 9.15) Kizárólag stúdió által készített surround hangok használhatóak fel, házilag felkevertek tilosak. TV-s surround hang esetén mindig győződjünk meg, hogy valódi surround-e, amennyiben nem, downmixeljük. Pl.: `ffmpeg -i input.ac3 -ac 2 -f sox - | sox -p -S -b 24 --norm=-1 output.wav`
+  - 9.16) Amennyiben a forrás audió megtartható újrakódolás nélkül, úgy annak újrakódolása tilos.
+    - 9.16.1) Ez alól kivétel, ha kizárólag `E-AC3` hang áll rendelkezésre, ekkor a nagyobb kompatibilitás érdekében `AC3` hang készíthető. Ennek módjáról lásd 10.14)-es pont.
+  - 9.17) Egy másik forrásból származó hang akkor számít jobb minőségűnek, hogyha a lowpass (cutoff) frekvencia 16 kHz alatt legalább 1 kHz-el, 16 kHz felett legalább 1.5 kHz-el magasabb, és a többlet adat nem sztochasztikus (dithering miatt belekerülő) zaj. Ha ez teljesül, akkor készíthető új release, egyéb esetben `dupe`. Kérdéses esetekben proofként egy-egy spektrum mutatása szükséges a két hangról.
+    - 9.17.1) Ez alól kivétel, hogyha az alacsonyabb lowpass-szel rendelkező hang minősége hallhatóan jobb.
 
 ## 10) Audio kódolás
   - 10.1) `AC3` (`DD`) esetében Dolby Certified encodert kell használni (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`, `Sonic Audio Transcoder`).
@@ -240,6 +244,8 @@
     - 10.11.1) Commentary track kizárólag `AAC` 2.0 (vagy mono) lehet és 80-160 kbps bitrátával rendelkezhet (mono esetén 40-80 kbps).
     - 10.11.2) (UHD) BluRay, HDDVD, (UHD) WEB-DL források esetén Commentary trackek használata TILOS (erre ott vannak a HD formátumok)!
   - 10.12) `AC3` (`DD`) és `E-AC3` (`DD+`/`DDP`) esetén a `dialnorm` értéket meg kell tartani!
+  - 10.13) Amennyiben a forrás `AC3` és újrakódolás szükséges, akkor az újrakódolt hang bitrátája nem lehet magasabb, mint a forrásé.
+  - 10.14) `E-AC3` hang `AC3`-ba történő kódolásakor a megengedett bitráták az eredeti `1.7`-szereséhez legközelebb eső két bitráta (nagyjából ennyivel jobb a `DD+` algoritmus). Például: ha a forrás `DDP@192`, akkor `192 * 1.7 = 326.4`, tehát az `AC3` bitrátája lehet `320 kbps` vagy `384 kbps` vagy ha a forrás `DDP@256`, akkor `256 * 1.7 = 435.2`, tehát `384 kbps` és `448 kbps`-es `AC3` készíthető.
 
 ## 11) Feliratok
  - 11.1) Kizárólag SRT (SubRip) formátumú feliratok megengedettek!
