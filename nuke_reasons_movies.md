@@ -59,6 +59,7 @@
         - `wrong.audio.format` = nem megfelelő formátumú hang használata
         - `oversized.audio` = indokolatlanul nagy méretű hang használata
         - `upscaled = upconverted.audio` = a kész encode bitrátája/csatornaszáma/bitmélysége indokolatlanul magasabb, mint a forrásé
+        - `starved.audio` = a kész encode bitrátája nagyon alacsony, azaz hallható minőségromlást okoz a tömörítés
         - `audio.oos` = hang csúszik a képhez képest
         - `upsampled` = az eredeti hangnál magasabb mintavételezés használata
         - `downsampled` = az eredeti hangnál alacsonyabb mintavételezés használata
