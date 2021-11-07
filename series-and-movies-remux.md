@@ -121,7 +121,7 @@
   - 6.5) Az elérhető legjobb minőségű hangok megtartása KÖTELEZŐ!
   - 6.6) A hangsávok újrakódolása SZIGORÚAN TILOS!
      - 6.6.1) Kivétel compatibility trackek és audiokommentár.
-     - 6.6.2) Kivétel azon hangok, amelyek nyújtást igényelnek.
+     - 6.6.2) Kivétel azon hangok, amelyek nyújtást igényelnek vagy egyéb olyan beavatkozást, mely során az újrakódolás nem elkerülhető.
   - 6.7) Megengedett hangformátumok: `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`), `DTS`, `DTS-HD.MA`, `DTS-X`, `TrueHD`, `AAC`, `FLAC`.
   - 6.8) LPCM használata TILOS!
      - 6.8.1) Az ilyen hangokat `DTS-HD.MA`, `TrueHD` vagy `FLAC` formátumba kell tömöríteni.
