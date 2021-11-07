@@ -52,7 +52,7 @@
         - `no.deblock` = deblock filter kikapcsolása
         - `no.aq` = adaptív kvantálás kikapcsolása
         - `invalid.vbv` = túl magas VBV értékek használata
-        - `shifted.video` = bizonyos forrásfilterek (pl. régi FFMS2) beszúrt/eldobott egy frame-t a kép elejéről, ezáltal eltolva azt a hanghoz képest
+        - `shifted.video` = bizonyos forrásfilterek (pl. régi FFMS2) beszúrt/eldobott egy frame-t a kép elejéről, ezáltal eltolva azt a hanghoz képest (min. 100 ms csúszás)
         - `extra.frames`/`missing.frames` = videóhoz hozzáadott, hiányzott framek (kivéve ha videó végéről hiányzik `1` frame és az fekete)
     
     - 2.1.2) Audio:
