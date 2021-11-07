@@ -121,6 +121,7 @@
   - 6.5) Az elérhető legjobb minőségű hangok megtartása KÖTELEZŐ!
   - 6.6) A hangsávok újrakódolása SZIGORÚAN TILOS!
      - 6.6.1) Kivétel compatibility trackek és audiokommentár.
+     - 6.6.2) Kivétel azon hangok, amelyek nyújtást igényelnek.
   - 6.7) Megengedett hangformátumok: `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`), `DTS`, `DTS-HD.MA`, `DTS-X`, `TrueHD`, `AAC`, `FLAC`.
   - 6.8) LPCM használata TILOS!
      - 6.8.1) Az ilyen hangokat `DTS-HD.MA`, `TrueHD` vagy `FLAC` formátumba kell tömöríteni.
@@ -133,6 +134,8 @@
   - 6.14) Maximum +/- 100 ms hangcsúszás megengedett.
   - 6.15) A hangok nyelvét kötelező Language tagben jelezni!
   - 6.16) Kizárólag stúdió által készített surround hangok használhatóak fel, házilag felkevertek tilosak. TV-s surround hang esetén mindig győződjünk meg, hogy valódi surround-e, amennyiben nem, downmixeljük. Pl.: `ffmpeg -i input.ac3 -ac 2 -f sox - | sox -p -S -b 24 --norm=-1 output.wav`
+  - 6.17) Egy másik forrásból származó hang akkor számít jobb minőségűnek, hogyha a lowpass (cutoff) frekvencia 16 kHz alatt legalább 1 kHz-el, 16 kHz felett legalább 1.5 kHz-el magasabb, és a többlet adat nem sztochasztikus (dithering miatt belekerülő) zaj. Ha ez teljesül, akkor készíthető új release, egyéb esetben `dupe`. Kérdéses esetekben proofként egy-egy spektrum mutatása szükséges a két hangról.
+    - 6.18.1) Ez alól kivétel, hogyha az alacsonyabb lowpass-szel rendelkező hang minősége hallhatóan jobb.
 
 ## 7) Audio kódolás
   - 7.1) `AC3` (`DD`) esetében erősen ajánlott Dolby Certified encodert (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`, `Sonic Audio Transcoder`).
@@ -153,6 +156,8 @@
   - 7.11) Commentary track maximum 2.0 lehet, `AC3` (`DD`) esetében maximum 192 kbps, `AAC` esetében 80-160 kbps.
   - 7.12) Szegmentált kódolás használata TILOS!
   - 7.13) `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`), `DTS`, `DTS-HD.MA`, és `DTS-X` esetén a `dialnorm` értéket meg kell tartani!
+  - 7.14) Amennyiben a forrás `AC3` és újrakódolás szükséges, akkor az újrakódolt hang bitrátája nem lehet magasabb, mint a forrásé.
+  - 7.15) `E-AC3` hang `AC3`-ba történő kódolásakor a megengedett bitráták az eredeti `1.7`-szereséhez legközelebb eső két bitráta (nagyjából ennyivel jobb a `DD+` algoritmus). Például: ha a forrás `DDP@192`, akkor `192 * 1.7 = 326.4`, tehát az `AC3` bitrátája lehet `320` kbps vagy `384` kbps vagy ha a forrás `DDP@256`, akkor `256 * 1.7 = 435.2`, tehát `384` kbps és `448` kbps-es `AC3` készíthető.
 
 ## 8) Feliratok
  - 8.1) Kizárólag SRT (SubRip) és PGS-SUP formátumú feliratok megengedettek!
