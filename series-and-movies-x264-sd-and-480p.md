@@ -202,6 +202,7 @@
 ## 9) Audio
   - 9.1) Magyar hangsávot tartalmazó release esetén kötelező a `HUN` (`Hun`) tag használata. Amennyiben a release nem tartalmaz magyar hangsávot, úgy nem kell nyelvi tag-ot megadni.
   - 9.2) Az eredeti hangsáv megtartása opcionális.
+    - 9.2.1) Kivétel, hogyha nem érhető el magyar nyelv, ezesetben megtartása kötelező.
   - 9.3) Nem angol nyelvű, eredeti hangsáv esetén az angol hang (már amennyiben létezik) megtartása opcionális.
   - 9.4) Egyéb nyelvű hangok megtartása TILOS!
   - 9.5) Megengedett hangformátumok: `AC3` (`DD`), `AAC`. Amennyiben a forrás hang `E-AC3` (`DD+`/`DDP`) formátumú és maximum 6 csatornát tartalmaz, ez is engedélyezett; egyéb esetekben TILOS!
