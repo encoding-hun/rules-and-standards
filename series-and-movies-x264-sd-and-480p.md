@@ -224,6 +224,11 @@
     - 9.16.1) Ez alól kivétel, ha kizárólag `E-AC3` hang áll rendelkezésre, ekkor a nagyobb kompatibilitás érdekében `AC3` hang készíthető. Ennek módjáról lásd 10.14)-es pont.
   - 9.17) Egy másik forrásból származó hang akkor számít jobb minőségűnek, hogyha a lowpass (cutoff) frekvencia 16 kHz alatt legalább 1 kHz-el, 16 kHz felett legalább 1.5 kHz-el magasabb, és a többlet adat nem sztochasztikus (dithering miatt belekerülő) zaj. Ha ez teljesül, akkor készíthető új release, egyéb esetben `dupe`. Kérdéses esetekben proofként egy-egy spektrum mutatása szükséges a két hangról.
     - 9.17.1) Ez alól kivétel, hogyha az alacsonyabb lowpass-szel rendelkező hang minősége hallhatóan jobb.
+    - 9.18.2) További kivételt képez, hogyha jobb forrásból elérhető a hang és a bitrátakülönbség meghaladja a 192 kbps-t `DD` és `DTS` esetén, vagy a `128` kbps-t `DD+` és `AAC` esetén. `DD+` és `DD` hangok bitrátáinak összehasonlítása a 10.14-es pontban rögzítettek szerint `1.7`-es szorzófaktorral történik. `AAC` és `DD` között ugyanezt az átváltást használjuk. Például egy `DD@448`-as DVD hang mindig cserélhető egy BD-ről származó `DD@640`-re.
+  - 9.19) A hangok sorrendje:
+    - magyar (ha van)
+    - eredeti (opcionális; ha nincs magyar kötelező)
+    - angol (ha az eredeti nem ez; opcionális)
 
 ## 10) Audio kódolás
   - 10.1) `AC3` (`DD`) esetében Dolby Certified encodert kell használni (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`, `Sonic Audio Transcoder`).
