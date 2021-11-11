@@ -40,12 +40,14 @@
        - 2.5.1.1) `[season]` tag legalább két jegyre megadandó (mind az évad, mind a rész), kivéve mini-series esetén.
        - 2.5.1.2) Adott sorozat adott évadán belül a taggelés nem változhat.
        - 2.5.1.3) Az évadok és részek számozásánál csak hivatalos források elfogadottak.
+       - 2.5.1.4) Napi sorozat esetén, amennyiben évad/epizód nem ismert, vagy nem tagolt, a következő jelölés alkalmazandó: `[series.name].[YYYY].[MM].[DD].[resolution].[source].[audio.codec].[video.codec].[language]-[group]` (itt `[YYYY]` az évet, `[MM]` a hónapot, `[DD]` a napot jelöli).
     - 2.5.2) Filmek:
     `[movie.title].[year].[resolution].[source].[audio.codec].[video.codec].[language]-[group]`
        - 2.5.2.1) A dokumentumfilmek filmnek minősülnek.
-    - 2.5.3) `[audio.codec]` opcionális.
-    - 2.5.4) 480p release esetén `480p` tag is kell `[source]` előtt.
-    - 2.5.5) SD és RETAiL forrás esetén `[source]`-t a forrás milyensége + `Rip` taggal képezzük, pl. `BDRip`, `DVDRip`.
+    - 2.5.3) Sportközvetítések és egyéb TV-s műfajok: `[event.name].[YYYY[-YY]].[team.vs.team].[resolution].[source].[audio.codec].[video.codec].[language]-[group]`.
+    - 2.5.4) `[audio.codec]` opcionális.
+    - 2.5.5) 480p release esetén `480p` tag is kell `[source]` előtt.
+    - 2.5.6) SD és RETAiL forrás esetén `[source]`-t a forrás milyensége + `Rip` taggal képezzük, pl. `BDRip`, `DVDRip`.
   - 2.6) A könyvtár és fájlok nevének maximális hossza 255 karakter lehet, de ajánlott 250 alatt megállni.
   - 2.7) `[series.name]` és `[movie.title]` KIZÁRÓLAG eredeti vagy angol nyelvű lehet.
   - 2.8) `[audio.codec]` a film/sorozat eredeti nyelvére vonatkozik.
