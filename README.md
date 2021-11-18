@@ -14,4 +14,4 @@
 
 ## Oldalak, amelyek aláírták ([link](https://github.com/encoding-hun/rules-and-standards/issues/18))
 
-## Banned grps
+## Banned groups
