@@ -53,6 +53,7 @@
   - 2.8) `[audio.codec]` a film/sorozat eredeti nyelvére vonatkozik.
   - 2.9) `WEB-DL` és `WEBRip` forrás esetén meg kell jelölni, hogy pontosan melyik oldalról való (pl. `NF.WEB-DL`, `AMZN.WEB-DL`).
     - 2.9.1) A használandó hazai és nemzetközi rövidítések itt érhetőek el: [**LINK**](https://github.com/encoding-hun/rules-and-standards/blob/master/web-abbrevation.md).
+    - 2.9.2) Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen release készítője választhat egyet a forrás 2-4 betűjének sorban történő felhasználásával.
   - 2.10) WEB-hez további guide:
     - 2.10.1) Az minősül `WEB-DL`-nek, ami nem lett újrakódolva az oldalról való leszedés után (vagy közben).
     - 2.10.2) Ha x264 settings-t látsz, az nem garancia arra, hogy `WEBRip`, `NF` és `AMZN` maga is `x264`-et használ.
