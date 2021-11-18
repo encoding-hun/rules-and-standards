@@ -7,7 +7,7 @@
 | [**x265 UHD-HD**](https://github.com/encoding-hun/rules-and-standards/blob/master/series-and-movies-x265-hd-uhd.md)          | 2021.11.11.      | 2020.06.14. |
 | **DVD, MP3 és lossless audio** (korábbi szabályzat érvényben)                                                                |                  |             |
 
-##[**Nuke okok**](https://github.com/encoding-hun/rules-and-standards/blob/master/nuke_reasons_movies.md)
+[**##Nuke okok**](https://github.com/encoding-hun/rules-and-standards/blob/master/nuke_reasons_movies.md)
 
 ## Csapatok, akik aláírták és tudomásul vették ([link](https://github.com/encoding-hun/rules-and-standards/issues/14))
 `boOk`, `FULCRUM`, `Legacy`, `NaGa`, `NFC`, `pcroland`, `SFY`
