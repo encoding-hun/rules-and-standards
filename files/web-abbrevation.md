@@ -1,6 +1,6 @@
-### Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen release készítője választhat egyet a forrás 2-4 betűjének egymás után történő felhasználásával. (Pl.: `sonymax.hu` -> `SMAX`, `filmboxlive.hu` -> `FBL`)
+Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen release készítője választhat egyet a forrás 2-4 betűjének egymás után történő felhasználásával. (Pl.: `sonymax.hu` -> `SMAX`, `filmboxlive.hu` -> `FBL`)
 
-## Hazai:
+## Hazai
 | oldal                           | rövidítés |
 | :-                              | :-        |
 | cinego.hu                       | `CNGO`    |
@@ -13,7 +13,7 @@
 | tv2.hu                          | `TV2`     |
 | filmboxlive.com                 | `FBL`     |
 | spilerextra.hu                  | `SPLR`    |
-## Nemzetközi:
+## Nemzetközi (BTN Web Content Guidelines alapján)
 | oldal                           | rövidítés |
 | :-                              | :-        |
 | 9Now                            | `9NOW`    |
@@ -172,3 +172,4 @@
 | Xbox Video                      | `XBOX`    |
 | Yahoo                           | `YHOO`    |
 | ZDF                             | `ZDF `    |
+
