@@ -62,6 +62,7 @@
      - 2.14.1) `iNTERNAL`-ként kell feltütnetni minden olyan release-t, amely ellentmond a szabályzat bármely pontjának, de nem érhető el olyan forrás, amely teljesítené.
   - 2.15) TV-ből származó hangok esetén `CUSTOM` tag használata opcionális.
   - 2.16) `RETAiL` (eredeti lemezről készült) tag használata ajánlott, ha korábban készült olyan release, ahol a hang nem a BD/HDDVD lemezről származik.
+     - 2.16.1) Az UHD Blu-ray forrásokat `UHD.BluRay`-nek kell taggelni.
   - 2.17) Nem Retail és nem WEB forrás esetén NFO-ban jelölni kell, hogy milyen forrás és esetlegesen miben tér el a Retail változattól. `READ.NFO` tag használata KÖTELEZŐ!
   - 2.18) `PROPER` = más hibás munkájának javítása; `REPACK` = muxolási hiba, hiányzó hang/felirat; `RERiP` = hibás videó/hang
      - 2.18.1) `PROPER` release-re érkező `PROPER`-t `REAL.PROPER`-nek kell taggelni (és így tovább a későbbieket, pl. `REAL.REAL.PROPER`)).
