@@ -83,7 +83,7 @@
         - `drm.not.removed` = bármilyen jellegű DRM maradt a releasen
  
 
- - 2.2) Kevésbé súlyos, nem technikai hibák -- ezek nem `PROPER`-elhetőek. Indokolt esetben esetén `READ.NFO` kiadható rá.
+ - 2.2) Kevésbé súlyos, nem technikai hibák -- ezek nem `PROPER`-elhetőek. Indokolt esetben `READ.NFO` kiadható rá.
     - 2.2.1) Video:
         - `obsolete.encoder` = túl régi encoder használata
         - `delayed.video` = MKV-ban flaggelt video delay
