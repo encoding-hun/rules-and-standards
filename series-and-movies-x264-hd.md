@@ -75,22 +75,22 @@
  - 3.2) Az NFO nyelve angol és/vagy magyar.
  - 3.3) Magyar nyelvű NFO esetén az angol kifejezések szakszerű fordításának használata kötelező (ebben segít a Wikipedia).
  - 3.4) Az NFO-ban kötelező a következő információkat feltüntetni:
-      * Release címe
-      * Release készítésének ideje
-      * Eredeti cím
+      * release címe
+      * release készítésének ideje
+      * eredeti cím
       * IMDb URL
-      * Video és hang forrása (feliratnál jelölni kell, amennyiben fansub)
-      * A release mérete (csak a fő mkv, B, kB, MB, GB, KiB, MiB és GiB elfogadott)
-      * Videóhoz használt encoder
-      * Videó felbontása
-      * Videó bitrátája
-      * Videó FPS-e
-      * Audiósávok nyelvei
-      * Audiósávok típusai
-      * Audiósávok csatornaszáma
-      * Audiósávok bitrátája
-      * Audió mintavételezési rátája (Sample rate)
-      * Feliratok nyelve
+      * videó és audió forrása (feliratnál jelölni kell, amennyiben fansub)
+      * a release mérete (csak a fő mkv fájl(ok), `B`, `kB`, `MB`, `GB`, `KiB`, `MiB` és `GiB` elfogadott)
+      * videóhoz használt encoder
+      * videó felbontása
+      * videó bitrátája
+      * videó FPS-e
+      * audiosávok nyelvei
+      * audiosávok típusai
+      * audiosávok csatornaszáma
+      * audiosávok bitrátája
+      * audió mintavételezési rátája (sampling rate), opcionális 48kHz esetén
+      * feliratok nyelve
   - 3.5) Más csapatok sértegetése, személyeskedés TILOS!
   - 3.6) `PROPER`/`REPACK`/`RERiP` release-ek esetén fel kell tüntetni a korábbi release problémáit. Képi vagy hangi `PROPER` esetén csatolni kell proofot, hogy valóban jobb az új release.
   - 3.7) Felesleges, zavaró dolgokat az NFO-ba elhelyezni TILOS!
