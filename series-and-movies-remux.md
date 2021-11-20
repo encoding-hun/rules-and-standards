@@ -109,11 +109,11 @@
   - 5.7) Égetett felirattal rendelkező forrásokat lehetőleg kerüljük, kivéve ha szignifikánsan jobb a minősége.
   - 5.8) Hybrid remuxok megengedettek, ha ezzel jobb minőség érhető el.
   - 5.9) A konténerben felbontásra és croppolásra extra metaadatokat megadni TILOS!
-  - 5.10) A video sáv Language tagjának beállítása opcionális: vagy magyar vagy az eredeti nyelv.
+  - 5.10) A videosáv Language tagjának beállítása opcionális: vagy magyar vagy az eredeti nyelv.
   - 5.11) Encoder által beírt header eltávolítása SZIGORÚAN TILOS!
   - 5.12) Színekre vonatkozó metaadatok (pl. ColorMatrix, ColorPrimaries, TransferFunction, Chroma Location, CLL, stb.) eltávolítása SZIGORÚAN TILOS!
 
-## 6) Audio
+## 6) Audió
   - 6.1) Magyar hangsávot tartalmazó release esetén kötelező a `HUN` (`Hun`) tag használata. Amennyiben a release nem tartalmaz magyar hangsávot, úgy nem kell nyelvi tag-ot megadni.
   - 6.2) Az eredeti nyelvű hangsáv megtartása KÖTELEZŐ!
   - 6.3) Nem angol nyelvű, eredeti hangsáv esetén az angol hang (már amennyiben létezik) megtartása opcionális.
@@ -143,7 +143,7 @@
     - angol (ha az eredeti nem ez; opcionális)
     - kommentárok (opcionális)
 
-## 7) Audio kódolás
+## 7) Audiokódolás
   - 7.1) `AC3` (`DD`) esetében erősen ajánlott Dolby Certified encodert (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`, `Sonic Audio Transcoder`).
   - 7.2) Egyéb esetben kizárólag FFmpeg (4.1 vagy újabb) vagy Aften (2009-12-26 vagy újabb) használható.
   - 7.3) `DTS-HD.MA` hang készítéséhez kizárólag `DTS-HD Master Audio Suite` használható.
