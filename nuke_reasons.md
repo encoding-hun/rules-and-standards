@@ -109,7 +109,7 @@
         - `missing.proof` = hiányzó proof
         - `missing.chapterlist` = hiányzó chapterlist
         - `invalid.character` = tiltott karaktert tartalmazó könyvtár és/vagy filenevek (`PROPER`-elhető, ha a lejátszásban gondot okoz, pl. Windows-on tiltott mappanevek, lásd 2.4)-es pontja a szabályzatnak)
-        - `invalid.dirname = bad.dirname` = nem eredeti vagy angol nyelvű könyvtárnév használata; hiányzó adatok; 255 karakternél hosszabb könyvtárnév
+        - `invalid.dirname`, `bad.dirname` = nem eredeti vagy angol nyelvű könyvtárnév használata; hiányzó adatok; 255 karakternél hosszabb könyvtárnév
         - `missing.source` = forrás nincs feltüntetve (pontosítható, pl. `missing.audio.source`)
         - `mislabeled` = hibás tag (pl. forrás nem a megjelölt)
         - `nfo.wtf` = NFO érthetetlen vagy értelmezhetetlen
