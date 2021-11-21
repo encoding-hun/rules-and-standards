@@ -45,7 +45,7 @@
   - 2.6) A könyvtár és fájlok nevének maximális hossza 255 karakter lehet, de ajánlott 250 alatt megállni.
   - 2.7) `[series.name]` és `[movie.title]` KIZÁRÓLAG eredeti vagy angol nyelvű lehet.
   - 2.8) `[audio.codec]` a film/sorozat eredeti nyelvére vonatkozik.
-  - 2.9) `WEB-DL` és `WEBRip` forrás esetén meg kell jelölni, hogy pontosan melyik oldalról való (pl. `NF.WEB-DL`, `AMZN.WEB-DL`).
+  - 2.9) `WEB-DL` és `WEBRip` forrás esetén meg kell jelölni, hogy pontosan melyik oldalról való a videó (pl. `NF.WEB-DL`, `AMZN.WEB-DL`).
     - 2.9.1) A használandó hazai és nemzetközi rövidítések itt érhetőek el: [**LINK**](https://github.com/encoding-hun/rules-and-standards/blob/master/files/web-abbrevation.md).
     - 2.9.2) Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen release készítője választhat egyet a forrás 2-4 betűjének egymás után történő felhasználásával. (Pl.: `sonymax.hu` -> `SMAX`, `filmboxlive.hu` -> `FBL`)
   - 2.10) WEB-hez további guide:
@@ -72,25 +72,27 @@
   - 3.2) Az NFO nyelve angol és/vagy magyar.
   - 3.3) Magyar nyelvű NFO esetén az angol kifejezések szakszerű fordításának használata kötelező (ebben segít a Wikipedia).
   - 3.4) Az NFO-ban kötelező a következő információkat feltüntetni:
-    * release címe
-    * release készítésének ideje
-    * eredeti cím
-    * IMDb URL
-    * videó és audió forrása (feliratnál jelölni kell, amennyiben fansub)
-    * a release mérete (csak a fő mkv fájl(ok), `B`, `kB`, `MB`, `GB`, `KiB`, `MiB` és `GiB` elfogadott)
-    * videóhoz használt encoder
-    * videó felbontása
-    * videó bitrátája
-    * videó FPS-e
-    * Videó dinamikatartománya
-    * Videó színinformációi
-    * audiosávok nyelvei
-    * audiosávok típusai
-    * audiosávok csatornaszáma
-    * audiosávok bitrátája
-    * audió mintavételezési rátája (sampling rate), opcionális 48kHz esetén
-    * feliratok nyelve
-    * feliratok formátuma
+    - release címe
+    - release készítésének ideje
+    - eredeti cím
+    - IMDb URL
+    - a release mérete (csak a fő mkv fájl(ok), `B`, `kB`, `MB`, `GB`, `KiB`, `MiB` és `GiB` elfogadott)
+    - videó forrása, `WEB` esetén oldal megjelölése
+    - videóhoz használt encoder
+    - videó felbontása
+    - videó bitrátája
+    - videó FPS-e
+    - videó dinamikatartománya
+    - videó színinformációi
+    - audiosávok forrása(i), `WEB` esetén oldal megjelölése
+    - audiosávok nyelvei
+    - audiosávok típusai
+    - audiosávok csatornaszáma
+    - audiosávok bitrátája
+    - audió mintavételezési rátája (sampling rate), opcionális 48kHz esetén
+    - feliratok forrása(i), fansub esetén
+    - feliratok nyelve
+    - feliratok formátuma
   - 3.5) Más csapatok sértegetése, személyeskedés TILOS!
   - 3.6) `PROPER`/`REPACK`/`RERiP` release-ek esetén fel kell tüntetni a korábbi release problémáit. Képi vagy hangi `PROPER` esetén csatolni kell proofot, hogy valóban jobb az új release.
   - 3.7) Felesleges, zavaró dolgokat az NFO-ba elhelyezni TILOS!
@@ -276,7 +278,7 @@
   - 11.5) Kötelező feliratok, amennyiben elérhetőek a forráson: magyar forced, magyar, eredeti nyelv forced, eredeti nyelv.
   - 11.6) Magyar filmek esetén ajánlott az angol nyelvű felirat (ha van) megtartása is.
   - 11.7) A lemezen elérhető, főcímhez tartozó feliratokat `.srt` formátumban KÖTELEZŐ muxolni. PGS-SUP feliratok használata opcionális.
-  - 11.8) Kommentár feliratokat csak akkor kötelező muxolni, ha az kapcsolódik az audiókommentárhoz.
+  - 11.8) Kommentár feliratokat csak akkor kötelező muxolni, ha az kapcsolódik az audiokommentárhoz.
     - 11.11.1) Egyéb esetben opcionálisak.
     - 11.11.2) Kommentár feliratokat elegendő PGS-SUP vagy SRT formátumban muxolni.
   - 11.9) A muxolt `.srt` feliratokat megfelelő karakterkódolással kell muxolni (UTF8 vagy beállítani a forrással egyezőt)
