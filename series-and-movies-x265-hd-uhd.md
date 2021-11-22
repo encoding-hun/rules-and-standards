@@ -155,7 +155,7 @@
   - 7.8) Kizárólag CFR (constant framerate) mód használható! Amennyiben a forrás VFR-el rendelkezik, úgy ez felülírja az 7.6-os pontot.
   - 7.9) A dupe framek eltávolítása kötelező!
 
-## 8) Videó kódolás
+## 8) Videokódolás
   - 8.1) Kizárólag x265 használható.
   - 8.2) Minimum `2.9`-es x265-as használata kötelező; kivétel, ha korábbi, minőségi encodera (pl. `DON`, `TayTo`, `VietHD` és egyéb HDB internalok; megbízható források) muxolunk.
   - 8.3) Elfogadott x265 variánsok: vanilla, Yuuki, aMod.

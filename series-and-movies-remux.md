@@ -100,7 +100,7 @@
   - 4.3) Amennyiben jobb minőségű BD elérhető, mint amiből a korábbi release készült, ezt `READ.NFO` taggel jelezni kell.
   - 4.4) Muxolni kizárólag olyan már kész release-re szabad, amely megfelel ezen szabályzatban rögzített pontoknak. Törekedni kell az elérhető legjobb minőségű release felhasználására!
 
-## 5) Video
+## 5) Videó
   - 5.1) A videó újrakódolása SZIGORÚAN TILOS!
   - 5.2) Kizárólag egy videósáv használata megengedett.
     - 5.2.1) Kivétel dual layer Dolby Vision formátum.
