@@ -189,7 +189,6 @@
   - 8.26) `merange` értéke nem lehet 20-nál kisebb.
   - 8.27) `subme` értéke nem lehet 8-nál kisebb.
   - 8.28) `rc-lookahead` értéke nem lehet `FPS*2`-nél kisebb.
-  - Kizárólag 1:1 oldalarányú pixelek használata megengedett (`--sar 1:1`). 
   - 8.29) Kizárólag Limited, TV range-ű release készíthető (`16-235`).
   - 8.30) `--vbv-maxrate` maximum `62500`, `--vbv-bufsize` maximum `78125` lehet, de egyik sem lehet kevesebb, mint `30000`.
   - 8.31) `--deblock` kikapcsolása TILOS. Ajánlott beállítás filmek esetén: `-3:-3`.
