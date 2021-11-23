@@ -157,7 +157,7 @@
 
 ## 8) Videokódolás
   - 8.1) Kizárólag x265 használható.
-  - 8.2) Minimum `3.3`-as x265 használata kötelező; kivétel, ha korábbi, minőségi encodera (pl. `DON`, `TayTo`, `VietHD` és egyéb HDB internalok; megbízható források) muxolunk.
+  - 8.2) Minimum `3.3`-as x265 használata kötelező; kivétel, ha korábbi, minőségi encode-ra (pl. `DON`, `TayTo`, `VietHD` és egyéb HDB internalok; megbízható források) muxolunk.
   - 8.3) Elfogadott x265 variánsok: vanilla, Yuuki, aMod.
   - 8.4) Az x265 header eltávolítása TILOS!
   - 8.5) Törekedjünk a minél újabb encoder használatára!
@@ -273,8 +273,8 @@
     - 11.1.2) A kész felirat lehetőleg kevés, érthetőséget nem zavaró helyesírási hibát tartalmazhat, de törekedjünk, hogy ne legyen benne hiba.
     - 11.1.3) A felismertetett feliraton javasolt egy spellchecker lefuttatása.
   - 11.2) A feliratokat tartalmaznia kell az `.mkv`-nak, opcionálisan mellette is meghagyható.
-  - 11.3) Amennyiben HDR formátumról származó PGS-SUP feliratot teszünk SDR 2160p encodera, úgy a fényerejét 60%-al meg kell növelni.
-  - 11.4) Amennyiben SDR formátumról származó PGS-SUP feliratot teszünk HDR encodera, úgy a fényerejét 60%-al le kell csökkenteni.
+  - 11.3) Amennyiben HDR formátumról származó PGS-SUP feliratot teszünk SDR 2160p encode-ra, úgy a fényerejét 60%-al meg kell növelni.
+  - 11.4) Amennyiben SDR formátumról származó PGS-SUP feliratot teszünk HDR encode-ra, úgy a fényerejét 60%-al le kell csökkenteni.
   - 11.5) Kötelező feliratok, amennyiben elérhetőek a forráson: magyar forced, magyar, eredeti nyelv forced, eredeti nyelv.
   - 11.6) Magyar filmek esetén ajánlott az angol nyelvű felirat (ha van) megtartása is.
   - 11.7) A lemezen elérhető, főcímhez tartozó feliratokat `.srt` formátumban KÖTELEZŐ muxolni. PGS-SUP feliratok használata opcionális.
