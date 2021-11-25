@@ -108,7 +108,7 @@
     - 4.3.1) Kivétel, ha nem érhető el magasabb felbontású `WEB-DL`.
   - 4.4) Amennyiben jobb minőségű UHD BD elérhető, mint amiből a korábbi release készült, ezt `READ.NFO` taggel jelezni kell.
   - 4.5) Ha az UHD forrás SDR, akkor kizárólag 2160p készíthető x265-tel, az 1080p-t x264-el kell elkészíteni (lásd másik szabályzat).
-  - 4.6) Muxolni kizárólag olyan már kész release-re szabad, amely megfelel ezen szabályzatban rögzített pontoknak (kivéve az x265 verziójára vonatkozó szabálypont HDB internalok esetén). Törekedni kell az elérhető legjobb minőségű release felhasználására! Gyatra minőségű release-re való muxolás helyett saját encode készítése ERŐSEN AJÁNLOTT!
+  - 4.6) Muxolni kizárólag olyan már kész release-re szabad, amely megfelel ezen szabályzatban rögzített pontoknak (kivéve az x265 verziójára vonatkozó szabálypont korábbi, minőségi encode esetén). Törekedni kell az elérhető legjobb minőségű encode felhasználására!
 
 ## 5) Video
   - 5.1) Már kész release alacsonyabb felbontással való újrakódolása SZIGORÚAN TILOS!
@@ -158,7 +158,7 @@
 
 ## 8) Videokódolás
   - 8.1) Kizárólag x265 használható.
-  - 8.2) Minimum `3.3`-as x265 használata kötelező; kivétel, ha korábbi, minőségi encode-ra (pl. `DON`, `TayTo`, `VietHD` és egyéb HDB internalok; megbízható források) muxolunk.
+  - 8.2) Minimum `3.3`-as x265 használata kötelező; kivétel, ha korábbi, minőségi encode-ra (pl. `DON`, `TayTo`, `VietHD` és egyéb megbízható források) muxolunk.
   - 8.3) Elfogadott x265 variánsok: vanilla, Yuuki, aMod.
   - 8.4) Az x265 header eltávolítása TILOS!
   - 8.5) Törekedjünk a minél újabb encoder használatára!
