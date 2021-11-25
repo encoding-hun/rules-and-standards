@@ -53,7 +53,7 @@
       - `invalid.vbv` = túl magas VBV értékek használata
       - `shifted.video` = bizonyos forrásfilterek (pl. régi FFMS2) beszúrt/eldobott egy frame-t a kép elejéről, ezáltal eltolva azt a hanghoz képest (min. 100 ms csúszás)
       - `extra.frames`/`missing.frames` = videóhoz hozzáadott, hiányzott framek (kivéve ha videó végéről hiányzik `1` frame és az fekete)
-    
+
     - 2.1.2) Audio:
       - `wrong.audio.format` = nem megfelelő formátumú hang használata
       - `oversized.audio` = indokolatlanul nagy méretű hang használata
@@ -65,7 +65,7 @@
       - `forbidden.audio.encoder` = tiltott hang encoder használata (pl. FFmpeg használata nem compatibility `AC3` és `E-AC3` hangokhoz)
       - `wrong.stretching.algo` = nem megfelelő hangnyújtás használata
       - `missing.compatibility.track` = hiányzó compatibility track
-    
+
     - 2.1.3) Felirat:
       - `sub.oos` = felirat csúszik a képhez képest
       - `missing.forced.subs` = hiányzó forced felirat
