@@ -66,6 +66,7 @@
     - 2.18.1) `PROPER` release-re érkező `PROPER`-t `REAL.PROPER`-nek kell taggelni (és így tovább a későbbieket, pl. `REAL.REAL.PROPER`).
   - 2.19) `READ.NFO` és `PROPER`/`REPACK`/`RERiP` tagek együttes használata TILOS!
   - 2.20) Zavaró és felesleges tagek használata TILOS!
+  - 2.21) Több magyar szinkron esetén jelölni kell a szinkronok számát, pl.: `2xHUN`.
 
 ## 3) NFO
   - 3.1) NFO használata kötelező.
