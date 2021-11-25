@@ -21,7 +21,7 @@
     - 1.8.1) Chapterek elnevezése opcionális, kizárólag magyar vagy angol fejezetcímek használhatóak.
   - 1.9) Vízjelek használata TILOS!
 
-## 2) Taggelés - könyvtárnév
+## 2) Tagelés - könyvtárnév
   - 2.1) Ékezetes karakterek használata TILOS!
   - 2.2) Engedélyezett karakterek: `a-z` `A-Z` `0-9` `.` `-` `_` `+`.
     - 2.2.1) Ismételt kötőkarakterek használata TILOS! (pl. `...` vagy `-.`)
@@ -36,7 +36,7 @@
   - 2.5) Sorozatok és filmek ajánlott tagelése (a sorrendtől el lehet térni):
     - 2.5.1) Sorozatok: `[series.name].[season].[resolution].[source].[audio.codec].[video.codec].[language]-[group]`
       - 2.5.1.1) `[season]` tag legalább két jegyre megadandó (mind az évad, mind a rész), kivéve mini-series esetén.
-      - 2.5.1.2) Adott sorozat adott évadán belül a taggelés nem változhat.
+      - 2.5.1.2) Adott sorozat adott évadán belül a tagelés nem változhat.
       - 2.5.1.3) Az évadok és részek számozásánál csak hivatalos források elfogadottak.
       - 2.5.1.4) Napi sorozat esetén, amennyiben évad/epizód nem ismert, vagy nem tagolt, a következő jelölés alkalmazandó: `[series.name].[YYYY].[MM].[DD].[resolution].[source].[audio.codec].[video.codec].[language]-[group]` (itt `[YYYY]` az évet, `[MM]` a hónapot, `[DD]` a napot jelöli).
     - 2.5.2) Filmek: `[movie.title].[year].[resolution].[source].[audio.codec].[video.codec].[language]-[group]`
@@ -50,15 +50,15 @@
     - 2.10.1) `iNTERNAL`-ként kell feltütnetni minden olyan release-t, amely ellentmond a szabályzat bármely pontjának, de nem érhető el olyan forrás, amely teljesítené.
   - 2.11) TV-ből származó hangok esetén `CUSTOM` tag használata opcionális.
   - 2.12) `RETAiL` (eredeti lemezről készült) tag használata ajánlott, ha korábban készült olyan release, ahol a hang nem a BD/HDDVD lemezről származik.
-    - 2.12.1) A Blu-ray forrásokat `BluRay`-nek kell taggelni.
-    - 2.12.2) Az UHD Blu-ray forrásokat `UHD.BluRay`-nek kell taggelni.
-    - 2.12.3) A HD-DVD forrásokat `HDDVD`-nek kell taggelni.
+    - 2.12.1) A Blu-ray forrásokat `BluRay`-nek kell tagelni.
+    - 2.12.2) Az UHD Blu-ray forrásokat `UHD.BluRay`-nek kell tagelni.
+    - 2.12.3) A HD-DVD forrásokat `HDDVD`-nek kell tagelni.
   - 2.13) UHD formátum esetén fel kell tüntetni, hogy `SDR`, `HDR` vagy `HDR10Plus` (`HDR10+`) a kép.
   - 2.14) Dolby Vision-re elfogadott tag-ek: `DV`, `Dolby.Vision`.
   - 2.15) Dolby Vision esetén fel kell tüntetni, hogy single (`SL`) vagy dual layer (`DL`) a kép.
   - 2.16) Ha a hangsáv tartalmaz Atmos kiegészítést, úgy azt `Atmos` taggel jelölni kell.
   - 2.17) `PROPER` = más hibás munkájának javítása; `REPACK` = saját hiba javítása
-    - 2.17.1) `PROPER` release-re érkező `PROPER`-t `REAL.PROPER`-nek kell taggelni (és így tovább a későbbieket, pl. `REAL.REAL.PROPER`).
+    - 2.17.1) `PROPER` release-re érkező `PROPER`-t `REAL.PROPER`-nek kell tagelni (és így tovább a későbbieket, pl. `REAL.REAL.PROPER`).
   - 2.18) `READ.NFO` és `PROPER`/`REPACK`/`RERiP` tagek együttes használata TILOS!
   - 2.19) Zavaró és felesleges tagek használata TILOS!
   - 2.20) Több magyar szinkron esetén jelölni kell a szinkronok számát, pl.: `2xHUN`.
