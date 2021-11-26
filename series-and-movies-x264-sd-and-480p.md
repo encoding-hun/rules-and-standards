@@ -50,7 +50,7 @@
   - 2.7) `[series.name]` és `[movie.title]` KIZÁRÓLAG eredeti vagy angol nyelvű lehet.
   - 2.8) `[audio.codec]` a film/sorozat eredeti nyelvére vonatkozik.
   - 2.9) `WEB-DL` és `WEBRip` forrás esetén meg kell jelölni, hogy pontosan melyik oldalról való a videó (pl. `NF.WEB-DL`, `AMZN.WEB-DL`).
-    - 2.9.1) A használandó hazai és nemzetközi rövidítések itt érhetőek el: [**LINK**](https://github.com/encoding-hun/rules-and-standards/blob/master/files/web-abbrevation.md).
+    - 2.9.1) A használandó hazai és nemzetközi rövidítések itt érhetőek el: [**LINK**](files/web-abbrevation.md).
     - 2.9.2) Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen release készítője választhat egyet a forrás 2-4 betűjének egymás után történő felhasználásával. (Pl.: `sonymax.hu` -> `SMAX`, `filmboxlive.hu` -> `FBL`)
   - 2.10) WEB-hez további guide:
     - 2.10.1) Az minősül `WEB-DL`-nek, ami nem lett újrakódolva az oldalról való leszedés után (vagy közben).
@@ -179,7 +179,7 @@
     - 8.17.1) Ha a forrás HD és a ColorMatrix `undef`, akkor `BT.709`-nek kell flaggelni.
     - 8.17.2) Ha a forrás SD és a ColorMatrix `undef`, akkor meg kell vizsgálni, hogy `BT.601` vagy `BT.709`-el jobbak-e a színek és annak megfelelően flaggelni.
     - 8.17.3) `undef` flaggelése TILOS!
-  - 8.18) ColorPrimaries és TransferFunction flaggelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod, mit csinálsz). Használata esetén a forrással egyezőre kell állítani. Bővebb infó: [**mod16.org**](https://mod16.org/hurfdurf/?p=116) | [**mirror**](https://github.com/encoding-hun/rules-and-standards/blob/master/files/color-coefficient.md)
+  - 8.18) ColorPrimaries és TransferFunction flaggelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod, mit csinálsz). Használata esetén a forrással egyezőre kell állítani. Bővebb infó: [**mod16.org**](https://mod16.org/hurfdurf/?p=116) | [**mirror**](files/color-coefficient.md)
   - 8.19) Kötelező 16 referenciaképet használni (`--ref 16`).
   - 8.20) B frame-ek kikapcsolása TILOS. Minimum `8` egymás utáni B frame-t kell engedni (`--bframes 8` vagy több).
   - 8.21) A készült videónak DXVA-kompatibilisnek kell lennie (max. `High@L4.1`).
