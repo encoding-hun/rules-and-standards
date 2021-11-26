@@ -110,7 +110,7 @@
   - 4.5) Ha az UHD forrás SDR, akkor kizárólag 2160p készíthető x265-tel, az 1080p-t x264-el kell elkészíteni (lásd másik szabályzat).
   - 4.6) Muxolni kizárólag olyan már kész release-re szabad, amely megfelel ezen szabályzatban rögzített pontoknak (kivéve az x265 verziójára vonatkozó szabálypont korábbi, minőségi encode esetén). Törekedni kell az elérhető legjobb minőségű encode felhasználására!
 
-## 5) Video
+## 5) Videó
   - 5.1) Már kész release alacsonyabb felbontással való újrakódolása SZIGORÚAN TILOS!
   - 5.2) Kizárólag egy videósáv használata megengedett.
   - 5.3) Egybefüggő videó darabolása TILOS! Egy lemezen található több rész (melyeket stáblista választ el) darabolása részekre KÖTELEZŐ!
