@@ -195,7 +195,7 @@
   - 8.31) `--deblock` kikapcsolása TILOS. Ajánlott beállítás filmek esetén: `-3:-3`.
   - 8.32) Adaptív kvantálás használata kötelező! `--aq-mode=1`/`2`/`3` (`3` ajánlott)
   - 8.33) A készített release bitrátája nem lehet nagyobb, mint a forrásé.
-    - 8.32.1) Kivételt képeznek Hybrid release-ek, melyek több forrás felhasználásával készülnek.
+    - 8.33.1) Kivételt képeznek Hybrid release-ek, melyek több forrás felhasználásával készülnek.
   - 8.34) A videó bitrátáját vagy CRF értékét úgy kell megválasztani, hogy a képminőség transzparens legyen (amennyire lehet) a forráshoz képest.
   - 8.35) Ajánlott frameserverek: AviSynth+ és VapourSynth.
   - 8.36) HDTV/PDTV forrás esetén logók maszkolása megengedett (pl. `InpaintFunc`).
@@ -229,7 +229,7 @@
   - 9.17) Egy másik forrásból származó hang akkor számít jobb minőségűnek, hogyha a lowpass (cutoff) frekvencia 16 kHz alatt legalább 1 kHz-el, 16 kHz felett legalább 1.5 kHz-el magasabb, és a többlet adat nem sztochasztikus (dithering miatt belekerülő) zaj. Ha ez teljesül, akkor készíthető új release, egyéb esetben `dupe`. Kérdéses esetekben proofként egy-egy spektrum mutatása szükséges a két hangról.
     - 9.17.1) Ez alól kivétel, hogyha az alacsonyabb lowpass-szel rendelkező hang minősége hallhatóan jobb.
     - 9.17.2) További kivételt képez, hogyha jobb forrásból elérhető a hang és a bitrátakülönbség meghaladja a 192 kbps-t `DD` és `DTS` esetén, vagy a `128` kbps-t `DD+` és `AAC` esetén. `DD+` és `DD` hangok bitrátáinak összehasonlítása a 10.14-es pontban rögzítettek szerint `1.7`-es szorzófaktorral történik. `AAC` és `DD` között ugyanezt az átváltást használjuk. Például egy `DD@448`-as DVD hang mindig cserélhető egy BD-ről származó `DD@640`-re.
-  - 9.19) A hangok sorrendje:
+  - 9.18) A hangok sorrendje:
     - magyar (ha van)
     - eredeti (opcionális; ha nincs magyar kötelező)
     - angol (ha az eredeti nem ez; opcionális)
@@ -243,18 +243,18 @@
       - 10.3.2.1) `qaac`: `-V 90` - `-V 127` és `--no-delay --ignorelength` (egyéb kapcsolók használata tilos)
       - 10.3.2.2) `FDK`: `-m 4` vagy `-m 5` (és `-cutoff 20000` ffmpeg-es libfdk_aac használata esetén)
       - 10.3.2.3) `Nero`: `-q 40` - `-q 75`
-  - 10.5) A hangok mintavételezését (sampling rate) tilos megváltoztatni!
-  - 10.6) Belső konverziók esetén meg kell tartani (vagy jobbat kell használni), mint az eredeti hang bitmélysége és mintavételezési rátája.
-  - 10.7) Ha a hangot nyújtani kell előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. `hdtools compare`).
-  - 10.8) Resamplingre használható programok: `hdtools resample`, `eac3to`, `Sound Forge`, `Audacity`, `SoX`, és `Adobe Audition`.
-  - 10.9) TimeStretchingre használható programok: `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge`, `SONAR` `élastique TimeStretch`, `Audacity`, `SoX`, és `Adobe Audition`.
-  - 10.10) Szegmentált kódolás használata TILOS!
-  - 10.11) Commentary trackek használata csak akkor megengedett, ha kizárólag SD (DVD, PDTV, SD WEB-DL) forrás érhető el.
-    - 10.11.1) Commentary track kizárólag `AAC` 2.0 (vagy mono) lehet és 80-160 kbps bitrátával rendelkezhet (mono esetén 40-80 kbps).
-    - 10.11.2) (UHD) BluRay, HDDVD, (UHD) WEB-DL források esetén Commentary trackek használata TILOS (erre ott vannak a HD formátumok)!
-  - 10.12) `AC3` (`DD`) és `E-AC3` (`DD+`/`DDP`) esetén a `dialnorm` értéket meg kell tartani!
-  - 10.13) Amennyiben a forrás `AC3` és újrakódolás szükséges, akkor az újrakódolt hang bitrátája nem lehet magasabb, mint a forrásé.
-  - 10.14) `E-AC3` hang `AC3`-ba történő kódolásakor a megengedett bitráták az eredeti `1.7`-szereséhez legközelebb eső két bitráta (nagyjából ennyivel jobb a `DD+` algoritmus). Például: ha a forrás `DDP@192`, akkor `192 * 1.7 = 326.4`, tehát az `AC3` bitrátája lehet `320 kbps` vagy `384 kbps` vagy ha a forrás `DDP@256`, akkor `256 * 1.7 = 435.2`, tehát `384 kbps` és `448 kbps`-es `AC3` készíthető.
+  - 10.4) A hangok mintavételezését (sampling rate) tilos megváltoztatni!
+  - 10.5) Belső konverziók esetén meg kell tartani (vagy jobbat kell használni), mint az eredeti hang bitmélysége és mintavételezési rátája.
+  - 10.6) Ha a hangot nyújtani kell előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. `hdtools compare`).
+  - 10.7) Resamplingre használható programok: `hdtools resample`, `eac3to`, `Sound Forge`, `Audacity`, `SoX`, és `Adobe Audition`.
+  - 10.8) TimeStretchingre használható programok: `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge`, `SONAR` `élastique TimeStretch`, `Audacity`, `SoX`, és `Adobe Audition`.
+  - 10.9) Szegmentált kódolás használata TILOS!
+  - 10.10) Commentary trackek használata csak akkor megengedett, ha kizárólag SD (DVD, PDTV, SD WEB-DL) forrás érhető el.
+    - 10.10.1) Commentary track kizárólag `AAC` 2.0 (vagy mono) lehet és 80-160 kbps bitrátával rendelkezhet (mono esetén 40-80 kbps).
+    - 10.10.2) (UHD) BluRay, HDDVD, (UHD) WEB-DL források esetén Commentary trackek használata TILOS (erre ott vannak a HD formátumok)!
+  - 10.11) `AC3` (`DD`) és `E-AC3` (`DD+`/`DDP`) esetén a `dialnorm` értéket meg kell tartani!
+  - 10.12) Amennyiben a forrás `AC3` és újrakódolás szükséges, akkor az újrakódolt hang bitrátája nem lehet magasabb, mint a forrásé.
+  - 10.13) `E-AC3` hang `AC3`-ba történő kódolásakor a megengedett bitráták az eredeti `1.7`-szereséhez legközelebb eső két bitráta (nagyjából ennyivel jobb a `DD+` algoritmus). Például: ha a forrás `DDP@192`, akkor `192 * 1.7 = 326.4`, tehát az `AC3` bitrátája lehet `320 kbps` vagy `384 kbps` vagy ha a forrás `DDP@256`, akkor `256 * 1.7 = 435.2`, tehát `384 kbps` és `448 kbps`-es `AC3` készíthető.
 
 ## 11) Feliratok
   - 11.1) Kizárólag SRT (SubRip) formátumú feliratok megengedettek!

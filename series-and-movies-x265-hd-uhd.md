@@ -122,7 +122,7 @@
   - 5.7) Hybrid encode-ok megengedettek, ha ezzel jobb minőség érhető el.
     - 5.7.1) SDR és HDR források nem keverhetőek!
   - 5.8) A konténerben felbontásra és croppolásra extra metaadatokat megadni TILOS!
-  - 5.10) A videosáv Language tagjának beállítása opcionális: vagy magyar vagy az eredeti nyelv.
+  - 5.9) A videosáv Language tagjának beállítása opcionális: vagy magyar vagy az eredeti nyelv.
 
 ## 6) Felbontás
   - 6.1) 1080p release maximális felbontása `1920x1080` lehet.
@@ -252,10 +252,10 @@
   - 10.3) `DTS-HD.MA` hang készítéséhez kizárólag `DTS-HD Master Audio Suite` használható.
   - 10.4) `AAC` esetében elfogadott encoderek: `qaac` (`Apple AAC`), `FDK`, `Nero`.
     - 10.4.1) Csak stereo/mono hangnál használható AAC.
-    - 10.3.2) Javasolt beállítások:
-      - 10.3.2.1) `qaac`: `-V 90` - `-V 127` és `--no-delay --ignorelength` (egyéb kapcsolók használata tilos)
-      - 10.3.2.2) `FDK`: `-m 4` vagy `-m 5` (és `-cutoff 20000` ffmpeg-es libfdk_aac használata esetén)
-      - 10.3.2.3) `Nero`: `-q 40` - `-q 75`
+    - 10.4.2) Javasolt beállítások:
+      - 10.4.2.1) `qaac`: `-V 90` - `-V 127` és `--no-delay --ignorelength` (egyéb kapcsolók használata tilos)
+      - 10.4.2.2) `FDK`: `-m 4` vagy `-m 5` (és `-cutoff 20000` ffmpeg-es libfdk_aac használata esetén)
+      - 10.4.2.3) `Nero`: `-q 40` - `-q 75`
   - 10.5) Compatibility `AC3` (`DD`) track készület FFmpeg (4.1 vagy újabb) vagy Aften (2009-12-26 vagy újabb) segítségével is.
   - 10.6) A hangok mintavételezését (sampling rate) tilos megváltoztatni!
   - 10.7) Belső konverziók esetén meg kell tartani (vagy jobbat kell használni), mint az eredeti hang bitmélysége és mintavételezési rátája.
@@ -280,8 +280,8 @@
   - 11.6) Magyar filmek esetén ajánlott az angol nyelvű felirat (ha van) megtartása is.
   - 11.7) A lemezen elérhető, főcímhez tartozó feliratokat `.srt` formátumban KÖTELEZŐ muxolni. PGS-SUP feliratok használata opcionális.
   - 11.8) Kommentár feliratokat csak akkor kötelező muxolni, ha az kapcsolódik az audiokommentárhoz.
-    - 11.11.1) Egyéb esetben opcionálisak.
-    - 11.11.2) Kommentár feliratokat elegendő PGS-SUP vagy SRT formátumban muxolni.
+    - 11.8.1) Egyéb esetben opcionálisak.
+    - 11.8.2) Kommentár feliratokat elegendő PGS-SUP vagy SRT formátumban muxolni.
   - 11.9) A muxolt `.srt` feliratokat megfelelő karakterkódolással kell muxolni (UTF8 vagy beállítani a forrással egyezőt)
   - 11.10) Az opcionálisan mellékelt `.srt` feliratok kizárólag UTF8(-BOM) vagy ANSI kódolásúak lehetnek.
   - 11.11) PGS-SUP feliratoknál ajánlott a `zlib` tömörítés kikapcsolása.

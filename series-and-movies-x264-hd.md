@@ -190,7 +190,7 @@
   - 8.31) `--deblock` kikapcsolása TILOS. Ajánlott beállítás filmek esetén: `-3:-3`.
   - 8.32) Adaptív kvantálás használata kötelező! `--aq-mode=1`/`2`/`3` (`3` ajánlott).
   - 8.33) A készített release bitrátája nem lehet nagyobb, mint a forrásé.
-    - 8.32.1) Kivételt képeznek Hybrid release-ek, melyek több forrás felhasználásával készülnek.
+    - 8.33.1) Kivételt képeznek Hybrid release-ek, melyek több forrás felhasználásával készülnek.
   - 8.34) A videó bitrátáját vagy CRF értékét úgy kell megválasztani, hogy a képminőség transzparens legyen (amennyire lehet) a forráshoz képest.
   - 8.35) Ajánlott frameserverek: AviSynth+ és VapourSynth.
   - 8.36) HDTV forrás esetén logók maszkolása megengedett (pl. `InpaintFunc`).

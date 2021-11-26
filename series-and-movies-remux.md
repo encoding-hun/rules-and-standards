@@ -155,10 +155,10 @@
   - 7.4) A készített `AC3` (`DD`) nem tartalmazhat Copyright Protected flaget.
   - 7.5) `AAC` esetében elfogadott encoderek: `qaac` (`Apple AAC`), `FDK`, `Nero`.
     - 7.5.1) Csak stereo/mono hangnál használható `AAC`.
-    - 10.3.2) Javasolt beállítások:
-      - 10.3.2.1) `qaac`: `-V 90` - `-V 127` és `--no-delay --ignorelength` (egyéb kapcsolók használata tilos)
-      - 10.3.2.2) `FDK`: `-m 4` vagy `-m 5` (és `-cutoff 20000` ffmpeg-es libfdk_aac használata esetén)
-      - 10.3.2.3) `Nero`: `-q 40` - `-q 75`
+    - 7.5.2) Javasolt beállítások:
+      - 7.5.2.1) `qaac`: `-V 90` - `-V 127` és `--no-delay --ignorelength` (egyéb kapcsolók használata tilos)
+      - 7.5.2.2) `FDK`: `-m 4` vagy `-m 5` (és `-cutoff 20000` ffmpeg-es libfdk_aac használata esetén)
+      - 7.5.2.3) `Nero`: `-q 40` - `-q 75`
   - 7.6) A hangok mintavételezését (sampling rate) tilos megváltoztatni!
   - 7.7) Belső konverziók esetén meg kell tartani (vagy jobbat kell használni), mint az eredeti hang bitmélysége és mintavételezési rátája.
   - 7.8) Ha a hangot nyújtani kell előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. `hdtools compare`).
