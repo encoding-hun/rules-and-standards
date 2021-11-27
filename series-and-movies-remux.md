@@ -105,7 +105,7 @@
   - 5.1) A videó újrakódolása SZIGORÚAN TILOS!
   - 5.2) Kizárólag egy videósáv használata megengedett.
     - 5.2.1) Kivétel dual layer Dolby Vision formátum.
-  - 5.3) 2D-s releasehez nem használható 3D-s film bal vagy jobb szeméhez tartozó kép, kivéve, ha a filmből nem létezik 2D-s kiadás.
+  - 5.3) 2D-s release-hez nem használható 3D-s film bal vagy jobb szeméhez tartozó kép, kivéve, ha a filmből nem létezik 2D-s kiadás.
   - 5.4) Egybefüggő videó darabolása TILOS! Egy lemezen található több rész (melyeket stáblista választ el) darabolása részekre KÖTELEZŐ!
     - 5.4.1) Ha a film több lemezen található és nincs a lemez végén stáblista, akkor össze kell a szegmenseket fűzni.
   - 5.5) Az előző rész tartalmából-t, a bevezető intrókat, és a stáblistát kötelező teljes hosszukban megtartani és a főcímmel együtt kódolni.

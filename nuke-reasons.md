@@ -10,7 +10,7 @@
   - 1.9) A szabályzat adott pontjának létrejötte/módosítása előtt készült release nem NUKE-olható, ha csak a változtatott pontban hibás és a változtatást megelőző szabályzat szerint rendben volt. Kérdés esetén a commit history ad támpontot.
   - 1.10) `PROPER` kizárólag technikai hiba (technical flaw) esetén adható ki másik csapat munkájára.
   - 1.11) `READ.NFO` akkor adható ki, ha a korábbi release nem technikailag hibás, de minőségben gyengébb, vagy valami apróság hiányzik (pl. chapterlist), ami még nem indokol `PROPER`-t. 
-  - 1.12) A `PROPER` és `READ.NFO` megjelölésű releasekhez kötelező `proof`. Jobb kép esetén összehasonlítás (comparison), hangcsúszás (`oos`) esetén kép a csúszásról. Apróságok esetén elég ezt az `NFO`-ban jelezni, pl. hiányzó felirat, hiányzó chapterlist, stb. Kivétel ha az ok egyértelmű (pl. egyértelműen jobb forrású hang).
+  - 1.12) A `PROPER` és `READ.NFO` megjelölésű release-ekhez kötelező `proof`. Jobb kép esetén összehasonlítás (comparison), hangcsúszás (`oos`) esetén kép a csúszásról. Apróságok esetén elég ezt az `NFO`-ban jelezni, pl. hiányzó felirat, hiányzó chapterlist, stb. Kivétel ha az ok egyértelmű (pl. egyértelműen jobb forrású hang).
     - 1.12.1) Kérdésesség esetén a Council utólag is bekérhet `proof`-ot. Ennek pótlásának elmulasztása nuke-ot eredményez `dupe` reasonnal.
   - 1.13) Saját release javítása esetén a korábbi release `unnuke`-ot kap, jelölve a javítást.
   - 1.14) Komolyabb képi problémák javítására a `RERiP` tag használata, minden egyébre a `REPACK` tag használata javasolt, kivéve ha a probléma egyszerűen javítható (pl. `bad.dirname`, `NFO` hibák), amikor elég ezt egyszerűen átírni.
@@ -79,7 +79,7 @@
       - `no.nfo` = hiányzó NFO
       - `compressed` = tömörített formátum
       - `password.protected` = bármilyen módon jelszavazott állomány
-      - `drm.not.removed` = bármilyen jellegű DRM maradt a releasen
+      - `drm.not.removed` = bármilyen jellegű DRM maradt a release-en
 
   - 2.2) Kevésbé súlyos, nem technikai hibák -- ezek nem `PROPER`-elhetőek. Indokolt esetben `READ.NFO` kiadható rá.
     - 2.2.1) Video:
