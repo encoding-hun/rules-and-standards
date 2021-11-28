@@ -10,7 +10,7 @@
 ## [**Nuke indokok**](nuke-reasons.md)
 
 ## Csapatok, akik aláírták és tudomásul vették ([link](https://github.com/encoding-hun/rules-and-standards/issues/14))
-`boOk`, `DenZo`, `FULCRUM`, `Legacy`, `NaGa`, `NFC`, `pcroland`, `PTHD`, `SFY`
+`ARROW`, `boOk`, `DenZo`, `FULCRUM`, `Legacy`, `NaGa`, `NFC`, `pcroland`, `PTHD`, `SFY`
 
 ## Oldalak, amelyek aláírták ([link](https://github.com/encoding-hun/rules-and-standards/issues/18))
 
