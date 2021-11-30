@@ -217,7 +217,7 @@
     - 9.14.2) DTS meghagyása, mellé KÖTELEZŐ `DD@640` (2 csatorna esetén `DD@256` vagy `AAC`) compatibility track készítése.
   - 9.15) Lossy hangot csak losslessből szabad kódolni.
     - 9.15.1) Ez alól kivétel ha csak DTS hang érhető el és compatibility tracket készítünk vagy 1080p-re `DDP@1024`-et.
-  - 9.16) Maximum +/- 100 ms hangcsúszás megengedett.
+  - 9.16) A maximális megengedett hangcsúszás 100 ms.
   - 9.17) A hangok nyelvét kötelező Language tagben jelezni!
   - 9.18) Kizárólag stúdió által készített surround hangok használhatóak fel, házilag felkevertek tilosak. TV-s surround hang esetén mindig győződjünk meg, hogy valódi surround-e, amennyiben nem, downmixeljük. Pl.: `ffmpeg -i input.ac3 -ac 2 -f sox - | sox -p -S -b 24 --norm=-1 output.wav`
   - 9.19) Amennyiben a forrás audió megtartható újrakódolás nélkül, úgy annak újrakódolása tilos.
@@ -278,4 +278,4 @@
   - 11.13) Retail felirat használata kötelező, amennyiben elérhető.
     - 11.13.1) Fansub használható Retail felirat mellett is.
     - 11.13.2) Fansub és Retail együttes használatánál `--track-name`-ben kötelező megadni a nevüket.
-  - 11.14) A feliratok nem csúszhatnak zavaró mértékben a képhez képest (max. ~400 ms).
+  - 11.14) A maximális megengedett feliratcsúszás 300 ms.

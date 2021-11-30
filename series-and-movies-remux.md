@@ -136,7 +136,7 @@
     - 6.11.1) Ha a lemezen lévő compatibility track csak 384-448 kbps bitrátájú, akkor készíthető a `TrueHD` hangból 640 kbps bitrátájú hang is.
   - 6.12) Audiokommentár megtartása opcionális.
   - 6.13) Audiokommentár formátuma kizárólag AC3 (`DD`) lehet vagy `AAC`.
-  - 6.14) Maximum +/- 100 ms hangcsúszás megengedett.
+  - 6.14) A maximális megengedett hangcsúszás 100 ms.
   - 6.15) A hangok nyelvét kötelező Language tagben jelezni!
   - 6.16) Kizárólag stúdió által készített surround hangok használhatóak fel, házilag felkevertek tilosak. TV-s surround hang esetén mindig győződjünk meg, hogy valódi surround-e, amennyiben nem, downmixeljük. Pl.: `ffmpeg -i input.ac3 -ac 2 -f sox - | sox -p -S -b 24 --norm=-1 output.wav`
   - 6.17) Egy másik forrásból származó hang akkor számít jobb minőségűnek, hogyha a lowpass (cutoff) frekvencia 16 kHz alatt legalább 1 kHz-el, 16 kHz felett legalább 1.5 kHz-el magasabb, és a többlet adat nem sztochasztikus (dithering miatt belekerülő) zaj. Ha ez teljesül, akkor készíthető új release, egyéb esetben `dupe`. Kérdéses esetekben proofként egy-egy spektrum mutatása szükséges a két hangról.
@@ -211,4 +211,4 @@
   - 8.20) Retail felirat használata kötelező, amennyiben elérhető.
     - 8.20.1) Fansub használható Retail felirat mellett is.
     - 8.20.2) Fansub és Retail együttes használatánál `--track-name`-ben kötelező megadni a nevüket.
-  - 8.21) A feliratok nem csúszhatnak zavaró mértékben a képhez képest (max. ~400 ms).
+  - 8.21) A maximális megengedett feliratcsúszás 300 ms.
