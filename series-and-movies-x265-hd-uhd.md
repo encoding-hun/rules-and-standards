@@ -13,9 +13,9 @@
   - 1.5) A fő MKV mellé `SFV` vagy `MD5` ellenőrzőösszeg készítése ajánlott, de nem kötelező.
   - 1.6) Sample készítése opcionális.
     - 1.6.1) Hossza 50-90 másodperc közötti legyen.
-    - 1.6.2) A Sample nem származhat az epizód/film legelejéről, valamint legvégéről.
-    - 1.6.3) A Sample-t újrakódolás nélkül, a végső encode-ból kell kivágni.
-    - 1.6.4) A Sample-t egy `Sample` nevű mappába vagy a fő MKV mellé kell helyezni. Utóbbi esetben a filenévben kell jelölni, hogy melyik a sample.
+    - 1.6.2) A sample nem származhat az epizód/film legelejéről, valamint legvégéről.
+    - 1.6.3) A sample-t újrakódolás nélkül, a végső encode-ból kell kivágni.
+    - 1.6.4) A sample-t egy `Sample` nevű mappába vagy a fő MKV mellé kell helyezni. Utóbbi esetben a filenévben kell jelölni, hogy melyik a sample.
   - 1.7) mHD, HDLight és egyéb vicces baromságok készítése és felhasználása TILOS!
   - 1.8) Chapterlist használata KÖTELEZŐ, amennyiben a forrás tartalmaz ilyet!
     - 1.8.1) Chapterek elnevezése opcionális, kizárólag magyar vagy angol fejezetcímek használhatóak.
@@ -57,7 +57,7 @@
   - 2.12) `Rip`, `RiP` és `RIP` megjelölés is elfogadott.
   - 2.13) `REPACK` (`Repack`) és `RERiP` (`Rerip`) tagok használata kötelező, ha saját release-t javít valaki.
   - 2.14) `iNT` vagy `iNTERNAL` tag használata DUPE elkerülésére TILOS!
-    - 2.14.1) `iNTERNAL`-ként kell feltütnetni minden olyan release-t, amely ellentmond a szabályzat bármely pontjának, de nem érhető el olyan forrás, amely teljesítené.
+    - 2.14.1) `iNTERNAL`-ként kell feltüntetni minden olyan release-t, amely ellentmond a szabályzat bármely pontjának, de nem érhető el olyan forrás, amely teljesítené.
   - 2.15) TV-ből származó hangok esetén `CUSTOM` tag használata opcionális.
   - 2.16) `RETAiL` (eredeti lemezről készült) tag használata ajánlott, ha korábban készült olyan release, ahol a hang nem a BD/HDDVD lemezről származik.
     - 2.16.1) Az UHD Blu-ray forrásokat `UHD.BluRay`-nek kell tagelni.
@@ -91,7 +91,7 @@
     - audiosávok csatornaszáma
     - audiosávok bitrátája
     - audió mintavételezési rátája (sampling rate), opcionális 48kHz esetén
-    - feliratok forrása(i), fansub esetén
+    - feliratok forrása(i) fansub esetén
     - feliratok nyelve
     - feliratok formátuma
   - 3.5) Más csapatok sértegetése, személyeskedés TILOS!
@@ -122,22 +122,22 @@
   - 5.7) Hybrid encode-ok megengedettek, ha ezzel jobb minőség érhető el.
     - 5.7.1) SDR és HDR források nem keverhetőek!
   - 5.8) A konténerben felbontásra és croppolásra extra metaadatokat megadni TILOS!
-  - 5.9) A videosáv Language tagjának beállítása opcionális: vagy magyar vagy az eredeti nyelv.
+  - 5.9) A videosáv Language tag-jénak beállítása opcionális: vagy magyar vagy az eredeti nyelv.
 
 ## 6) Felbontás
   - 6.1) 1080p release maximális felbontása `1920x1080` lehet.
     - 6.1.1) 720p release készítése UHD forrásból kizárólag SDR esetén megengedett és kizárólag x264 segítségével (lásd másik szabályzat).
   - 6.2) 2160p release maximális felbontása `3840x2160` lehet.
   - 6.3) A videó felbontása mod2 kell legyen.
-  - 6.4) A videó felskálázása SZIGORÚAN TILOS (pl. ha croppolás után 3836 széles a kép, tilos 3840-re felnagyítani)!
+  - 6.4) A videó felskálázása SZIGORÚAN TILOS (pl. ha cropolás után 3836 széles a kép, tilos 3840-re felnagyítani)!
     - 6.4.1) Upscaled forrás esetén az eredeti, upscale előtti (vagy annál kisebb) felbontáson készíthető release. Ennek megkeresésésére jó pl. az UpscaleCheck és a getnative kódok. Köztes felbontások esetén a kerekítés szabályai érvényesek (pl. 900p és felette készíthető 1080p).
-  - 6.5) Eltérő képarányú release (pl. `OM`) nem dupeolja a korábbit és *vica versa*.
+  - 6.5) Eltérő képarányú release (pl. `OM`) nem dupe-olja a korábbit és *vica versa*.
   - 6.6) A videót cropolni kell addig amíg maximum 1-1 px fekete sáv marad. A cropot a főcímnél kell meghatározni.
-  - 6.7) A dirty lineok, dirty pixelek és faded lineok eltávolítása TILOS!
+  - 6.7) A dirty line-ok, dirty pixelek és faded line-ok eltávolítása TILOS!
   - 6.8) Az 1 px fekete sávok (widow line) és dirty line-ok javítása ajánlott.
     - widow line javítása pl.: `FillMargins`/`FillBorder`
     - dirty line/faded line pl.: `bbmod`/`FixRowBrightness`/`BalanceBorders`/`EdgeFixer`
-  - 6.9) Javítás után a widow lineok (eredetileg fekete sávok) 2160p esetén eltávolíthatóak (resize vagy overlay), 1080p esetén kötelezően eltávolítandóak (resize).
+  - 6.9) Javítás után a widow line-ok (eredetileg fekete sávok) 2160p esetén eltávolíthatóak (resize vagy overlay), 1080p esetén kötelezően eltávolítandóak (resize).
   - 6.10) A kódolt videó felbontása 1 pixellel térhet el a forrás alapján (cropolás után) számolttól (mod2).
 
 ## 7) Filterek
@@ -153,8 +153,8 @@
     - 7.5.2) Számos upscaled anyagra a grain már a magasabb felbontáson kerül rá. Ilyen esetekben eltávolítása indokolt lehet.
   - 7.6) DeBlocking és DeBanding filterek használata megengedett, ezeket érdemes adott zónákra korlátozni (pl. `ReplaceFramesSimple`, `Trim`, vagy `ConditionalFilter` segítségével).
   - 7.7) A videó eredeti FPS értékét meg kell tartani. Interlace-elt forrás esetén 2 félképből 1-et kell képezni (értsd `50i`-ből `25p`-t kell készíteni). Ez alól kivétel lehet a sportfelvétel, ahol indokolt lehet az `50p`. Ekkor kizárólag `QTGMC` (`preset slow` vagy jobb) deinterlacer használható!
-  - 7.8) Kizárólag CFR (constant framerate) mód használható! Amennyiben a forrás VFR-el rendelkezik, úgy ez felülírja az 7.6-os pontot.
-  - 7.9) A dupe framek eltávolítása kötelező!
+  - 7.8) Kizárólag CFR (constant framerate) mód használható! Amennyiben a forrás VFR-rel rendelkezik, úgy ez felülírja az 7.6-os pontot.
+  - 7.9) A dupe fram-ek eltávolítása kötelező!
 
 ## 8) Videokódolás
   - 8.1) Kizárólag x265 használható.
@@ -178,7 +178,7 @@
   - 8.18) Range megadása kötelező: `--range` (általában `limited`).
   - 8.19) `--ref` értéke maximum `6`, minimum `4` lehet.
     - 8.19.1) 1080p esetén `--ref` értéke kizárólag `6` lehet.
-  - 8.20) B frame-ek kikapcsolása TILOS. Minimum `4` egymás utáni B frame-t kell engedni (`--bframes 4` vagy több).
+  - 8.20) B frame-ek kikapcsolása TILOS. Minimum `4` egymás utáni B frame-et kell engedni (`--bframes 4` vagy több).
   - 8.21) `--rd` értéke minimum `3` kell legyen.
   - 8.22) `--dynamic-rd` használata megengedett.
   - 8.23) `--ctu` értéke minimum `32`.
@@ -203,7 +203,7 @@
   - 8.41) HDR esetén `--hdr10` és `--hdr10-opt` kapcsolók használata KÖTELEZŐ.
   - 8.42) HDR10Plus esetén kizárólag `--dhdr10-info` használható, `--dhdr10-opt` használata TILOS!
   - 8.43) A készített release bitrátája nem lehet nagyobb, mint a forrásé.
-    - 8.43.1) Kivételt képeznek Hybrid release-ek, melyek több forrás felhasználásával készülnek.
+    - 8.43.1) Kivételt képeznek az olyan hybrid release-ek, melyek több forrás felhasználásával készülnek.
   - 8.44) A videó bitrátáját vagy CRF értékét úgy kell megválasztani, hogy a képminőség transzparens legyen (amennyire lehet) a forráshoz képest.
   - 8.45) Ajánlott frameserverek: AviSynth+ és VapourSynth.
   - 8.46) UHDTV forrás esetén logók maszkolása megengedett (pl. `InpaintFunc`).
@@ -211,7 +211,7 @@
   - 8.48) A `WEB-DL`-ek felmentést élveznek az összes 8-as pontbeli szabály alól, kivéve a 8.7-est.
 
 ## 9) Audió
-  - 9.1) Magyar hangsávot tartalmazó release esetén kötelező a `HUN` (`Hun`) tag használata. Amennyiben a release nem tartalmaz magyar hangsávot, úgy nem kell nyelvi tag-ot megadni.
+  - 9.1) Magyar hangsávot tartalmazó release esetén kötelező a `HUN` (`Hun`) tag használata. Amennyiben a release nem tartalmaz magyar hangsávot, úgy nem kell nyelvi tag-et megadni.
   - 9.2) Az eredeti nyelvű hangsáv megtartása KÖTELEZŐ!
   - 9.3) Nem angol nyelvű, eredeti hangsáv esetén az angol hang (már amennyiben létezik) megtartása opcionális.
   - 9.4) Egyéb nyelvű hangok megtartása TILOS!
@@ -220,8 +220,8 @@
     - 9.5.2) `TrueHD`, `DTS`, `DTS-HD.MA`, és `DTS-X` hangokhoz KÖTELEZŐ `DD@640` compatibility track készítése.
     - 9.5.3) Lossless formátumok kereszt-konvertálása TILOS (pl. `TrueHD`-> `FLAC`)!
   - 9.6) `MP3`, `MP2`, és egyéb vicces formátumok használata TILOS!
-  - 9.7) Más hangok encode-olása `AAC`-be kizárólag a kommentár sáv esetén megengedett.
-    - 9.7.1) Kivétel, ha nyújtani és/vagy vágni kell, ekkor lehet `AAC`, amennyiben stereo vagy mono.
+  - 9.7) Más hangok encode-olása `AAC`-be kizárólag a kommentársáv esetén megengedett.
+    - 9.7.1) Kivétel, ha nyújtani és/vagy vágni kell, ekkor lehet `AAC`, amennyiben sztereó vagy monó.
   - 9.8) LPCM hangot kötelező `TrueHD`, `DTS-HD.MA` vagy `FLAC` formátumba (film esetén) vagy AAC formátumba (kommentár esetén) konvertálni.
   - 9.9) A hangsávok eredeti csatornaszámát meg kell tartani!
   - 9.10) 1080p felbontás és 8 csatornás hang esetén DD+ formátumot kell használni (`DDP@1536`).
@@ -234,7 +234,7 @@
   - 9.13) Lossy hangot csak losslessből szabad kódolni.
     - 9.13.1) Ez alól kivétel ha csak DTS hang érhető el és compatibility tracket készítünk vagy 1080p-re `DDP@1024`-et.
   - 9.14) A maximális megengedett hangcsúszás 100 ms.
-  - 9.15) A hangok nyelvét kötelező Language tagben jelezni!
+  - 9.15) A hangok nyelvét kötelező Language tag-ben jelezni!
   - 9.16) Kizárólag stúdió által készített surround hangok használhatóak fel, házilag felkevertek tilosak. TV-s surround hang esetén mindig győződjünk meg, hogy valódi surround-e, amennyiben nem, downmixeljük. Pl.: `ffmpeg -i input.ac3 -ac 2 -f sox - | sox -p -S -b 24 --norm=-1 output.wav`
   - 9.17) Amennyiben a forrás audió megtartható újrakódolás nélkül, úgy annak újrakódolása tilos.
   - 9.18) Egy másik forrásból származó hang akkor számít jobb minőségűnek, hogyha a lowpass (cutoff) frekvencia 16 kHz alatt legalább 1 kHz-el, 16 kHz felett legalább 1.5 kHz-el magasabb, és a többlet adat nem sztochasztikus (dithering miatt belekerülő) zaj. Ha ez teljesül, akkor készíthető új release, egyéb esetben `dupe`. Kérdéses esetekben proofként egy-egy spektrum bemutatása szükséges a két hangról.
@@ -251,15 +251,15 @@
   - 10.2) A készített `AC3` (`DD`) nem tartalmazhat Copyright Protected flaget.
   - 10.3) `DTS-HD.MA` hang készítéséhez kizárólag `DTS-HD Master Audio Suite` használható.
   - 10.4) `AAC` esetében elfogadott encoderek: `qaac` (`Apple AAC`), `FDK`, `Nero`.
-    - 10.4.1) Csak stereo/mono hangnál használható AAC.
+    - 10.4.1) Csak sztereó/monó hangnál használható AAC.
     - 10.4.2) Javasolt beállítások:
       - 10.4.2.1) `qaac`: `-V 90` - `-V 127` és `--no-delay --ignorelength` (egyéb kapcsolók használata tilos)
       - 10.4.2.2) `FDK`: `-m 4` vagy `-m 5` (és `-cutoff 20000` ffmpeg-es libfdk_aac használata esetén)
       - 10.4.2.3) `Nero`: `-q 40` - `-q 75`
-  - 10.5) Compatibility `AC3` (`DD`) track készület FFmpeg (4.1 vagy újabb) vagy Aften (2009-12-26 vagy újabb) segítségével is.
+  - 10.5) Compatibility `AC3` (`DD`) track készülhet FFmpeg (4.1 vagy újabb) vagy Aften (2009-12-26 vagy újabb) segítségével is.
   - 10.6) A hangok mintavételezését (sampling rate) tilos megváltoztatni!
   - 10.7) Belső konverziók esetén meg kell tartani (vagy jobbat kell használni), mint az eredeti hang bitmélysége és mintavételezési rátája.
-  - 10.8) Ha a hangot nyújtani kell előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. `hdtools compare`).
+  - 10.8) Ha a hangot nyújtani kell, előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. `hdtools compare`).
   - 10.9) Resamplingre használható programok: `hdtools resample`, `eac3to`, `Sound Forge`, `Audacity`, `SoX`, és `Adobe Audition`.
   - 10.10) TimeStretchingre használható programok: `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge`, `SONAR` `élastique TimeStretch`, `Audacity`, `SoX`, és `Adobe Audition`.
   - 10.11) Commentary track maximum 2.0 lehet, `AC3` (`DD`) esetében maximum 192 kbps, `AAC` esetében 80-160 kbps.
@@ -279,9 +279,9 @@
   - 11.5) Kötelező feliratok, amennyiben elérhetőek a forráson: magyar forced, magyar, eredeti nyelv forced, eredeti nyelv.
   - 11.6) Magyar filmek esetén ajánlott az angol nyelvű felirat (ha van) megtartása is.
   - 11.7) A lemezen elérhető, főcímhez tartozó feliratokat `.srt` formátumban KÖTELEZŐ muxolni. PGS-SUP feliratok használata opcionális.
-  - 11.8) Kommentár feliratokat csak akkor kötelező muxolni, ha az kapcsolódik az audiokommentárhoz.
+  - 11.8) Kommentárfeliratokat csak akkor kötelező muxolni, ha az kapcsolódik az audiokommentárhoz.
     - 11.8.1) Egyéb esetben opcionálisak.
-    - 11.8.2) Kommentár feliratokat elegendő PGS-SUP vagy SRT formátumban muxolni.
+    - 11.8.2) Kommentárfeliratokat elegendő PGS-SUP vagy SRT formátumban muxolni.
   - 11.9) A muxolt `.srt` feliratokat megfelelő karakterkódolással kell muxolni (UTF8 vagy beállítani a forrással egyezőt)
   - 11.10) Az opcionálisan mellékelt `.srt` feliratok kizárólag UTF8(-BOM) vagy ANSI kódolásúak lehetnek.
   - 11.11) PGS-SUP feliratoknál ajánlott a `zlib` tömörítés kikapcsolása.
