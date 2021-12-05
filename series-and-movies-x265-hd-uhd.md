@@ -85,6 +85,7 @@
     - videó bitrátája
     - videó FPS-e
     - videó dinamikatartománya
+    - `DV` videó esetén a profil feltüntetése
     - videó színinformációi
     - audiosávok forrása(i), `WEB` esetén oldal megjelölése
     - audiosávok nyelvei
