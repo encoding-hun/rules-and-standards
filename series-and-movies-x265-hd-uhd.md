@@ -117,7 +117,7 @@
   - 5.2) Kizárólag egy videósáv használata megengedett.
   - 5.3) Egybefüggő videó darabolása TILOS! Egy lemezen található több rész (melyeket stáblista választ el) darabolása részekre KÖTELEZŐ!
     - 5.3.1) Ha a film több lemezen található és nincs a lemez végén stáblista, akkor össze kell a szegmenseket fűzni.
-  - 5.4) Az előző rész tartalmából-t, a bevezető intrókat, és a stáblistát kötelező teljes hosszukban megtartani és a főcímmel együtt kódolni.
+  - 5.4) Az előző rész tartalmából-t, a bevezető intrókat és a stáblistát kötelező teljes hosszukban megtartani és a főcímmel együtt kódolni.
   - 5.5) A zavaró bevágásokat: műsorszám hirdetést tartalmaz, reklámok, FBI Warning, stb. el kell távolítani.
     - 5.5.1) Kivéve, amikor ez a videó/hang (közel) teljes újrakódolásával járna.
   - 5.6) Égetett felirattal rendelkező forrásokat lehetőleg kerüljük, kivéve ha szignifikánsan jobb a minősége.
@@ -147,7 +147,7 @@
   - 7.2) Tonemapping SZIGORÚAN TILOS!
     - 7.2.1) Kivétel mintaképek vagy proof.
   - 7.3) Resize-oláshoz `z_Spline36Resize` (`resize.Spline36`) vagy `Spline36ResizeMod` ajánlott, a `Spline36Resize` tartalmaz egy apró chroma shifting bugot, használata kerülendő. (VapourSynth-et nem érinti.) További engedett resizerek: `z_Spline64Resize` (`resize.Spline64`), `BlackmanResize`.
-    - 7.3.1) Tilos `Nearest Neighbor`, `Bilinear`, `Bicubic`, és egyéb gyenge resizerek használata.
+    - 7.3.1) Tilos `Nearest Neighbor`, `Bilinear`, `Bicubic` és egyéb gyenge resizerek használata.
   - 7.4) Kizárólag frame pontos forrásfilterek használhatóak (pl. `FFMS2`, `LSMASH`, `DGDecNV`).
     - 7.4.1) Pontatlan forrásfilterek használata TILOS (pl. `DirectShowSource`)!
   - 7.5) A kép minőségét jelentősen befolyásoló filterek használata (pl. grain eltávolítása, warp sharping, stb.) TILOS!
@@ -200,7 +200,7 @@
   - 8.36) `--qg-size` mérete nem lehet nagyobb, mint `32`.
   - 8.37) `--deblock` kikapcsolása TILOS. Ajánlott beállítás filmek esetén: `-3:-3`.
   - 8.38) SAO kikapcsolása ajánlott (`--no-sao --selective-sao 0`).
-  - 8.39) Mindenképpen high tier-t kell használni (`--high-tier`), be kell kapcsolni a header ismétlést (`--repeat-headers`), be kell kapcsolni az access unit delimitert (`--aud`), és a HRD adatok továbbítását (`--hrd`).
+  - 8.39) Mindenképpen high tier-t kell használni (`--high-tier`), be kell kapcsolni a header ismétlést (`--repeat-headers`), be kell kapcsolni az access unit delimitert (`--aud`) és a HRD adatok továbbítását (`--hrd`).
   - 8.40) `--uhd-bd` kapcsoló használata TILOS!
   - 8.41) HDR esetén `--hdr10` és `--hdr10-opt` kapcsolók használata KÖTELEZŐ.
   - 8.42) HDR10Plus esetén kizárólag `--dhdr10-info` használható, `--dhdr10-opt` használata TILOS!
@@ -218,10 +218,10 @@
   - 9.3) Nem angol nyelvű, eredeti hangsáv esetén az angol hang (már amennyiben létezik) megtartása opcionális.
   - 9.4) Egyéb nyelvű hangok megtartása TILOS!
   - 9.5) Megengedett hangformátumok: `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`), `DTS`, `AAC`, `FLAC`.
-    - 9.5.1) 2160p esetén `TrueHD`, `DTS-HD.MA`, és `DTS-X` is megengedett.
-    - 9.5.2) `TrueHD`, `DTS`, `DTS-HD.MA`, és `DTS-X` hangokhoz KÖTELEZŐ `DD@640` compatibility track készítése.
+    - 9.5.1) 2160p esetén `TrueHD`, `DTS-HD.MA` és `DTS-X` is megengedett.
+    - 9.5.2) `TrueHD`, `DTS`, `DTS-HD.MA` és `DTS-X` hangokhoz KÖTELEZŐ `DD@640` compatibility track készítése.
     - 9.5.3) Lossless formátumok kereszt-konvertálása TILOS (pl. `TrueHD`-> `FLAC`)!
-  - 9.6) `MP3`, `MP2`, és egyéb vicces formátumok használata TILOS!
+  - 9.6) `MP3`, `MP2` és egyéb vicces formátumok használata TILOS!
   - 9.7) Más hangok encode-olása `AAC`-be kizárólag a kommentársáv esetén megengedett.
     - 9.7.1) Kivétel, ha nyújtani és/vagy vágni kell, ekkor lehet `AAC`, amennyiben sztereó vagy monó.
   - 9.8) LPCM hangot kötelező `TrueHD`, `DTS-HD.MA` vagy `FLAC` formátumba (film esetén) vagy AAC formátumba (kommentár esetén) konvertálni.
@@ -262,11 +262,11 @@
   - 10.6) A hangok mintavételezését (sampling rate) tilos megváltoztatni!
   - 10.7) Belső konverziók esetén meg kell tartani (vagy jobbat kell használni), mint az eredeti hang bitmélysége és mintavételezési rátája.
   - 10.8) Ha a hangot nyújtani kell, előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. `hdtools compare`).
-  - 10.9) Resamplingre használható programok: `hdtools resample`, `eac3to`, `Sound Forge`, `Audacity`, `SoX`, és `Adobe Audition`.
-  - 10.10) TimeStretchingre használható programok: `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge`, `SONAR` `élastique TimeStretch`, `Audacity`, `SoX`, és `Adobe Audition`.
+  - 10.9) Resamplingre használható programok: `hdtools resample`, `eac3to`, `Sound Forge`, `Audacity`, `SoX` és `Adobe Audition`.
+  - 10.10) TimeStretchingre használható programok: `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge`, `SONAR` `élastique TimeStretch`, `Audacity`, `SoX` és `Adobe Audition`.
   - 10.11) Commentary track maximum 2.0 lehet, `AC3` (`DD`) esetében maximum 192 kbps, `AAC` esetében 80-160 kbps.
   - 10.12) Szegmentált kódolás használata TILOS!
-  - 10.13) `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`), `DTS`, `DTS-HD.MA`, és `DTS-X` esetén a `dialnorm` értéket meg kell tartani!
+  - 10.13) `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`), `DTS`, `DTS-HD.MA` és `DTS-X` esetén a `dialnorm` értéket meg kell tartani!
   - 10.14) Ha szükséges a forrás hang újrakódolása, és az veszteséges formátum (lossy) (`AC3`, `E-AC3`, `DTS`, stb.), akkor az újrakódolt hang bitrátája nem lehet magasabb, mint a forrásé.
   - 10.15) `E-AC3` hang `AC3`-ba történő kódolásakor a megengedett bitráták az eredeti `1.7`-szereséhez legközelebb eső két bitráta (nagyjából ennyivel jobb a `DD+` algoritmus). Például: ha a forrás `DDP@192`, akkor `192 * 1.7 = 326.4`, tehát az `AC3` bitrátája lehet `320 kbps` vagy `384 kbps` vagy ha a forrás `DDP@256`, akkor `256 * 1.7 = 435.2`, tehát `384 kbps` és `448 kbps`-es `AC3` készíthető.
 
