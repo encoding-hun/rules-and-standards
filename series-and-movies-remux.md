@@ -14,9 +14,9 @@
   - 1.6) A fő MKV (MP4/M2TS) mellé `SFV` vagy `MD5` ellenőrzőösszeg készítése ajánlott, de nem kötelező.
   - 1.7) Sample készítése opcionális.
     - 1.7.1) Hossza 50-90 másodperc közötti legyen.
-    - 1.7.2) A Sample nem származhat az epizód/film legelejéről, valamint legvégéről.
-    - 1.7.3) A Sample-t újrakódolás nélkül, a végső encode-ból kell kivágni.
-    - 1.7.4) A Sample-t egy `Sample` nevű mappába vagy a fő MKV (MP4/M2TS) mellé kell helyezni. Utóbbi esetben a filenévben kell jelölni, hogy melyik a sample.
+    - 1.7.2) A sample nem származhat az epizód/film legelejéről, valamint legvégéről.
+    - 1.7.3) A sample-t újrakódolás nélkül, a végső encode-ból kell kivágni.
+    - 1.7.4) A sample-t egy `Sample` nevű mappába vagy a fő MKV (MP4/M2TS) mellé kell helyezni. Utóbbi esetben a filenévben kell jelölni, hogy melyik a sample.
   - 1.8) Chapterlist használata KÖTELEZŐ, amennyiben a forrás tartalmaz ilyet!
     - 1.8.1) Chapterek elnevezése opcionális, kizárólag magyar vagy angol fejezetcímek használhatóak.
   - 1.9) Vízjelek használata TILOS!
@@ -47,14 +47,14 @@
   - 2.8) Elfogadott `[video.codec]` tagek: `AVC`, `VC1`, `MPEG2`, `HEVC`, `AV1`.
   - 2.9) `REPACK` (`Repack`) tag használata kötelező, ha saját release-t javít valaki.
   - 2.10) `iNT` vagy `iNTERNAL` tag használata DUPE elkerülésére TILOS!
-    - 2.10.1) `iNTERNAL`-ként kell feltütnetni minden olyan release-t, amely ellentmond a szabályzat bármely pontjának, de nem érhető el olyan forrás, amely teljesítené.
+    - 2.10.1) `iNTERNAL`-ként kell feltüntetni minden olyan release-t, amely ellentmond a szabályzat bármely pontjának, de nem érhető el olyan forrás, amely teljesítené.
   - 2.11) TV-ből származó hangok esetén `CUSTOM` tag használata opcionális.
   - 2.12) `RETAiL` (eredeti lemezről készült) tag használata ajánlott, ha korábban készült olyan release, ahol a hang nem a BD/HDDVD lemezről származik.
     - 2.12.1) A Blu-ray forrásokat `BluRay`-nek kell tagelni.
     - 2.12.2) Az UHD Blu-ray forrásokat `UHD.BluRay`-nek kell tagelni.
     - 2.12.3) A HD-DVD forrásokat `HDDVD`-nek kell tagelni.
   - 2.13) UHD formátum esetén fel kell tüntetni, hogy `SDR`, `HDR` vagy `HDR10Plus` (`HDR10+`) a kép.
-  - 2.14) Dolby Vision-re elfogadott tag-ek: `DV`, `Dolby.Vision`.
+  - 2.14) Dolby Vision-re elfogadott tagek: `DV`, `Dolby.Vision`.
   - 2.15) Dolby Vision esetén fel kell tüntetni, hogy single (`SL`) vagy dual layer (`DL`) a kép.
   - 2.16) Ha a hangsáv tartalmaz Atmos kiegészítést, úgy azt `Atmos` taggel jelölni kell.
   - 2.17) `PROPER` = más hibás munkájának javítása; `REPACK` = saját hiba javítása
@@ -86,7 +86,7 @@
     - audiosávok csatornaszáma
     - audiosávok bitrátája
     - audió mintavételezési rátája (sampling rate), opcionális 48kHz esetén
-    - feliratok forrása(i), fansub esetén
+    - feliratok forrása(i) fansub esetén
     - feliratok nyelve
     - feliratok formátuma
   - 3.5) Más csapatok sértegetése, személyeskedés TILOS!
@@ -113,13 +113,13 @@
     - 5.6.1) Kivéve, amikor ez a videó/hang (közel) teljes újrakódolásával járna.
   - 5.7) Égetett felirattal rendelkező forrásokat lehetőleg kerüljük, kivéve ha szignifikánsan jobb a minősége.
   - 5.8) Hybrid remuxok megengedettek, ha ezzel jobb minőség érhető el.
-  - 5.9) A konténerben felbontásra és croppolásra extra metaadatokat megadni TILOS!
+  - 5.9) A konténerben felbontásra és cropolásra extra metaadatokat megadni TILOS!
   - 5.10) A videosáv Language tagjának beállítása opcionális: vagy magyar vagy az eredeti nyelv.
   - 5.11) Encoder által beírt header eltávolítása SZIGORÚAN TILOS!
   - 5.12) Színekre vonatkozó metaadatok (pl. ColorMatrix, ColorPrimaries, TransferFunction, Chroma Location, CLL, stb.) eltávolítása SZIGORÚAN TILOS!
 
 ## 6) Audió
-  - 6.1) Magyar hangsávot tartalmazó release esetén kötelező a `HUN` (`Hun`) tag használata. Amennyiben a release nem tartalmaz magyar hangsávot, úgy nem kell nyelvi tag-ot megadni.
+  - 6.1) Magyar hangsávot tartalmazó release esetén kötelező a `HUN` (`Hun`) tag használata. Amennyiben a release nem tartalmaz magyar hangsávot, úgy nem kell nyelvi taget megadni.
   - 6.2) Az eredeti nyelvű hangsáv megtartása KÖTELEZŐ!
   - 6.3) Nem angol nyelvű, eredeti hangsáv esetén az angol hang (már amennyiben létezik) megtartása opcionális.
   - 6.4) Egyéb nyelvű hangok megtartása TILOS!
@@ -154,16 +154,16 @@
   - 7.3) `DTS-HD.MA` hang készítéséhez kizárólag `DTS-HD Master Audio Suite` használható.
   - 7.4) A készített `AC3` (`DD`) nem tartalmazhat Copyright Protected flaget.
   - 7.5) `AAC` esetében elfogadott encoderek: `qaac` (`Apple AAC`), `FDK`, `Nero`.
-    - 7.5.1) Csak stereo/mono hangnál használható `AAC`.
+    - 7.5.1) Csak sztereó/monó hangnál használható `AAC`.
     - 7.5.2) Javasolt beállítások:
       - 7.5.2.1) `qaac`: `-V 90` - `-V 127` és `--no-delay --ignorelength` (egyéb kapcsolók használata tilos)
       - 7.5.2.2) `FDK`: `-m 4` vagy `-m 5` (és `-cutoff 20000` ffmpeg-es libfdk_aac használata esetén)
       - 7.5.2.3) `Nero`: `-q 40` - `-q 75`
   - 7.6) A hangok mintavételezését (sampling rate) tilos megváltoztatni!
   - 7.7) Belső konverziók esetén meg kell tartani (vagy jobbat kell használni), mint az eredeti hang bitmélysége és mintavételezési rátája.
-  - 7.8) Ha a hangot nyújtani kell előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. `hdtools compare`).
-  - 7.9) Resamplingre használható programok: `hdtools resample`, `eac3to`, `Sound Forge`, `Audacity`, `SoX`, és `Adobe Audition`.
-  - 7.10) TimeStretchingre használható programok: `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge`, `SONAR` `élastique TimeStretch`, `Audacity`, `SoX`, és `Adobe Audition`.
+  - 7.8) Ha a hangot nyújtani kell, előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. `hdtools compare`).
+  - 7.9) Resamplingre használható programok: `hdtools resample`, `eac3to`, `Sound Forge`, `Audacity`, `SoX` és `Adobe Audition`.
+  - 7.10) TimeStretchingre használható programok: `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge`, `SONAR` `élastique TimeStretch`, `Audacity`, `SoX` és `Adobe Audition`.
   - 7.11) Commentary track maximum 2.0 lehet, `AC3` (`DD`) esetében maximum 192 kbps, `AAC` esetében 80-160 kbps.
   - 7.12) Szegmentált kódolás használata TILOS!
   - 7.13) `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`), `DTS`, `DTS-HD.MA`, és `DTS-X` esetén a `dialnorm` értéket meg kell tartani!
@@ -174,7 +174,7 @@
   - 8.1) Kizárólag SRT (SubRip) és PGS-SUP formátumú feliratok megengedettek!
     - 8.1.1) Az OCR karakterfelismerést a lehető legpontosabban kell elvégezni.
     - 8.1.2) A kész felirat lehetőleg kevés, érthetőséget nem zavaró helyesírási hibát tartalmazhat, de törekedjünk, hogy ne legyen benne hiba.
-    - 8.1.3) A felismertetett feliraton javasolt egy spellchecker lefuttatása.
+    - 8.1.3) A felismertetett feliraton javasolt egy spellchecker / helyesírás-ellenőrző lefuttatása.
   - 8.2) A feliratokat tartalmaznia kell az `.mkv`-nak, opcionálisan mellette is meghagyható.
   - 8.3) `.mp4` konténer használata esetén a feliratok muxolása TILOS! A feliratokat a file mellé, vagy egy `Subs` mappába kell helyezni.
   - 8.4) `.m2ts` konténer használata esetén kizárólag PGS-SUP feliratokat szabad muxolni. Az `.srt` feliratokat a file mellé, vagy egy `Subs` mappába kell helyezni.
@@ -185,9 +185,9 @@
   - 8.9) A lemezen elérhető, főcímhez tartozó feliratokat `.srt` és `.sup` formátumban is KÖTELEZŐ muxolni/mellékelni.
     - 8.9.1) Kivéve 3D-s filmek esetén, ahol elegendő a PGS-SUP használata.
   - 8.10) Ha a felirat egyéb helyről származik (pl. WEB), akkor készíthető custom PGS-SUP felirat, de nem kötelező.
-  - 8.11) Kommentár feliratokat csak akkor kötelező muxolni, ha az kapcsolódik az audiokommentárhoz.
+  - 8.11) Kommentárfeliratokat csak akkor kötelező muxolni, ha az kapcsolódik az audiokommentárhoz.
     - 8.11.1) Egyéb esetben opcionálisak.
-    - 8.11.2) Kommentár feliratokat elegendő PGS-SUP vagy SRT formátumban muxolni.
+    - 8.11.2) Kommentárfeliratokat elegendő PGS-SUP vagy SRT formátumban muxolni.
   - 8.12) A muxolt `.srt` feliratokat megfelelő karakterkódolással kell muxolni (UTF8 vagy beállítani a forrással egyezőt)
   - 8.13) Az opcionálisan mellékelt `.srt` feliratok kizárólag UTF8(-BOM) vagy ANSI kódolásúak lehetnek.
   - 8.14) PGS-SUP feliratoknál ajánlott a `zlib` tömörítés kikapcsolása.
