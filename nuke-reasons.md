@@ -5,12 +5,12 @@
   - 1.4) Több ok `_` (underscore) karakterrel fűzendő össze. pl. `bad.res_bad.crop`.
   - 1.5) A NUKE reason kizárólag kisbetűket tartalmazhat.
   - 1.6) A szabályzattól notorikusan eltérő csapatok permanens bant kapnak.
-  - 1.7) Egyéb értelmező tag-ek kizárólag angol nyelven használhatóak: pl. `wrong.format_mono.audio.should.be.aac`
-  - 1.8) Nuke indoknak használhatóak a szabályzatban található pontok említése is. Ekkor az említett pont sérül valameny módon.
+  - 1.7) Egyéb értelmező tagek kizárólag angol nyelven használhatóak: pl. `wrong.format_mono.audio.should.be.aac`
+  - 1.8) Nuke indoknak használhatóak a szabályzatban található pontok említése is. Ekkor az említett pont sérül valamely módon.
   - 1.9) A szabályzat adott pontjának létrejötte/módosítása előtt készült release nem NUKE-olható, ha csak a változtatott pontban hibás és a változtatást megelőző szabályzat szerint rendben volt. Kérdés esetén a commit history ad támpontot.
   - 1.10) `PROPER` kizárólag technikai hiba (technical flaw) esetén adható ki másik csapat munkájára.
   - 1.11) `READ.NFO` akkor adható ki, ha a korábbi release nem technikailag hibás, de minőségben gyengébb, vagy valami apróság hiányzik (pl. chapterlist), ami még nem indokol `PROPER`-t. 
-  - 1.12) A `PROPER` és `READ.NFO` megjelölésű release-ekhez kötelező `proof`. Jobb kép esetén összehasonlítás (comparison), hangcsúszás (`oos`) esetén kép a csúszásról. Apróságok esetén elég ezt az `NFO`-ban jelezni, pl. hiányzó felirat, hiányzó chapterlist, stb. Kivétel ha az ok egyértelmű (pl. egyértelműen jobb forrású hang).
+  - 1.12) A `PROPER` és `READ.NFO` megjelölésű release-ekhez kötelező `proof`. Jobb kép esetén összehasonlítás (comparison), hangcsúszás (`oos`) esetén kép a csúszásról. Apróságok esetén elég ezt az `NFO`-ban jelezni, pl. hiányzó felirat, hiányzó chapterlist, stb. Kivétel, ha az ok egyértelmű (pl. egyértelműen jobb forrású hang).
     - 1.12.1) Kérdésesség esetén a Council utólag is bekérhet `proof`-ot. Ennek pótlásának elmulasztása nuke-ot eredményez `dupe` reasonnal.
   - 1.13) Saját release javítása esetén a korábbi release `unnuke`-ot kap, jelölve a javítást.
   - 1.14) Komolyabb képi problémák javítására a `RERiP` tag használata, minden egyébre a `REPACK` tag használata javasolt, kivéve ha a probléma egyszerűen javítható (pl. `bad.dirname`, `NFO` hibák), amikor elég ezt egyszerűen átírni.
@@ -23,7 +23,7 @@
       - `bad.colorimetry` = `--colormatrix` hibás használata
       - `bad.deinterlace` = hibás deinterlace-elés, általában sávozódó videó és/vagy egyéb képi artifactek
       - `bad.ivtc` = vegyes félképek hibás eltávolítása
-      - `dupe.frames` = duplázott képkockák, általában hibás deinterlacelés/IVTC eredménye (kivétel, ha a forrás is ilyen és nem érhető el jobb, pl. BBC iPlayer; ilyen esetekben javasolt egy újrakódolt release készítése `READ.NFO` tag használata mellett)
+      - `dupe.frames` = duplázott képkockák, általában hibás deinterlace-elés/IVTC eredménye (kivétel, ha a forrás is ilyen és nem érhető el jobb, pl. BBC iPlayer; ilyen esetekben javasolt egy újrakódolt release készítése `READ.NFO` tag használata mellett)
       - `bitstarved = undersized` = szükségesnél jelentősen alacsonyabb bitráta
       - `bloated = oversized` = szükségesnél jelentősen magasabb bitráta
       - `upscaled` = felskálázott kép (forrás és kész encode is) példák kép felskálázottság ellenőrzésére:\
@@ -45,14 +45,14 @@
       - `no.8x8dct` = 8x8-as DCT transzformáció kikapcsolása
       - `wrong.partitions` = kevés partíció használata
       - `wrong.me` = `umh`-nál rosszabb mozgáskereső algoritmus használata
-      - `wrong.merange = insufficient.merange` = túl kicsit mozgáskeresési vektor használata (20 (HD)/24 (SD)-nél kevesebb)
+      - `wrong.merange = insufficient.merange` = túl kicsi mozgáskeresési vektor használata (20 (HD)/24 (SD)-nél kevesebb)
       - `wrong.sar` = nem négyzet alakú pixelek használata
       - `wrong.range` = nem Limited color range használata
       - `no.deblock` = deblock filter kikapcsolása
       - `no.aq` = adaptív kvantálás kikapcsolása
       - `invalid.vbv` = túl magas VBV értékek használata
-      - `shifted.video` = bizonyos forrásfilterek (pl. régi FFMS2) beszúrt/eldobott egy frame-t a kép elejéről, ezáltal eltolva azt a hanghoz képest (min. 100 ms csúszás)
-      - `extra.frames`/`missing.frames` = videóhoz hozzáadott, hiányzott framek (kivéve ha videó végéről hiányzik `1` frame és az fekete)
+      - `shifted.video` = bizonyos forrásfilterek (pl. régi FFMS2) beszúrt/eldobott egy frame-et a kép elejéről, ezáltal eltolva azt a hanghoz képest (min. 100 ms csúszás)
+      - `extra.frames`/`missing.frames` = videóhoz hozzáadott, hiányzott frame-ek (kivéve ha videó végéről hiányzik `1` frame és az fekete)
 
     - 2.1.2) Audio:
       - `wrong.audio.format` = nem megfelelő formátumú hang használata
@@ -84,16 +84,16 @@
   - 2.2) Kevésbé súlyos, nem technikai hibák -- ezek nem `PROPER`-elhetőek. Indokolt esetben `READ.NFO` kiadható rá.
     - 2.2.1) Video:
       - `obsolete.encoder` = túl régi encoder használata
-      - `delayed.video` = MKV-ban flaggelt video delay
+      - `delayed.video` = MKV-ban flagelt video delay
 
     - 2.2.2) Audio:
       - `audio.longer.than.video` = a hangsáv több, mint 1 másodperccel túlnyúlik a videón
-      - `delayed.audio` = MKV-ban flaggelt audio delay (`PROPER`-elhető, ha hossza meghaladja az 500 ms-t és/vagy lejátszási problémákat okoz)
-      - `missing.audio.lang.tag` = hiányzó audio nyelv tag MKV-ban és/vagy dirname-ben
+      - `delayed.audio` = MKV-ban flagelt audio delay (`PROPER`-elhető, ha hossza meghaladja az 500 ms-t és/vagy lejátszási problémákat okoz)
+      - `missing.audio.lang.tag` = hiányzó audionyelv tag MKV-ban és/vagy dirname-ben
 
     - 2.2.3) Felirat:
       - `invalid.sub.entries` = olyan sorok, melyek átfednek másokkal, a film után játszódnának le, hosszuk 5 ms-nél rövidebb, vagy nem tartozik a filmhez (utóbbi alól kivétel a gyárilag bennelévő `Fordított: XY` és a fansuboknál a forrásoldal, fordító neve)
-      - `missing.subs.lang.tag` = hiányzó felirat nyelv tag MKV-ban
+      - `missing.subs.lang.tag` = hiányzó feliratnyelv tag MKV-ban
 
     - 2.2.4) Egyéb:
       - `dupe` = DUPE release, azaz egy korábbival megegyezik, vagy közel azonos
