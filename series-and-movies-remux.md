@@ -53,9 +53,10 @@
     - 2.12.1) A Blu-ray forrásokat `BluRay`-nek kell tagelni.
     - 2.12.2) Az UHD Blu-ray forrásokat `UHD.BluRay`-nek kell tagelni.
     - 2.12.3) A HD-DVD forrásokat `HDDVD`-nek kell tagelni.
-  - 2.13) UHD formátum esetén fel kell tüntetni, hogy `SDR`, `HDR` vagy `HDR10Plus` (`HDR10+`) a kép.
-  - 2.14) Dolby Vision-re elfogadott tagek: `DV`, `Dolby.Vision`.
-  - 2.15) Dolby Vision esetén fel kell tüntetni, hogy single (`SL`) vagy dual layer (`DL`) a kép.
+  - 2.13) UHD formátum esetén fel kell tüntetni, hogy `HDR` vagy `HDR10Plus` (`HDR10+`) a kép.
+    - 2.13.1) `SDR` taggelése opcionális.
+  - 2.14) Dolby Vision-re elfogadott tagek: `DV`, `Dolby.Vision`, `DoVi`.
+  - 2.15) Dolby Vision esetén opcionálisan fel lehet tüntetni, hogy single (`SL`) vagy dual layer (`DL`) a kép.
   - 2.16) Ha a hangsáv tartalmaz Atmos kiegészítést, úgy azt `Atmos` taggel jelölni kell.
   - 2.17) `PROPER` = más hibás munkájának javítása; `REPACK` = saját hiba javítása
     - 2.17.1) `PROPER` release-re érkező `PROPER`-t `REAL.PROPER`-nek kell tagelni (és így tovább a későbbieket, pl. `REAL.REAL.PROPER`).
@@ -80,6 +81,7 @@
     - videó FPS-e
     - videó dinamikatartománya, `UHD` esetén
     - videó színinformációi, `UHD` esetén
+    - `DV` kép esetén a profil száma
     - audiosávok forrása(i), `WEB` esetén oldal megjelölése
     - audiosávok nyelvei
     - audiosávok típusai
