@@ -60,7 +60,7 @@
   - 2.11) `Rip`, `RiP` és `RIP` megjelölés is elfogadott.
   - 2.12) `REPACK` (`Repack`) és `RERiP` (`Rerip`) tagok használata kötelező, ha saját release-t javít valaki.
   - 2.13) `iNT` vagy `iNTERNAL` tag használata DUPE elkerülésére TILOS!
-    - 2.13.1) `iNTERNAL`-ként kell feltütnetni minden olyan release-t, amely ellentmond a szabályzat bármely pontjának, de nem érhető el olyan forrás, amely teljesítené (pl. tonemapping).
+    - 2.13.1) `iNTERNAL`-ként kell feltüntetni minden olyan release-t, amely ellentmond a szabályzat bármely pontjának, de nem érhető el olyan forrás, amely teljesítené (pl. tonemapping).
   - 2.14) TV-ből származó hangok esetén `CUSTOM` tag használata opcionális.
   - 2.15) `RETAiL` (eredeti lemezről készült) tag használata ajánlott, ha korábban készült olyan release, ahol a hang nem a BD/HDDVD lemezről származik.
     - 2.15.1) A Blu-ray forrásokat `BluRay`-nek kell tagelni.
@@ -94,7 +94,7 @@
     - audiosávok csatornaszáma
     - audiosávok bitrátája
     - audió mintavételezési rátája (sampling rate), opcionális 48kHz esetén
-    - feliratok forrása(i), fansub esetén
+    - feliratok forrása(i) fansub esetén
     - feliratok nyelve
   - 3.5) Más csapatok sértegetése, személyeskedés TILOS!
   - 3.6) `PROPER`/`REPACK`/`RERiP` release-ek esetén fel kell tüntetni a korábbi release problémáit. Képi vagy hangi `PROPER` esetén csatolni kell proofot, hogy valóban jobb az új release.
@@ -124,7 +124,7 @@
   - 5.7) Égetett felirattal rendelkező forrásokat lehetőleg kerüljük, kivéve ha szignifikánsan jobb a minősége.
   - 5.8) Hybrid encode-ok megengedettek, ha ezzel jobb minőség érhető el.
   - 5.9) A konténerben felbontásra és croppolásra extra metaadatokat megadni TILOS!
-  - 5.10) A videosáv Language tagjának beállítása opcionális: vagy magyar vagy az eredeti nyelv.
+  - 5.10) A videosáv Language tagjénak beállítása opcionális: vagy magyar vagy az eredeti nyelv.
 
 ## 6) Felbontás
   - 6.1) SD release maximális szélessége `720 px` lehet (`AutoResize("SD")`)
@@ -133,13 +133,13 @@
   - 6.3) A videó felbontása mod2 kell legyen.
   - 6.4) A videó felskálázása SZIGORÚAN TILOS (pl. ha croppolás után 704 széles a kép, tilos 720-ra felnagyítani)!
     - 6.4.1) Amennyiben a forrás szélessége kevesebb, mint `720 px` széles, úgy a kész encode-nak a `forrás-crop` szélesnek kell lennie.
-  - 6.5) Eltérő képarányú release (pl. `OM`) nem dupeolja a korábbit és *vica versa*.
+  - 6.5) Eltérő képarányú release (pl. `OM`) nem dupe-olja a korábbit és *vica versa*.
   - 6.6) A videót cropolni kell addig amíg maximum 1-1 px fekete sáv marad. A cropot a főcímnél kell meghatározni.
-  - 6.7) A dirty lineok, dirty pixelek és faded lineok eltávolítása TILOS!
+  - 6.7) A dirty line-ok, dirty pixelek és faded line-ok eltávolítása TILOS!
   - 6.8) Az 1 px fekete sávok (widow line) és dirty line-ok javítása ajánlott.
     - widow line javítása pl.: `FillMargins`/`FillBorder`
     - dirty line/faded line pl.: `bbmod`/`FixRowBrightness`/`BalanceBorders`/`EdgeFixer`
-  - 6.9) Javítás után a widow lineok (eredetileg fekete sávok) eltávolítandóak (resize).
+  - 6.9) Javítás után a widow line-ok (eredetileg fekete sávok) eltávolítandóak (resize).
   - 6.10) A kódolt videó felbontása 1 pixellel térhet el a forrás alapján (cropolás után) számolttól, pl. 720x405 helyett 720x404 (mod2).
   - 6.11) Alacsonyabb felbontás kizárólag akkor megengedett, ha irreálisan magas bitrátát kapnánk a fentebb említett szélességek esetén.
 
@@ -154,8 +154,8 @@
     - 7.4.2) Számos upscaled anyagra a grain már a magasabb felbontáson kerül rá. Ilyen esetekben eltávolítása indokolt lehet.
   - 7.5) DeBlocking és DeBanding filterek használata megengedett, ezeket érdemes adott zónákra korlátozni (pl. `ReplaceFramesSimple`, `Trim`, vagy `ConditionalFilter` segítségével).
   - 7.6) A videó eredeti FPS értékét meg kell tartani. Interlace-elt forrás esetén 2 félképből 1-et kell képezni (értsd `50i`-ből `25p`-t kell készíteni). Ez alól kivétel lehet a sportfelvétel, ahol indokolt lehet az `50p`. Ekkor kizárólag `QTGMC` (`preset slow` vagy jobb) deinterlacer használható!
-  - 7.7) Kizárólag CFR (constant framerate) mód használható! Amennyiben a forrás VFR-el rendelkezik, úgy ez felülírja az 7.6-os pontot.
-  - 7.8) A dupe framek eltávolítása kötelező!
+  - 7.7) Kizárólag CFR (constant framerate) mód használható! Amennyiben a forrás VFR-rel rendelkezik, úgy ez felülírja az 7.6-os pontot.
+  - 7.8) A dupe frame-ek eltávolítása kötelező!
 
 ## 8) Videokódolás
   - 8.1) Kizárólag x264 használható.
@@ -175,13 +175,13 @@
     - 8.14.1) A DVD-k nem négyzet alakú pixeleit négyzetté kell alakítani!
   - 8.15) A keyframe-ek közötti maximális távolság `FPS*20` lehet (`FPS*10` ajánlott); minimum `FPS*5` adható meg.
   - 8.16) `--min-keyint` értéke legalább `FPS/2`, maximum `FPS*2` lehet (`floor(FPS)` ajánlott, default).
-  - 8.17) ColorMatrixot KÖTELEZŐ flaggelni (tipikusan `BT.709` BD esetén vagy `BT.470B/G` PAL DVD esetén).
-    - 8.17.1) Ha a forrás HD és a ColorMatrix `undef`, akkor `BT.709`-nek kell flaggelni.
+  - 8.17) ColorMatrixot KÖTELEZŐ flagelni (tipikusan `BT.709` BD esetén vagy `BT.470B/G` PAL DVD esetén).
+    - 8.17.1) Ha a forrás HD és a ColorMatrix `undef`, akkor `BT.709`-nek kell flagelni.
     - 8.17.2) Ha a forrás SD és a ColorMatrix `undef`, akkor meg kell vizsgálni, hogy `BT.601` vagy `BT.709`-el jobbak-e a színek és annak megfelelően flaggelni.
-    - 8.17.3) `undef` flaggelése TILOS!
-  - 8.18) ColorPrimaries és TransferFunction flaggelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod, mit csinálsz). Használata esetén a forrással egyezőre kell állítani. Bővebb infó: [**mod16.org**](https://mod16.org/hurfdurf/?p=116) | [**mirror**](files/color-coefficient.md)
+    - 8.17.3) `undef` flagelése TILOS!
+  - 8.18) ColorPrimaries és TransferFunction flagelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod, mit csinálsz). Használata esetén a forrással egyezőre kell állítani. Bővebb infó: [**mod16.org**](https://mod16.org/hurfdurf/?p=116) | [**mirror**](files/color-coefficient.md)
   - 8.19) Kötelező 16 referenciaképet használni (`--ref 16`).
-  - 8.20) B frame-ek kikapcsolása TILOS. Minimum `8` egymás utáni B frame-t kell engedni (`--bframes 8` vagy több).
+  - 8.20) B frame-ek kikapcsolása TILOS. Minimum `8` egymás utáni B frame-et kell engedni (`--bframes 8` vagy több).
   - 8.21) A készült videónak DXVA-kompatibilisnek kell lennie (max. `High@L4.1`).
   - 8.22) `CABAC` kikapcsolása TILOS.
   - 8.23) `8x8dct` kikapcsolása TILOS.
@@ -195,7 +195,7 @@
   - 8.31) `--deblock` kikapcsolása TILOS. Ajánlott beállítás filmek esetén: `-3:-3`.
   - 8.32) Adaptív kvantálás használata kötelező! `--aq-mode=1`/`2`/`3` (`3` ajánlott)
   - 8.33) A készített release bitrátája nem lehet nagyobb, mint a forrásé.
-    - 8.33.1) Kivételt képeznek Hybrid release-ek, melyek több forrás felhasználásával készülnek.
+    - 8.33.1) Kivételt képeznek az olyan hybrid release-ek, melyek több forrás felhasználásával készülnek.
   - 8.34) A videó bitrátáját vagy CRF értékét úgy kell megválasztani, hogy a képminőség transzparens legyen (amennyire lehet) a forráshoz képest.
   - 8.35) Ajánlott frameserverek: AviSynth+ és VapourSynth.
   - 8.36) HDTV/PDTV forrás esetén logók maszkolása megengedett (pl. `InpaintFunc`).
@@ -203,9 +203,9 @@
   - 8.38) A `WEB-DL`-ek felmentést élveznek az összes 8-as pontbeli szabály alól, kivéve a 8.8-ast.
 
 ## 9) Audió
-  - 9.1) Magyar hangsávot tartalmazó release esetén kötelező a `HUN` (`Hun`) tag használata. Amennyiben a release nem tartalmaz magyar hangsávot, úgy nem kell nyelvi tag-ot megadni.
+  - 9.1) Magyar hangsávot tartalmazó release esetén kötelező a `HUN` (`Hun`) tag használata. Amennyiben a release nem tartalmaz magyar hangsávot, úgy nem kell nyelvi tag-et megadni.
   - 9.2) Az eredeti hangsáv megtartása opcionális.
-    - 9.2.1) Kivétel, hogyha nem érhető el magyar nyelv, ezesetben megtartása kötelező.
+    - 9.2.1) Kivétel, hogyha nem érhető el magyar nyelv, ez esetben megtartása kötelező.
   - 9.3) Nem angol nyelvű, eredeti hangsáv esetén az angol hang (már amennyiben létezik) megtartása opcionális.
   - 9.4) Egyéb nyelvű hangok megtartása TILOS!
   - 9.5) Megengedett hangformátumok: `AC3` (`DD`), `AAC`. Amennyiben a forrás hang `E-AC3` (`DD+`/`DDP`) formátumú és maximum 6 csatornát tartalmaz, ez is engedélyezett; egyéb esetekben TILOS!
@@ -218,14 +218,14 @@
     - 9.9.1) `AC3` (`DD`) esetén a forrással megegyező bitráta vagy jobb forrás esetén 192-256 kbps elfogadott.
     - 9.9.2) Amennyiben a forrás hang 2 csatornás `E-AC3` (`DD+`/`DDP`)-at tartalmaz, megtarthatjuk. Törekedjünk a felesleges újrakódolások elkerülésére.
   - 9.10) 2 csatornás `CUSTOM` hangnál (TV-ből vagy WEB-ről felvett) javasolt `AAC` használata.
-  - 9.11) Mono hang KIZÁRÓLAG `AAC` lehet.
+  - 9.11) Monó hang KIZÁRÓLAG `AAC` lehet.
   - 9.12) Lossy hangot csak losslessből szabad kódolni.
     - 9.12.1) Ez alól kivétel ha csak `DTS` vagy `E-AC3` (`DD+`/`DDP`) hang érhető el.
   - 9.13) A maximális megengedett hangcsúszás 100 ms.
   - 9.14) A hangok nyelvét kötelező Language tagben jelezni!
   - 9.15) Kizárólag stúdió által készített surround hangok használhatóak fel, házilag felkevertek tilosak. TV-s surround hang esetén mindig győződjünk meg, hogy valódi surround-e, amennyiben nem, downmixeljük. Pl.: `ffmpeg -i input.ac3 -ac 2 -f sox - | sox -p -S -b 24 --norm=-1 output.wav`
   - 9.16) Amennyiben a forrás audió megtartható újrakódolás nélkül, úgy annak újrakódolása tilos.
-    - 9.16.1) Ez alól kivétel, ha kizárólag `E-AC3` hang áll rendelkezésre, ekkor a nagyobb kompatibilitás érdekében `AC3` hang készíthető. Ennek módjáról lásd 10.14)-es pont.
+    - 9.16.1) Ez alól kivétel, ha kizárólag `E-AC3` hang áll rendelkezésre, ekkor a nagyobb kompatibilitás érdekében `AC3` hang készíthető. Ennek módjáról lásd a 10.14)-es pontot.
   - 9.17) Egy másik forrásból származó hang akkor számít jobb minőségűnek, hogyha a lowpass (cutoff) frekvencia 16 kHz alatt legalább 1 kHz-el, 16 kHz felett legalább 1.5 kHz-el magasabb, és a többlet adat nem sztochasztikus (dithering miatt belekerülő) zaj. Ha ez teljesül, akkor készíthető új release, egyéb esetben `dupe`. Kérdéses esetekben proofként egy-egy spektrum mutatása szükséges a két hangról.
     - 9.17.1) Ez alól kivétel, hogyha az alacsonyabb lowpass-szel rendelkező hang minősége hallhatóan jobb.
     - 9.17.2) További kivételt képez, hogyha jobb forrásból elérhető a hang és a bitrátakülönbség meghaladja a 192 kbps-t `DD` és `DTS` esetén, vagy a `128` kbps-t `DD+` és `AAC` esetén. `DD+` és `DD` hangok bitrátáinak összehasonlítása a 10.14-es pontban rögzítettek szerint `1.7`-es szorzófaktorral történik. `AAC` és `DD` között ugyanezt az átváltást használjuk. Például egy `DD@448`-as DVD hang mindig cserélhető egy BD-ről származó `DD@640`-re.
@@ -238,19 +238,19 @@
   - 10.1) `AC3` (`DD`) esetében Dolby Certified encodert kell használni (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`, `Sonic Audio Transcoder`).
   - 10.2) A készített `AC3` (`DD`) nem tartalmazhat Copyright Protected flaget.
   - 10.3) `AAC` esetében elfogadott encoderek: `qaac` (`Apple AAC`), `FDK`, `Nero`.
-    - 10.3.1) Csak stereo/mono hangnál használható `AAC`.
+    - 10.3.1) Csak sztereó/monó hangnál használható `AAC`.
     - 10.3.2) Javasolt beállítások:
       - 10.3.2.1) `qaac`: `-V 90` - `-V 127` és `--no-delay --ignorelength` (egyéb kapcsolók használata tilos)
       - 10.3.2.2) `FDK`: `-m 4` vagy `-m 5` (és `-cutoff 20000` ffmpeg-es libfdk_aac használata esetén)
       - 10.3.2.3) `Nero`: `-q 40` - `-q 75`
   - 10.4) A hangok mintavételezését (sampling rate) tilos megváltoztatni!
   - 10.5) Belső konverziók esetén meg kell tartani (vagy jobbat kell használni), mint az eredeti hang bitmélysége és mintavételezési rátája.
-  - 10.6) Ha a hangot nyújtani kell előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. `hdtools compare`).
-  - 10.7) Resamplingre használható programok: `hdtools resample`, `eac3to`, `Sound Forge`, `Audacity`, `SoX`, és `Adobe Audition`.
-  - 10.8) TimeStretchingre használható programok: `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge`, `SONAR` `élastique TimeStretch`, `Audacity`, `SoX`, és `Adobe Audition`.
+  - 10.6) Ha a hangot nyújtani kell, előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. `hdtools compare`).
+  - 10.7) Resamplingre használható programok: `hdtools resample`, `eac3to`, `Sound Forge`, `Audacity`, `SoX` és `Adobe Audition`.
+  - 10.8) TimeStretchingre használható programok: `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge`, `SONAR` `élastique TimeStretch`, `Audacity`, `SoX` és `Adobe Audition`.
   - 10.9) Szegmentált kódolás használata TILOS!
   - 10.10) Commentary trackek használata csak akkor megengedett, ha kizárólag SD (DVD, PDTV, SD WEB-DL) forrás érhető el.
-    - 10.10.1) Commentary track kizárólag `AAC` 2.0 (vagy mono) lehet és 80-160 kbps bitrátával rendelkezhet (mono esetén 40-80 kbps).
+    - 10.10.1) Commentary track kizárólag `AAC` 2.0 (vagy monó) lehet és 80-160 kbps bitrátával rendelkezhet (monó esetén 40-80 kbps).
     - 10.10.2) (UHD) BluRay, HDDVD, (UHD) WEB-DL források esetén Commentary trackek használata TILOS (erre ott vannak a HD formátumok)!
   - 10.11) `AC3` (`DD`) és `E-AC3` (`DD+`/`DDP`) esetén a `dialnorm` értéket meg kell tartani!
   - 10.12) Amennyiben a forrás `AC3` és újrakódolás szükséges, akkor az újrakódolt hang bitrátája nem lehet magasabb, mint a forrásé.
@@ -260,8 +260,8 @@
   - 11.1) Kizárólag SRT (SubRip) formátumú feliratok megengedettek!
     - 11.1.1) Az OCR karakterfelismerést a lehető legpontosabban kell elvégezni.
     - 11.1.2) A kész felirat lehetőleg kevés, érthetőséget nem zavaró helyesírási hibát tartalmazhat, de törekedjünk, hogy ne legyen benne hiba.
-    - 11.1.3) A felismertetett feliraton javasolt egy spellchecker lefuttatása.
-  - 11.2) A feliratokat tartalmaznia kell az mkv-nak, opcionálisan mellette is meghagyható.
+    - 11.1.3) A felismertetett feliraton javasolt spellchecker / helyesírás-ellenőrző lefuttatása.
+  - 11.2) A feliratokat tartalmaznia kell az mkv-nak, de opcionálisan mellette is meghagyható.
   - 11.3) Kizárólag a magyar forced felirat megtartása kötelező, a többi opcionális.
   - 11.4) Magyar filmek esetén ajánlott az angol nyelvű felirat (ha van) megtartása is.
   - 11.5) A muxolt feliratokat megfelelő karakterkódolással kell muxolni (UTF8 vagy beállítani a forrással egyezőt)
