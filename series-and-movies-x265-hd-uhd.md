@@ -156,7 +156,7 @@
   - 7.6) DeBlocking és DeBanding filterek használata megengedett, ezeket érdemes adott zónákra korlátozni (pl. `ReplaceFramesSimple`, `Trim`, vagy `ConditionalFilter` segítségével).
   - 7.7) A videó eredeti FPS értékét meg kell tartani. Interlace-elt forrás esetén 2 félképből 1-et kell képezni (értsd `50i`-ből `25p`-t kell készíteni). Ez alól kivétel lehet a sportfelvétel, ahol indokolt lehet az `50p`. Ekkor kizárólag `QTGMC` (`preset slow` vagy jobb) deinterlacer használható!
   - 7.8) Kizárólag CFR (constant framerate) mód használható! Amennyiben a forrás VFR-rel rendelkezik, úgy ez felülírja az 7.6-os pontot.
-  - 7.9) A dupe fram-ek eltávolítása kötelező!
+  - 7.9) A dupe frame-ek eltávolítása kötelező!
 
 ## 8) Videokódolás
   - 8.1) Kizárólag x265 használható.
