@@ -124,7 +124,7 @@
   - 5.7) Hybrid encode-ok megengedettek, ha ezzel jobb minőség érhető el.
     - 5.7.1) SDR és HDR források nem keverhetőek!
   - 5.8) A konténerben felbontásra és croppolásra extra metaadatokat megadni TILOS!
-  - 5.9) A videosáv Language tag-jénak beállítása opcionális: vagy magyar vagy az eredeti nyelv.
+  - 5.9) A videosáv Language tagjének beállítása opcionális: vagy magyar vagy az eredeti nyelv.
 
 ## 6) Felbontás
   - 6.1) 1080p release maximális felbontása `1920x1080` lehet.

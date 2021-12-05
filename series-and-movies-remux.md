@@ -116,7 +116,7 @@
   - 5.7) Égetett felirattal rendelkező forrásokat lehetőleg kerüljük, kivéve ha szignifikánsan jobb a minősége.
   - 5.8) Hybrid remuxok megengedettek, ha ezzel jobb minőség érhető el.
   - 5.9) A konténerben felbontásra és cropolásra extra metaadatokat megadni TILOS!
-  - 5.10) A videosáv Language tagjának beállítása opcionális: vagy magyar vagy az eredeti nyelv.
+  - 5.10) A videosáv Language tagjének beállítása opcionális: vagy magyar vagy az eredeti nyelv.
   - 5.11) Encoder által beírt header eltávolítása SZIGORÚAN TILOS!
   - 5.12) Színekre vonatkozó metaadatok (pl. ColorMatrix, ColorPrimaries, TransferFunction, Chroma Location, CLL, stb.) eltávolítása SZIGORÚAN TILOS!
 

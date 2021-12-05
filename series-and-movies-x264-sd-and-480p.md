@@ -124,7 +124,7 @@
   - 5.7) Égetett felirattal rendelkező forrásokat lehetőleg kerüljük, kivéve ha szignifikánsan jobb a minősége.
   - 5.8) Hybrid encode-ok megengedettek, ha ezzel jobb minőség érhető el.
   - 5.9) A konténerben felbontásra és croppolásra extra metaadatokat megadni TILOS!
-  - 5.10) A videosáv Language tagjénak beállítása opcionális: vagy magyar vagy az eredeti nyelv.
+  - 5.10) A videosáv Language tagjének beállítása opcionális: vagy magyar vagy az eredeti nyelv.
 
 ## 6) Felbontás
   - 6.1) SD release maximális szélessége `720 px` lehet (`AutoResize("SD")`)
