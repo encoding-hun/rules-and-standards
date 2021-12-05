@@ -53,7 +53,7 @@
     - 2.10.2) Ha x264 settings-t látsz, az nem garancia arra, hogy `WEBRip`, `NF` és `AMZN` maga is `x264`-et használ.
     - 2.10.3) Egy `WEB-DL` nem feltétlenül jobb, mint egy `WEBRip` (pl. `2160p.WEB-DL`-ből kódolt `1080p.WEBRip` vs `1080p.WEB-DL`)
     - 2.10.4) `WEB-DLRip` megjelölés TILTOTT, `WEB-DL`-ből kódolt Rip = `WEBRip`
-  - 2.11) `[dynrng]` értéke lehet: `SDR`, `HDR`, `HDR10Plus` (`HDR10+`), `DV` (`Dolby.Vision`, `DoVi`).
+  - 2.11) `[dynrng]` értéke lehet: `SDR`, `HDR`, `HDR10Plus` (`HDR10+`), `HLG`, `DV` (`Dolby.Vision`, `DoVi`).
     - 2.11.1) `SDR` esetén a taggelés opcionális.
   - 2.12) `Rip`, `RiP` és `RIP` megjelölés is elfogadott.
   - 2.13) `REPACK` (`Repack`) és `RERiP` (`Rerip`) tagok használata kötelező, ha saját release-t javít valaki.
