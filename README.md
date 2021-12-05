@@ -1,8 +1,8 @@
 ## A magyar release-ek készítésénél követendő szabályok
 | kategória                                                     | utolsó frissítés | érvényben         |
 | :-                                                            | :-               | :-                |
-| [**x264 SD és 480p**](series-and-movies-x264-sd-and-480p.md)  | 2021.12.01.      | 2020.02.19.       |
-| [**x264 HD**](series-and-movies-x264-hd.md)                   | 2021.12.01.      | 2020.02.19.       |
+| [**x264 SD és 480p**](series-and-movies-x264-sd-and-480p.md)  | 2021.12.05.      | 2020.02.19.       |
+| [**x264 HD**](series-and-movies-x264-hd.md)                   | 2021.12.05.      | 2020.02.19.       |
 | [**x265 UHD-HD**](series-and-movies-x265-hd-uhd.md)           | 2021.12.05.      | 2020.06.14.       |
 | [**REMUX**](series-and-movies-remux.md)                       | 2021.12.05.      | 2020.06.14.       |
 | **DVD, MP3 és lossless audio** (korábbi szabályzat érvényben) |                  |                   |
