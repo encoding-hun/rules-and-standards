@@ -53,7 +53,7 @@
     - 2.12.1) A Blu-ray forrásokat `BluRay`-nek kell tagelni.
     - 2.12.2) Az UHD Blu-ray forrásokat `UHD.BluRay`-nek kell tagelni.
     - 2.12.3) A HD-DVD forrásokat `HDDVD`-nek kell tagelni.
-  - 2.13) UHD formátum esetén fel kell tüntetni, hogy `HDR` vagy `HDR10Plus` (`HDR10+`) a kép.
+  - 2.13) UHD formátum esetén fel kell tüntetni, hogy `HDR`, `HDR10Plus` (`HDR10+`), `HLG`, vagy `DV` a kép.
     - 2.13.1) `SDR` taggelése opcionális.
   - 2.14) Dolby Vision-re elfogadott tagek: `DV`, `Dolby.Vision`, `DoVi`.
   - 2.15) Dolby Vision esetén opcionálisan fel lehet tüntetni, hogy single (`SL`) vagy dual layer (`DL`) a kép.
