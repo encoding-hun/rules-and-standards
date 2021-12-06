@@ -271,25 +271,32 @@
   - 10.15) `E-AC3` hang `AC3`-ba történő kódolásakor a megengedett bitráták az eredeti `1.7`-szereséhez legközelebb eső két bitráta (nagyjából ennyivel jobb a `DD+` algoritmus). Például: ha a forrás `DDP@192`, akkor `192 * 1.7 = 326.4`, tehát az `AC3` bitrátája lehet `320 kbps` vagy `384 kbps` vagy ha a forrás `DDP@256`, akkor `256 * 1.7 = 435.2`, tehát `384 kbps` és `448 kbps`-es `AC3` készíthető.
 
 ## 11) Feliratok
-  - 11.1) Kizárólag SRT (SubRip) és PGS-SUP formátumú feliratok megengedettek!
-    - 11.1.1) Az OCR karakterfelismerést a lehető legpontosabban kell elvégezni.
-    - 11.1.2) A kész felirat lehetőleg kevés, érthetőséget nem zavaró helyesírási hibát tartalmazhat, de törekedjünk, hogy ne legyen benne hiba.
-    - 11.1.3) A felismertetett feliraton javasolt egy spellchecker lefuttatása.
-  - 11.2) A feliratokat tartalmaznia kell az `.mkv`-nak, opcionálisan mellette is meghagyható.
-  - 11.3) Amennyiben HDR formátumról származó PGS-SUP feliratot teszünk SDR 2160p encode-ra, úgy a fényerejét 60%-al meg kell növelni.
-  - 11.4) Amennyiben SDR formátumról származó PGS-SUP feliratot teszünk HDR encode-ra, úgy a fényerejét 60%-al le kell csökkenteni.
-  - 11.5) Kötelező feliratok, amennyiben elérhetőek a forráson: magyar forced, magyar, eredeti nyelv forced, eredeti nyelv.
-  - 11.6) Magyar filmek esetén ajánlott az angol nyelvű felirat (ha van) megtartása is.
-  - 11.7) A lemezen elérhető, főcímhez tartozó feliratokat `.srt` formátumban KÖTELEZŐ muxolni. PGS-SUP feliratok használata opcionális.
-  - 11.8) Kommentárfeliratokat csak akkor kötelező muxolni, ha az kapcsolódik az audiokommentárhoz.
-    - 11.8.1) Egyéb esetben opcionálisak.
-    - 11.8.2) Kommentárfeliratokat elegendő PGS-SUP vagy SRT formátumban muxolni.
-  - 11.9) A muxolt `.srt` feliratokat megfelelő karakterkódolással kell muxolni (UTF8 vagy beállítani a forrással egyezőt)
-  - 11.10) Az opcionálisan mellékelt `.srt` feliratok kizárólag UTF8(-BOM) vagy ANSI kódolásúak lehetnek.
-  - 11.11) PGS-SUP feliratoknál ajánlott a `zlib` tömörítés kikapcsolása.
-  - 11.12) A feliratok nyelvét KÖTELEZŐ Language tagként beállítani.
-  - 11.13) Title tag használata opcionális.
-  - 11.14) Feliratok sorrendje:
+  - 11.1) Kizárólag `SRT` (SubRip), `SSA` (ASS) és `PGS-SUP` formátumú feliratok megengedettek!
+    - 11.1.1) `SSA` feliratok használata esetén kötelező `SRT`-t is mellékelni kompatibilitás miatt.
+    - 11.1.2) `SSA` feliratok használata esetén kötelező tartalmaznia kell az mkv-nak a fontokat.
+  - 11.2) Az OCR karakterfelismerést a lehető legpontosabban kell elvégezni.
+    - 11.2.1) A kész felirat lehetőleg kevés, érthetőséget nem zavaró helyesírási hibát tartalmazhat, de törekedjünk, hogy ne legyen benne hiba.
+    - 11.2.2) A felismertetett feliraton javasolt spellchecker / helyesírás-ellenőrző lefuttatása.
+  - 11.3) A feliratokat tartalmaznia kell az mkv-nak, de opcionálisan mellette is meghagyhatóak az `SRT` formátumúak.
+  - 11.4) Amennyiben HDR formátumról származó PGS-SUP feliratot teszünk SDR 2160p encode-ra, úgy a fényerejét 60%-al meg kell növelni.
+  - 11.5) Amennyiben SDR formátumról származó PGS-SUP feliratot teszünk HDR encode-ra, úgy a fényerejét 60%-al le kell csökkenteni.
+  - 11.6) Kötelező feliratok, amennyiben elérhetőek: magyar forced, magyar, eredeti nyelv forced, eredeti nyelv.
+  - 11.7) Magyar filmek esetén ajánlott az angol nyelvű felirat (ha van) megtartása is.
+  - 11.8) A lemezen elérhető, főcímhez tartozó feliratokat `.srt` formátumban KÖTELEZŐ muxolni. PGS-SUP feliratok használata opcionális.
+  - 11.9) Kommentárfeliratokat csak akkor kötelező muxolni, ha az kapcsolódik az audiokommentárhoz.
+    - 11.9.1) Egyéb esetben opcionálisak.
+    - 11.9.2) Kommentárfeliratokat elegendő PGS-SUP vagy SRT formátumban muxolni.
+  - 11.10) A muxolt `.srt` feliratokat megfelelő karakterkódolással kell muxolni (UTF8 vagy beállítani a forrással egyezőt)
+  - 11.11) Az opcionálisan mellékelt `.srt` feliratok kizárólag UTF8(-BOM) vagy ANSI kódolásúak lehetnek.
+  - 11.12) Feliratok képre égetése, hardcode-olása SZIGORÚAN TILOS!
+  - 11.13) PGS-SUP feliratoknál ajánlott a `zlib` tömörítés kikapcsolása.
+  - 11.14) A feliratok nyelvét KÖTELEZŐ language tagként beállítani, pl.: `--language 0:hun`
+  - 11.15) Track-name használata opcionális (`--track-name 0:'Name'`)
+    - 11.15.1) Forced feliratoknál track-name és forced flag használata ajánlott, pl.: `--forced-flag 0:yes --track-name 0:'Forced'`
+    - 11.15.2) SDH feliratoknál track-name és hearing-impaired flag használata ajánlott, pl.: `--hearing-impaired-flag 0:yes --track-name 0:'SDH'`
+  - 11.16) Retail felirat használata kötelező, amennyiben elérhető.
+    - 11.16.1) Fansub használható Retail felirat mellett is, ilyenkor meg kell adni hogy melyik melyik, pl.: `--track-name 0:'Fansub'`, `--track-name 0:'NF'`
+  - 11.17) Feliratok sorrendje:
     - magyar forced (ha van), srt
     - magyar full, srt
     - eredeti forced (ha van), srt
@@ -302,9 +309,5 @@
     - eredeti full, sup (opcionális)
     - eredeti full SDH, sup (opcionális)
     - kommentárok, sup (opcionális)
-  - 11.15) Forced feliratoknál a Forced flag használata ajánlott.
-  - 11.16) További feliratok opcionálisan muxolhatóak vagy mellékelhetőek. FIGYELEM: bizonyos lejátszók nem képesek mind az MKV specifikációban leírt 127 sáv kezelésére, így ajánlott 16 sáv alatt maradni (ebbe a videó- és hangsávok is beletartoznak).
-  - 11.17) Retail felirat használata kötelező, amennyiben elérhető.
-    - 11.17.1) Fansub használható Retail felirat mellett is.
-    - 11.17.2) Fansub és Retail együttes használatánál `--track-name`-ben kötelező megadni a nevüket.
-  - 11.18) A maximális megengedett feliratcsúszás 300 ms.
+  - 11.18) További feliratok opcionálisan muxolhatóak vagy mellékelhetőek. FIGYELEM: bizonyos lejátszók nem képesek mind az MKV specifikációban leírt 127 sáv kezelésére, így ajánlott 16 sáv alatt maradni (ebbe a videó- és hangsávok is beletartoznak).
+  - 11.19) A maximális megengedett feliratcsúszás 300 ms.

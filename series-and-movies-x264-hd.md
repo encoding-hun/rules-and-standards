@@ -253,29 +253,31 @@
   - 10.14) `E-AC3` hang `AC3`-ba történő kódolásakor a megengedett bitráták az eredeti `1.7`-szereséhez legközelebb eső két bitráta (nagyjából ennyivel jobb a `DD+` algoritmus). Például: ha a forrás `DDP@192`, akkor `192 * 1.7 = 326.4`, tehát az `AC3` bitrátája lehet `320 kbps` vagy `384 kbps` vagy ha a forrás `DDP@256`, akkor `256 * 1.7 = 435.2`, tehát `384 kbps` és `448 kbps`-es `AC3` készíthető.
 
 ## 11) Feliratok
-  - 11.1) Kizárólag SRT (SubRip) formátumú feliratok megengedettek!
-    - 11.1.1) Az OCR karakterfelismerést a lehető legpontosabban kell elvégezni.
-    - 11.1.2) A kész felirat lehetőleg kevés, érthetőséget nem zavaró helyesírási hibát tartalmazhat, de törekedjünk, hogy ne legyen benne hiba.
-    - 11.1.3) A felismertetett feliraton javasolt spellchecker / helyesírás-ellenőrző lefuttatása.
-    - 11.1.4) Kivételt képeznek a 3D-s encode-ok, ahol megengedett a pgs/sup formátum is.
-  - 11.2) A feliratokat tartalmaznia kell az mkv-nak, de opcionálisan mellette is meghagyható.
-  - 11.3) Kötelező feliratok, amennyiben elérhetőek a forráson: magyar forced, magyar, eredeti nyelv forced, eredeti nyelv.
-  - 11.4) Magyar filmek esetén ajánlott az angol nyelvű felirat (ha van) megtartása is.
-  - 11.5) A muxolt feliratokat megfelelő karakterkódolással kell muxolni (UTF8 vagy beállítani a forrással egyezőt)
-  - 11.6) Az opcionálisan mellékelt feliratok kizárólag `.srt` formátumú és UTF8(-BOM) vagy ANSI kódolásúak lehetnek.
-  - 11.7) Feliratok képre égetése, hardcode-olása SZIGORÚAN TILOS!
-  - 11.8) A feliratok nyelvét KÖTELEZŐ Language tagként beállítani.
-  - 11.9) Title tag használata opcionális.
-  - 11.10) Feliratok sorrendje:
+  - 11.1) Kizárólag `SRT` (SubRip) és `SSA` (ASS) formátumú feliratok megengedettek!
+    - 11.1.1) `SSA` feliratok használata esetén kötelező `SRT`-t is mellékelni kompatibilitás miatt.
+    - 11.1.2) `SSA` feliratok használata esetén kötelező tartalmaznia kell az mkv-nak a fontokat.
+    - 11.1.3) Kivételt képeznek a 3D-s encode-ok, ahol megengedett a pgs/sup formátum is.
+  - 11.2) Az OCR karakterfelismerést a lehető legpontosabban kell elvégezni.
+    - 11.2.1) A kész felirat lehetőleg kevés, érthetőséget nem zavaró helyesírási hibát tartalmazhat, de törekedjünk, hogy ne legyen benne hiba.
+    - 11.2.2) A felismertetett feliraton javasolt spellchecker / helyesírás-ellenőrző lefuttatása.
+  - 11.3) A feliratokat tartalmaznia kell az mkv-nak, de opcionálisan mellette is meghagyhatóak az `SRT` formátumúak.
+  - 11.4) Kötelező feliratok, amennyiben elérhetőek: magyar forced, magyar, eredeti nyelv forced, eredeti nyelv.
+  - 11.5) Magyar filmek esetén ajánlott az angol nyelvű felirat (ha van) megtartása is.
+  - 11.6) A muxolt feliratokat megfelelő karakterkódolással kell muxolni (UTF8 vagy beállítani a forrással egyezőt)
+  - 11.7) Az opcionálisan mellékelt feliratok kizárólag `.srt` formátumú és UTF8(-BOM) vagy ANSI kódolásúak lehetnek.
+  - 11.8) Feliratok képre égetése, hardcode-olása SZIGORÚAN TILOS!
+  - 11.9) A feliratok nyelvét KÖTELEZŐ language tagként beállítani, pl.: `--language 0:hun`
+  - 11.10) Track-name használata opcionális (`--track-name 0:'Name'`)
+    - 11.10.1) Forced feliratoknál track-name és forced flag használata ajánlott, pl.: `--forced-flag 0:yes --track-name 0:'Forced'`
+    - 11.10.2) SDH feliratoknál track-name és hearing-impaired flag használata ajánlott, pl.: `--hearing-impaired-flag 0:yes --track-name 0:'SDH'`
+  - 11.11) Retail felirat használata kötelező, amennyiben elérhető.
+    - 11.11.1) Fansub használható Retail felirat mellett is, ilyenkor meg kell adni hogy melyik melyik, pl.: `--track-name 0:'Fansub'`, `--track-name 0:'NF'`
+  - 11.12) Feliratok sorrendje:
     - magyar forced (ha van)
     - magyar full
     - eredeti forced (ha van)
     - eredeti full
     - eredeti full SDH
     - kommentárok (opcionális)
-  - 11.11) Forced feliratoknál a Forced flag használata ajánlott.
-  - 11.12) További feliratok opcionálisan muxolhatóak vagy mellékelhetőek. FIGYELEM: bizonyos lejátszók nem képesek mind az MKV specifikációban leírt 127 sáv kezelésére, így ajánlott 16 sáv alatt maradni (ebbe a videó- és hangsávok is beletartoznak).
-  - 11.13) Retail felirat használata kötelező, amennyiben elérhető.
-    - 11.13.1) Fansub használható Retail felirat mellett is.
-    - 11.13.2) Fansub és Retail együttes használatánál `--track-name`-ben kötelező megadni a nevüket.
+  - 11.13) További feliratok opcionálisan muxolhatóak vagy mellékelhetőek. FIGYELEM: bizonyos lejátszók nem képesek mind az MKV specifikációban leírt 127 sáv kezelésére, így ajánlott 16 sáv alatt maradni (ebbe a videó- és hangsávok is beletartoznak).
   - 11.14) A maximális megengedett feliratcsúszás 300 ms.
