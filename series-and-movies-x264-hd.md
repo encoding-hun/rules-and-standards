@@ -266,18 +266,18 @@
   - 11.6) A muxolt feliratokat megfelelő karakterkódolással kell muxolni (UTF8 vagy beállítani a forrással egyezőt)
   - 11.7) Az opcionálisan mellékelt feliratok kizárólag `.srt` formátumú és UTF8(-BOM) vagy ANSI kódolásúak lehetnek.
   - 11.8) Feliratok képre égetése, hardcode-olása SZIGORÚAN TILOS!
-  - 11.9) A feliratok nyelvét KÖTELEZŐ language tagként beállítani, pl.: `--language 0:hun`
-  - 11.10) Track-name használata opcionális (`--track-name 0:'Name'`)
-    - 11.10.1) Forced feliratoknál track-name és forced flag használata ajánlott, pl.: `--forced-flag 0:yes --track-name 0:'Forced'`
-    - 11.10.2) SDH feliratoknál track-name és hearing-impaired flag használata ajánlott, pl.: `--hearing-impaired-flag 0:yes --track-name 0:'SDH'`
+  - 11.9) A feliratok nyelvét KÖTELEZŐ language tagként beállítani, pl.: `--language 0:hun`.
+  - 11.10) Track-name használata opcionális, pl.: `--track-name 0:'Name'`.
+    - 11.10.1) Forced feliratoknál track-name és forced flag használata ajánlott, pl.: `--forced-flag 0:yes --track-name 0:'Forced'`.
+    - 11.10.2) SDH feliratoknál track-name és hearing-impaired flag használata ajánlott, pl.: `--hearing-impaired-flag 0:yes --track-name 0:'SDH'`.
   - 11.11) Retail felirat használata kötelező, amennyiben elérhető.
-    - 11.11.1) Fansub használható Retail felirat mellett is, ilyenkor meg kell adni hogy melyik melyik, pl.: `--track-name 0:'Fansub'`, `--track-name 0:'NF'`
+    - 11.11.1) Fansub használható Retail felirat mellett is, ilyenkor meg kell adni hogy melyik melyik, pl.: `--track-name 0:'Fansub'`, `--track-name 0:'NF'`.
   - 11.12) Feliratok sorrendje:
     - magyar forced (ha van)
     - magyar full
     - eredeti forced (ha van)
     - eredeti full
     - eredeti full SDH
-    - kommentárok (opcionális)
+    - kommentárok (ha van) (opcionális)
   - 11.13) További feliratok opcionálisan muxolhatóak vagy mellékelhetőek. FIGYELEM: bizonyos lejátszók nem képesek mind az MKV specifikációban leírt 127 sáv kezelésére, így ajánlott 16 sáv alatt maradni (ebbe a videó- és hangsávok is beletartoznak).
   - 11.14) A maximális megengedett feliratcsúszás 300 ms.

@@ -195,19 +195,19 @@
   - 8.13) A muxolt `.srt` feliratokat megfelelő karakterkódolással kell muxolni (UTF8 vagy beállítani a forrással egyezőt)
   - 8.14) Az opcionálisan mellékelt `.srt` feliratok kizárólag UTF8(-BOM) vagy ANSI kódolásúak lehetnek.
   - 8.15) PGS-SUP feliratoknál ajánlott a `zlib` tömörítés kikapcsolása.
-  - 8.16) A feliratok nyelvét KÖTELEZŐ language tagként beállítani, pl.: `--language 0:hun`
-  - 8.17) Track-name használata opcionális (`--track-name 0:'Name'`)
-    - 8.17.1) Forced feliratoknál track-name és forced flag használata ajánlott, pl.: `--forced-flag 0:yes --track-name 0:'Forced'`
-    - 8.17.2) SDH feliratoknál track-name és hearing-impaired flag használata ajánlott, pl.: `--hearing-impaired-flag 0:yes --track-name 0:'SDH'`
+  - 8.16) A feliratok nyelvét KÖTELEZŐ language tagként beállítani, pl.: `--language 0:hun`.
+  - 8.17) Track-name használata opcionális, pl.: `--track-name 0:'Name'`.
+    - 8.17.1) Forced feliratoknál track-name és forced flag használata ajánlott, pl.: `--forced-flag 0:yes --track-name 0:'Forced'`.
+    - 8.17.2) SDH feliratoknál track-name és hearing-impaired flag használata ajánlott, pl.: `--hearing-impaired-flag 0:yes --track-name 0:'SDH'`.
   - 8.18) Retail felirat használata kötelező, amennyiben elérhető.
-    - 8.18.1) Fansub használható Retail felirat mellett is, ilyenkor meg kell adni hogy melyik melyik, pl.: `--track-name 0:'Fansub'`, `--track-name 0:'NF'`
+    - 8.18.1) Fansub használható Retail felirat mellett is, ilyenkor meg kell adni hogy melyik melyik, pl.: `--track-name 0:'Fansub'`, `--track-name 0:'NF'`.
   - 8.19) Feliratok sorrendje:
     - magyar forced (ha van)
     - magyar full
     - eredeti forced (ha van)
     - eredeti full
     - eredeti full SDH
-    - kommentárok (opcionális)
+    - kommentárok (ha van) (opcionális)
   - 8.20) Az SRT feliratok minden esetben meg kell előzzék az egyéb formátumú feliratokat.
   - 8.21) További feliratok opcionálisan muxolhatóak vagy mellékelhetőek. FIGYELEM: bizonyos lejátszók nem képesek mind az MKV specifikációban leírt 127 sáv kezelésére, így ajánlott 16 sáv alatt maradni (ebbe a videó- és hangsávok is beletartoznak).
   - 8.22) A maximális megengedett feliratcsúszás 300 ms.
