@@ -202,17 +202,12 @@
   - 8.18) Retail felirat használata kötelező, amennyiben elérhető.
     - 8.18.1) Fansub használható Retail felirat mellett is, ilyenkor meg kell adni hogy melyik melyik, pl.: `--track-name 0:'Fansub'`, `--track-name 0:'NF'`
   - 8.19) Feliratok sorrendje:
-    - magyar forced (ha van), srt
-    - magyar full, srt
-    - eredeti forced (ha van), srt
-    - eredeti full, srt
-    - eredeti full SDH, srt
-    - kommentárok (opcionális), srt
-    - magyar forced (ha van), sup
-    - magyar full, sup
-    - eredeti forced (ha van), sup
-    - eredeti full, sup
-    - eredeti full SDH, sup
-    - kommentárok (opcionális), sup
-  - 8.20) További feliratok opcionálisan muxolhatóak vagy mellékelhetőek. FIGYELEM: bizonyos lejátszók nem képesek mind az MKV specifikációban leírt 127 sáv kezelésére, így ajánlott 16 sáv alatt maradni (ebbe a videó- és hangsávok is beletartoznak).
-  - 8.21) A maximális megengedett feliratcsúszás 300 ms.
+    - magyar forced (ha van)
+    - magyar full
+    - eredeti forced (ha van)
+    - eredeti full
+    - eredeti full SDH
+    - kommentárok (opcionális)
+  - 8.20) Az SRT feliratok minden esetben meg kell előzzék az egyéb formátumú feliratokat.
+  - 8.21) További feliratok opcionálisan muxolhatóak vagy mellékelhetőek. FIGYELEM: bizonyos lejátszók nem képesek mind az MKV specifikációban leírt 127 sáv kezelésére, így ajánlott 16 sáv alatt maradni (ebbe a videó- és hangsávok is beletartoznak).
+  - 8.22) A maximális megengedett feliratcsúszás 300 ms.
