@@ -257,9 +257,9 @@
   - 10.13) `E-AC3` hang `AC3`-ba történő kódolásakor a megengedett bitráták az eredeti `1.7`-szereséhez legközelebb eső két bitráta (nagyjából ennyivel jobb a `DD+` algoritmus). Például: ha a forrás `DDP@192`, akkor `192 * 1.7 = 326.4`, tehát az `AC3` bitrátája lehet `320 kbps` vagy `384 kbps` vagy ha a forrás `DDP@256`, akkor `256 * 1.7 = 435.2`, tehát `384 kbps` és `448 kbps`-es `AC3` készíthető.
 
 ## 11) Feliratok
-  - 11.1) Kizárólag `SRT` (SubRip) és `SSA` (ASS) formátumú feliratok megengedettek!
-    - 11.1.1) `SSA` feliratok használata esetén kötelező `SRT`-t is mellékelni kompatibilitás miatt.
-    - 11.1.2) `SSA` feliratok használata esetén kötelező tartalmaznia kell az mkv-nak a fontokat.
+  - 11.1) Kizárólag `SRT` (SubRip) és `SSA`/`ASS` formátumú feliratok megengedettek!
+    - 11.1.1) `SSA`/`ASS` feliratok használata esetén kötelező `SRT`-t is mellékelni kompatibilitás miatt.
+    - 11.1.2) `SSA`/`ASS` feliratok használata esetén kötelező tartalmaznia kell az mkv-nak a fontokat.
   - 11.2) Az OCR karakterfelismerést a lehető legpontosabban kell elvégezni.
     - 11.2.1) A kész felirat lehetőleg kevés, érthetőséget nem zavaró helyesírási hibát tartalmazhat, de törekedjünk, hogy ne legyen benne hiba.
     - 11.2.2) A felismertetett feliraton javasolt spellchecker / helyesírás-ellenőrző lefuttatása.
