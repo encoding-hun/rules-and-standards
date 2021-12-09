@@ -35,6 +35,7 @@
 - [VapourSynth](https://github.com/vapoursynth/vapoursynth/releases)
 - [VapourSynth Editor mod](https://github.com/YomikoR/VapourSynth-Editor/releases)
 - [VapourSynth Editor 2](https://bitbucket.org/gundamftw/vapoursynth-editor-2/downloads/) | [Doom9](https://forum.doom9.org/showthread.php?t=181708)
+- [Portable FATPACK](https://github.com/theChaosCoder/vapoursynth-portable-FATPACK/releases)
 
 # Audió
 - [qaac, fdkaac, sox](https://cloud01.opsdata.ch/index.php/s/CWptD6kwGSSisHi)
