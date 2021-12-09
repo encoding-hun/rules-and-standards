@@ -9,6 +9,8 @@
 
 ## [**Nuke indokok**](nuke-reasons.md)
 
+## [**Toolok](files/tools.md)
+
 ## Csapatok, akik aláírták és tudomásul vették ([link](https://github.com/encoding-hun/rules-and-standards/issues/14))
 `ARROW`, `boOk`, `DenZo`, `FULCRUM`, `Legacy`, `NaGa`, `NFC`, `pcroland`, `prldm`, `PTHD`, `SFY`, `VARYG`
 
