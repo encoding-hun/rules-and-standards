@@ -156,7 +156,7 @@
   - 8.1) Kizárólag x264 használható.
   - 8.2) Minimum `r3000`-es x264 használata kötelező; kivétel, ha korábbi, minőségi encode-ra (pl. `DON`, `TayTo`, `VietHD` és egyéb megbízható források) muxolunk.
   - 8.3) TILOS minden olyan x264 használata, amely az alábbi bugos commitot tartalmazza (`r2969`-`r2979`): https://code.videolan.org/videolan/x264/commit/92d36908cbafd2a6edf7e61d69f341027b57f6f8
-  - 8.4) Elfogadott x264 variánsok: vanilla, tMod, Yuuki, kMod, saiclabs, aMod.
+  - 8.4) Elfogadott x264 variánsok: vanilla, tMod, kMod, aMod, Patman.
   - 8.5) Az x264 header eltávolítása TILOS!
   - 8.6) Törekedjünk a minél újabb encoder használatára!
   - 8.7) Házibarkács encoderek használata TILOS!

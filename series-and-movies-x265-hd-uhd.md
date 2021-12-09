@@ -161,7 +161,7 @@
 ## 8) Videokódolás
   - 8.1) Kizárólag x265 használható.
   - 8.2) Minimum `3.3`-as x265 használata kötelező; kivétel, ha korábbi, minőségi encode-ra (pl. `DON`, `TayTo`, `VietHD` és egyéb megbízható források) muxolunk.
-  - 8.3) Elfogadott x265 variánsok: vanilla, Yuuki, aMod.
+  - 8.3) Elfogadott x265 variánsok: vanilla, aMod, Patman, Yuuki.
   - 8.4) Az x265 header eltávolítása TILOS!
   - 8.5) Törekedjünk a minél újabb encoder használatára!
   - 8.6) Házibarkács encoderek használata TILOS!
