@@ -47,7 +47,7 @@
   - [TypesettingTools](https://github.com/TypesettingTools/Aegisub) | [buildek](https://thevacuumof.space/builds/)
   - [official](https://github.com/Aegisub/Aegisub/releases) (régi!)
 - [Notepad++](https://notepad-plus-plus.org/downloads/)
-- [Subtitle Workshop](http://subworkshop.sourceforge.net/) | [VideHelp - újabb](https://www.videohelp.com/software/Subtitle-Workshop)
+- [Subtitle Workshop](http://subworkshop.sourceforge.net/) | [VideoHelp - újabb](https://www.videohelp.com/software/Subtitle-Workshop)
 
 # NFO
 - [PabloDraw](http://picoe.ca/products/pablodraw)
