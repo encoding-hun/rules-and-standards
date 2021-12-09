@@ -1,28 +1,28 @@
 # Videó
-- [MKVToolNix](https://mkvtoolnix.download/downloads.html) | [Continous](https://mkvtoolnix.download/windows/continuous/64-bit/)
+- [MKVToolNix](https://mkvtoolnix.download/downloads.html) | [continous](https://mkvtoolnix.download/windows/continuous/64-bit/)
 - [MakeMKV](https://www.makemkv.com/)
 - [DGDemux](http://rationalqm.us/dgdemux/binaries/)
 - [DGDecNV](http://rationalqm.us/dgdecnv/binaries/)
 - [DGMPGDec](http://rationalqm.us/dgmpgdec/)
 - x264
-  - [Vanilla r3079](https://artifacts.videolan.org/x264/release-win64/)
+  - [vanilla r3079](https://artifacts.videolan.org/x264/release-win64/)
   - [tMod r3065](https://emma.cloud.tabdigital.eu/s/SK5WoB6mmcwtLJn) | [mirror](https://drive.google.com/file/d/1GwOfLl8Vdf0H0jgDYA5QvkGUpeAN8U-0)
   - [tMod r3075](https://github.com/jpsdr/x264/releases)
   - [Patman r3075](https://github.com/Patman86/x264-Mod-by-Patman/releases)
   - [kMod r3059](https://github.com/cshmnyfy/x264-kMod-patches/releases)
   - [aMod r3059](https://github.com/DJATOM/x264-aMod)
 - x265
-  - [Vanilla 3.5+20](http://msystem.waw.pl/x265/)
+  - [vanilla 3.5+20](http://msystem.waw.pl/x265/)
   - [Patman 3.5+20](https://github.com/Patman86/x265-Mod-by-Patman/releases)
   - [aMod 3.5+20](https://github.com/DJATOM/x265-aMod/releases/)
   - [Yuuki 3.5+2](https://down.7086.in/x265-Yuuki-Asuna/)
 - [AvsPmod](https://github.com/gispos/AvsPmod/releases)
-- [ffmpeg](https://ffmpeg.org/download.html) | [Win64 builds](https://github.com/BtbN/FFmpeg-Builds/releases)
-- [VideoReDo TVSuite](https://ncore.pro/torrents.php?action=details&id=3248269) | [Latest betas](https://www.videoredo.net/msgBoard/index.php?resources/videoredo-tvsuite-v6-beta.3/)
+- [ffmpeg](https://ffmpeg.org/download.html)
+- [VideoReDo TVSuite](https://ncore.pro/torrents.php?action=details&id=3248269) | [béta buildek](https://www.videoredo.net/msgBoard/index.php?resources/videoredo-tvsuite-v6-beta.3/)
 - [tsMuxer](https://github.com/justdan96/tsMuxer/releases)
 
 ## AviSynth+
-- [AviSynth+ official build](https://github.com/AviSynth/AviSynthPlus/releases) | [3.7.1 béták](https://forum.doom9.org/showthread.php?t=181351)
+- [AviSynth+ official build](https://github.com/AviSynth/AviSynthPlus/releases) | [3.7.1 béta buildek](https://forum.doom9.org/showthread.php?t=181351)
 - [Avisynth+ 3.7.0 (r3474) clang build](https://cloud01.opsdata.ch/index.php/s/xeMjWNC6biXcoeC) | [mirror](https://drive.google.com/drive/folders/1oJunPPq9C30d-ZIb_7RgXaFFaGujMoJY)
   - ~15%-kal gyorsabb az official buildnél.
   - A telepítéséhez először telepítsük az official buildet, majd futtassuk az `avisynth_updater.bat` fájlt admin módban.
@@ -55,7 +55,9 @@
   - [TypesettingTools](https://github.com/TypesettingTools/Aegisub) | [buildek](https://thevacuumof.space/builds/)
   - [official](https://github.com/Aegisub/Aegisub/releases) (régi!)
 - [Notepad++](https://notepad-plus-plus.org/downloads/)
-- [Subtitle Workshop](http://subworkshop.sourceforge.net/) | [VideoHelp - újabb](https://www.videohelp.com/software/Subtitle-Workshop)
+- [Subtitle WorkShop]
+  - [6.0e](https://sourceforge.net/projects/subtitle-workshop-classic) | [mirror](https://www.videohelp.com/software/Subtitle-Workshop)
+  - [6.0b official](http://subworkshop.sourceforge.net/) (régi!)
 
 # NFO
 - [PabloDraw](http://picoe.ca/products/pablodraw)
