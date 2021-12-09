@@ -174,7 +174,7 @@
 
 ## 8) Feliratok
   - 8.1) Kizárólag `SRT` (SubRip), `SSA`/`ASS` és `PGS-SUP` formátumú feliratok megengedettek!
-    - 8.1.1) `SSA`/`ASS` feliratok használata esetén kötelező `SRT`-t is mellékelni kompatibilitás miatt.
+    - 8.1.1) `SSA`/`ASS` feliratok használata esetén kötelező `SRT`-t is tartalmaznia az mkv-nak. Ez alól animék kivételt képeznek.
     - 8.1.2) `SSA`/`ASS` feliratok használata esetén tartalmaznia kell az mkv-nak a fontokat.
   - 8.2) Az OCR karakterfelismerést a lehető legpontosabban kell elvégezni.
     - 8.2.1) A kész felirat lehetőleg kevés, érthetőséget nem zavaró helyesírási hibát tartalmazhat, de törekedjünk, hogy ne legyen benne hiba.
