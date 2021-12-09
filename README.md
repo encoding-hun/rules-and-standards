@@ -7,7 +7,7 @@
 | [**REMUX**](series-and-movies-remux.md)                       | 2021.12.09.      | 2020.06.14.       |
 | **DVD, MP3 és lossless audio** (korábbi szabályzat érvényben) |                  |                   |
 
-## [**Nuke indokok**](nuke-reasons.md)
+## [Nuke indokok](nuke-reasons.md)
 
 ## [Toolok](files/tools.md)
 
