@@ -3,6 +3,7 @@
 - [MakeMKV](https://www.makemkv.com/)
 - [DGDemux](http://rationalqm.us/dgdemux/binaries/)
 - [x264 tMod r3065](https://emma.cloud.tabdigital.eu/s/SK5WoB6mmcwtLJn) | [mirror](https://drive.google.com/file/d/1GwOfLl8Vdf0H0jgDYA5QvkGUpeAN8U-0)
+- [x264 tMod r3075](https://github.com/jpsdr/x264/releases)
 - [AvsPmod](https://github.com/gispos/AvsPmod/releases)
 - [ffmpeg](https://ffmpeg.org/download.html)
 - [VideoReDo TVSuite](https://ncore.pro/torrents.php?action=details&id=3248269)
@@ -19,6 +20,7 @@
 
 ## VapourSynth
 - [VapourSynth](https://github.com/vapoursynth/vapoursynth/releases)
+- [VapourSynth Editor mod](https://github.com/YomikoR/VapourSynth-Editor/releases)
 - [VapourSynth Editor 2](https://bitbucket.org/gundamftw/vapoursynth-editor-2/downloads/) | [Doom9](https://forum.doom9.org/showthread.php?t=181708)
 
 # Audió
@@ -39,7 +41,7 @@
   - [TypesettingTools](https://github.com/TypesettingTools/Aegisub) | [buildek](https://thevacuumof.space/builds/)
   - [official](https://github.com/Aegisub/Aegisub/releases) (régi!)
 - [Notepad++](https://notepad-plus-plus.org/downloads/)
-- [Subtitle Workshop](http://subworkshop.sourceforge.net/)
+- [Subtitle Workshop](http://subworkshop.sourceforge.net/) | [VideHelp - újabb](https://www.videohelp.com/software/Subtitle-Workshop)
 
 # NFO
 - [PabloDraw](http://picoe.ca/products/pablodraw)
