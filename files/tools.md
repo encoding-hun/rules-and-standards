@@ -1,5 +1,5 @@
 # Videó
-- [MKVToolNix](https://mkvtoolnix.download/downloads.html) | [continous](https://mkvtoolnix.download/windows/continuous/64-bit/)
+- [MKVToolNix](https://mkvtoolnix.download/downloads.html) | [continous buildek](https://mkvtoolnix.download/windows/continuous/64-bit/)
 - [MakeMKV](https://www.makemkv.com/)
 - [DGDemux](http://rationalqm.us/dgdemux/binaries/)
 - [DGDecNV](http://rationalqm.us/dgdecnv/binaries/)
@@ -22,7 +22,7 @@
 - [tsMuxer](https://github.com/justdan96/tsMuxer/releases)
 
 ## AviSynth+
-- [AviSynth+ official build](https://github.com/AviSynth/AviSynthPlus/releases) | [3.7.1 béta buildek](https://forum.doom9.org/showthread.php?t=181351)
+- [AviSynth+ official build](https://github.com/AviSynth/AviSynthPlus/releases) | [béta buildek](https://forum.doom9.org/showthread.php?t=181351)
 - [Avisynth+ 3.7.0 (r3474) clang build](https://cloud01.opsdata.ch/index.php/s/xeMjWNC6biXcoeC) | [mirror](https://drive.google.com/drive/folders/1oJunPPq9C30d-ZIb_7RgXaFFaGujMoJY)
   - ~15%-kal gyorsabb az official buildnél.
   - A telepítéséhez először telepítsük az official buildet, majd futtassuk az `avisynth_updater.bat` fájlt admin módban.
@@ -55,7 +55,7 @@
   - [TypesettingTools](https://github.com/TypesettingTools/Aegisub) | [buildek](https://thevacuumof.space/builds/)
   - [official](https://github.com/Aegisub/Aegisub/releases) (régi!)
 - [Notepad++](https://notepad-plus-plus.org/downloads/)
-- [Subtitle WorkShop]
+- Subtitle WorkShop
   - [6.0e](https://sourceforge.net/projects/subtitle-workshop-classic) | [mirror](https://www.videohelp.com/software/Subtitle-Workshop)
   - [6.0b official](http://subworkshop.sourceforge.net/) (régi!)
 
