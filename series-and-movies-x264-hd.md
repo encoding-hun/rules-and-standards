@@ -263,7 +263,7 @@
     - 11.2.1) A kész felirat lehetőleg kevés, érthetőséget nem zavaró helyesírási hibát tartalmazhat, de törekedjünk, hogy ne legyen benne hiba.
     - 11.2.2) A felismertetett feliraton javasolt spellchecker / helyesírás-ellenőrző lefuttatása.
   - 11.3) A feliratokat tartalmaznia kell az mkv-nak, de opcionálisan mellette is meghagyhatóak az `SRT` formátumúak.
-  - 11.4) Kötelező feliratok, amennyiben elérhetőek: magyar forced, magyar, eredeti nyelv forced, eredeti nyelv.
+  - 11.4) Kötelező feliratok, amennyiben elérhetőek: magyar forced, magyar, eredeti forced, eredeti.
   - 11.5) Magyar filmek esetén ajánlott az angol nyelvű felirat (ha van) megtartása is.
   - 11.6) A muxolt feliratokat megfelelő karakterkódolással kell muxolni (UTF8 vagy beállítani a forrással egyezőt)
   - 11.7) Az opcionálisan mellékelt feliratok kizárólag `.srt` formátumú és UTF8(-BOM) vagy ANSI kódolásúak lehetnek.

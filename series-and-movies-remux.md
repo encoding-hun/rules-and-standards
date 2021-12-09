@@ -186,7 +186,7 @@
   - 8.5) `.m2ts` konténer használata esetén kizárólag PGS-SUP feliratokat szabad muxolni. Az `.srt` feliratokat a file mellé, vagy egy `Subs` mappába kell helyezni.
   - 8.6) Amennyiben HDR formátumról származó PGS-SUP feliratot teszünk SDR remuxra, úgy a fényerejét 60%-al meg kell növelni.
   - 8.7) Amennyiben SDR formátumról származó PGS-SUP feliratot teszünk HDR remuxra, úgy a fényerejét 60%-al le kell csökkenteni.
-  - 8.8) Kötelező feliratok, amennyiben elérhetőek: magyar forced, magyar, eredeti nyelv forced, eredeti nyelv.
+  - 8.8) Kötelező feliratok, amennyiben elérhetőek: magyar forced, magyar, eredeti forced, eredeti.
   - 8.9) Magyar filmek esetén ajánlott az angol nyelvű felirat (ha van) megtartása is.
   - 8.10) A lemezen elérhető, főcímhez tartozó feliratokat `.srt` és `.sup` formátumban is KÖTELEZŐ muxolni/mellékelni.
     - 8.10.1) Kivéve 3D-s filmek esetén, ahol elegendő a PGS-SUP használata.

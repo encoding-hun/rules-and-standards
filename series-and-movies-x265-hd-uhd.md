@@ -282,7 +282,7 @@
   - 11.3) A feliratokat tartalmaznia kell az mkv-nak, de opcionálisan mellette is meghagyhatóak az `SRT` formátumúak.
   - 11.4) Amennyiben HDR formátumról származó PGS-SUP feliratot teszünk SDR 2160p encode-ra, úgy a fényerejét 60%-al meg kell növelni.
   - 11.5) Amennyiben SDR formátumról származó PGS-SUP feliratot teszünk HDR encode-ra, úgy a fényerejét 60%-al le kell csökkenteni.
-  - 11.6) Kötelező feliratok, amennyiben elérhetőek: magyar forced, magyar, eredeti nyelv forced, eredeti nyelv.
+  - 11.6) Kötelező feliratok, amennyiben elérhetőek: magyar forced, magyar, eredeti forced, eredeti.
   - 11.7) Magyar filmek esetén ajánlott az angol nyelvű felirat (ha van) megtartása is.
   - 11.8) A lemezen elérhető, főcímhez tartozó feliratokat `.srt` formátumban KÖTELEZŐ muxolni. PGS-SUP feliratok használata opcionális.
   - 11.9) Kommentárfeliratokat csak akkor kötelező muxolni, ha az kapcsolódik az audiokommentárhoz.
