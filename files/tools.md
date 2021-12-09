@@ -34,7 +34,10 @@
 - [SubtitleEdit](https://nikse.dk/SubtitleEdit/) | [GitHub](https://github.com/SubtitleEdit/subtitleedit/releases)
 - [VisualSubSync-Enhanced](https://github.com/Red5goahead/VisualSubSync-Enhanced/releases)
 - [Gaupol](https://otsaloma.io/gaupol/)
-- [AegiSub](https://github.com/Ristellise/AegisubDC/releases)
+- AegiSub
+  - [Daydream Cafe Edition](https://github.com/Ristellise/AegisubDC/releases)
+  - [TypesettingTools](https://github.com/TypesettingTools/Aegisub) | [buildek](https://thevacuumof.space/builds/)
+  - [official](https://github.com/Aegisub/Aegisub/releases) (régi!)
 - [Notepad++](https://notepad-plus-plus.org/downloads/)
 - [Subtitle Workshop](http://subworkshop.sourceforge.net/)
 
