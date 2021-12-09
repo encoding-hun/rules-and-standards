@@ -9,9 +9,13 @@
   - [tMod r3065](https://emma.cloud.tabdigital.eu/s/SK5WoB6mmcwtLJn) | [mirror](https://drive.google.com/file/d/1GwOfLl8Vdf0H0jgDYA5QvkGUpeAN8U-0)
   - [tMod r3075](https://github.com/jpsdr/x264/releases)
   - [Patman r3075](https://github.com/Patman86/x264-Mod-by-Patman/releases)
+  - [kmod r3059](https://github.com/cshmnyfy/x264-kMod-patches/releases)
+  - [Yuuki r3011](https://down.7086.in/x264_Yuuki/)
 - x265
   - [Vanilla 3.5+20](http://msystem.waw.pl/x265/)
   - [Patman 3.5+20](https://github.com/Patman86/x265-Mod-by-Patman/releases)
+  - [aMod 3.5+20](https://github.com/DJATOM/x265-aMod/releases/)
+  - [Yuuki 3.5+2](https://down.7086.in/x265-Yuuki-Asuna/)
 - [AvsPmod](https://github.com/gispos/AvsPmod/releases)
 - [ffmpeg](https://ffmpeg.org/download.html) | [Win64 builds](https://github.com/BtbN/FFmpeg-Builds/releases)
 - [VideoReDo TVSuite](https://ncore.pro/torrents.php?action=details&id=3248269) | [Latest betas](https://www.videoredo.net/msgBoard/index.php?resources/videoredo-tvsuite-v6-beta.3/)
