@@ -2,6 +2,8 @@
 - [MKVToolNix](https://mkvtoolnix.download/downloads.html) | [Continous](https://mkvtoolnix.download/windows/continuous/64-bit/)
 - [MakeMKV](https://www.makemkv.com/)
 - [DGDemux](http://rationalqm.us/dgdemux/binaries/)
+- [DGDecNV](http://rationalqm.us/dgdecnv/binaries/)
+- [DGMPGDec](http://rationalqm.us/dgmpgdec/)
 - x264
   - [Vanilla r3079](https://artifacts.videolan.org/x264/release-win64/)
   - [tMod r3065](https://emma.cloud.tabdigital.eu/s/SK5WoB6mmcwtLJn) | [mirror](https://drive.google.com/file/d/1GwOfLl8Vdf0H0jgDYA5QvkGUpeAN8U-0)
