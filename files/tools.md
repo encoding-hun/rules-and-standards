@@ -1,5 +1,5 @@
 # Videó
-- [MKVToolNix](https://mkvtoolnix.download/downloads.html) | [continuous buildek](https://mkvtoolnix.download/windows/continuous/64-bit/)
+- [MKVToolNix](https://mkvtoolnix.download/downloads.html) | continuous buildek: [win]](https://mkvtoolnix.download/windows/continuous/64-bit/), [linux](https://mkvtoolnix.download/appimage/continuous)
 - [MakeMKV](https://www.makemkv.com/)
 - [DGDemux](http://rationalqm.us/dgdemux/binaries/)
 - [DGDecNV](http://rationalqm.us/dgdecnv/binaries/)
