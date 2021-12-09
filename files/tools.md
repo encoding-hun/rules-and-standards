@@ -15,6 +15,7 @@
 - [AvsPmod](https://github.com/gispos/AvsPmod/releases)
 - [ffmpeg](https://ffmpeg.org/download.html) | [Win64 builds](https://github.com/BtbN/FFmpeg-Builds/releases)
 - [VideoReDo TVSuite](https://ncore.pro/torrents.php?action=details&id=3248269) | [Latest betas](https://www.videoredo.net/msgBoard/index.php?resources/videoredo-tvsuite-v6-beta.3/)
+- [tsMuxer](https://github.com/justdan96/tsMuxer/releases)
 
 ## AviSynth+
 - [AviSynth+ official build](https://github.com/AviSynth/AviSynthPlus/releases) | [3.7.1 béták](https://forum.doom9.org/showthread.php?t=181351)
