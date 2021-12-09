@@ -10,7 +10,7 @@
 - [VideoReDo TVSuite](https://ncore.pro/torrents.php?action=details&id=3248269)
 
 ## AviSynth+
-- [AviSynth+ official build](https://github.com/AviSynth/AviSynthPlus/releases)
+- [AviSynth+ official build](https://github.com/AviSynth/AviSynthPlus/releases) | [Official betas - Avisynth+ 3.7.1 test build 34](https://forum.doom9.org/showthread.php?t=181351)
 - [Avisynth+ 3.7.0 (r3474) clang build](https://cloud01.opsdata.ch/index.php/s/xeMjWNC6biXcoeC) | [mirror](https://drive.google.com/drive/folders/1oJunPPq9C30d-ZIb_7RgXaFFaGujMoJY)
   - ~15%-kal gyorsabb az official buildnél.
   - A telepítéséhez először telepítsük az official buildet, majd futtassuk az `avisynth_updater.bat` fájlt admin módban.
