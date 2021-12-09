@@ -203,7 +203,8 @@
   - 8.38) A `WEB-DL`-ek felmentést élveznek az összes 8-as pontbeli szabály alól, kivéve a 8.8-ast.
 
 ## 9) Audió
-  - 9.1) Magyar hangsávot tartalmazó release esetén kötelező a `HUN` (`Hun`) tag használata. Amennyiben a release nem tartalmaz magyar hangsávot, úgy nem kell nyelvi tag-et megadni.
+  - 9.1) Kötelező az összes audió nyelvet tagben megadni, pl.: `HUN`, `HUN.ENG`, `HUN.ENG.SPA`.
+    - 9.1.1) Amennyiben a release csak az eredeti nyelvet tartalmazza, úgy nem kell nyelvi taget megadni.
   - 9.2) Az eredeti hangsáv megtartása opcionális.
     - 9.2.1) Kivétel, hogyha nem érhető el magyar nyelv, ez esetben megtartása kötelező.
   - 9.3) Nem angol nyelvű, eredeti hangsáv esetén az angol hang (már amennyiben létezik) megtartása opcionális.

@@ -121,7 +121,9 @@
   - 5.12) Színekre vonatkozó metaadatok (pl. ColorMatrix, ColorPrimaries, TransferFunction, Chroma Location, CLL, stb.) eltávolítása SZIGORÚAN TILOS!
 
 ## 6) Audió
-  - 6.1) Magyar hangsávot tartalmazó release esetén kötelező a `HUN` (`Hun`) tag használata. Amennyiben a release nem tartalmaz magyar hangsávot, úgy nem kell nyelvi taget megadni.
+  - 6.1) Magyar hangsávot tartalmazó release esetén kötelező a `HUN` (`Hun`) tag használata.
+    - 6.1.1) Amennyiben a release nem tartalmaz magyar hangsávot, úgy nem kell nyelvi taget megadni.
+    - 6.1.2) Amennyiben a magyar hang az eredeti, úgy nem kell nyelvi taget megadni.
   - 6.2) Az eredeti nyelvű hangsáv megtartása KÖTELEZŐ!
   - 6.3) Nem angol nyelvű, eredeti hangsáv esetén az angol hang (már amennyiben létezik) megtartása opcionális.
   - 6.4) Egyéb nyelvű hangok megtartása TILOS!
