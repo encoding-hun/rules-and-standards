@@ -21,7 +21,7 @@
 - [VideoReDo TVSuite](https://ncore.pro/torrents.php?action=details&id=3248269) | [béta buildek](https://www.videoredo.net/msgBoard/index.php?resources/videoredo-tvsuite-v6-beta.3/)
 - [tsMuxer](https://github.com/justdan96/tsMuxer/releases)
 
-## AviSynth+
+### AviSynth+
 - [AviSynth+ official build](https://github.com/AviSynth/AviSynthPlus/releases) | [béta buildek](https://forum.doom9.org/showthread.php?t=181351)
 - [Avisynth+ 3.7.0 (r3474) clang build](https://cloud01.opsdata.ch/index.php/s/xeMjWNC6biXcoeC) | [mirror](https://drive.google.com/drive/folders/1oJunPPq9C30d-ZIb_7RgXaFFaGujMoJY)
   - ~15%-kal gyorsabb az official buildnél.
@@ -31,7 +31,7 @@
   - 32 bites AviSynth+ esetén másoljuk a `lib\x86\Release`-ben található `DevIL.dll`-t a `C:\Windows\SysWOW64` mappába.
   - 64 bites AviSynth+ esetén másoljuk a `lib\x64\Release`-ben található `DevIL.dll`-t a `C:\Windows\System32` mappába.
 
-## VapourSynth
+### VapourSynth
 - [VapourSynth](https://github.com/vapoursynth/vapoursynth/releases)
 - [VapourSynth Editor mod](https://github.com/YomikoR/VapourSynth-Editor/releases)
 - [VapourSynth Editor 2](https://bitbucket.org/gundamftw/vapoursynth-editor-2/downloads/) | [Doom9](https://forum.doom9.org/showthread.php?t=181708)
