@@ -1,13 +1,13 @@
 # Videó
-- [MKVToolNix](https://mkvtoolnix.download/downloads.html)
+- [MKVToolNix](https://mkvtoolnix.download/downloads.html) | [Continous](https://mkvtoolnix.download/windows/continuous/64-bit/)
 - [MakeMKV](https://www.makemkv.com/)
 - [DGDemux](http://rationalqm.us/dgdemux/binaries/)
 - x264
   - [tMod r3065](https://emma.cloud.tabdigital.eu/s/SK5WoB6mmcwtLJn) | [mirror](https://drive.google.com/file/d/1GwOfLl8Vdf0H0jgDYA5QvkGUpeAN8U-0)
   - [tMod r3075](https://github.com/jpsdr/x264/releases)
 - [AvsPmod](https://github.com/gispos/AvsPmod/releases)
-- [ffmpeg](https://ffmpeg.org/download.html)
-- [VideoReDo TVSuite](https://ncore.pro/torrents.php?action=details&id=3248269)
+- [ffmpeg](https://ffmpeg.org/download.html) | [Win64 builds](https://github.com/BtbN/FFmpeg-Builds/releases)
+- [VideoReDo TVSuite](https://ncore.pro/torrents.php?action=details&id=3248269) | [Lates betas](https://www.videoredo.net/msgBoard/index.php?resources/videoredo-tvsuite-v6-beta.3/)
 
 ## AviSynth+
 - [AviSynth+ official build](https://github.com/AviSynth/AviSynthPlus/releases) | [3.7.1 béták](https://forum.doom9.org/showthread.php?t=181351)
