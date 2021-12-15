@@ -212,10 +212,10 @@
     - 9.6.3) 5.1: `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`)
       - 9.6.3.1) `AC3` (`DD`) 640 kbps, ha jobb forrásból készül, vagy az eredetivel megegyező (pl. DVD esetén).
       - 9.6.3.2) `E-AC3` (`DD+`/`DDP`) 1024 kbps, ha jobb forrásból készül, vagy az eredetivel megegyező.
-    - 9.6.4) 7.1: `E-AC3` (`DD+`/`DDP`) 1080p és 2160p esetén
+    - 9.6.4) 7.1: `E-AC3` (`DD+`/`DDP`) 1080p esetén
       - 9.6.4.1) 1536 kbps, ha jobb forrásból készül, vagy az eredetivel megegyező.
   - 9.7) Kizárólag stúdió által készített surround hangok használhatóak fel, házilag felkevertek tilosak. TV-s surround hang esetén mindig győződjünk meg, hogy valódi surround-e, amennyiben nem, downmixeljük. Pl.: `ffmpeg -i input.ac3 -ac 2 -f sox - | sox -p -S -b 24 --norm=-1 output.wav`
-  - 9.8) Nem megengedett formátumok, pl. 5.1-es `AAC` vagy lossy `DTS` használata 1080p és 2160p-nél megengedett, ha az érintetlen forráson nem elérhető jobb. Mellé KÖTELEZŐ `DD@640` (2 csatorna esetén `DD@256` vagy `AAC`) compatibility track készítése.
+  - 9.8) Más formátumok, pl. 5.1-es `AAC` vagy lossy `DTS` használata 1080p-nél megengedett, ha az érintetlen forráson nem érhető el jobb. Mellé KÖTELEZŐ `DD@640` (2 csatorna esetén `DD@256` vagy `AAC`) compatibility track készítése.
   - 9.9) A hangsávok eredeti csatornaszámát meg kell tartani!
     - 9.9.1) Kivétel 8 csatornás hangok 720p esetén esetén, ahol a core-t kell megtartani vagy egy 6 csatornás `DD@640`-et kell készíteni.
   - 9.10) A maximális megengedett hangcsúszás 100 ms.
@@ -231,7 +231,7 @@
     - kommentárok (opcionális)
 
 ## 10) Audiokódolás
-  - 10.1) `AC3` (`DD`) esetében erősen ajánlott Dolby Certified encodert (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`, `Sonic Audio Transcoder`) használni, egy esetben kizárólag FFmpeg (4.1 vagy újabb) vagy Aften (2009-12-26 vagy újabb) használható.
+  - 10.1) `AC3` (`DD`) esetében erősen ajánlott Dolby Certified encodert (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`, `Sonic Audio Transcoder`) használni, egyéb esetben kizárólag FFmpeg (4.1 vagy újabb) vagy Aften (2009-12-26 vagy újabb) használható.
   - 10.2) A készített `AC3` (`DD`) nem tartalmazhat Copyright Protected flaget.
   - 10.3) `AAC` esetében elfogadott encoderek: `qaac` (`Apple AAC`), `FDK`, `Nero`.
     - 10.3.1) Csak sztereó/monó hangnál használható `AAC`.

@@ -216,61 +216,56 @@
   - 9.1) Magyar hangsávot tartalmazó release esetén kötelező a `HUN` (`Hun`) tag használata.
     - 9.1.1) Amennyiben a release nem tartalmaz magyar hangsávot, úgy nem kell nyelvi taget megadni.
     - 9.1.2) Amennyiben a magyar hang az eredeti, úgy nem kell nyelvi taget megadni.
-  - 9.2) Az eredeti nyelvű hangsáv megtartása KÖTELEZŐ!
-  - 9.3) Nem angol nyelvű, eredeti hangsáv esetén az angol hang (már amennyiben létezik) megtartása opcionális.
-  - 9.4) Egyéb nyelvű hangok megtartása TILOS!
-  - 9.5) Megengedett hangformátumok: `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`), `DTS`, `AAC`, `FLAC`.
-    - 9.5.1) 2160p esetén `TrueHD`, `DTS-HD.MA` és `DTS-X` is megengedett.
-    - 9.5.2) `TrueHD`, `DTS`, `DTS-HD.MA` és `DTS-X` hangokhoz KÖTELEZŐ `DD@640` compatibility track készítése.
-    - 9.5.3) Lossless formátumok kereszt-konvertálása TILOS (pl. `TrueHD`-> `FLAC`)!
-  - 9.6) `MP3`, `MP2` és egyéb vicces formátumok használata TILOS!
-  - 9.7) Más hangok encode-olása `AAC`-be kizárólag a kommentársáv esetén megengedett.
-    - 9.7.1) Kivétel, ha nyújtani és/vagy vágni kell, ekkor lehet `AAC`, amennyiben sztereó vagy monó.
-  - 9.8) LPCM hangot kötelező `TrueHD`, `DTS-HD.MA` vagy `FLAC` formátumba (film esetén) vagy AAC formátumba (kommentár esetén) konvertálni.
-  - 9.9) A hangsávok eredeti csatornaszámát meg kell tartani!
-  - 9.10) 1080p felbontás és 8 csatornás hang esetén DD+ formátumot kell használni (`DDP@1536`).
-    - 9.10.1) Amennyiben a lemezen ilyen nem áll rendelkezésre, úgy a lossless hangból kell elkészíteni.
-    - 9.10.2) 2160p felbontás esetén lásd 9.5.1 és 9.5.2-es pont.
-  - 9.11) 2 csatornás `CUSTOM` hangnál (TV-ből vagy WEB-ről felvett) javasolt `AAC` használata.
-  - 9.12) Amennyiben az érintetlen forráson kizárólag `DTS` (vagy `DTS-HD MA`, `DTS:X`) található:
-    - 9.12.1) `DDP@1024` kódolása (ajánlott, kivéve ha 768 kbps vagy kisebb a DTS bitrátája),
-    - 9.12.2) DTS meghagyása, mellé KÖTELEZŐ `DD@640` (2 csatorna esetén `DD@256` vagy `AAC`) compatibility track készítése.
-  - 9.13) Lossy hangot csak losslessből szabad kódolni.
-    - 9.13.1) Ez alól kivétel ha csak DTS hang érhető el és compatibility tracket készítünk vagy 1080p-re `DDP@1024`-et.
-  - 9.14) A maximális megengedett hangcsúszás 100 ms.
-  - 9.15) A hangok nyelvét kötelező Language tag-ben jelezni!
-  - 9.16) Kizárólag stúdió által készített surround hangok használhatóak fel, házilag felkevertek tilosak. TV-s surround hang esetén mindig győződjünk meg, hogy valódi surround-e, amennyiben nem, downmixeljük. Pl.: `ffmpeg -i input.ac3 -ac 2 -f sox - | sox -p -S -b 24 --norm=-1 output.wav`
-  - 9.17) Amennyiben a forrás audió megtartható újrakódolás nélkül, úgy annak újrakódolása tilos.
-  - 9.18) Egy másik forrásból származó hang akkor számít jobb minőségűnek, hogyha a lowpass (cutoff) frekvencia 16 kHz alatt legalább 1 kHz-el, 16 kHz felett legalább 1.5 kHz-el magasabb, és a többlet adat nem sztochasztikus (dithering miatt belekerülő) zaj. Ha ez teljesül, akkor készíthető új release, egyéb esetben `dupe`. Kérdéses esetekben proofként egy-egy spektrum bemutatása szükséges a két hangról.
-    - 9.18.1) Ez alól kivétel, hogyha az alacsonyabb lowpass-szel rendelkező hang minősége hallhatóan jobb.
-    - 9.18.2) További kivételt képez, hogyha jobb forrásból elérhető a hang és a bitrátakülönbség meghaladja a 192 kbps-t `DD` és `DTS` esetén, vagy a `128` kbps-t `DD+` és `AAC` esetén. `DD+` és `DD` hangok bitrátáinak összehasonlítása a 10.15-ös pontban rögzítettek szerint `1.7`-es szorzófaktorral történik. `AAC` és `DD` között ugyanezt az átváltást használjuk. Például egy `DD@448`-as DVD hang mindig cserélhető egy BD-ről származó `DD@640`-re.
-  - 9.19) A hangok sorrendje:
+  - 9.2) A hangok nyelvét kötelező a Language tagben jelezni!
+  - 9.3) Az eredeti nyelvű hangsáv megtartása KÖTELEZŐ!
+  - 9.4) Nem angol nyelvű, eredeti hangsáv esetén az angol hang (már amennyiben létezik) megtartása opcionális.
+  - 9.5) Egyéb nyelvű hangok megtartása TILOS!
+  - 9.6) Megengedett hangformátumok:
+    - 9.6.1) 1.0: `AAC`
+    - 9.6.2) 2.0: `AAC` (ajánlott), `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`)
+      - 9.6.2.1) `AC3` (`DD`) esetén a forrással megegyező bitráta vagy jobb forrás esetén 192-256 kbps elfogadott.
+    - 9.6.3) 5.1: `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`)
+      - 9.6.3.1) `AC3` (`DD`) 640 kbps, ha jobb forrásból készül, vagy az eredetivel megegyező (pl. DVD esetén).
+      - 9.6.3.2) `E-AC3` (`DD+`/`DDP`) 1024 kbps, ha jobb forrásból készül, vagy az eredetivel megegyező.
+    - 9.6.4) 7.1: `E-AC3` (`DD+`/`DDP`)
+      - 9.6.4.1) 1536 kbps, ha jobb forrásból készül, vagy az eredetivel megegyező.
+  - 9.7) Kizárólag stúdió által készített surround hangok használhatóak fel, házilag felkevertek tilosak. TV-s surround hang esetén mindig győződjünk meg, hogy valódi surround-e, amennyiben nem, downmixeljük. Pl.: `ffmpeg -i input.ac3 -ac 2 -f sox - | sox -p -S -b 24 --norm=-1 output.wav`
+  - 9.8) 2160p esetén lossless hangok is megengedettek, pl.: `TrueHD`, `DTS-HD.MA` és `DTS-X`.
+  - 9.9) Más formátumok, pl. 5.1-es `AAC` vagy lossy `DTS` használata (ha az érintetlen forráson nem érhető el jobb) esetén KÖTELEZŐ `DD@640` (2 csatorna esetén `DD@256` vagy `AAC`) compatibility track készítése.
+    - 9.9.1) `TrueHD` formátum esetén az AC3 (`DD`) compatibility stream megtartása KÖTELEZŐ! Ha a lemezen lévő compatibility track csak 384-448 kbps bitrátájú, akkor készíthető a `TrueHD` hangból 640 kbps bitrátájú hang is.
+  - 9.10) Lossless formátumok kereszt-konvertálása TILOS (pl. `TrueHD` -> `FLAC`).
+    - 9.10.1) Ez alól kivételt képeznek az LPCM hangok, amiket kötelező `TrueHD`, `DTS-HD.MA` vagy `FLAC` formátumba vagy kommentár esetén akár `AAC` formátumba konvertálni.
+  - 9.11) A hangsávok eredeti csatornaszámát meg kell tartani!
+  - 9.12) A maximális megengedett hangcsúszás 100 ms.
+  - 9.13) Amennyiben a forrás audió megtartható újrakódolás nélkül, úgy annak újrakódolása tilos. (pl. a forrás megengedett formátumú és nem kell nyújtani.)
+  - 9.14) Egy másik forrásból származó hang akkor számít jobb minőségűnek, hogyha a lowpass (cutoff) frekvencia 16 kHz alatt legalább 1 kHz-el, 16 kHz felett legalább 1.5 kHz-el magasabb, és a többlet adat nem sztochasztikus (dithering miatt belekerülő) zaj. Ha ez teljesül, akkor készíthető új release, egyéb esetben `dupe`. Kérdéses esetekben proofként egy-egy spektrum bemutatása szükséges a két hangról.
+    - 9.14.1) Ez alól kivétel, hogyha az alacsonyabb lowpass-szel rendelkező hang minősége hallhatóan jobb.
+    - 9.14.2) További kivételt képez, hogyha jobb forrásból elérhető a hang és a bitrátakülönbség meghaladja a 192 kbps-t `DD` és `DTS` esetén, vagy a `128` kbps-t `DD+` és `AAC` esetén. `DD+` és `DD` hangok bitrátáinak összehasonlítása a 10.11-ös pontban rögzítettek szerint `1.7`-es szorzófaktorral történik. `AAC` és `DD` között ugyanezt az átváltást használjuk. Például egy `DD@448`-as DVD hang mindig cserélhető egy BD-ről származó `DD@640`-re.
+  - 9.15) A hangok sorrendje:
     - magyar (ha van)
     - eredeti
     - angol (ha az eredeti nem ez; opcionális)
     - kommentárok (opcionális)
 
 ## 10) Audiokódolás
-  - 10.1) `AC3` (`DD`) esetében Dolby Certified encodert kell használni (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`, `Sonic Audio Transcoder`).
+  - 10.1) `AC3` (`DD`) esetében erősen ajánlott Dolby Certified encodert (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`, `Sonic Audio Transcoder`) használni, egyéb esetben kizárólag FFmpeg (4.1 vagy újabb) vagy Aften (2009-12-26 vagy újabb) használható.
   - 10.2) A készített `AC3` (`DD`) nem tartalmazhat Copyright Protected flaget.
   - 10.3) `DTS-HD.MA` hang készítéséhez kizárólag `DTS-HD Master Audio Suite` használható.
   - 10.4) `AAC` esetében elfogadott encoderek: `qaac` (`Apple AAC`), `FDK`, `Nero`.
     - 10.4.1) Csak sztereó/monó hangnál használható AAC.
     - 10.4.2) Javasolt beállítások:
       - 10.4.2.1) `qaac`: `-V 90` - `-V 127` és `--no-delay --ignorelength` (egyéb kapcsolók használata tilos)
-      - 10.4.2.2) `FDK`: `-m 4` vagy `-m 5` (és `-cutoff 20000` ffmpeg-es libfdk_aac használata esetén)
+      - 10.4.2.2) `FDK`: `-m 4` vagy `-m 5` (és `-cutoff 20000` FFmpeg-es libfdk_aac használata esetén)
       - 10.4.2.3) `Nero`: `-q 40` - `-q 75`
-  - 10.5) Compatibility `AC3` (`DD`) track készülhet FFmpeg (4.1 vagy újabb) vagy Aften (2009-12-26 vagy újabb) segítségével is.
-  - 10.6) A hangok mintavételezését (sampling rate) tilos megváltoztatni!
-  - 10.7) Belső konverziók esetén meg kell tartani (vagy jobbat kell használni), mint az eredeti hang bitmélysége és mintavételezési rátája.
-  - 10.8) Ha a hangot nyújtani kell, előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. `hdtools compare`).
-  - 10.9) Resamplingre használható programok: `hdtools resample`, `eac3to`, `Sound Forge`, `Audacity`, `SoX` és `Adobe Audition`.
-  - 10.10) TimeStretchingre használható programok: `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge`, `SONAR` `élastique TimeStretch`, `Audacity`, `SoX` és `Adobe Audition`.
-  - 10.11) Commentary track maximum 2.0 lehet, `AC3` (`DD`) esetében maximum 192 kbps, `AAC` esetében 80-160 kbps.
-  - 10.12) Szegmentált kódolás használata TILOS!
-  - 10.13) `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`), `DTS`, `DTS-HD.MA` és `DTS-X` esetén a `dialnorm` értéket meg kell tartani!
-  - 10.14) Ha szükséges a forrás hang újrakódolása, és az veszteséges formátum (lossy) (`AC3`, `E-AC3`, `DTS`, stb.), akkor az újrakódolt hang bitrátája nem lehet magasabb, mint a forrásé.
-  - 10.15) `E-AC3` hang `AC3`-ba történő kódolásakor a megengedett bitráták az eredeti `1.7`-szereséhez legközelebb eső két bitráta (nagyjából ennyivel jobb a `DD+` algoritmus). Például: ha a forrás `DDP@192`, akkor `192 * 1.7 = 326.4`, tehát az `AC3` bitrátája lehet `320 kbps` vagy `384 kbps` vagy ha a forrás `DDP@256`, akkor `256 * 1.7 = 435.2`, tehát `384 kbps` és `448 kbps`-es `AC3` készíthető.
+  - 10.5) A hangok mintavételezését (sampling rate) tilos megváltoztatni!
+  - 10.6) Belső konverziók esetén meg kell tartani (vagy jobbat kell használni), mint az eredeti hang bitmélysége és mintavételezési rátája.
+  - 10.7) Ha a hangot nyújtani kell, előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. `hdtools compare`).
+    - 10.7.1) Resamplingre használható programok: `SoX`, `hdtools resample`, `eac3to`, `Sound Forge`, `Audacity` és `Adobe Audition`.
+    - 10.7.2) TimeStretchingre használható programok: `SoX`, `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge`, `SONAR` `élastique TimeStretch`, `Audacity` és `Adobe Audition`.
+  - 10.8) Szegmentált kódolás használata TILOS!
+  - 10.9) Commentary track maximum 2.0 lehet, `AC3` (`DD`) esetében maximum 192 kbps, `AAC` esetében 80-160 kbps.
+  - 10.10) `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`), `DTS`, `DTS-HD.MA` és `DTS-X` esetén a `dialnorm` értéket meg kell tartani!
+  - 10.11) `E-AC3` hang `AC3`-ba történő kódolásakor a megengedett bitráták az eredeti `1.7`-szereséhez legközelebb eső két bitráta (nagyjából ennyivel jobb a `DD+` algoritmus). Például: ha a forrás `DDP@192`, akkor `192 * 1.7 = 326.4`, tehát az `AC3` bitrátája lehet `320 kbps` vagy `384 kbps` vagy ha a forrás `DDP@256`, akkor `256 * 1.7 = 435.2`, tehát `384 kbps` és `448 kbps`-es `AC3` készíthető.
 
 ## 11) Feliratok
   - 11.1) Kizárólag `SRT` (SubRip), `SSA`/`ASS` és `PGS-SUP` formátumú feliratok megengedettek!
