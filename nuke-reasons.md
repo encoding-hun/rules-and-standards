@@ -21,6 +21,8 @@
       - `bad.res` = hibás felbontás
       - `bad.crop` = hibás cropolás
       - `bad.colorimetry` = `--colormatrix` hibás használata
+      - `bad.primaries` = `--primaries` hibás használata
+      - `bad.transfer` = `--transfer` hibás használata
       - `bad.deinterlace` = hibás deinterlace-elés, általában sávozódó videó és/vagy egyéb képi artifactek
       - `bad.ivtc` = vegyes félképek hibás eltávolítása
       - `dupe.frames` = duplázott képkockák, általában hibás deinterlace-elés/IVTC eredménye (kivétel, ha a forrás is ilyen és nem érhető el jobb, pl. BBC iPlayer; ilyen esetekben javasolt egy újrakódolt release készítése `READ.NFO` tag használata mellett)
