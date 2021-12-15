@@ -148,7 +148,7 @@
     - 6.11.1) Ez alól kivételt képeznek az LPCM hangok, amiket kötelező `TrueHD`, `DTS-HD.MA` vagy `FLAC` formátumba vagy kommentár esetén akár `AAC` formátumba konvertálni.
   - 6.12) A hangsávok eredeti csatornaszámát meg kell tartani!
   - 6.13) A maximális megengedett hangcsúszás 100 ms.
-  - 6.14) Audiokommentár megtartása opcionális, formátuma kizárólag AC3 (`DD`) vagy `AAC` lehet és maximum 2.0.
+  - 6.14) Audiokommentár megtartása opcionális.
   - 6.15) Amennyiben a forrás audió megtartható újrakódolás nélkül, úgy annak újrakódolása tilos. (pl. a forrás megengedett formátumú és nem kell nyújtani.)
   - 6.16) Egy másik forrásból származó hang akkor számít jobb minőségűnek, hogyha a lowpass (cutoff) frekvencia 16 kHz alatt legalább 1 kHz-el, 16 kHz felett legalább 1.5 kHz-el magasabb, és a többlet adat nem sztochasztikus (dithering miatt belekerülő) zaj. Ha ez teljesül, akkor készíthető új release, egyéb esetben `dupe`. Kérdéses esetekben proofként egy-egy spektrum mutatása szükséges a két hangról.
     - 6.16.1) Ez alól kivétel, hogyha az alacsonyabb lowpass-szel rendelkező hang minősége hallhatóan jobb.
