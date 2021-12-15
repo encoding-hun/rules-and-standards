@@ -43,7 +43,7 @@
       - `wrong.ref = insufficient.ref` = kevés referenciakép használata
       - `wrong.bframes = insufficient.bframes` = 5 (HD)/8 (SD)-nál kevesebb egymás utána B frame
       - `not.dxva` = nem DXVA kompatibilis videó
-      - `wrong.level` = L4.1-nél magasabb Level használata
+      - `wrong.level` = nem megfelelő Level használata encode esetén (x264: SD = L4.1; HD < 60 fps = L4.1; HD > 60 fps = L4.2; x265: L5.1)
       - `no.8x8dct` = 8x8-as DCT transzformáció kikapcsolása
       - `wrong.partitions` = kevés partíció használata
       - `wrong.me` = `umh`-nál rosszabb mozgáskereső algoritmus használata
