@@ -10,7 +10,7 @@
   - [tMod r3075](https://github.com/jpsdr/x264/releases)
   - [Patman r3079](https://github.com/Patman86/x264-Mod-by-Patman/releases)
   - [kMod r3059](https://github.com/cshmnyfy/x264-kMod-patches/releases)
-  - [aMod r3059](https://github.com/DJATOM/x264-aMod)
+  - [aMod r3059](https://github.com/DJATOM/x264-aMod/releases)
 - x265
   - [vanilla 3.5+20](http://msystem.waw.pl/x265/)
   - [Patman 3.5+21](https://github.com/Patman86/x265-Mod-by-Patman/releases)
