@@ -23,8 +23,8 @@
 
 ### AviSynth+
 - [AviSynth+ official build](https://github.com/AviSynth/AviSynthPlus/releases) | [béta buildek](https://forum.doom9.org/showthread.php?t=181351)
-- [Avisynth+ 3.7.0 (r3474) clang build](https://cloud01.opsdata.ch/index.php/s/xeMjWNC6biXcoeC) | [mirror](https://drive.google.com/drive/folders/1oJunPPq9C30d-ZIb_7RgXaFFaGujMoJY)
-  - ~15%-kal gyorsabb az official buildnél.
+- [Avisynth+ 3.7.1 (r3584) clang build](https://cloud01.opsdata.ch/index.php/s/xeMjWNC6biXcoeC) | [mirror](https://drive.google.com/drive/folders/1oJunPPq9C30d-ZIb_7RgXaFFaGujMoJY)
+  - ~7%-kal gyorsabb az official buildnél.
   - A telepítéséhez először telepítsük az official buildet, majd futtassuk az `avisynth_updater.bat` fájlt admin módban.
 - [AviSynth+ plugin pack](https://gitlab.com/uvz/AviSynthPlus-Plugins-Scripts) | [pluginok és scriptek listája](https://docs.google.com/spreadsheets/d/1-R-LZ2U5y6N6gV40PuYWQvXBzKCeGZ8iGDmQGpT85Jw)
 - [DevIL 1.8.0 SDK](http://openil.sourceforge.net/download.php)
