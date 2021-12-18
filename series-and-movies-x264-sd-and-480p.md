@@ -82,7 +82,7 @@
     - release készítésének ideje
     - eredeti cím
     - IMDb URL
-    - a release mérete (csak a fő mkv fájl(ok), `B`, `kB`, `MB`, `GB`, `KiB`, `MiB` és `GiB` elfogadott)
+    - hossz (másodperc megadása nem kötelező), sorozat esetén átlag hossz és/vagy összes hossz
     - videó forrása, `WEB` esetén oldal megjelölése
     - videóhoz használt encoder
     - videó felbontása
