@@ -5,7 +5,7 @@
 - [DGDecNV](http://rationalqm.us/dgdecnv/binaries/)
 - [DGMPGDec](http://rationalqm.us/dgmpgdec/)
 - x264
-  - [vanilla r3079](https://artifacts.videolan.org/x264/release-win64/)
+  - [vanilla r3081](https://artifacts.videolan.org/x264/release-win64/)
   - [tMod r3079](https://emma.cloud.tabdigital.eu/s/SK5WoB6mmcwtLJn) | [mirror](https://drive.google.com/file/d/1GwOfLl8Vdf0H0jgDYA5QvkGUpeAN8U-0)
   - [tMod r3075](https://github.com/jpsdr/x264/releases)
   - [Patman r3079](https://github.com/Patman86/x264-Mod-by-Patman/releases)
@@ -13,7 +13,7 @@
   - [aMod r3059](https://github.com/DJATOM/x264-aMod/releases)
 - x265
   - [vanilla 3.5+20](http://msystem.waw.pl/x265/)
-  - [Patman 3.5+21](https://github.com/Patman86/x265-Mod-by-Patman/releases)
+  - [Patman 3.5+21+12](https://github.com/Patman86/x265-Mod-by-Patman/releases)
   - [aMod 3.5+20](https://github.com/DJATOM/x265-aMod/releases/)
   - [Yuuki 3.5+2](https://down.7086.in/x265-Yuuki-Asuna/)
 - [AvsPmod](https://github.com/gispos/AvsPmod/releases)
