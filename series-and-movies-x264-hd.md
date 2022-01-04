@@ -169,7 +169,7 @@
   - 8.14) Kizárólag 1:1 oldalarányú pixelek használata megengedett (`--sar 1:1`).
   - 8.15) A keyframe-ek közötti maximális távolság (`--keyint`) `FPS*20` lehet (`FPS*10` ajánlott, default); minimum `FPS*5` adható meg.
   - 8.16) `--min-keyint` értéke legalább `FPS/2`, maximum `FPS*2` lehet (`floor(FPS)` ajánlott, default).
-  - 8.17) ColorMatrixot, amennyiben a forrás tartalmaz erre vonatkozó információt KÖTELEZŐ flagelni (tipikusan `BT.709`), amennyiben nem, úgy `undef`-en kell hagyni.
+  - 8.17) ColorMatrixot, amennyiben a forrás tartalmaz erre vonatkozó információt KÖTELEZŐ flagelni (tipikusan `BT.709`), amennyiben nem, úgy ajánlott `undef`-en hagyni vagy `BT.709`-nek lehet flagelni.
   - 8.18) ColorPrimaries és TransferFunction flagelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod, mit csinálsz). Használata esetén a forrással egyezőre kell állítani. Bővebb infó: [**mod16.org**](https://mod16.org/hurfdurf/?p=116) | [**mirror**](files/color-coefficient.md)
   - 8.19) A maximálisan megengedett referenciaképek számának használata kötelező (--ref).
     - 8.19.1) `--preset veryslow`/`placebo` magától kiszámolja a legnagyobbat, ami még nem töri meg a kompatibilitást. (Érdemes így csinálni, és akkor nem kell manuálisan számolni.)
