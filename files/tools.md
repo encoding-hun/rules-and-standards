@@ -53,14 +53,17 @@
 - AegiSub
   - [Daydream Cafe Edition](https://github.com/Ristellise/AegisubDC/releases)
   - [TypesettingTools](https://github.com/TypesettingTools/Aegisub) | [buildek](https://thevacuumof.space/builds/)
-  - [official](https://github.com/Aegisub/Aegisub/releases) (régi!)
+  - [official](https://github.com/Aegisub/Aegisub/releases) *(régi!)*
 - [Notepad++](https://notepad-plus-plus.org/downloads/)
 - Subtitle WorkShop
   - [6.0e](https://sourceforge.net/projects/subtitle-workshop-classic) | [mirror](https://www.videohelp.com/software/Subtitle-Workshop)
-  - [6.0b official](http://subworkshop.sourceforge.net/) (régi!)
+  - [6.0b official](http://subworkshop.sourceforge.net/) *(régi!)*
 
 # NFO
 - [PabloDraw](http://picoe.ca/products/pablodraw)
 - [Moebius](https://github.com/blocktronics/moebius/releases)
 - [neovim](https://github.com/neovim/neovim/releases)
   - A helyes megjelenítéshez a `~/.config/nvim/init.vim` fájlba rakjuk be a következő sort: `autocmd BufReadPre *.nfo :setlocal fileencodings=cp437,utf-8`
+
+# Comparison
+- [compup-nc](https://github.com/pcroland/compup-nc) *(comparison feltöltő nCore-ra és BitHUmenre)*
