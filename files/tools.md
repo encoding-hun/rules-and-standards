@@ -16,7 +16,6 @@
   - [Patman 3.5+21+12](https://github.com/Patman86/x265-Mod-by-Patman/releases)
   - [aMod 3.5+20](https://github.com/DJATOM/x265-aMod/releases/)
   - [Yuuki 3.5+2](https://down.7086.in/x265-Yuuki-Asuna/)
-- [AvsPmod](https://github.com/gispos/AvsPmod/releases)
 - [ffmpeg](https://ffmpeg.org/download.html)
 - [VideoReDo TVSuite](https://ncore.pro/torrents.php?action=details&id=3248269) | [béta buildek](https://www.videoredo.net/msgBoard/index.php?resources/videoredo-tvsuite-v6-beta.3/)
 - [tsMuxer](https://github.com/justdan96/tsMuxer/releases)
@@ -26,6 +25,7 @@
 - [Avisynth+ 3.7.1 (r3593) clang build](https://cloud01.opsdata.ch/index.php/s/xeMjWNC6biXcoeC) | [mirror](https://drive.google.com/drive/folders/1oJunPPq9C30d-ZIb_7RgXaFFaGujMoJY)
   - ~7%-kal gyorsabb az official buildnél.
   - A telepítéséhez először telepítsük az official buildet, majd futtassuk az `avisynth_updater.bat` fájlt admin módban.
+- [AvsPmod](https://github.com/gispos/AvsPmod/releases)
 - [AviSynth+ plugin pack](https://gitlab.com/uvz/AviSynthPlus-Plugins-Scripts) | [pluginok és scriptek listája](https://docs.google.com/spreadsheets/d/1-R-LZ2U5y6N6gV40PuYWQvXBzKCeGZ8iGDmQGpT85Jw)
 - [DevIL 1.8.0 SDK](http://openil.sourceforge.net/download.php)
   - 32 bites AviSynth+ esetén másoljuk a `lib\x86\Release`-ben található `DevIL.dll`-t a `C:\Windows\SysWOW64` mappába.
