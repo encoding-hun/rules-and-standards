@@ -55,6 +55,7 @@
     - 2.10.4) `WEB-DLRip` megjelölés TILTOTT, `WEB-DL`-ből kódolt Rip = `WEBRip`
   - 2.11) `[dynrng]` értéke lehet: `SDR`, `HDR`, `HDR10Plus` (`HDR10+`), `HLG`, `DV` (`Dolby.Vision`, `DoVi`).
     - 2.11.1) `SDR` esetén a taggelés opcionális.
+    - 2.11.2) Ha egy tartalom Dolby Vision és HDR(10+) metadatával is rendelkezik úgy vagy `DV`-nek kell taggelni és NFO-ban jelezni, hogy van HDR/SDR compatibility layer vagy mindegyik tagnek meg kell jelennie, pl. `DV.HDR`.
   - 2.12) `Rip`, `RiP` és `RIP` megjelölés is elfogadott.
   - 2.13) `REPACK` (`Repack`) és `RERiP` (`Rerip`) tagok használata kötelező, ha saját release-t javít valaki.
   - 2.14) `iNT` vagy `iNTERNAL` tag használata DUPE elkerülésére TILOS!
