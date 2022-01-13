@@ -5,7 +5,7 @@
 
 ## 1) Általános
   - 1.1) Tilos a DUPE, azaz a korábbival megegyező (vagy közel azonos) minőségű release készítése.
-  - 1.2) Kizárólag `.mkv` konténer használata elfogadott; kivétel Dolby Vision-t tartalmazó encode-ok (itt `.mp4` és `.ts` konténer is megengedett).
+  - 1.2) Kizárólag `.mkv` konténer használata elfogadott; kivétel Dolby Vision-t tartalmazó encode-ok (itt `.mp4` és `.m2ts/.ts` konténer is megengedett).
     - 1.2.1) Ajánlott muxer: MKVToolNix (mkvmerge). Törekedjünk a lehető legfrissebb változat használatára.
     - 1.2.2) Header compression használata TILOS.
   - 1.3) A film csonkítása, trimmelése TILOS.
