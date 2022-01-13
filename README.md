@@ -4,7 +4,7 @@
 | [**x264 SD és 480p**](series-and-movies-x264-sd-and-480p.md)  | 2021.12.15.      | 2020.02.19.       |
 | [**x264 HD**](series-and-movies-x264-hd.md)                   | 2022.01.04.      | 2020.02.19.       |
 | [**x265 UHD-HD**](series-and-movies-x265-hd-uhd.md)           | 2022.01.09.      | 2020.06.14.       |
-| [**REMUX**](series-and-movies-remux.md)                       | 2021.12.15.      | 2020.06.14.       |
+| [**REMUX**](series-and-movies-remux.md)                       | 2022.01.13.      | 2020.06.14.       |
 | **DVD, MP3 és lossless audio** (korábbi szabályzat érvényben) |                  |                   |
 
 ## [Nuke indokok](nuke-reasons.md)
