@@ -72,4 +72,5 @@
 - [Aicha - Advanced Encoding Guide](https://silentaperture.gitlab.io/mdbook-guide)
 - [UHDBits - The Encoding Guide](https://encoding-guide.neocities.org/)
 - [Irrational-Encoding-Wizardry - Fansubbing Guide](https://guide.encode.moe/)
+- [x264 settings](http://www.chaneru.com/Roku/HLS/X264_Settings.htm)
 - [BodoiCuHo -  x264 Encoding Guide](https://bodoicuho.ucoz.ru/) *(outdated)*
