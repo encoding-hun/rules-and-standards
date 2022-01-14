@@ -19,6 +19,8 @@
 - [ffmpeg](https://ffmpeg.org/download.html)
 - [VideoReDo TVSuite](https://ncore.pro/torrents.php?action=details&id=3248269) | [béta buildek](https://www.videoredo.net/msgBoard/index.php?resources/videoredo-tvsuite-v6-beta.3/)
 - [tsMuxer](https://github.com/justdan96/tsMuxer/releases)
+- [dovi_tool](https://github.com/quietvoid/dovi_tool/releases)
+- [hdr10plus_tool](https://github.com/quietvoid/hdr10plus_tool/releases)
 
 ### AviSynth+
 - [AviSynth+ official build](https://github.com/AviSynth/AviSynthPlus/releases) | [béta buildek](https://forum.doom9.org/showthread.php?t=181351)
