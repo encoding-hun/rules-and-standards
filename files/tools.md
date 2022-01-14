@@ -68,6 +68,8 @@
 # Comparison
 - [compup-nc](https://github.com/pcroland/compup-nc) *(comparison feltöltő nCore-ra és BitHUmenre)*
 
-# Guide-ok
-- [Aicha Advanced Encoding Guide](https://silentaperture.gitlab.io/mdbook-guide) *(filtering, encoding)*
-- [BodoiCuHo x264 Encoding Guide](https://bodoicuho.ucoz.ru/) *(outdated)*
+# Guides
+- [Aicha - Advanced Encoding Guide](https://silentaperture.gitlab.io/mdbook-guide)
+- [UHDBits - The Encoding Guide](https://encoding-guide.neocities.org/)
+- [Irrational-Encoding-Wizardry - Fansubbing Guide](https://guide.encode.moe/)
+- [BodoiCuHo -  x264 Encoding Guide](https://bodoicuho.ucoz.ru/) *(outdated)*
