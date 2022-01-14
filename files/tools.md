@@ -6,7 +6,7 @@
 - [DGMPGDec](http://rationalqm.us/dgmpgdec/)
 - x264
   - [vanilla r3081](https://artifacts.videolan.org/x264/release-win64/)
-  - [tMod r3079](https://emma.cloud.tabdigital.eu/s/SK5WoB6mmcwtLJn) | [mirror](https://drive.google.com/file/d/1GwOfLl8Vdf0H0jgDYA5QvkGUpeAN8U-0)
+  - [tMod r3081](https://emma.cloud.tabdigital.eu/s/SK5WoB6mmcwtLJn) | [mirror](https://drive.google.com/file/d/1GwOfLl8Vdf0H0jgDYA5QvkGUpeAN8U-0)
   - [tMod r3075](https://github.com/jpsdr/x264/releases)
   - [Patman r3079](https://github.com/Patman86/x264-Mod-by-Patman/releases)
   - [kMod r3059](https://github.com/cshmnyfy/x264-kMod-patches/releases)
