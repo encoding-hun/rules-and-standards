@@ -9,7 +9,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | eszinhaz.hu                     | `ESZH`    |
 | rtlmost.hu                      | `RTLM`    |
 | sonymax.hu                      | `SMAX`    |
-| tvgo.hu                         | `TVGO`    |
+| telekomtvgo.hu                  | `TVGO`    |
 | tv2.hu                          | `TV2`     |
 | filmboxlive.com                 | `FBL`     |
 | spilerextra.hu                  | `SPLR`    |
