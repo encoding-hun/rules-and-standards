@@ -11,7 +11,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | sonymax.hu                      | `SMAX`    |
 | telekomtvgo.hu                  | `TVGO`    |
 | tv2.hu                          | `TV2`     |
-| filmboxlive.com                 | `FBL`     |
+| filmbox.com                     | `FBP`     |
 | spilerextra.hu                  | `SPLR`    |
 ## Nemzetközi (BTN Web Content Guidelines alapján)
 | oldal                           | rövidítés |
