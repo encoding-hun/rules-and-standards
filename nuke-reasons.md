@@ -20,7 +20,7 @@
     - 2.1.1) Video:
       - `bad.res` = hibás felbontás
       - `bad.crop` = hibás cropolás
-      - `bad.colorimetry` = `--colormatrix` hibás használata
+      - `bad.colorimetry = bad.colormatrix` = `--colormatrix` hibás használata
       - `bad.primaries` = `--primaries` hibás használata
       - `bad.transfer` = `--transfer` hibás használata
       - `bad.deinterlace` = hibás deinterlace-elés, általában sávozódó videó és/vagy egyéb képi artifactek
