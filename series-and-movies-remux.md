@@ -103,6 +103,9 @@
   `(UHD)` `BluRay` > `HDDVD`, `DTheater`
   - 4.3) Amennyiben jobb minőségű BD elérhető, mint amiből a korábbi release készült, ezt `READ.NFO` taggel jelezni kell.
   - 4.4) Muxolni kizárólag olyan már kész release-re szabad, amely megfelel ezen szabályzatban rögzített pontoknak. Törekedni kell az elérhető legjobb minőségű release felhasználására!
+  - 4.5) Ha egy videóból már készült `DV` és `HDR` sávot is tartalmazó `SL` `Profile 8.1`-es release (`DV.HDR`), úgy külön csak `DV` (`Profile 5`) és csak `HDR`-t tartalmazó release későbbi kiadása már DUPE.
+    - 4.5.1) `DL` és `SL` nem DUPE-olja egymást.
+    - 4.5.2) Ha egy videóból létezik `DL` `DV` release, de `SL` `DV.HDR` még nem, akkor kiadható külön csak `HDR` release, de javasolt a két sáv megfelelő egyesítése és `DV.HDR` release készítése.
 
 ## 5) Videó
   - 5.1) A videó újrakódolása SZIGORÚAN TILOS!
