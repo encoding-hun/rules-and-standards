@@ -57,6 +57,7 @@
     - 2.13.1) `SDR` taggelése opcionális.
   - 2.14) Dolby Vision-re elfogadott tagek: `DV`, `Dolby.Vision`, `DoVi`.
   - 2.15) Dolby Vision esetén opcionálisan fel lehet tüntetni, hogy single (`SL`) vagy dual layer (`DL`) a kép.
+    - 2.15.2) Ha egy `SL` tartalom Dolby Vision és HDR(10+) metadatával is rendelkezik úgy vagy `DV`-nek kell taggelni és NFO-ban jelezni, hogy van HDR/SDR compatibility layer vagy mindegyik tagnek meg kell jelennie, pl. `DV.HDR`.
   - 2.16) Ha a hangsáv tartalmaz Atmos kiegészítést, úgy azt `Atmos` taggel jelölni kell.
   - 2.17) `PROPER` = más hibás munkájának javítása; `REPACK` = saját hiba javítása
     - 2.17.1) `PROPER` release-re érkező `PROPER`-t `REAL.PROPER`-nek kell tagelni (és így tovább a későbbieket, pl. `REAL.REAL.PROPER`).
