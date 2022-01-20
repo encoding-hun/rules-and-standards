@@ -112,6 +112,7 @@
   - 4.4) Amennyiben jobb minőségű UHD BD elérhető, mint amiből a korábbi release készült, ezt `READ.NFO` taggel jelezni kell.
   - 4.5) Ha az UHD forrás SDR, akkor kizárólag 2160p készíthető x265-tel, az 1080p-t x264-el kell elkészíteni (lásd másik szabályzat).
   - 4.6) Muxolni kizárólag olyan már kész release-re szabad, amely megfelel ezen szabályzatban rögzített pontoknak (kivéve az x265 verziójára vonatkozó szabálypont korábbi, minőségi encode esetén). Törekedni kell az elérhető legjobb minőségű encode felhasználására!
+  - 4.7) Ha egy videóból már készült `DV` és `HDR` sávot is tartalmazó `Profile 8.1`-es release (`DV.HDR`), úgy külön csak `DV` (`Profile 5`) és csak `HDR`-t tartalmazó release későbbi kiadása már DUPE.
 
 ## 5) Videó
   - 5.1) Már kész release alacsonyabb felbontással való újrakódolása SZIGORÚAN TILOS!
