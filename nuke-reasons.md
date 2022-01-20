@@ -32,7 +32,7 @@
       `Interleave(last, last.AutoResize("720").AutoResize("1080").Subtitle("1080 -> 720 -> 1080"))` (720p upscale)\
       `Interleave(last, last.AutoResize("480").AutoResize("1080").Subtitle("1080 -> 480 -> 1080"))` (480p upscale)\
       (AutoResize z_Spline36Resize-t használ alapértelmezetten)
-      - `tonemapped` = UHD forrásból tonemapping segítségével készített 8 bites videó
+      - `tonemapped` = UHD forrásból tonemapping (HDR->SDR) segítségével készített 8 bites videó
       - `forbidden.encoder` = tiltott encoder használata
       - `compressed.src` = már tömörített forrás használata
       - `bad.video` = a kész encode tömörítési hibákat tartalmaz; nem YUV420 formátumú
