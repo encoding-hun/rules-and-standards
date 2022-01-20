@@ -168,7 +168,7 @@
   - 8.8) Kizárólag 8 bites YUV420 (YV12) videó megengedett.
   - 8.9) Kizárólag 2pass és CRF kódolások megengedettek.
   - 8.10) Szegmentált kódolás TILOS!
-  - 8.11) `level 4.1`-et kell használni.
+  - 8.11) `level 4.1`-et és `High Profile`-t kell használni.
   - 8.12) Zónák használata megengedett.
   - 8.13) GPU encoding minden formája TILTOTT!
   - 8.14) Kizárólag 1:1 oldalarányú pixelek használata megengedett (`--sar 1:1`).
