@@ -178,7 +178,7 @@
   - 8.15) A keyframe-ek közötti maximális távolság (`--keyint`) `FPS*20` lehet (`FPS*10` ajánlott, default).
   - 8.16) `--min-keyint` értéke legalább `FPS/2`, maximum `FPS*2` lehet (`floor(FPS)` ajánlott, default).
   - 8.17) Színadatok forrással egyező flaggelése KÖTELEZŐ!
-    - 8.18) Megadandó paraméterek: `--colorprim`, `--transfer`, `--colormatrix`, `--chromaloc`, `--master-display`, `--max-cll`.
+    - 8.17.1) Megadandó paraméterek: `--colorprim`, `--transfer`, `--colormatrix`, `--chromaloc`, `--master-display`, `--max-cll`.
   - 8.18) Range megadása kötelező: `--range` (általában `limited`).
   - 8.19) `--ref` értéke maximum `6`, minimum `4` lehet.
     - 8.19.1) 1080p esetén `--ref` értéke kizárólag `6` lehet.
