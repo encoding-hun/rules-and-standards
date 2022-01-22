@@ -187,32 +187,32 @@
   - 8.22) `--dynamic-rd` használata megengedett.
   - 8.23) `--ctu` értéke minimum `32`.
   - 8.24) `--rect` és `--amp` (aszimmetrikus partíciók) használata megengedett.
-  - 8.24) `--limit-refs` értéke maximum `2` lehet ha `--rect` és `--amp` be van kapcsolva, egyébként `1`.
-  - 8.25) Early skip, split RD, tskip-fast, adaptív frameduplikálás bekapcsolása TILOS (`--no-early-skip`, `--no-splitrd-skip`, `--no-tskip-fast`, `--no-frame-dup`, default)!
-  - 8.26) `--max-merge` értéke legalább `2`.
-  - 8.27) `--subme` értéke legalább `3`.
-  - 8.28) `--merange` értéke legalább `32`.
-  - 8.29) `--weightp` használata KÖTELEZŐ, `--weightb` használata ajánlott.
-  - 8.30) `--psy-rd` és `--psy-rdoq` kikapcsolása TILOS!
-  - 8.31) `--rc-lookahead` értéke nem lehet `FPS`-nél kisebb.
-  - 8.32) `--lookahead-slices` maximum `4` lehet 2160p esetén és maximum `2` 1080p esetén.
-  - 8.33) `--vbv-maxrate` és `--vbv-bufsize` értéke nem haladhatja meg a `160000`-et és egyik sem lehet kisebb, mint `100000`.
-  - 8.34) Adaptív kvantálás használata kötelező! `--aq-mode=1`/`2`/`3`/`4` (`3` vagy `4` ajánlott).
-  - 8.35) `--hevc-aq` és `--aq-motion` használata egyelőre nem javasolt.
-  - 8.36) `--qg-size` mérete nem lehet nagyobb, mint `32`.
-  - 8.37) `--deblock` kikapcsolása TILOS. Ajánlott beállítás filmek esetén: `-3:-3`.
-  - 8.38) SAO kikapcsolása ajánlott (`--no-sao --selective-sao 0`).
-  - 8.39) Mindenképpen high tier-t kell használni (`--high-tier`), be kell kapcsolni a header ismétlést (`--repeat-headers`), be kell kapcsolni az access unit delimitert (`--aud`) és a HRD adatok továbbítását (`--hrd`).
-  - 8.40) `--uhd-bd` kapcsoló használata TILOS!
-  - 8.41) HDR esetén `--hdr10` és `--hdr10-opt` kapcsolók használata KÖTELEZŐ.
-  - 8.42) HDR10Plus esetén kizárólag `--dhdr10-info` használható, `--dhdr10-opt` használata TILOS!
-  - 8.43) A készített release bitrátája nem lehet nagyobb, mint a forrásé.
-    - 8.43.1) Kivételt képeznek az olyan hybrid release-ek, melyek több forrás felhasználásával készülnek.
-  - 8.44) A videó bitrátáját vagy CRF értékét úgy kell megválasztani, hogy a képminőség transzparens legyen (amennyire lehet) a forráshoz képest.
-  - 8.45) Ajánlott frameserverek: AviSynth+ és VapourSynth.
-  - 8.46) UHDTV forrás esetén logók maszkolása megengedett (pl. `InpaintFunc`).
-  - 8.47) A stáblista, amennyiben nem tartalmaz extra jelenetet, kódolható alacsonyabb bitrátával.
-  - 8.48) A `WEB-DL`-ek felmentést élveznek az összes 8-as pontbeli szabály alól, kivéve a 8.7-est.
+  - 8.25) `--limit-refs` értéke maximum `2` lehet ha `--rect` és `--amp` be van kapcsolva, egyébként `1`.
+  - 8.26) Early skip, split RD, tskip-fast, adaptív frameduplikálás bekapcsolása TILOS (`--no-early-skip`, `--no-splitrd-skip`, `--no-tskip-fast`, `--no-frame-dup`, default)!
+  - 8.27) `--max-merge` értéke legalább `2`.
+  - 8.28) `--subme` értéke legalább `3`.
+  - 8.29) `--merange` értéke legalább `32`.
+  - 8.30) `--weightp` használata KÖTELEZŐ, `--weightb` használata ajánlott.
+  - 8.31) `--psy-rd` és `--psy-rdoq` kikapcsolása TILOS!
+  - 8.32) `--rc-lookahead` értéke nem lehet `FPS`-nél kisebb.
+  - 8.33) `--lookahead-slices` maximum `4` lehet 2160p esetén és maximum `2` 1080p esetén.
+  - 8.34) `--vbv-maxrate` és `--vbv-bufsize` értéke nem haladhatja meg a `160000`-et és egyik sem lehet kisebb, mint `100000`.
+  - 8.35) Adaptív kvantálás használata kötelező! `--aq-mode=1`/`2`/`3`/`4` (`3` vagy `4` ajánlott).
+  - 8.36) `--hevc-aq` és `--aq-motion` használata egyelőre nem javasolt.
+  - 8.37) `--qg-size` mérete nem lehet nagyobb, mint `32`.
+  - 8.38) `--deblock` kikapcsolása TILOS. Ajánlott beállítás filmek esetén: `-3:-3`.
+  - 8.39) SAO kikapcsolása ajánlott (`--no-sao --selective-sao 0`).
+  - 8.40) Mindenképpen high tier-t kell használni (`--high-tier`), be kell kapcsolni a header ismétlést (`--repeat-headers`), be kell kapcsolni az access unit delimitert (`--aud`) és a HRD adatok továbbítását (`--hrd`).
+  - 8.41) `--uhd-bd` kapcsoló használata TILOS!
+  - 8.42) HDR esetén `--hdr10` és `--hdr10-opt` kapcsolók használata KÖTELEZŐ.
+  - 8.43) HDR10Plus esetén kizárólag `--dhdr10-info` használható, `--dhdr10-opt` használata TILOS!
+  - 8.44) A készített release bitrátája nem lehet nagyobb, mint a forrásé.
+    - 8.44.1) Kivételt képeznek az olyan hybrid release-ek, melyek több forrás felhasználásával készülnek.
+  - 8.45) A videó bitrátáját vagy CRF értékét úgy kell megválasztani, hogy a képminőség transzparens legyen (amennyire lehet) a forráshoz képest.
+  - 8.46) Ajánlott frameserverek: AviSynth+ és VapourSynth.
+  - 8.47) UHDTV forrás esetén logók maszkolása megengedett (pl. `InpaintFunc`).
+  - 8.48) A stáblista, amennyiben nem tartalmaz extra jelenetet, kódolható alacsonyabb bitrátával.
+  - 8.49) A `WEB-DL`-ek felmentést élveznek az összes 8-as pontbeli szabály alól, kivéve a 8.7-est.
 
 ## 9) Audió
   - 9.1) Magyar hangsávot tartalmazó release esetén kötelező a `HUN` (`Hun`) tag használata.
