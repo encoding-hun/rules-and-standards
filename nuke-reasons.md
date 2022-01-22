@@ -20,13 +20,13 @@
     - 2.1.1) Video:
       - `bad.res` = hibás felbontás
       - `bad.crop` = hibás cropolás
-      - `bad.colorimetry = bad.colormatrix` = `--colormatrix` hibás használata
+      - `bad.colorimetry, bad.colormatrix` = `--colormatrix` hibás használata
       - `bad.primaries` = `--primaries` hibás használata
       - `bad.transfer` = `--transfer` hibás használata
       - `bad.deinterlace` = hibás deinterlace-elés, általában sávozódó videó és/vagy egyéb képi artifactek
       - `bad.ivtc` = vegyes félképek hibás eltávolítása
       - `dupe.frames` = duplázott képkockák, általában hibás deinterlace-elés/IVTC eredménye (kivétel, ha a forrás is ilyen és nem érhető el jobb, pl. BBC iPlayer; ilyen esetekben javasolt egy újrakódolt release készítése `READ.NFO` tag használata mellett)
-      - `bitstarved = undersized` = szükségesnél jelentősen alacsonyabb bitráta
+      - `bitstarved, undersized` = szükségesnél jelentősen alacsonyabb bitráta
       - `bloated = oversized` = szükségesnél jelentősen magasabb bitráta
       - `upscaled` = felskálázott kép (forrás és kész encode is) példák kép felskálázottság ellenőrzésére:\
       `Interleave(last, last.AutoResize("720").AutoResize("1080").Subtitle("1080 -> 720 -> 1080"))` (720p upscale)\
@@ -41,13 +41,13 @@
       - `wrong.fps = bad.fps` = hibás FPS használata
       - `wrong.resizer` = nem megfelelő resizer használata (pl. `Nearest Neighbor`, `Bilinear`, `Bicubic`)
       - `wrong.ref = insufficient.ref` = kevés referenciakép használata
-      - `wrong.bframes = insufficient.bframes` = 5 (HD)/8 (SD)-nál kevesebb egymás utána B frame
+      - `wrong.bframes, insufficient.bframes` = 5 (HD)/8 (SD)-nál kevesebb egymás utána B frame
       - `not.dxva` = nem DXVA kompatibilis videó
       - `wrong.level` = nem megfelelő Level használata encode esetén (x264: SD = L4.1; HD < 60 fps = L4.1; HD >= 60 fps = L4.2; x265: L5.1)
       - `no.8x8dct` = 8x8-as DCT transzformáció kikapcsolása
       - `wrong.partitions` = kevés partíció használata
       - `wrong.me` = `umh`-nál rosszabb mozgáskereső algoritmus használata
-      - `wrong.merange = insufficient.merange` = túl kicsi mozgáskeresési vektor használata (20 (HD)/24 (SD)-nél kevesebb)
+      - `wrong.merange, insufficient.merange` = túl kicsi mozgáskeresési vektor használata (20 (HD)/24 (SD)-nél kevesebb)
       - `wrong.sar` = nem négyzet alakú pixelek használata
       - `wrong.range` = nem Limited color range használata
       - `no.deblock` = deblock filter kikapcsolása
