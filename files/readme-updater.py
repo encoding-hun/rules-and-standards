@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-from pathlib import Path
-from rich import print
 import os
-import time
-import subprocess
-import sys
 import re
+import subprocess
+from pathlib import Path
+
+from rich import print
 
 # groups and sites for README.md
 sites = []
