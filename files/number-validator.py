@@ -13,7 +13,7 @@ def printexit(number):
 
 def validate(f):
     print(f'[bold green]{f}: [/bold green]', end='')
-    t = Path(os.path.join('..', f)).read_text()
+    t = Path(os.path.join(os.path.dirname(__file__), '..', f)).read_text()
     numbers = re.findall('(?:  -|##) ([0-9.]+)\)', t)
     for n in range(1, len(numbers)):
         p = numbers[n - 1]
