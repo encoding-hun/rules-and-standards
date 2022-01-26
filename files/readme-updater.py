@@ -8,7 +8,7 @@ from rich import print
 
 # groups and sites for README.md
 sites = []
-groups = ['Legacy', 'pcroland', 'NFC', 'NaGa', 'boOk', 'SFY', 'PTHD', 'FULCRUM', 'DenZo', 'ARROW', 'prldm', 'VARYG', '14V1', 'NYH']
+groups = ['Legacy', 'pcroland', 'NFC', 'NaGa', 'boOk', 'SFY', 'PTHD', 'FULCRUM', 'DenZo', 'ARROW', 'prldm', 'VARYG', '14V1', 'NYH', 'GS88']
 banned_groups = []
 
 
@@ -27,9 +27,9 @@ def main():
     print(f'sorted deduplicated groups:\n[cyan]{", ".join(grps)}[/cyan]')
     print(f'sorted deduplicated sites:\n[cyan]{", ".join(sts)}[/cyan]')
     print(f'sorted deduplicated banned groups:\n[cyan]{", ".join(bgrps)}[/cyan]')
-    grps = f'`{"`, `".join(grps)}`\n' if grps else ''
-    bgrps = f'`{"`, `".join(bgrps)}`\n' if bgrps else ''
-    sts = f'`{"`, `".join(sts)}`\n' if sts else ''
+    grps_j = f'`{"`, `".join(grps)}`\n' if grps else ''
+    bgrps_j = f'`{"`, `".join(bgrps)}`\n' if bgrps else ''
+    sts_j = f'`{"`, `".join(sts)}`\n' if sts else ''
 
     t1 = gettime('series-and-movies-x264-sd-and-480p.md')
     t2 = gettime('series-and-movies-x264-hd.md')
@@ -49,12 +49,12 @@ def main():
 
 ## [Toolok](files/tools.md)
 
-## Csapatok, akik aláírták és tudomásul vették (ábécé sorrendben) - 14 csapat ([link](https://github.com/encoding-hun/rules-and-standards/issues/14))
-{grps}
+## Csapatok, akik aláírták és tudomásul vették (ábécé sorrendben) - {len(grps)} csapat ([link](https://github.com/encoding-hun/rules-and-standards/issues/14))
+{grps_j}
 ## Oldalak, amelyek aláírták ([link](https://github.com/encoding-hun/rules-and-standards/issues/18))
-{sts}
+{sts_j}
 ## Banned groups
-{bgrps}'''
+{bgrps_j}'''
 
     readme_file = open(os.path.join(os.path.dirname(__file__), '..', 'README.md'), 'w')
     readme_file.write(readme)
