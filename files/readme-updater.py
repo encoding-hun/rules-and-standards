@@ -3,6 +3,7 @@ import os
 import re
 import subprocess
 from pathlib import Path
+import difflib
 
 from rich import print
 
@@ -49,16 +50,25 @@ def main():
 
 ## [Toolok](files/tools.md)
 
-## Csapatok, akik aláírták és tudomásul vették (ábécé sorrendben) - {len(grps)} csapat ([link](https://github.com/encoding-hun/rules-and-standards/issues/14))
+## Csapatok, akik aláírták és tudomásul vették (ábécé sorrendben){" - " + str(len(grps)) + " csapat" if len(grps) > 0 else ""} ([link](https://github.com/encoding-hun/rules-and-standards/issues/14))
 {grps_j}
-## Oldalak, amelyek aláírták ([link](https://github.com/encoding-hun/rules-and-standards/issues/18))
+## Oldalak, amelyek aláírták{" - " + str(len(sts)) + " oldal" if len(sts) > 0 else ""} ([link](https://github.com/encoding-hun/rules-and-standards/issues/18))
 {sts_j}
-## Banned groups
+## Banned groups{" - " + str(len(bgrps)) + " csapat" if len(bgrps) > 0 else ""}
 {bgrps_j}'''
 
-    readme_file = open(os.path.join(os.path.dirname(__file__), '..', 'README.md'), 'w')
-    readme_file.write(readme)
-    readme_file.close()
+    new_readme = open(os.path.join(os.path.dirname(__file__), '..', 'README2.md'), 'w')
+    new_readme.write(readme)
+    new_readme.close()
+
+    diff_old = open(os.path.join(os.path.dirname(__file__), '..', 'README.md'), 'r')
+    diff_new = open(os.path.join(os.path.dirname(__file__), '..', 'README2.md'), 'r')
+    diff = difflib.unified_diff(diff_old.readlines(), diff_new.readlines(), n=0)
+    diff_old.close()
+    diff_new.close()
+    print(f'difference between old and new README.md:\n[cyan]{"".join(diff)}[/cyan]')
+    os.remove(os.path.join(os.path.dirname(__file__), '..', 'README.md'))
+    os.rename(os.path.join(os.path.dirname(__file__), '..', 'README2.md'), os.path.join(os.path.dirname(__file__), '..', 'README.md'))
     print('[green]File saved. ✅[/green]')
 
 if __name__=='__main__':
