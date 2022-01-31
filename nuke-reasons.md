@@ -17,7 +17,7 @@
 
 ## 2) Indokok
   - 2.1) Technikai hibák (technical flaws) -- ezek `PROPER`-elhetőek.
-    - 2.1.1) Video:
+    - 2.1.1) Videó:
       - `bad.res` = hibás felbontás
       - `bad.crop` = hibás cropolás
       - `bad.colorimetry, bad.colormatrix` = `--colormatrix` hibás használata
@@ -56,7 +56,7 @@
       - `shifted.video` = bizonyos forrásfilterek (pl. régi FFMS2) beszúrt/eldobott egy frame-et a kép elejéről, ezáltal eltolva azt a hanghoz képest (min. 100 ms csúszás)
       - `extra.frames`/`missing.frames` = videóhoz hozzáadott, hiányzott frame-ek (kivéve ha videó végéről hiányzik `1` frame és az fekete)
 
-    - 2.1.2) Audio:
+    - 2.1.2) Audió:
       - `wrong.audio.format` = nem megfelelő formátumú hang használata
       - `oversized.audio` = indokolatlanul nagy méretű hang használata
       - `upscaled = upconverted.audio` = a kész encode bitrátája/csatornaszáma/bitmélysége indokolatlanul magasabb, mint a forrásé
@@ -84,13 +84,13 @@
       - `drm.not.removed` = bármilyen jellegű DRM maradt a release-en
 
   - 2.2) Kevésbé súlyos, nem technikai hibák -- ezek nem `PROPER`-elhetőek. Indokolt esetben `READ.NFO` kiadható rá.
-    - 2.2.1) Video:
+    - 2.2.1) Videó:
       - `obsolete.encoder` = túl régi encoder használata
-      - `delayed.video` = MKV-ban flagelt video delay
+      - `delayed.video` = MKV-ban flagelt videó delay
 
-    - 2.2.2) Audio:
+    - 2.2.2) Audió:
       - `audio.longer.than.video` = a hangsáv több, mint 1 másodperccel túlnyúlik a videón
-      - `delayed.audio` = MKV-ban flagelt audio delay (`PROPER`-elhető, ha hossza meghaladja az 500 ms-t és/vagy lejátszási problémákat okoz)
+      - `delayed.audio` = MKV-ban flagelt audió delay (`PROPER`-elhető, ha hossza meghaladja az 500 ms-t és/vagy lejátszási problémákat okoz)
       - `missing.audio.lang.tag` = hiányzó audionyelv tag MKV-ban és/vagy dirname-ben
 
     - 2.2.3) Felirat:
