@@ -296,6 +296,7 @@
     - 11.15.2) SDH feliratoknál track-name és hearing-impaired flag használata ajánlott, pl.: `--hearing-impaired-flag 0:yes --track-name 0:'SDH'`.
   - 11.16) Retail felirat használata kötelező, amennyiben elérhető.
     - 11.16.1) Fansub használható Retail felirat mellett is, ilyenkor meg kell adni hogy melyik melyik, pl.: `--track-name 0:'Fansub'`, `--track-name 0:'NF'`.
+    - 11.16.2) Silány minőségű gépi fordítás (pl. Google Translate) használata tilos.
   - 11.17) Feliratok sorrendje:
     - magyar forced (ha van)
     - magyar full
