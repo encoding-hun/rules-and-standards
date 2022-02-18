@@ -42,7 +42,6 @@
 
 # Audió
 - [qaac, fdkaac, sox](https://cloud01.opsdata.ch/index.php/s/CWptD6kwGSSisHi)
-- [Sony Sound Forge Pro v11.0.299](https://ncore.pro/torrents.php?action=details&id=1728976)
 - [Audacity](https://drive.google.com/file/d/1D_RFVYeRzGLObhrLnMYm3SNZfcAOL-jO)
   - ffmpeg libek letöltése innen: [LINK](https://github.com/88keyz/Zeranoe/releases/tag/20200831-4a11a6f-w32-shared)
   - ffmpeg beállítása ez alapján: [LINK](https://manual.audacityteam.org/man/installing_ffmpeg_for_windows.html)
