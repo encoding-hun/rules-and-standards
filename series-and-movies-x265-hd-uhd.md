@@ -8,7 +8,7 @@
   - 1.2) Kizárólag `.mkv` konténer használata elfogadott; kivétel Dolby Vision-t tartalmazó encode-ok (itt `.mp4` és `.m2ts/.ts` konténer is megengedett).
     - 1.2.1) Ajánlott muxer: MKVToolNix (mkvmerge). Törekedjünk a lehető legfrissebb változat használatára.
     - 1.2.2) Header compression használata TILOS.
-    - 1.2.3) Minden muxolt sávnak `track-enabled`-nek kell lennie (`--track-enabled-flag 1`).
+    - 1.2.3) Minden muxolt sávnak `track-enabled`-nek kell lennie (`--track-enabled-flag 0:1`).
   - 1.3) A film csonkítása, trimmelése TILOS.
   - 1.4) A film tömörítése (pl. rar, zip stb.) és darabolása TILOS.
   - 1.5) A fő MKV mellé `SFV` vagy `MD5` ellenőrzőösszeg készítése ajánlott, de nem kötelező.
