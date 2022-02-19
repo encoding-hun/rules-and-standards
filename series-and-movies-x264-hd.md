@@ -233,7 +233,7 @@
     - kommentárok (opcionális)
 
 ## 10) Audiokódolás
-  - 10.1) `AC3` (`DD`) esetében erősen ajánlott Dolby Certified encodert (pl. `Sound Forge AC-3 Pro`, `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Dolby Media Encoder`, `Sonic Audio Transcoder`) használni, egyéb esetben kizárólag FFmpeg (4.1 vagy újabb) vagy Aften (2009-12-26 vagy újabb) használható.
+  - 10.1) `AC3`/`E-AC3` kódolása esetén erősen ajánlott Dolby Certified encodert (pl. `Dolby Encoding Engine`/[`deew`](files/tools.md), `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Sonic Audio Transcoder`) használni, egyéb esetben kizárólag FFmpeg (4.1 vagy újabb) használható.
   - 10.2) A készített `AC3` (`DD`) nem tartalmazhat Copyright Protected flaget.
   - 10.3) `AAC` esetében elfogadott encoderek: `qaac` (`Apple AAC`), `FDK`, `Nero`.
     - 10.3.1) Csak sztereó/monó hangnál használható `AAC`.
