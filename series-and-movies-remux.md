@@ -181,7 +181,7 @@
     - 7.7.2) TimeStretchingre használható programok: `SoX`, `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge`, `SONAR` `élastique TimeStretch`, `Audacity` és `Adobe Audition`.
   - 7.8) Szegmentált kódolás használata TILOS!
   - 7.9) A `dialnorm` értékeket mérés alapján kell beállítani vagy forrásból kell megtartani. (előbbi preferált)
-    - 7.9.1 A `Dolby Encoding Engine`/[`deew`](files/tools.md) magától beállítja, így itt erre nincs szükség.
+    - 7.9.1) A `Dolby Encoding Engine`/[`deew`](files/tools.md) magától beállítja, így itt erre nincs szükség. A mérés kézzel `Adobe Audition` segítségével történhet, a `C` csatornára kapott `ITU-R BS.1770-3 Loudness` értéket kell `dialnorm` értéknek megadni.
   - 7.11) `E-AC3` hang `AC3`-ba történő kódolásakor a megengedett bitráták az eredeti `1.7`-szereséhez legközelebb eső két bitráta (nagyjából ennyivel jobb a `DD+` algoritmus). Például: ha a forrás `DDP@192`, akkor `192 * 1.7 = 326.4`, tehát az `AC3` bitrátája lehet `320` kbps vagy `384` kbps vagy ha a forrás `DDP@256`, akkor `256 * 1.7 = 435.2`, tehát `384` kbps és `448` kbps-es `AC3` készíthető.
 
 ## 8) Feliratok
