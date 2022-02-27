@@ -7,7 +7,7 @@
 - x264
   - [vanilla r3094](https://artifacts.videolan.org/x264/release-win64/)
   - [tMod r3094](https://emma.cloud.tabdigital.eu/s/rrHWew8eH8R8ezc) | [mirror](https://drive.google.com/drive/folders/18UzdSN66G0I646w9sP1qsCZuPO52CwYP)
-    <details><summary>There are few minor differences compared to the jpsdr builds:</summary>
+    <details><summary>Különbségek jpsdr buildjéhez képest</summary>
 
     - patch for building with mingw on Linux instead of Windows
     - audio is disabled
@@ -18,7 +18,7 @@
       - weightp 2 for Blu-ray
       - rbsp_alignment_zero_bit
     </details>
-  - [tMod r3085](https://github.com/jpsdr/x264/releases)
+  - [tMod r3085 by jpsdr](https://github.com/jpsdr/x264/releases)
   - [Patman r3079](https://github.com/Patman86/x264-Mod-by-Patman/releases)
   - [kMod r3059](https://github.com/cshmnyfy/x264-kMod-patches/releases)
   - [aMod r3059+18](https://github.com/DJATOM/x264-aMod/releases)
