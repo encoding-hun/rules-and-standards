@@ -8,6 +8,7 @@
   - [vanilla r3094](https://artifacts.videolan.org/x264/release-win64/)
   - [tMod r3094](https://emma.cloud.tabdigital.eu/s/rrHWew8eH8R8ezc) | [mirror](https://drive.google.com/drive/folders/18UzdSN66G0I646w9sP1qsCZuPO52CwYP)
     <details><summary>There are few minor differences compared to the jpsdr builds:</summary>
+
     - patch for building with mingw on Linux instead of Windows
     - audio is disabled
     - not applied patches
