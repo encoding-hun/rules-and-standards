@@ -6,11 +6,20 @@
 - [DGMPGDec](http://rationalqm.us/dgmpgdec/)
 - x264
   - [vanilla r3094](https://artifacts.videolan.org/x264/release-win64/)
-  - [tMod r3085](https://emma.cloud.tabdigital.eu/s/rrHWew8eH8R8ezc) | [mirror](https://drive.google.com/drive/folders/18UzdSN66G0I646w9sP1qsCZuPO52CwYP)
+  - [tMod r3094](https://emma.cloud.tabdigital.eu/s/rrHWew8eH8R8ezc) | [mirror](https://drive.google.com/drive/folders/18UzdSN66G0I646w9sP1qsCZuPO52CwYP)
+    <details><summary>There are few minor differences compared to the jpsdr builds:</summary>
+    - patch for building with mingw on Linux instead of Windows
+    - audio is disabled
+    - not applied patches
+      - AviSynth 16-bit hack (AviSynth+ native high bit depth is officiallly long time supported)
+      - f3kdb usage for converting from higher bit depth to output bit depth
+      - double unicode buffer
+      - weightp 2 for Blu-ray
+      - rbsp_alignment_zero_bit</details>
   - [tMod r3085](https://github.com/jpsdr/x264/releases)
   - [Patman r3079](https://github.com/Patman86/x264-Mod-by-Patman/releases)
   - [kMod r3059](https://github.com/cshmnyfy/x264-kMod-patches/releases)
-  - [aMod r3059](https://github.com/DJATOM/x264-aMod/releases)
+  - [aMod r3059+18](https://github.com/DJATOM/x264-aMod/releases)
 - x265
   - [vanilla 3.5+29](http://msystem.waw.pl/x265/)
   - [Patman 3.5+21+12](https://github.com/Patman86/x265-Mod-by-Patman/releases)
