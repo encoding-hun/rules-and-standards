@@ -6,7 +6,7 @@
 - [DGMPGDec](http://rationalqm.us/dgmpgdec/)
 - x264
   - [vanilla r3094](https://artifacts.videolan.org/x264/release-win64/)
-  - [tMod r3094](https://emma.cloud.tabdigital.eu/s/rrHWew8eH8R8ezc) | [mirror](https://drive.google.com/drive/folders/18UzdSN66G0I646w9sP1qsCZuPO52CwYP)
+  - [tMod r3094+49](https://emma.cloud.tabdigital.eu/s/rrHWew8eH8R8ezc) | [mirror](https://drive.google.com/drive/folders/18UzdSN66G0I646w9sP1qsCZuPO52CwYP)
     - <details>
       <summary>Különbségek jpsdr buildjéhez képest</summary>
 
@@ -19,8 +19,8 @@
         - weightp 2 for Blu-ray
         - rbsp_alignment_zero_bit
     </details>
-  - [tMod r3085 (jpsdr)](https://github.com/jpsdr/x264/releases)
-  - [Patman r3079](https://github.com/Patman86/x264-Mod-by-Patman/releases)
+  - [tMod r3085+55 (jpsdr)](https://github.com/jpsdr/x264/releases)
+  - [Patman r3079+8](https://github.com/Patman86/x264-Mod-by-Patman/releases)
   - [kMod r3059](https://github.com/cshmnyfy/x264-kMod-patches/releases)
   - [aMod r3059+18](https://github.com/DJATOM/x264-aMod/releases)
 - x265
@@ -53,12 +53,13 @@
 - [Portable FATPACK](https://github.com/theChaosCoder/vapoursynth-portable-FATPACK/releases)
 
 # Audió
+- [Dolby Encodinge Engine](https://ncore.pro/torrents.php?action=details&id=3300065)
 - [deew (Dolby Encoding Engine Wrapper)](https://github.com/pcroland/deew)
 - [qaac, fdkaac, sox](https://cloud01.opsdata.ch/index.php/s/CWptD6kwGSSisHi)
 - [Audacity](https://drive.google.com/file/d/1D_RFVYeRzGLObhrLnMYm3SNZfcAOL-jO)
   - ffmpeg libek letöltése innen: [LINK](https://github.com/88keyz/Zeranoe/releases/tag/20200831-4a11a6f-w32-shared)
   - ffmpeg beállítása ez alapján: [LINK](https://manual.audacityteam.org/man/installing_ffmpeg_for_windows.html)
-- [Adobe Audition](https://ncore.pro/torrents.php?action=details&id=3249667)
+- [Adobe Audition](https://ncore.pro/torrents.php?action=details&id=3298512)
 - [audiostretch, aacenc, audiocomp, downmix bash/zsh snippets](https://github.com/encoding-hun/snippets)
 
 # Felirat
