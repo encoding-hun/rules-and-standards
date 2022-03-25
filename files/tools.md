@@ -53,10 +53,11 @@
 - [Portable FATPACK](https://github.com/theChaosCoder/vapoursynth-portable-FATPACK/releases)
 
 # Audió
-- [Dolby Encodinge Engine](https://ncore.pro/torrents.php?action=details&id=3300065)
+- [Dolby Encodinge Engine](https://ncore.pro/torrents.php?action=details&id=3300065) | [linux](https://ncore.pro/torrents.php?action=details&id=3300066)
 - [deew (Dolby Encoding Engine Wrapper)](https://github.com/pcroland/deew)
 - [qaac, fdkaac, sox](https://cloud01.opsdata.ch/index.php/s/CWptD6kwGSSisHi)
 - [Audacity](https://drive.google.com/file/d/1D_RFVYeRzGLObhrLnMYm3SNZfcAOL-jO)
+  - ebben a custom buildben ki van kapcsolva ffmpeg `-drc_scale`-je.
   - ffmpeg libek letöltése innen: [LINK](https://github.com/88keyz/Zeranoe/releases/tag/20200831-4a11a6f-w32-shared)
   - ffmpeg beállítása ez alapján: [LINK](https://manual.audacityteam.org/man/installing_ffmpeg_for_windows.html)
 - [Adobe Audition](https://ncore.pro/torrents.php?action=details&id=3298512)
