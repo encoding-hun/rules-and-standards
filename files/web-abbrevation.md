@@ -127,8 +127,8 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | PokerGo                         | `POGO`    |
 | Project Alpha                   | `PA  `    |
 | puhutv                          | `PUHU`    |
-| Quibi                           | `QIBI`    |
 | Rakuten TV                      | `RKTN`    |
+| The Roku Channel                | `ROKU`    |
 | Rooster Teeth                   | `RSTR`    |
 | RTÉ                             | `RTE `    |
 | SBS (AU)                        | `SBS `    |
@@ -162,7 +162,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | USA Network                     | `USAN`    |
 | Velocity                        | `VLCT`    |
 | VH1                             | `VH1 `    |
-| Viaplay                         | `VIAP`    |
+| Viaplay (originals only)        | `VIAP`    |
 | Viceland                        | `VICE`    |
 | Vimeo                           | `VMEO`    |
 | VRV                             | `VRV `    |
