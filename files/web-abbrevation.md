@@ -96,6 +96,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | HGTV                            | `HGTV`    |
 | HIDIVE                          | `HIDI`    |
 | History Channel                 | `HIST`    |
+| Hotstar                         | `HS  `    |
 | Hulu                            | `HULU`    |
 | Ici TOU.TV                      | `TOU `    |
 | IFC                             | `IFC `    |
