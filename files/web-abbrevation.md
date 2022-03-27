@@ -16,6 +16,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 ## Nemzetközi (BTN Web Content Guidelines alapján)
 | oldal                           | rövidítés |
 | :-                              | :-        |
+| 7plus                           | `7P  `    |
 | 9Now                            | `9NOW`    |
 | A&E                             | `AE  `    |
 | ABC (AU) iView                  | `AUBC`    |
@@ -36,6 +37,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | Blackpills                      | `BKPL`    |
 | Boomerang                       | `BOOM`    |
 | BravoTV                         | `BRAV`    |
+| BRAVIA CORE                     | `CORE`    |
 | C More                          | `CMOR`    |
 | Canal+                          | `CNLP`    |
 | Cartoon Network                 | `CN  `    |
@@ -50,7 +52,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | Cooking Channel                 | `COOK`    |
 | Country Music Television        | `CMT `    |
 | Crackle                         | `CRKL`    |
-| Crunchy Roll                    | `CR  `    |
+| Crunchyroll                     | `CR  `    |
 | CSpan                           | `CSPN`    |
 | CTV                             | `CTV `    |
 | CuriosityStream                 | `CUR `    |
@@ -63,7 +65,8 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | DirecTV Now                     | `DTV `    |
 | Discovery Channel               | `DISC`    |
 | Discovery+                      | `DSCP`    |
-| Disney                          | `DSNY`    |
+| DisneyNOW                       | `DSNY`    |
+| DisneyLife                      | `DSNL`    |
 | Disney+                         | `DSNP`    |
 | DIY Network                     | `DIY `    |
 | Doc Club                        | `DOCC`    |
@@ -88,7 +91,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | go90                            | `GO90`    |
 | Google Play                     | `PLAY`    |
 | Hallmark                        | `HLMK`    |
-| HBO                             | `HBO `    |
+| HBO GO/Now                      | `HBO `    |
 | HBO Max                         | `HMAX`    |
 | HGTV                            | `HGTV`    |
 | HIDIVE                          | `HIDI`    |
@@ -128,14 +131,15 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | Project Alpha                   | `PA  `    |
 | puhutv                          | `PUHU`    |
 | Rakuten TV                      | `RKTN`    |
-| The Roku Channel                | `ROKU`    |
 | Rooster Teeth                   | `RSTR`    |
 | RTÉ                             | `RTE `    |
+| RTL+ (DE)                       | `RTLP`    |
 | SBS (AU)                        | `SBS `    |
 | Seeso                           | `SESO`    |
 | Shomi                           | `SHMI`    |
 | Showtime                        | `SHO `    |
 | Shudder                         | `SHDR`    |
+| Spectrum                        | `SPEC`    |
 | Spike                           | `SPIK`    |
 | Sportsnet                       | `SNET`    |
 | Sprout                          | `SPRT`    |
@@ -149,6 +153,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | TenPlay                         | `TEN `    |
 | TFOU                            | `TFOU`    |
 | The CW                          | `CW  `    |
+| The Roku Channel                | `ROKU`    |
 | TIMvision                       | `TIMV`    |
 | TLC                             | `TLC `    |
 | Travel Channel                  | `TRVL`    |
@@ -156,16 +161,19 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | TV3 (IE)                        | `TV3 `    |
 | TV4 (SE)                        | `TV4 `    |
 | TVLand                          | `TVL `    |
+| TVNZ                            | `TVNZ`    |
 | UFC                             | `UFC `    |
 | UKTV                            | `UKTV`    |
 | Univision                       | `UNIV`    |
 | USA Network                     | `USAN`    |
 | Velocity                        | `VLCT`    |
 | VH1                             | `VH1 `    |
-| Viaplay (originals only)        | `VIAP`    |
+| Viaplay                         | `VIAP`    |
 | Viceland                        | `VICE`    |
+| Viki                            | `VIKI`    |
 | Vimeo                           | `VMEO`    |
 | VRV                             | `VRV `    |
+| Vudu                            | `VUDU`    |
 | W Network                       | `WNET`    |
 | WatchMe                         | `WME `    |
 | WWE Network                     | `WWEN`    |
