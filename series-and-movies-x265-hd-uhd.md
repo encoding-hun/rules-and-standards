@@ -47,7 +47,7 @@
   - 2.7) `[series.name]` és `[movie.title]` KIZÁRÓLAG eredeti vagy angol nyelvű lehet.
   - 2.8) `[audio.codec]` a film/sorozat eredeti nyelvére vonatkozik.
   - 2.9) `WEB-DL` és `WEBRip` forrás esetén meg kell jelölni, hogy pontosan melyik oldalról való a videó (pl. `NF.WEB-DL`, `AMZN.WEB-DL`).
-    - 2.9.1) A használandó hazai és nemzetközi rövidítések itt érhetőek el: [**LINK**](files/web-abbrevation.md).
+    - 2.9.1) A használandó hazai és nemzetközi rövidítések itt érhetőek el: [**LINK**](/files/web-abbrevation.md).
     - 2.9.2) Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen release készítője választhat egyet a forrás 2-4 betűjének egymás után történő felhasználásával. (Pl.: `sonymax.hu` -> `SMAX`, `filmboxlive.hu` -> `FBL`)
   - 2.10) WEB-hez további guide:
     - 2.10.1) Az minősül `WEB-DL`-nek, ami nem lett újrakódolva az oldalról való leszedés után (vagy közben).
@@ -253,7 +253,7 @@
     - kommentárok (opcionális)
 
 ## 10) Audiokódolás
-  - 10.1) `AC3`/`E-AC3` kódolása esetén erősen ajánlott Dolby Certified encodert (pl. `Dolby Encoding Engine`/[`deew`](files/tools.md), `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Sonic Audio Transcoder`) használni, egyéb esetben kizárólag FFmpeg (4.1 vagy újabb) használható.
+  - 10.1) `AC3`/`E-AC3` kódolása esetén erősen ajánlott Dolby Certified encodert (pl. `Dolby Encoding Engine`/[`deew`](/files/tools.md), `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Sonic Audio Transcoder`) használni, egyéb esetben kizárólag FFmpeg (4.1 vagy újabb) használható.
   - 10.2) A készített `AC3` (`DD`) nem tartalmazhat Copyright Protected flaget.
   - 10.3) `DTS-HD.MA` hang készítéséhez kizárólag `DTS-HD Master Audio Suite` használható.
   - 10.4) `AAC` esetében elfogadott encoderek: `qaac` (`Apple AAC`), `FDK`, `Nero`.
@@ -269,7 +269,7 @@
     - 10.7.2) TimeStretchingre használható programok: `SoX`, `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge`, `SONAR` `élastique TimeStretch`, `Audacity` és `Adobe Audition`.
   - 10.8) Szegmentált kódolás használata TILOS!
   - 10.9) A `dialnorm` értékeket mérés alapján kell beállítani vagy forrásból kell megtartani. (előbbi preferált)
-    - 10.9.1) A `Dolby Encoding Engine`/[`deew`](files/tools.md) magától beállítja, így itt erre nincs szükség. A mérés kézzel `Adobe Audition` segítségével történhet, a `C` csatornára kapott `ITU-R BS.1770-3 Loudness` értéket kell `dialnorm` értéknek megadni.
+    - 10.9.1) A `Dolby Encoding Engine`/[`deew`](/files/tools.md) magától beállítja, így itt erre nincs szükség. A mérés kézzel `Adobe Audition` segítségével történhet, a `C` csatornára kapott `ITU-R BS.1770-3 Loudness` értéket kell `dialnorm` értéknek megadni.
   - 10.10) `E-AC3` hang `AC3`-ba történő kódolásakor a megengedett bitráták az eredeti `1.7`-szereséhez legközelebb eső két bitráta (nagyjából ennyivel jobb a `DD+` algoritmus). Például: ha a forrás `DDP@192`, akkor `192 * 1.7 = 326.4`, tehát az `AC3` bitrátája lehet `320 kbps` vagy `384 kbps` vagy ha a forrás `DDP@256`, akkor `256 * 1.7 = 435.2`, tehát `384 kbps` és `448 kbps`-es `AC3` készíthető.
 
 ## 11) Feliratok

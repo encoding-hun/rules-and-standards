@@ -47,7 +47,7 @@
   - 2.7) `[series.name]` és `[movie.title]` KIZÁRÓLAG eredeti vagy angol nyelvű lehet.
   - 2.8) `[audio.codec]` a film/sorozat eredeti nyelvére vonatkozik.
   - 2.9) `WEB-DL` és `WEBRip` forrás esetén meg kell jelölni, hogy pontosan melyik oldalról való a videó (pl. `NF.WEB-DL`, `AMZN.WEB-DL`).
-    - 2.9.1) A használandó hazai és nemzetközi rövidítések itt érhetőek el: [**LINK**](files/web-abbrevation.md).
+    - 2.9.1) A használandó hazai és nemzetközi rövidítések itt érhetőek el: [**LINK**](/files/web-abbrevation.md).
     - 2.9.2) Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen release készítője választhat egyet a forrás 2-4 betűjének egymás után történő felhasználásával. (Pl.: `sonymax.hu` -> `SMAX`, `filmboxlive.hu` -> `FBL`)
   - 2.10) WEB-hez további guide:
     - 2.10.1) Az minősül `WEB-DL`-nek, ami nem lett újrakódolva az oldalról való leszedés után (vagy közben).
@@ -172,7 +172,7 @@
   - 8.15) A keyframe-ek közötti maximális távolság (`--keyint`) `FPS*20` lehet (`FPS*10` ajánlott, default); minimum `FPS*5` adható meg.
   - 8.16) `--min-keyint` értéke legalább `FPS/2`, maximum `FPS*2` lehet (`floor(FPS)` ajánlott, default).
   - 8.17) ColorMatrixot, amennyiben a forrás tartalmaz erre vonatkozó információt KÖTELEZŐ flagelni (tipikusan `BT.709`), amennyiben nem, úgy ajánlott `undef`-en hagyni vagy `BT.709`-nek lehet flagelni.
-  - 8.18) ColorPrimaries és TransferFunction flagelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod, mit csinálsz). Használata esetén a forrással egyezőre kell állítani. Bővebb infó: [**mod16.org**](https://mod16.org/hurfdurf/?p=116) | [**mirror**](files/color-coefficient.md)
+  - 8.18) ColorPrimaries és TransferFunction flagelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod, mit csinálsz). Használata esetén a forrással egyezőre kell állítani. Bővebb infó: [**mod16.org**](https://mod16.org/hurfdurf/?p=116) | [**mirror**](/files/color-coefficient.md)
   - 8.19) A maximálisan megengedett referenciaképek számának használata kötelező (--ref).
     - 8.19.1) `--preset veryslow`/`placebo` magától kiszámolja a legnagyobbat, ami még nem töri meg a kompatibilitást. (Érdemes így csinálni, és akkor nem kell manuálisan számolni.)
     - 8.19.2) Kiszámolása: `8388608/(végső szélesség*végső magasság)` -> lefele kerekítés.
@@ -234,7 +234,7 @@
     - kommentárok (opcionális)
 
 ## 10) Audiokódolás
-  - 10.1) `AC3`/`E-AC3` kódolása esetén erősen ajánlott Dolby Certified encodert (pl. `Dolby Encoding Engine`/[`deew`](files/tools.md), `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Sonic Audio Transcoder`) használni, egyéb esetben kizárólag FFmpeg (4.1 vagy újabb) használható.
+  - 10.1) `AC3`/`E-AC3` kódolása esetén erősen ajánlott Dolby Certified encodert (pl. `Dolby Encoding Engine`/[`deew`](/files/tools.md), `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Sonic Audio Transcoder`) használni, egyéb esetben kizárólag FFmpeg (4.1 vagy újabb) használható.
   - 10.2) A készített `AC3` (`DD`) nem tartalmazhat Copyright Protected flaget.
   - 10.3) `AAC` esetében elfogadott encoderek: `qaac` (`Apple AAC`), `FDK`, `Nero`.
     - 10.3.1) Csak sztereó/monó hangnál használható `AAC`.
@@ -249,7 +249,7 @@
     - 10.6.2) TimeStretchingre használható programok: `SoX`, `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge`, `SONAR` `élastique TimeStretch`, `Audacity` és `Adobe Audition`.
   - 10.7) Szegmentált kódolás használata TILOS!
   - 10.8) A `dialnorm` értékeket mérés alapján kell beállítani vagy forrásból kell megtartani. (előbbi preferált)
-    - 10.8.1) A `Dolby Encoding Engine`/[`deew`](files/tools.md) magától beállítja, így itt erre nincs szükség. A mérés kézzel `Adobe Audition` segítségével történhet, a `C` csatornára kapott `ITU-R BS.1770-3 Loudness` értéket kell `dialnorm` értéknek megadni.
+    - 10.8.1) A `Dolby Encoding Engine`/[`deew`](/files/tools.md) magától beállítja, így itt erre nincs szükség. A mérés kézzel `Adobe Audition` segítségével történhet, a `C` csatornára kapott `ITU-R BS.1770-3 Loudness` értéket kell `dialnorm` értéknek megadni.
   - 10.9) `E-AC3` hang `AC3`-ba történő kódolásakor a megengedett bitráták az eredeti `1.7`-szereséhez legközelebb eső két bitráta (nagyjából ennyivel jobb a `DD+` algoritmus). Például: ha a forrás `DDP@192`, akkor `192 * 1.7 = 326.4`, tehát az `AC3` bitrátája lehet `320 kbps` vagy `384 kbps` vagy ha a forrás `DDP@256`, akkor `256 * 1.7 = 435.2`, tehát `384 kbps` és `448 kbps`-es `AC3` készíthető.
 
 ## 11) Feliratok

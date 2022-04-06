@@ -181,7 +181,7 @@
     - 8.17.1) Ha a forrás HD és a ColorMatrix `undef`, akkor `BT.709`-nek kell flagelni.
     - 8.17.2) Ha a forrás SD és a ColorMatrix `undef`, akkor meg kell vizsgálni, hogy `BT.601` vagy `BT.709`-el jobbak-e a színek és annak megfelelően flaggelni.
     - 8.17.3) `undef` flagelése TILOS!
-  - 8.18) ColorPrimaries és TransferFunction flagelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod, mit csinálsz). Használata esetén a forrással egyezőre kell állítani. Bővebb infó: [**mod16.org**](https://mod16.org/hurfdurf/?p=116) | [**mirror**](./files/color-coefficient.md)
+  - 8.18) ColorPrimaries és TransferFunction flagelése opcionális (háttértudást igényel a stúdió setupról, csak akkor használd, ha tudod, mit csinálsz). Használata esetén a forrással egyezőre kell állítani. Bővebb infó: [**mod16.org**](https://mod16.org/hurfdurf/?p=116) | [**mirror**](/files/color-coefficient.md)
   - 8.19) Kötelező 16 referenciaképet használni (`--ref 16`).
   - 8.20) B frame-ek kikapcsolása TILOS. Minimum `8` egymás utáni B frame-et kell engedni (`--bframes 8` vagy több).
   - 8.21) A készült videónak DXVA-kompatibilisnek kell lennie (max. `High@L4.1`).
@@ -234,7 +234,7 @@
     - angol (ha az eredeti nem ez; opcionális)
 
 ## 10) Audiokódolás
-  - 10.1) `AC3` (`DD`) esetében erősen ajánlott Dolby Certified encodert (pl. `Dolby Encoding Engine`/[`deew`](files/tools.md), `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Sonic Audio Transcoder`) használni, egyéb esetben kizárólag FFmpeg (4.1 vagy újabb) használható.
+  - 10.1) `AC3` (`DD`) esetében erősen ajánlott Dolby Certified encodert (pl. `Dolby Encoding Engine`/[`deew`](/files/tools.md), `Minnetonka SurCode`, `Sonic Foundry Soft Encode`, `Sonic Audio Transcoder`) használni, egyéb esetben kizárólag FFmpeg (4.1 vagy újabb) használható.
   - 10.2) A készített `AC3` (`DD`) nem tartalmazhat Copyright Protected flaget.
   - 10.3) `AAC` esetében elfogadott encoderek: `qaac` (`Apple AAC`), `FDK`, `Nero`.
     - 10.3.1) Csak sztereó/monó hangnál használható `AAC`.
@@ -249,7 +249,7 @@
     - 10.6.2) TimeStretchingre használható programok: `SoX`, `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge`, `SONAR` `élastique TimeStretch`, `Audacity` és `Adobe Audition`.
   - 10.7) Szegmentált kódolás használata TILOS!
   - 10.8) A `dialnorm` értékeket mérés alapján kell beállítani vagy forrásból kell megtartani. (előbbi preferált)
-    - 10.8.1) A `Dolby Encoding Engine`/[`deew`](files/tools.md) magától beállítja, így itt erre nincs szükség. A mérés kézzel `Adobe Audition` segítségével történhet, a `C` csatornára kapott `ITU-R BS.1770-3 Loudness` értéket kell `dialnorm` értéknek megadni.
+    - 10.8.1) A `Dolby Encoding Engine`/[`deew`](/files/tools.md) magától beállítja, így itt erre nincs szükség. A mérés kézzel `Adobe Audition` segítségével történhet, a `C` csatornára kapott `ITU-R BS.1770-3 Loudness` értéket kell `dialnorm` értéknek megadni.
   - 10.9) `E-AC3` hang `AC3`-ba történő kódolásakor a megengedett bitráták az eredeti `1.7`-szereséhez legközelebb eső két bitráta (nagyjából ennyivel jobb a `DD+` algoritmus). Például: ha a forrás `DDP@192`, akkor `192 * 1.7 = 326.4`, tehát az `AC3` bitrátája lehet `320 kbps` vagy `384 kbps` vagy ha a forrás `DDP@256`, akkor `256 * 1.7 = 435.2`, tehát `384 kbps` és `448 kbps`-es `AC3` készíthető.
 
 ## 11) Feliratok
