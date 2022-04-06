@@ -10,7 +10,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | rtlmost.hu                      | `RTLM`    |
 | sonymax.hu                      | `SMAX`    |
 | telekomtvgo.hu                  | `TVGO`    |
-| tv2.hu                          | `TV2`     |
+| tv2play.hu                      | `TV2`     |
 | filmbox.com                     | `FBP`     |
 | spilerextra.hu                  | `SPLR`    |
 ## Nemzetközi (BTN Web Content Guidelines alapján)
