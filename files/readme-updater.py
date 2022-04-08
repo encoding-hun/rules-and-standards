@@ -40,15 +40,15 @@ def main():
     readme = f'''## A magyar release-ek készítésénél követendő szabályok
 | kategória                                                     | utolsó frissítés | érvényben         |
 | :-                                                            | :-               | :-                |
-| [**x264 SD és 480p**](series-and-movies-x264-sd-and-480p.md)  | {   t1    }      | 2020.02.19.       |
-| [**x264 HD**](series-and-movies-x264-hd.md)                   | {   t2    }      | 2020.02.19.       |
-| [**x265 UHD-HD**](series-and-movies-x265-hd-uhd.md)           | {   t3    }      | 2020.06.14.       |
-| [**REMUX**](series-and-movies-remux.md)                       | {   t4    }      | 2020.06.14.       |
+| [**x264 SD és 480p**](/series-and-movies-x264-sd-and-480p.md) | {   t1    }      | 2020.02.19.       |
+| [**x264 HD**](/series-and-movies-x264-hd.md)                  | {   t2    }      | 2020.02.19.       |
+| [**x265 UHD-HD**](/series-and-movies-x265-hd-uhd.md)          | {   t3    }      | 2020.06.14.       |
+| [**REMUX**](/series-and-movies-remux.md)                      | {   t4    }      | 2020.06.14.       |
 | **DVD, MP3 és lossless audio** (korábbi szabályzat érvényben) |                  |                   |
 
-## [Nuke indokok](nuke-reasons.md)
+## [Nuke indokok](/nuke-reasons.md)
 
-## [Toolok](files/tools.md)
+## [Toolok](/files/tools.md)
 
 ## Csapatok, akik aláírták és tudomásul vették (ábécé sorrendben){" - " + str(len(grps)) + " csapat" if len(grps) > 0 else ""} ([link](https://github.com/encoding-hun/rules-and-standards/issues/14))
 {grps_j}
