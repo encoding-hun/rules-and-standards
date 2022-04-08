@@ -17,7 +17,7 @@
     - 1.6.2) A sample nem származhat az epizód/film legelejéről, valamint legvégéről.
     - 1.6.3) A sample-t újrakódolás nélkül, a végső encode-ból kell kivágni.
     - 1.6.4) A sample-t egy `Sample` nevű mappába vagy a fő MKV mellé kell helyezni. Utóbbi esetben a filenévben kell jelölni, hogy melyik a sample.
-  - 1.7) mHD, HDLight és egyéb vicces baromságok készítése és felhasználása TILOS!
+  - 1.7) mHD, HDLight és hasonló bitstarved encode-ok készítése és felhasználása TILOS!
   - 1.8) Chapterlist használata KÖTELEZŐ, amennyiben a forrás tartalmaz ilyet!
     - 1.8.1) Chapterek elnevezése opcionális, kizárólag magyar vagy angol fejezetcímek használhatóak.
   - 1.9) Vízjelek használata TILOS!
