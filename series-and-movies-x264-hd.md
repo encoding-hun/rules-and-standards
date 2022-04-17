@@ -100,7 +100,7 @@
 
 ## 4) Források
   - 4.1) Csak jobb forrásból készített új release megengedett, minden egyéb DUPE.
-    - 4.1.1) Ez alól kivétel, ha eltérő vágással (`THETRICAL` vs. `EXTENDED`) rendelkezik a release.
+    - 4.1.1) Ez alól kivétel, ha eltérő vágással (`THEATRICAL` vs. `EXTENDED`) rendelkezik a release.
   - 4.2) Források prioritása:\
   `(UHD)` `BluRay` > `HDDVD`, `DTheater` > `WEBRip` nagyobb felbontású WEB-DL-ből kódolva > `WEB-DL` > `HDTV`\
   `P2P` > `Scene` (kivétel retail lemezek esetén)
