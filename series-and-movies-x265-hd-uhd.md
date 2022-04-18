@@ -107,8 +107,8 @@
   - 4.1) Csak jobb forrásból készített új release megengedett, minden egyéb DUPE.
     - 4.1.1) Ez alól kivétel, ha eltérő vágással (`THEATRICAL` vs. `EXTENDED`) rendelkezik a release.
   - 4.2) Források prioritása:\
-  `UHD BluRay` > `WEBRip` nagyobb felbontású WEB-DL-ből kódolva > `WEB-DL` > `UHDTV`\
-  `P2P` > `Scene` (kivétel retail lemezek esetén)
+         `UHD BluRay` > `WEBRip` nagyobb felbontású WEB-DL-ből kódolva > `WEB-DL` > `UHDTV`\
+         `P2P` > `Scene` (kivétel retail lemezek esetén)
   - 4.3) `WEBRip` alacsonyabb felbontással való újratömörítése TILOS!
     - 4.3.1) Kivétel, ha nem érhető el magasabb felbontású `WEB-DL`.
   - 4.4) Amennyiben jobb minőségű UHD BD elérhető, mint amiből a korábbi release készült, ezt `READ.NFO` taggel jelezni kell.

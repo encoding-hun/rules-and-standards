@@ -102,7 +102,7 @@
   - 4.1) Csak jobb forrásból készített új release megengedett, minden egyéb DUPE.
     - 4.1.1) Ez alól kivétel, ha eltérő vágással (`THEATRICAL` vs. `EXTENDED`) rendelkezik a release.
   - 4.2) Források prioritása:\
-  `(UHD)` `BluRay` > `HDDVD`, `DTheater`
+         `(UHD)` `BluRay` > `HDDVD`, `DTheater`
   - 4.3) Amennyiben jobb minőségű BD elérhető, mint amiből a korábbi release készült, ezt `READ.NFO` taggel jelezni kell.
   - 4.4) Muxolni kizárólag olyan már kész release-re szabad, amely megfelel ezen szabályzatban rögzített pontoknak. Törekedni kell az elérhető legjobb minőségű release felhasználására!
   - 4.5) Ha egy videóból már készült `DV` és `HDR` sávot is tartalmazó `SL` `Profile 8.1`-es release (`DV.HDR`), úgy külön csak `DV` (`Profile 5`) és csak `HDR`-t tartalmazó release későbbi kiadása már DUPE.
