@@ -6,12 +6,12 @@
   - 1.1) Tilos a DUPE, azaz a korábbival megegyező (vagy közel azonos) minőségű release készítése.
   - 1.2) SDR és HDR (ide értve a `HDR10Plus`-t is) tartalmakra kizárólag `.mkv` konténer használata elfogadott.
     - 1.2.1) Ajánlott muxer: MKVToolNix (mkvmerge). Törekedjünk a lehető legfrissebb változat használatára.
-    - 1.2.2) Header compression használata TILOS.
-    - 1.2.3) HDR kép és `.mkv` konténer esetén a különálló Dolby Vision sáv (EL külön sáv) megtartása TILOS! Dolby Vision release az 1.3-as pontnak megfelelően készíthető.
+    - 1.2.2) Header compression használata tilos.
+    - 1.2.3) HDR kép és `.mkv` konténer esetén a különálló Dolby Vision sáv (EL külön sáv) megtartása tilos! Dolby Vision release az 1.3-as pontnak megfelelően készíthető.
     - 1.2.4) Minden muxolt sávnak `track-enabled`-nek kell lennie (`--track-enabled-flag 0:1`).
   - 1.3) Dolby Vision esetén `.mkv` (ha a BL és EL egy videósávban van, SL), valamint `.mp4` és `.m2ts/.ts` (ha a BL és EL két videósávban van, DL) konténer elfogadott.
-  - 1.4) A film csonkítása, trimmelése TILOS.
-  - 1.5) A film tömörítése (pl. rar, zip stb.) és darabolása TILOS.
+  - 1.4) A film csonkítása, trimmelése tilos.
+  - 1.5) A film tömörítése (pl. rar, zip stb.) és darabolása tilos.
   - 1.6) A fő MKV (MP4/M2TS) mellé `SFV` vagy `MD5` ellenőrzőösszeg készítése ajánlott, de nem kötelező.
   - 1.7) Sample készítése opcionális.
     - 1.7.1) Hossza 50-90 másodperc közötti legyen.
@@ -20,20 +20,20 @@
     - 1.7.4) A sample-t egy `Sample` nevű mappába vagy a fő MKV (MP4/M2TS) mellé kell helyezni. Utóbbi esetben a filenévben kell jelölni, hogy melyik a sample.
   - 1.8) Chapterlist használata KÖTELEZŐ, amennyiben a forrás tartalmaz ilyet!
     - 1.8.1) Chapterek elnevezése opcionális, kizárólag magyar vagy angol fejezetcímek használhatóak.
-  - 1.9) Vízjelek használata TILOS!
+  - 1.9) Vízjelek használata tilos!
 
 ## 2) Tagelés - könyvtárnév
-  - 2.1) Ékezetes karakterek használata TILOS!
+  - 2.1) Ékezetes karakterek használata tilos!
   - 2.2) Engedélyezett karakterek: `a-z` `A-Z` `0-9` `.` `-` `_` `+`.
-    - 2.2.1) Ismételt kötőkarakterek használata TILOS! (pl. `...` vagy `-.`)
+    - 2.2.1) Ismételt kötőkarakterek használata tilos! (pl. `...` vagy `-.`)
     - 2.2.2) Amennyiben a cím tiltott karaktert tartalmaz (pl. `*`), akkor `.` vagy `-`-el helyettesítendő, vagy kiírható az a karakter, amit helyettesít, pl.: `T@gged` -> `Tagged`, `Elk*rtuk` -> `Elkurtuk`.
-  - 2.3) TILOS két azonos nevű file létrehozása, amelyek kizárólag kis és nagy betűben térnek el (pl. film-release és Film-release)!
+  - 2.3) Tilos két azonos nevű file létrehozása, amelyek kizárólag kis és nagy betűben térnek el (pl. film-release és Film-release)!
   - 2.4) A következő nevek nem használhatók könyvtár- és fájlnevek elején ponttal elválasztva: `CON`, `PRN`, `AUX`, `NUL`, `COM*`, `LPT*` (ahol `*` egy számot jelöl).\
-         TILOS: `Con.Man.2018.1080p.BluRay.REMUX.DTS-HD.MA.5.1.AVC.HUN-XYZ`\
-         OK: `Con_Man.2018.1080p.BluRay.REMUX.DTS-HD.MA.5.1.AVC.HUN-XYZ`\
-         TILOS: `con.man.mkv`, `con.mkv`\
-         OK: `con_man.mkv`, `conman.mkv`\
-         OK: `The.Con.Is.On.2018.1080p.BluRay.REMUX.DTS-HD.MA.5.1.AVC.HUN-XYZ`
+         tilos: `Con.Man.2018.1080p.BluRay.REMUX.DTS-HD.MA.5.1.AVC.HUN-XYZ`\
+         ok: `Con_Man.2018.1080p.BluRay.REMUX.DTS-HD.MA.5.1.AVC.HUN-XYZ`\
+         tilos: `con.man.mkv`, `con.mkv`\
+         ok: `con_man.mkv`, `conman.mkv`\
+         ok: `The.Con.Is.On.2018.1080p.BluRay.REMUX.DTS-HD.MA.5.1.AVC.HUN-XYZ`
   - 2.5) Sorozatok és filmek ajánlott tagelése (a sorrendtől el lehet térni):
     - 2.5.1) Sorozatok: `[series.name].[season].[resolution].[source].[audio.codec].[video.codec].[language]-[group]`
       - 2.5.1.1) `[season]` tag legalább két jegyre megadandó (mind az évad, mind a rész), kivéve mini-series esetén.
@@ -47,7 +47,7 @@
   - 2.7) `[series.name]` és `[movie.title]` KIZÁRÓLAG eredeti vagy angol nyelvű lehet.
   - 2.8) Elfogadott `[video.codec]` tagek: `AVC`, `VC1`, `MPEG2`, `HEVC`, `AV1`.
   - 2.9) `REPACK` (`Repack`) tag használata kötelező, ha saját release-t javít valaki.
-  - 2.10) `iNT` vagy `iNTERNAL` tag használata DUPE elkerülésére TILOS!
+  - 2.10) `iNT` vagy `iNTERNAL` tag használata DUPE elkerülésére tilos!
     - 2.10.1) `iNTERNAL`-ként kell feltüntetni minden olyan release-t, amely ellentmond a szabályzat bármely pontjának, de nem érhető el olyan forrás, amely teljesítené.
   - 2.11) TV-ből származó hangok esetén `CUSTOM` tag használata opcionális.
   - 2.12) `RETAiL` (eredeti lemezről készült) tag használata ajánlott, ha korábban készült olyan release, ahol a hang nem a BD/HDDVD lemezről származik.
@@ -62,8 +62,8 @@
   - 2.16) Ha a hangsáv tartalmaz Atmos kiegészítést, úgy azt `Atmos` taggel jelölni kell.
   - 2.17) `PROPER` = más hibás munkájának javítása; `REPACK` = saját hiba javítása
     - 2.17.1) `PROPER` release-re érkező `PROPER`-t `REAL.PROPER`-nek kell tagelni (és így tovább a későbbieket, pl. `REAL.REAL.PROPER`).
-  - 2.18) `READ.NFO` és `PROPER`/`REPACK`/`RERiP` tagek együttes használata TILOS!
-  - 2.19) Zavaró és felesleges tagek használata TILOS!
+  - 2.18) `READ.NFO` és `PROPER`/`REPACK`/`RERiP` tagek együttes használata tilos!
+  - 2.19) Zavaró és felesleges tagek használata tilos!
   - 2.20) Több magyar szinkron esetén jelölni kell a szinkronok számát, pl.: `2xHUN`.
 
 ## 3) NFO
@@ -93,9 +93,9 @@
     - feliratok forrása(i) fansub esetén
     - feliratok nyelve
     - feliratok formátuma
-  - 3.5) Más csapatok sértegetése, személyeskedés TILOS!
+  - 3.5) Más csapatok sértegetése, személyeskedés tilos!
   - 3.6) `PROPER`/`REPACK` release-ek esetén fel kell tüntetni a korábbi release problémáit. Képi vagy hangi `PROPER` esetén csatolni kell proofot, hogy valóban jobb az új release.
-  - 3.7) Felesleges, zavaró dolgokat az NFO-ba elhelyezni TILOS!
+  - 3.7) Felesleges, zavaró dolgokat az NFO-ba elhelyezni tilos!
   - 3.8) Egy release-ben csak egy NFO lehet. (pl. évadpackoknál részenkénti és COMPLETE packnál évadonkénti NFO tiltott.)
 
 ## 4) Források
@@ -110,21 +110,21 @@
     - 4.5.2) Ha egy videóból létezik `DL` `DV` release, de `SL` `DV.HDR` még nem, akkor kiadható külön csak `HDR` release, de javasolt a két sáv megfelelő egyesítése és `DV.HDR` release készítése.
 
 ## 5) Videó
-  - 5.1) A videó újrakódolása SZIGORÚAN TILOS!
+  - 5.1) A videó újrakódolása szigorúan tilos!
   - 5.2) Kizárólag egy videósáv használata megengedett.
     - 5.2.1) Kivétel dual layer Dolby Vision formátum.
   - 5.3) 2D-s release-hez nem használható 3D-s film bal vagy jobb szeméhez tartozó kép, kivéve, ha a filmből nem létezik 2D-s kiadás.
-  - 5.4) Egybefüggő videó darabolása TILOS! Egy lemezen található több rész (melyeket stáblista választ el) darabolása részekre KÖTELEZŐ!
+  - 5.4) Egybefüggő videó darabolása tilos! Egy lemezen található több rész (melyeket stáblista választ el) darabolása részekre KÖTELEZŐ!
     - 5.4.1) Ha a film több lemezen található és nincs a lemez végén stáblista, akkor össze kell a szegmenseket fűzni.
   - 5.5) Az előző rész tartalmából-t, a bevezető intrókat és a stáblistát kötelező teljes hosszukban megtartani és a főcímmel együtt kódolni.
   - 5.6) A zavaró bevágásokat: műsorszám hirdetést tartalmaz, reklámok, FBI Warning, stb. el kell távolítani.
     - 5.6.1) Kivéve, amikor ez a videó/hang (közel) teljes újrakódolásával járna.
   - 5.7) Égetett felirattal rendelkező forrásokat lehetőleg kerüljük, kivéve ha szignifikánsan jobb a minősége.
   - 5.8) Hybrid remuxok megengedettek, ha ezzel jobb minőség érhető el.
-  - 5.9) A konténerben felbontásra és cropolásra extra metaadatokat megadni TILOS!
+  - 5.9) A konténerben felbontásra és cropolásra extra metaadatokat megadni tilos!
   - 5.10) A videosáv Language tagjének beállítása opcionális: vagy magyar vagy az eredeti nyelv.
-  - 5.11) Encoder által beírt header eltávolítása SZIGORÚAN TILOS!
-  - 5.12) Színekre vonatkozó metaadatok (pl. ColorMatrix, ColorPrimaries, TransferFunction, Chroma Location, CLL, stb.) eltávolítása SZIGORÚAN TILOS!
+  - 5.11) Encoder által beírt header eltávolítása szigorúan tilos!
+  - 5.12) Színekre vonatkozó metaadatok (pl. ColorMatrix, ColorPrimaries, TransferFunction, Chroma Location, CLL, stb.) eltávolítása szigorúan tilos!
 
 ## 6) Audió
   - 6.1) Magyar hangsávot tartalmazó release esetén kötelező a `HUN` (`Hun`) tag használata.
@@ -133,9 +133,9 @@
   - 6.2) A hangok nyelvét kötelező a Language tagben jelezni!
   - 6.3) Az eredeti nyelvű hangsáv megtartása KÖTELEZŐ!
   - 6.4) Nem angol nyelvű, eredeti hangsáv esetén az angol hang (már amennyiben létezik) megtartása opcionális.
-  - 6.5) Egyéb nyelvű hangok megtartása TILOS!
+  - 6.5) Egyéb nyelvű hangok megtartása tilos!
   - 6.6) Az elérhető legjobb minőségű hangok megtartása KÖTELEZŐ!
-  - 6.7) A hangsávok újrakódolása SZIGORÚAN TILOS!
+  - 6.7) A hangsávok újrakódolása szigorúan tilos!
     - 6.7.1) Kivétel compatibility trackek és audiokommentár.
     - 6.7.2) Kivétel azon hangok, amelyek nyújtást igényelnek vagy egyéb olyan beavatkozást, mely során az újrakódolás nem elkerülhető.
   - 6.8) Megengedett hangformátumok:
@@ -150,7 +150,7 @@
   - 6.9) Kizárólag stúdió által készített surround hangok használhatóak fel, házilag felkevertek tilosak. TV-s surround hang esetén mindig győződjünk meg, hogy valódi surround-e, amennyiben nem, downmixeljük. Pl.: `ffmpeg -i input.ac3 -ac 2 -f sox - | sox -p -S -b 24 --norm=-1 output.wav`
   - 6.10) Más formátumok, pl. 5.1-es `AAC` vagy `DTS-HD MA` használata esetén KÖTELEZŐ `DD@640` (2 csatorna esetén `DD@256` vagy `AAC`) compatibility track készítése.
     - 6.10.1) `TrueHD` formátum esetén az AC3 (`DD`) compatibility stream megtartása KÖTELEZŐ! Ha a lemezen lévő compatibility track csak 384-448 kbps bitrátájú, akkor készíthető a `TrueHD` hangból 640 kbps bitrátájú hang is.
-  - 6.11) Lossless formátumok kereszt-konvertálása TILOS (pl. `TrueHD` -> `FLAC`).
+  - 6.11) Lossless formátumok kereszt-konvertálása tilos (pl. `TrueHD` -> `FLAC`).
     - 6.11.1) Ez alól kivételt képeznek az LPCM hangok, amiket kötelező `TrueHD`, `DTS-HD.MA` vagy `FLAC` formátumba vagy kommentár esetén akár `AAC` formátumba konvertálni.
   - 6.12) A hangsávok eredeti csatornaszámát meg kell tartani!
   - 6.13) A maximális megengedett hangcsúszás 100 ms.
@@ -180,7 +180,7 @@
   - 7.7) Ha a hangot nyújtani kell, előtte meg kell győződni, hogy Resampling vagy Time Stretch algoritmusra van-e szükség (pl. `hdtools compare`).
     - 7.7.1) Resamplingre használható programok: `SoX`, `hdtools resample`, `eac3to`, `Sound Forge`, `Audacity` és `Adobe Audition`.
     - 7.7.2) TimeStretchingre használható programok: `SoX`, `hdtools tstretch`, `Prosoniq TimeFactory II`, `Sound Forge`, `SONAR` `élastique TimeStretch`, `Audacity` és `Adobe Audition`.
-  - 7.8) Szegmentált kódolás használata TILOS!
+  - 7.8) Szegmentált kódolás használata tilos!
   - 7.9) A `dialnorm` értékeket mérés alapján kell beállítani vagy forrásból kell megtartani. (előbbi preferált)
     - 7.9.1) A `Dolby Encoding Engine`/[`deew`](/files/tools.md) magától beállítja, így itt erre nincs szükség. A mérés kézzel `Adobe Audition` segítségével történhet, a `C` csatornára kapott `ITU-R BS.1770-3 Loudness` értéket kell `dialnorm` értéknek megadni.
   - 7.10) `E-AC3` hang `AC3`-ba történő kódolásakor a megengedett bitráták az eredeti `1.7`-szereséhez legközelebb eső két bitráta (nagyjából ennyivel jobb a `DD+` algoritmus). Például: ha a forrás `DDP@192`, akkor `192 * 1.7 = 326.4`, tehát az `AC3` bitrátája lehet `320` kbps vagy `384` kbps vagy ha a forrás `DDP@256`, akkor `256 * 1.7 = 435.2`, tehát `384` kbps és `448` kbps-es `AC3` készíthető.
@@ -193,7 +193,7 @@
     - 8.2.1) A kész felirat lehetőleg kevés, érthetőséget nem zavaró helyesírási hibát tartalmazhat, de törekedjünk, hogy ne legyen benne hiba.
     - 8.2.2) A felismertetett feliraton javasolt spellchecker / helyesírás-ellenőrző lefuttatása.
   - 8.3) A feliratokat tartalmaznia kell az mkv-nak, de opcionálisan mellette is meghagyhatóak az `SRT` formátumúak.
-  - 8.4) `.mp4` konténer használata esetén a feliratok muxolása TILOS! A feliratokat a file mellé, vagy egy `Subs` mappába kell helyezni.
+  - 8.4) `.mp4` konténer használata esetén a feliratok muxolása tilos! A feliratokat a file mellé, vagy egy `Subs` mappába kell helyezni.
   - 8.5) `.m2ts` konténer használata esetén kizárólag PGS-SUP feliratokat szabad muxolni. Az `.srt` feliratokat a file mellé, vagy egy `Subs` mappába kell helyezni.
   - 8.6) Amennyiben HDR formátumról származó PGS-SUP feliratot teszünk SDR remuxra, úgy a fényerejét 60%-al meg kell növelni.
   - 8.7) Amennyiben SDR formátumról származó PGS-SUP feliratot teszünk HDR remuxra, úgy a fényerejét 60%-al le kell csökkenteni.
