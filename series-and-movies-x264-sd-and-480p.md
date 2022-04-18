@@ -30,11 +30,11 @@
     - 2.2.2) Amennyiben a cím tiltott karaktert tartalmaz (pl. `*`), akkor `.` vagy `-`-el helyettesítendő, vagy kiírható az a karakter, amit helyettesít, pl.: `T@gged` -> `Tagged`, `Elk*rtuk` -> `Elkurtuk`.
   - 2.3) TILOS két azonos nevű file létrehozása, amelyek kizárólag kis és nagy betűben térnek el (pl. film-release és Film-release)!
   - 2.4) A következő nevek nem használhatók könyvtár- és fájlnevek elején ponttal elválasztva: `CON`, `PRN`, `AUX`, `NUL`, `COM*`, `LPT*` (ahol `*` egy számot jelöl).
-    - 2.4.1) TILOS: `Con.Man.2018.BDRip.x264.HUN-XYZ`\
-    OK: `Con_Man.2018.BDRip.x264.HUN-XYZ`
-    - 2.4.2) TILOS: `con.man.mkv`, `con.mkv`\
-    OK: `con_man.mkv`, `conman.mkv`
-    - 2.4.3) OK: `The.Con.Is.On.2018.BDRip.x264.HUN-XYZ`
+         TILOS: `Con.Man.2018.BDRip.x264.HUN-XYZ`\
+         OK: `Con_Man.2018.BDRip.x264.HUN-XYZ`\
+         TILOS: `con.man.mkv`, `con.mkv`\
+         OK: `con_man.mkv`, `conman.mkv`\
+         OK: `The.Con.Is.On.2018.BDRip.x264.HUN-XYZ`
   - 2.5) Sorozatok és filmek ajánlott tagelése (a sorrendtől el lehet térni):
     - 2.5.1) Sorozatok: `[series.name].[season].[resolution].[source].[audio.codec].[video.codec].[language]-[group]`
       - 2.5.1.1) `[season]` tag legalább két jegyre megadandó (mind az évad, mind a rész), kivéve mini-series esetén.
