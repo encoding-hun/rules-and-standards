@@ -9,7 +9,7 @@ from rich import print
 
 # groups and sites for README.md
 sites = []
-groups = ['Legacy', 'pcroland', 'NFC', 'NaGa', 'boOk', 'SFY', 'PTHD', 'FULCRUM', 'DenZo', 'ARROW', 'prldm', 'VARYG', '14V1', 'NYH', 'GS88']
+groups = ['Legacy', 'pcroland', 'NFC', 'NaGa', 'boOk', 'SFY', 'PTHD', 'FULCRUM', 'DenZo', 'ARROW', 'prldm', 'VARYG', '14V1', 'NYH', 'GS88', 'JBR', 'MGM']
 banned_groups = []
 
 
