@@ -53,7 +53,7 @@
 - [Portable FATPACK](https://github.com/theChaosCoder/vapoursynth-portable-FATPACK/releases)
 
 # Audió
-- [Dolby Encodinge Engine](https://ncore.pro/torrents.php?action=details&id=3300065) | [linux](https://ncore.pro/torrents.php?action=details&id=3300066)
+- [Dolby Encoding Engine](https://ncore.pro/torrents.php?action=details&id=3300065) | [linux](https://ncore.pro/torrents.php?action=details&id=3300066)
 - [deew (Dolby Encoding Engine Wrapper)](https://github.com/pcroland/deew)
 - [qaac, fdkaac, sox](https://cloud01.opsdata.ch/index.php/s/CWptD6kwGSSisHi)
 - [Audacity](https://drive.google.com/file/d/1D_RFVYeRzGLObhrLnMYm3SNZfcAOL-jO)
