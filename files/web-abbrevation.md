@@ -109,6 +109,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | Lifetime                        | `LIFE`    |
 | Loving Nature                   | `LN  `    |
 | Motor Trend OnDemand            | `MTOD`    |
+| Movies Anywhere                 | `MA  `    |
 | MSNBC                           | `MNBC`    |
 | MTV                             | `MTV `    |
 | National Geographic             | `NATG`    |
