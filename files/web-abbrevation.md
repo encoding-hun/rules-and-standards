@@ -1,7 +1,7 @@
 Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen release készítője választhat egyet a forrás 2-4 betűjének egymás után történő felhasználásával. (Pl.: `sonymax.hu` -> `SMAX`, `eszinhaz.hu` -> `ESZH`)
 
 ## Hazai
-| oldal                           | rövidítés |
+| Oldal                           | Rövidítés |
 | :-                              | :-        |
 | cinego.hu                       | `CNGO`    |
 | filmio.hu                       | `FMIO`    |
@@ -14,7 +14,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | filmbox.com                     | `FBP`     |
 | spilerextra.hu                  | `SPLR`    |
 ## Nemzetközi (BTN Web Content Guidelines alapján)
-| oldal                           | rövidítés |
+| Oldal                           | Rövidítés |
 | :-                              | :-        |
 | 7plus                           | `7P  `    |
 | 9Now                            | `9NOW`    |
