@@ -13,6 +13,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | tv2play.hu                      | `TV2`     |
 | filmbox.com                     | `FBP`     |
 | spilerextra.hu                  | `SPLR`    |
+| mediaklikk.hu                   | `MKLK`    |
 ## Nemzetközi (BTN Web Content Guidelines alapján)
 | Oldal                           | Rövidítés |
 | :-                              | :-        |
