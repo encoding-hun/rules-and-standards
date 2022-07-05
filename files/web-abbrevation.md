@@ -134,6 +134,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | PokerGo                         | `POGO`    |
 | Project Alpha                   | `PA  `    |
 | puhutv                          | `PUHU`    |
+| Quibi                           | `QIBI`    |
 | Rakuten TV                      | `RKTN`    |
 | Rooster Teeth                   | `RSTR`    |
 | RTÉ                             | `RTE `    |
