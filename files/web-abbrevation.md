@@ -193,6 +193,6 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | Yahoo                           | `YHOO`    |
 | YouTube Movies                  | See Google Play |
 | YouTube Premium                 | `RED `    |
-| YouTube TV                      | `YTTV`
+| YouTube TV                      | `YTTV`    |
 | ZDF                             | `ZDF `    |
 
