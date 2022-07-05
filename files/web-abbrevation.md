@@ -91,7 +91,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | Global                          | `GLBL`    |
 | GloboSat Play                   | `GLOB`    |
 | go90                            | `GO90`    |
-| Google Play                     | `PLAY`    |
+| Google Play                     | `PLAY` (korábban `GP`) |
 | Hallmark                        | `HLMK`    |
 | HBO GO/Now                      | `HBO `    |
 | HBO Max                         | `HMAX`    |
