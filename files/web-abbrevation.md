@@ -14,6 +14,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | filmbox.com                     | `FBP`     |
 | spilerextra.hu                  | `SPLR`    |
 | mediaklikk.hu                   | `MKLK`    |
+| hu.axn.com                      | `AXNP`    |
 ## Nemzetközi (BTN Web Content Guidelines alapján)
 | Oldal                           | Rövidítés |
 | :-                              | :-        |
@@ -80,6 +81,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | Esquire                         | `ESQ `    |
 | Family                          | `FAM `    |
 | Family Jr                       | `FJR `    |
+| FlixOlé                         | `FO  `    |
 | Food Network                    | `FOOD`    |
 | Fox                             | `FOX `    |
 | Foxtel Now                      | `FXTL`    |
@@ -91,7 +93,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | Global                          | `GLBL`    |
 | GloboSat Play                   | `GLOB`    |
 | go90                            | `GO90`    |
-| Google Play                     | `PLAY`    |
+| Google Play                     | `PLAY` (korábban `GP`) |
 | Hallmark                        | `HLMK`    |
 | HBO GO/Now                      | `HBO `    |
 | HBO Max                         | `HMAX`    |
@@ -112,6 +114,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | Loving Nature                   | `LN  `    |
 | Motor Trend OnDemand            | `MTOD`    |
 | Movies Anywhere                 | `MA  `    |
+| Mubi                            | `MUBI`    |
 | MSNBC                           | `MNBC`    |
 | MTV                             | `MTV `    |
 | National Geographic             | `NATG`    |
@@ -126,6 +129,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | Now (Sky)                       | `NOW `    |
 | Paramount Network               | `PMNT`    |
 | Paramount+                      | `PMTP`    |
+| Paravi                          | `PRVI`    |
 | PBS                             | `PBS `    |
 | PBS Kids                        | `PBSK`    |
 | Peacock                         | `PCOK`    |
@@ -134,10 +138,11 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | PokerGo                         | `POGO`    |
 | Project Alpha                   | `PA  `    |
 | puhutv                          | `PUHU`    |
+| Quibi                           | `QIBI`    |
 | Rakuten TV                      | `RKTN`    |
 | Rooster Teeth                   | `RSTR`    |
 | RTÉ                             | `RTE `    |
-| RTL+ (DE)                       | `RTLP`    |
+| RTL+ (DE) (korábban TVNOW)      | `RTLP`    |
 | SBS (AU)                        | `SBS `    |
 | Seeso                           | `SESO`    |
 | Shomi                           | `SHMI`    |
@@ -168,20 +173,26 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | TVNZ                            | `TVNZ`    |
 | UFC                             | `UFC `    |
 | UKTV                            | `UKTV`    |
+| U-NEXT                          | `UNXT`    |
 | Univision                       | `UNIV`    |
 | USA Network                     | `USAN`    |
 | Velocity                        | `VLCT`    |
 | VH1                             | `VH1 `    |
 | Viaplay                         | `VIAP`    |
 | Viceland                        | `VICE`    |
+| Videoland                       | `VL  `    |
 | Viki                            | `VIKI`    |
 | Vimeo                           | `VMEO`    |
 | VRV                             | `VRV `    |
 | Vudu                            | `VUDU`    |
 | W Network                       | `WNET`    |
+| Waipu                           | `WAIP`    |
 | WatchMe                         | `WME `    |
 | WWE Network                     | `WWEN`    |
 | Xbox Video                      | `XBOX`    |
 | Yahoo                           | `YHOO`    |
+| YouTube Movies                  | See Google Play |
+| YouTube Premium                 | `RED `    |
+| YouTube TV                      | `YTTV`    |
 | ZDF                             | `ZDF `    |
 
