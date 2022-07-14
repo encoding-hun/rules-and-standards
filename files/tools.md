@@ -21,7 +21,6 @@
     </details>
   - [tMod r3085+55 (jpsdr)](https://github.com/jpsdr/x264/releases)
   - [Patman r3094+13](https://github.com/Patman86/x264-Mod-by-Patman/releases)
-  - [kMod r3059](https://github.com/cshmnyfy/x264-kMod-patches/releases)
   - [aMod r3059+18](https://github.com/DJATOM/x264-aMod/releases)
 - x265
   - [vanilla 3.5+36](http://msystem.waw.pl/x265)
