@@ -55,6 +55,7 @@
 - [Dolby Encoding Engine](https://ncore.pro/torrents.php?action=details&id=3370721) | [linux](https://ncore.pro/torrents.php?action=details&id=3370722)
 - [deew (Dolby Encoding Engine Wrapper)](https://github.com/pcroland/deew)
 - [Dolby Media Encoder](https://ncore.pro/torrents.php?action=details&id=3370723) | [macOS](https://ncore.pro/torrents.php?action=details&id=3370724)
+- [Dolby Reference Player](https://ncore.pro/torrents.php?action=details&id=3353263) | [macOS](https://ncore.pro/torrents.php?action=details&id=3353278)
 - [qaac, fdkaac, sox](https://cloud01.opsdata.ch/index.php/s/CWptD6kwGSSisHi)
 - [Audacity](https://drive.google.com/file/d/1D_RFVYeRzGLObhrLnMYm3SNZfcAOL-jO)
   - ebben a custom buildben ki van kapcsolva ffmpeg `-drc_scale`-je.
