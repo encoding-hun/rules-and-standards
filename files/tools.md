@@ -28,7 +28,7 @@
   - [aMod 3.5+20](https://github.com/DJATOM/x265-aMod/releases)
   - [Yuuki 3.5+2](https://down.7086.in/x265-Yuuki-Asuna)
 - [ffmpeg](https://ffmpeg.org/download.html)
-- [VideoReDo TVSuite](https://ncore.pro/torrents.php?action=details&id=3248269) | [béta buildek](https://www.videoredo.net/msgBoard/index.php?resources/videoredo-tvsuite-v6-beta.3/)
+- [VideoReDo TVSuite](https://ncore.pro/t/3248269) | [béta buildek](https://www.videoredo.net/msgBoard/index.php?resources/videoredo-tvsuite-v6-beta.3/)
 - [tsMuxer](https://github.com/justdan96/tsMuxer/releases)
 - [dovi_tool](https://github.com/quietvoid/dovi_tool/releases)
 - [hdr10plus_tool](https://github.com/quietvoid/hdr10plus_tool/releases)
@@ -52,16 +52,16 @@
 - [Portable FATPACK](https://github.com/theChaosCoder/vapoursynth-portable-FATPACK/releases)
 
 # Audió
-- [Dolby Encoding Engine](https://ncore.pro/torrents.php?action=details&id=3370721) | [linux](https://ncore.pro/torrents.php?action=details&id=3370722)
+- [Dolby Encoding Engine v5.2.1](https://ncore.pro/t/3370721) | [linux](https://ncore.pro/t/3370722)
 - [deew (Dolby Encoding Engine Wrapper)](https://github.com/pcroland/deew)
-- [Dolby Media Encoder](https://ncore.pro/torrents.php?action=details&id=3370723) | [macOS](https://ncore.pro/torrents.php?action=details&id=3370724)
-- [Dolby Reference Player](https://ncore.pro/torrents.php?action=details&id=3353263) | [macOS](https://ncore.pro/torrents.php?action=details&id=3353278)
+- [Dolby Media Encoder v3.3.0](https://ncore.pro/t/3370723) | [macOS](https://ncore.pro/t/3370724)
+- [Dolby Reference Player v3.2.0](https://ncore.pro/t/3379271) | [macOS](https://ncore.pro/t/3379272)
 - [qaac, fdkaac, sox](https://cloud01.opsdata.ch/index.php/s/CWptD6kwGSSisHi)
 - [Audacity](https://drive.google.com/file/d/1D_RFVYeRzGLObhrLnMYm3SNZfcAOL-jO)
   - ebben a custom buildben ki van kapcsolva ffmpeg `-drc_scale`-je.
   - ffmpeg libek letöltése innen: [LINK](https://github.com/88keyz/Zeranoe/releases/tag/20200831-4a11a6f-w32-shared)
   - ffmpeg beállítása ez alapján: [LINK](https://manual.audacityteam.org/man/installing_ffmpeg_for_windows.html)
-- [Adobe Audition](https://ncore.pro/torrents.php?action=details&id=3298512)
+- [Adobe Audition](https://ncore.pro/t/3298512)
 - [audiostretch, aacenc, audiocomp, downmix bash/zsh snippets](https://github.com/encoding-hun/snippets)
 
 # Felirat
@@ -74,7 +74,7 @@
   - [official](https://github.com/Aegisub/Aegisub/releases) *(régi!)*
 - [Notepad++](https://notepad-plus-plus.org/downloads/)
 - Subtitle WorkShop
-  - [6.0e](https://sourceforge.net/projects/subtitle-workshop-classic) | [mirror](https://www.videohelp.com/software/Subtitle-Workshop)
+  - [6.1.4](https://sourceforge.net/projects/subtitle-workshop-classic) | [mirror](https://www.videohelp.com/software/Subtitle-Workshop)
   - [6.0b official](http://subworkshop.sourceforge.net/) *(régi!)*
 
 # NFO
@@ -91,4 +91,4 @@
 - [UHDBits - The Encoding Guide](https://encoding-guide.neocities.org/)
 - [Irrational-Encoding-Wizardry - Fansubbing Guide](https://guide.encode.moe/)
 - [x264 settings](http://www.chaneru.com/Roku/HLS/X264_Settings.htm)
-- [BodoiCuHo -  x264 Encoding Guide](https://bodoicuho.ucoz.ru/) *(outdated)*
+- [BodoiCuHo -  x264 Encoding Guide](https://bodoicuho.ucoz.ru/) *(régi!)*
