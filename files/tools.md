@@ -78,7 +78,7 @@
   - [6.0b official](http://subworkshop.sourceforge.net/) *(régi!)*
 
 # NFO
-- [PabloDraw](http://picoe.ca/products/pablodraw)
+- [PabloDraw](http://picoe.ca/products/pablodraw) | [GitHub](https://github.com/cwensley/pablodraw/releases)
 - [Moebius](https://github.com/blocktronics/moebius/releases)
 - [neovim](https://github.com/neovim/neovim/releases)
   - A helyes megjelenítéshez a `~/.config/nvim/init.vim` fájlba rakjuk be a következő sort: `autocmd BufReadPre *.nfo :setlocal fileencodings=cp437,utf-8`
