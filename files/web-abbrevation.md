@@ -55,6 +55,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | Cooking Channel                 | `COOK`    |
 | Country Music Television        | `CMT `    |
 | Crackle                         | `CRKL`    |
+| Crave                           | `CRAV`    |
 | Criterion Channel               | `CRIT`    |
 | Crunchyroll                     | `CR  `    |
 | CSpan                           | `CSPN`    |
