@@ -3,19 +3,19 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 ## Hazai
 | Oldal                           | Rövidítés |
 | :-                              | :-        |
+| hu.axn.com                      | `AXNP`    |
 | cinego.hu                       | `CNGO`    |
-| filmio.hu                       | `FMIO`    |
-| archivum.mtva.hu                | `MTVA`    |
 | eszinhaz.hu                     | `ESZH`    |
+| filmbox.com                     | `FBP`     |
+| filmio.hu                       | `FMIO`    |
+| lifetv.hu                       | `LFTV`    |
+| mediaklikk.hu                   | `MKLK`    |
+| archivum.mtva.hu                | `MTVA`    |
 | rtlmost.hu                      | `RTLM`    |
 | sonymax.hu                      | `SMAX`    |
+| spilerextra.hu                  | `SPLR`    |
 | telekomtvgo.hu                  | `TVGO`    |
 | tv2play.hu                      | `TV2`     |
-| filmbox.com                     | `FBP`     |
-| spilerextra.hu                  | `SPLR`    |
-| mediaklikk.hu                   | `MKLK`    |
-| hu.axn.com                      | `AXNP`    |
-| lifetv.hu                       | `LFTV`    |
 ## Nemzetközi (BTN Web Content Guidelines alapján)
 | Oldal                           | Rövidítés |
 | :-                              | :-        |
