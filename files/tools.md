@@ -35,7 +35,7 @@
 
 ### AviSynth+
 - [AviSynth+ official build](https://github.com/AviSynth/AviSynthPlus/releases) | [béta buildek](https://forum.doom9.org/showthread.php?t=181351)
-- [Avisynth+ 3.7.x (r3682) clang build](https://gitlab.com/uvz/AviSynthPlus-Builds)
+- [Avisynth+ 3.7.x (r3689) clang build](https://gitlab.com/uvz/AviSynthPlus-Builds)
   - ~7%-kal gyorsabb az official buildnél.
   - A telepítéséhez először telepítsük az official buildet, majd futtassuk az `avisynth_updater.bat` fájlt admin módban.
 - [AvsPmod](https://github.com/gispos/AvsPmod/releases)
