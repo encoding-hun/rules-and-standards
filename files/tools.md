@@ -5,7 +5,7 @@
 - [DGDecNV](http://rationalqm.us/dgdecnv/binaries/)
 - [DGMPGDec](http://rationalqm.us/dgmpgdec/)
 - x264
-  - [vanilla r3095](https://artifacts.videolan.org/x264/release-win64/) | [MABS build](https://www.mediafire.com/?bxvu1vvld31k1)
+  - [vanilla r3098](https://artifacts.videolan.org/x264/release-win64/) | [MABS build](https://www.mediafire.com/?bxvu1vvld31k1)
   - [tMod r3098+49](https://emma.cloud.tabdigital.eu/s/rrHWew8eH8R8ezc) | [mirror](https://drive.google.com/drive/folders/18UzdSN66G0I646w9sP1qsCZuPO52CwYP)
     - <details>
       <summary>Különbségek jpsdr buildjéhez képest</summary>
@@ -23,7 +23,7 @@
   - [Patman r3094+13](https://github.com/Patman86/x264-Mod-by-Patman/releases)
   - [aMod r3059+18](https://github.com/DJATOM/x264-aMod/releases)
 - x265
-  - [vanilla 3.5+38](http://msystem.waw.pl/x265)
+  - [vanilla 3.5+39](http://msystem.waw.pl/x265)
   - [Patman 3.5+37+12](https://github.com/Patman86/x265-Mod-by-Patman/releases)
   - [aMod 3.5+67](https://github.com/DJATOM/x265-aMod/releases)
   - [Yuuki 3.5+2](https://down.7086.in/x265-Yuuki-Asuna)
