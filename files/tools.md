@@ -5,8 +5,8 @@
 - [DGDecNV](http://rationalqm.us/dgdecnv/binaries/)
 - [DGMPGDec](http://rationalqm.us/dgmpgdec/)
 - x264
-  - [vanilla r3098](https://artifacts.videolan.org/x264/release-win64/) | [MABS build](https://www.mediafire.com/?bxvu1vvld31k1)
-  - [tMod r3098+49](https://emma.cloud.tabdigital.eu/s/rrHWew8eH8R8ezc) | [mirror](https://drive.google.com/drive/folders/18UzdSN66G0I646w9sP1qsCZuPO52CwYP)
+  - [vanilla r3100](https://artifacts.videolan.org/x264/release-win64/) | [MABS build](https://www.mediafire.com/?bxvu1vvld31k1)
+  - [tMod r3100+49](https://emma.cloud.tabdigital.eu/s/rrHWew8eH8R8ezc) | [mirror](https://drive.google.com/drive/folders/18UzdSN66G0I646w9sP1qsCZuPO52CwYP)
     - <details>
       <summary>Különbségek jpsdr buildjéhez képest</summary>
 
