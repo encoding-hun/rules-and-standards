@@ -21,9 +21,10 @@
     </details>
   - [tMod r3099+55 (jpsdr)](https://github.com/jpsdr/x264/releases)
   - [Patman r3094+13](https://github.com/Patman86/x264-Mod-by-Patman/releases)
-  - [aMod r3059+18](https://github.com/DJATOM/x264-aMod/releases)
+  - [aMod r3101+20](https://github.com/DJATOM/x264-aMod/releases)
 - x265
-  - [vanilla 3.5+39](http://msystem.waw.pl/x265)
+  - [vanilla 3.5+40](http://msystem.waw.pl/x265)
+  - [jpsdr-Patman 3.5+56](https://github.com/jpsdr/x265/releases)
   - [Patman 3.5+37+12](https://github.com/Patman86/x265-Mod-by-Patman/releases)
   - [aMod 3.5+67](https://github.com/DJATOM/x265-aMod/releases)
   - [Yuuki 3.5+2](https://down.7086.in/x265-Yuuki-Asuna)
