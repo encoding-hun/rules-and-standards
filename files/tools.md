@@ -5,7 +5,7 @@
 - [DGDecNV](http://rationalqm.us/dgdecnv/binaries/)
 - [DGMPGDec](http://rationalqm.us/dgmpgdec/)
 - x264
-  - [vanilla r3100](https://artifacts.videolan.org/x264/release-win64/) | [MABS build](https://www.mediafire.com/?bxvu1vvld31k1)
+  - [vanilla r3101](https://artifacts.videolan.org/x264/release-win64/) | [MABS build](https://www.mediafire.com/?bxvu1vvld31k1)
   - [tMod r3100+49](https://emma.cloud.tabdigital.eu/s/rrHWew8eH8R8ezc) | [mirror](https://drive.google.com/drive/folders/18UzdSN66G0I646w9sP1qsCZuPO52CwYP)
     - <details>
       <summary>Különbségek jpsdr buildjéhez képest</summary>
@@ -36,7 +36,7 @@
 
 ### AviSynth+
 - [AviSynth+ official build](https://github.com/AviSynth/AviSynthPlus/releases) | [béta buildek](https://forum.doom9.org/showthread.php?t=181351)
-- [Avisynth+ 3.7.x (r3689) clang build](https://gitlab.com/uvz/AviSynthPlus-Builds)
+- [Avisynth+ 3.7.x (r3825) clang build](https://gitlab.com/uvz/AviSynthPlus-Builds)
   - ~7%-kal gyorsabb az official buildnél.
   - A telepítéséhez először telepítsük az official buildet, majd futtassuk az `avisynth_updater.bat` fájlt admin módban.
 - [AvsPmod](https://github.com/gispos/AvsPmod/releases)
