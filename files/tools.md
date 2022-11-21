@@ -5,7 +5,7 @@
 - [DGDecNV](http://rationalqm.us/dgdecnv/binaries/)
 - [DGMPGDec](http://rationalqm.us/dgmpgdec/)
 - x264
-  - [vanilla r3100](https://artifacts.videolan.org/x264/release-win64/) | [MABS build](https://www.mediafire.com/?bxvu1vvld31k1)
+  - [vanilla r3101](https://artifacts.videolan.org/x264/release-win64/) | [MABS build](https://www.mediafire.com/?bxvu1vvld31k1)
   - [tMod r3100+49](https://emma.cloud.tabdigital.eu/s/rrHWew8eH8R8ezc) | [mirror](https://drive.google.com/drive/folders/18UzdSN66G0I646w9sP1qsCZuPO52CwYP)
     - <details>
       <summary>Különbségek jpsdr buildjéhez képest</summary>
@@ -21,9 +21,10 @@
     </details>
   - [tMod r3099+55 (jpsdr)](https://github.com/jpsdr/x264/releases)
   - [Patman r3094+13](https://github.com/Patman86/x264-Mod-by-Patman/releases)
-  - [aMod r3059+18](https://github.com/DJATOM/x264-aMod/releases)
+  - [aMod r3101+20](https://github.com/DJATOM/x264-aMod/releases)
 - x265
-  - [vanilla 3.5+39](http://msystem.waw.pl/x265)
+  - [vanilla 3.5+68](http://msystem.waw.pl/x265)
+  - [jpsdr-Patman 3.5+68](https://github.com/jpsdr/x265/releases)
   - [Patman 3.5+37+12](https://github.com/Patman86/x265-Mod-by-Patman/releases)
   - [aMod 3.5+67](https://github.com/DJATOM/x265-aMod/releases)
   - [Yuuki 3.5+2](https://down.7086.in/x265-Yuuki-Asuna)
@@ -35,7 +36,7 @@
 
 ### AviSynth+
 - [AviSynth+ official build](https://github.com/AviSynth/AviSynthPlus/releases) | [béta buildek](https://forum.doom9.org/showthread.php?t=181351)
-- [Avisynth+ 3.7.x (r3689) clang build](https://gitlab.com/uvz/AviSynthPlus-Builds)
+- [Avisynth+ 3.7.x (r3825) clang build](https://gitlab.com/uvz/AviSynthPlus-Builds)
   - ~7%-kal gyorsabb az official buildnél.
   - A telepítéséhez először telepítsük az official buildet, majd futtassuk az `avisynth_updater.bat` fájlt admin módban.
 - [AvsPmod](https://github.com/gispos/AvsPmod/releases)
