@@ -16,6 +16,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | spilerextra.hu                  | `SPLR`    |
 | telekomtvgo.hu                  | `TVGO`    |
 | tv2play.hu                      | `TV2`     |
+| viasat3.hu                      | `VST3`    |
 ## Nemzetközi (BTN Web Content Guidelines alapján)
 | Oldal                           | Rövidítés |
 | :-                              | :-        |
