@@ -151,6 +151,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | Shomi                           | `SHMI`    |
 | Showtime                        | `SHO `    |
 | Shudder                         | `SHDR`    |
+| SkyShowtime                     | `SKST`    |
 | Spectrum                        | `SPEC`    |
 | Spike                           | `SPIK`    |
 | Sportsnet                       | `SNET`    |
