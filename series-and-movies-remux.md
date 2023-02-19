@@ -139,8 +139,8 @@
     - 6.7.1) Kivétel compatibility trackek és audiokommentár.
     - 6.7.2) Kivétel azon hangok, amelyek nyújtást igényelnek vagy egyéb olyan beavatkozást, mely során az újrakódolás nem elkerülhető.
   - 6.8) Megengedett hangformátumok:
-    - 6.8.1) 1.0: `AAC`
-    - 6.8.2) 2.0: `AAC` (ajánlott), `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`)
+    - 6.8.1) 1.0: `AAC`, `FLAC`
+    - 6.8.2) 2.0: `AAC` (ajánlott), `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`), `FLAC`
       - 6.8.2.1) `AC3` (`DD`) esetén a forrással megegyező bitráta vagy jobb forrás esetén 192-256 kbps elfogadott.
     - 6.8.3) 5.1: `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`), `AAC`, `FLAC`, `DTS(-HD MA)`, `TrueHD`
       - 6.8.3.1) `AC3` (`DD`) 640 kbps, ha jobb forrásból készül, vagy az eredetivel megegyező (pl. DVD esetén).
