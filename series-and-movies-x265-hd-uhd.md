@@ -225,17 +225,17 @@
   - 9.4) Nem angol nyelvű, eredeti hangsáv esetén az angol hang (már amennyiben létezik) megtartása opcionális.
   - 9.5) Egyéb nyelvű hangok megtartása tilos!
   - 9.6) Megengedett hangformátumok:
-    - 9.6.1) 1.0: `AAC`, `FLAC` (csak `2160p`)
-    - 9.6.2) 2.0: `AAC` (ajánlott), `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`), `FLAC` (csak `2160p`)
+    - 9.6.1) 1.0: `AAC`
+    - 9.6.2) 2.0: `AAC` (ajánlott), `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`)
       - 9.6.2.1) `AC3` (`DD`) esetén a forrással megegyező bitráta vagy jobb forrás esetén 192-256 kbps elfogadott.
-    - 9.6.3) 5.1: `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`), `AAC`, `FLAC` (csak `2160p`), `DTS(-HD MA)` (csak `2160p`), `TrueHD` (csak `2160p`)
+    - 9.6.3) 5.1: `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`), `AAC`
       - 9.6.3.1) `AC3` (`DD`) 640 kbps, ha jobb forrásból készül, vagy az eredetivel megegyező (pl. DVD esetén).
       - 9.6.3.2) `E-AC3` (`DD+`/`DDP`) 1024 kbps, ha jobb forrásból készül, vagy az eredetivel megegyező.
-    - 9.6.4) 7.1: `E-AC3` (`DD+`/`DDP`), `DTS(-HD MA)` (csak `2160p`), `TrueHD` (csak `2160p`), `DTS-X` (csak `2160p`)
+    - 9.6.4) 7.1: `E-AC3` (`DD+`/`DDP`)
       - 9.6.4.1) 1536 kbps, ha jobb forrásból készül, vagy az eredetivel megegyező.
   - 9.7) Kizárólag stúdió által készített surround hangok használhatóak fel, házilag felkevertek tilosak. TV-s surround hang esetén mindig győződjünk meg, hogy valódi surround-e, amennyiben nem, downmixeljük. Pl.: `ffmpeg -i input.ac3 -ac 2 -f sox - | sox -p -S -b 24 --norm=-1 output.wav`
-  - 9.8) 2160p esetén lossless hangok is megengedettek, pl.: `TrueHD`, `DTS-HD.MA` és `DTS-X`.
-  - 9.9) Más formátumok, pl. 5.1-es `AAC` vagy lossy `DTS` használata (ha az érintetlen forráson nem érhető el jobb) esetén KÖTELEZŐ `DD@640` (2 csatorna esetén `DD@256` vagy `AAC`) compatibility track készítése.
+  - 9.8) `2160p` esetén lossless hangok is megengedettek, pl.: `FLAC`, `TrueHD`, `DTS-HD.MA` és `DTS-X`.
+  - 9.9) Más formátumok, pl. 5.1-es `AAC` vagy lossy `DTS` használata (ha az érintetlen forráson nem érhető el jobb) esetén KÖTELEZŐ `DD@640` (2 csatorna esetén `DD@256` vagy `AAC`) compatibility track készítése. Ide értendőek a 9.8-as pontban felsorolt formátumok is.
     - 9.9.1) `TrueHD` formátum esetén az AC3 (`DD`) compatibility stream megtartása KÖTELEZŐ! Ha a lemezen lévő compatibility track csak 384-448 kbps bitrátájú, akkor készíthető a `TrueHD` hangból 640 kbps bitrátájú hang is.
   - 9.10) Lossless formátumok kereszt-konvertálása tilos (pl. `TrueHD` -> `FLAC`).
     - 9.10.1) Ez alól kivételt képeznek az LPCM hangok, amiket kötelező `TrueHD`, `DTS-HD.MA` vagy `FLAC` formátumba vagy kommentár esetén akár `AAC` formátumba konvertálni.
