@@ -142,10 +142,10 @@
     - 6.8.1) 1.0: `AAC`
     - 6.8.2) 2.0: `AAC` (ajánlott), `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`)
       - 6.8.2.1) `AC3` (`DD`) esetén a forrással megegyező bitráta vagy jobb forrás esetén 192-256 kbps elfogadott.
-    - 6.8.3) 5.1: `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`)
+    - 6.8.3) 5.1: `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`), `AAC`, `FLAC`, `DTS(-HD MA)`, `TrueHD`
       - 6.8.3.1) `AC3` (`DD`) 640 kbps, ha jobb forrásból készül, vagy az eredetivel megegyező (pl. DVD esetén).
       - 6.8.3.2) `E-AC3` (`DD+`/`DDP`) 1024 kbps, ha jobb forrásból készül, vagy az eredetivel megegyező.
-    - 6.8.4) 7.1: `E-AC3` (`DD+`/`DDP`) 1080p és 2160p esetén
+    - 6.8.4) 7.1: `E-AC3` (`DD+`/`DDP`), `DTS(-HD MA)`, `TrueHD`, `DTS-X`
       - 6.8.4.1) 1536 kbps, ha jobb forrásból készül, vagy az eredetivel megegyező.
   - 6.9) Kizárólag stúdió által készített surround hangok használhatóak fel, házilag felkevertek tilosak. TV-s surround hang esetén mindig győződjünk meg, hogy valódi surround-e, amennyiben nem, downmixeljük. Pl.: `ffmpeg -i input.ac3 -ac 2 -f sox - | sox -p -S -b 24 --norm=-1 output.wav`
   - 6.10) Más formátumok, pl. 5.1-es `AAC` vagy `DTS-HD MA` használata esetén KÖTELEZŐ `DD@640` (2 csatorna esetén `DD@256` vagy `AAC`) compatibility track készítése.
