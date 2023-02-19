@@ -225,13 +225,13 @@
   - 9.4) Nem angol nyelvű, eredeti hangsáv esetén az angol hang (már amennyiben létezik) megtartása opcionális.
   - 9.5) Egyéb nyelvű hangok megtartása tilos!
   - 9.6) Megengedett hangformátumok:
-    - 9.6.1) 1.0: `AAC`
-    - 9.6.2) 2.0: `AAC` (ajánlott), `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`)
+    - 9.6.1) 1.0: `AAC`, `FLAC` (csak `2160p`)
+    - 9.6.2) 2.0: `AAC` (ajánlott), `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`), `FLAC` (csak `2160p`)
       - 9.6.2.1) `AC3` (`DD`) esetén a forrással megegyező bitráta vagy jobb forrás esetén 192-256 kbps elfogadott.
-    - 9.6.3) 5.1: `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`)
+    - 9.6.3) 5.1: `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`), `AAC`, `FLAC` (csak `2160p`), `DTS(-HD MA)` (csak `2160p`), `TrueHD` (csak `2160p`)
       - 9.6.3.1) `AC3` (`DD`) 640 kbps, ha jobb forrásból készül, vagy az eredetivel megegyező (pl. DVD esetén).
       - 9.6.3.2) `E-AC3` (`DD+`/`DDP`) 1024 kbps, ha jobb forrásból készül, vagy az eredetivel megegyező.
-    - 9.6.4) 7.1: `E-AC3` (`DD+`/`DDP`)
+    - 9.6.4) 7.1: `E-AC3` (`DD+`/`DDP`), `DTS(-HD MA)` (csak `2160p`), `TrueHD` (csak `2160p`), `DTS-X` (csak `2160p`)
       - 9.6.4.1) 1536 kbps, ha jobb forrásból készül, vagy az eredetivel megegyező.
   - 9.7) Kizárólag stúdió által készített surround hangok használhatóak fel, házilag felkevertek tilosak. TV-s surround hang esetén mindig győződjünk meg, hogy valódi surround-e, amennyiben nem, downmixeljük. Pl.: `ffmpeg -i input.ac3 -ac 2 -f sox - | sox -p -S -b 24 --norm=-1 output.wav`
   - 9.8) 2160p esetén lossless hangok is megengedettek, pl.: `TrueHD`, `DTS-HD.MA` és `DTS-X`.
