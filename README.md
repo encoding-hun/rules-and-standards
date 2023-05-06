@@ -11,8 +11,8 @@
 
 ## [Toolok](/files/tools.md)
 
-## Csapatok, akik aláírták és tudomásul vették (ábécé sorrendben) - 17 csapat ([link](https://github.com/encoding-hun/rules-and-standards/issues/14))
-`14V1`, `boOk`, `DenZo`, `EKG`, `Fodyna`, `FULCRUM`, `GS88`, `JBR`, `Legacy`, `MGM`, `NaGa`, `NFC`, `pcroland`, `prldm`, `PTHD`, `SFY`, `VARYG`
+## Csapatok, akik aláírták és tudomásul vették (ábécé sorrendben) - 18 csapat ([link](https://github.com/encoding-hun/rules-and-standards/issues/14))
+`14V1`, `boOk`, `DenZo`, `EKG`, `Fodyna`, `FULCRUM`, `GS88`, `gyontato`, `JBR`, `Legacy`, `MGM`, `NaGa`, `NFC`, `pcroland`, `prldm`, `PTHD`, `SFY`, `VARYG`
 
 ## Oldalak, amelyek aláírták ([link](https://github.com/encoding-hun/rules-and-standards/issues/18))
 
