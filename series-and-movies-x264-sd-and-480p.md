@@ -135,7 +135,7 @@
   - 6.3) A videó felbontása mod2 kell legyen.
   - 6.4) A videó felskálázása szigorúan tilos (pl. ha croppolás után 704 széles a kép, tilos 720-ra felnagyítani)!
     - 6.4.1) Amennyiben a forrás szélessége kevesebb, mint `720 px` széles, úgy a kész encode-nak a `forrás-crop` szélesnek kell lennie.
-  - 6.5) Eltérő képarányú release (pl. `OM`) nem dupe-olja a korábbit és *vica versa*.
+  - 6.5) Eltérő képarányú release (pl. `OM`) nem dupe-olja a korábbit és *vice versa*.
   - 6.6) A videót cropolni kell addig amíg maximum 1-1 px fekete sáv marad. A cropot a főcímnél kell meghatározni.
   - 6.7) A dirty line-ok, dirty pixelek és faded line-ok eltávolítása tilos!
   - 6.8) Az 1 px fekete sávok (widow line) és dirty line-ok javítása ajánlott.

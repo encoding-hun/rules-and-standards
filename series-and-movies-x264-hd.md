@@ -131,7 +131,7 @@
   - 6.3) A videó felbontása mod2 kell legyen.
   - 6.4) A videó felskálázása szigorúan tilos (pl. ha croppolás után 1916 széles a kép, tilos 1920-ra felnagyítani)!
     - 6.4.1) Upscaled forrás esetén az eredeti, upscale előtti (vagy annál kisebb) felbontáson készíthető release. Ennek megkeresésésére jó pl. az UpscaleCheck és a getnative kódok. Köztes felbontások esetén a kerekítés szabályai érvényesek (pl. 900p és felette készíthető 1080p).
-  - 6.5) Eltérő képarányú release (pl. `OM`) nem dupe-olja a korábbit és *vica versa*.
+  - 6.5) Eltérő képarányú release (pl. `OM`) nem dupe-olja a korábbit és *vice versa*.
   - 6.6) A videót cropolni kell addig amíg maximum 1-1 px fekete sáv marad. A cropot a főcímnél kell meghatározni.
   - 6.7) A dirty line-ok, dirty pixelek és faded line-ok eltávolítása tilos!
   - 6.8) Az 1 px fekete sávok (widow line) és dirty line-ok javítása ajánlott.
