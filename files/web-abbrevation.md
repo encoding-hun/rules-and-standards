@@ -115,6 +115,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | Knowledge Network               | `KNOW`    |
 | Lifetime                        | `LIFE`    |
 | Loving Nature                   | `LN  `    |
+| Max (más mint a HBO Max)        | `MAX `    |
 | Motor Trend OnDemand            | `MTOD`    |
 | Movies Anywhere                 | `MA  `    |
 | Mubi                            | `MUBI`    |
