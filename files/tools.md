@@ -5,7 +5,7 @@
 - [DGDecNV](http://rationalqm.us/dgdecnv/binaries/)
 - [DGMPGDec](http://rationalqm.us/dgmpgdec/)
 - x264
-  - [vanilla r3106](https://artifacts.videolan.org/x264/release-win64/) | [MABS build](https://www.mediafire.com/?bxvu1vvld31k1)
+  - [vanilla r3107](https://artifacts.videolan.org/x264/release-win64/)
   - [tMod r3106+49](https://emma.cloud.tabdigital.eu/s/rrHWew8eH8R8ezc) | [mirror](https://drive.google.com/drive/folders/18UzdSN66G0I646w9sP1qsCZuPO52CwYP)
     - <details>
       <summary>Különbségek jpsdr buildjéhez képest</summary>
@@ -19,15 +19,16 @@
         - weightp 2 for Blu-ray
         - rbsp_alignment_zero_bit
     </details>
-  - [tMod r3099+55 (jpsdr)](https://github.com/jpsdr/x264/releases)
+  - [tMod r3107+58 (jpsdr)](https://github.com/jpsdr/x264/releases)
   - [Patman r3094+13](https://github.com/Patman86/x264-Mod-by-Patman/releases)
   - [aMod r3101+20](https://github.com/DJATOM/x264-aMod/releases)
+  - [MABS build r3106](https://www.mediafire.com/?bxvu1vvld31k1)
 - x265
-  - [vanilla 3.5+86](http://msystem.waw.pl/x265)
-  - [jpsdr-Patman 3.5+75](https://github.com/jpsdr/x265/releases)
-  - [Patman 3.5+37+12](https://github.com/Patman86/x265-Mod-by-Patman/releases)
-  - [aMod 3.5+67](https://github.com/DJATOM/x265-aMod/releases)
-  - [Yuuki 3.5+2](https://down.7086.in/x265-Yuuki-Asuna)
+  - [vanilla 3.5+102](http://msystem.waw.pl/x265)
+  - [jpsdr-Patman 3.5+103](https://github.com/jpsdr/x265/releases)
+  - [aMod 3.5+131](https://github.com/DJATOM/x265-aMod/releases)
+  - [Patman 3.5+37+12](https://github.com/Patman86/x265-Mod-by-Patman/releases) *(old)*
+  - [Yuuki 3.5+2](https://down.7086.in/x265-Yuuki-Asuna) *(old)*
 - [ffmpeg](https://ffmpeg.org/download.html)
 - [VideoReDo TVSuite](https://ncore.pro/t/3248269) | [béta buildek](https://www.videoredo.net/msgBoard/index.php?resources/videoredo-tvsuite-v6-beta.3/)
 - [tsMuxer](https://github.com/justdan96/tsMuxer/releases)
