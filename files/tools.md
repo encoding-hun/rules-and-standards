@@ -27,8 +27,8 @@
   - [vanilla 3.5+102](http://msystem.waw.pl/x265)
   - [jpsdr-Patman 3.5+103](https://github.com/jpsdr/x265/releases)
   - [aMod 3.5+131](https://github.com/DJATOM/x265-aMod/releases)
-  - [Patman 3.5+37+12](https://github.com/Patman86/x265-Mod-by-Patman/releases) *(old)*
-  - [Yuuki 3.5+2](https://down.7086.in/x265-Yuuki-Asuna) *(old)*
+  - [Patman 3.5+37+12](https://github.com/Patman86/x265-Mod-by-Patman/releases) *(régi!)*
+  - [Yuuki 3.5+2](https://down.7086.in/x265-Yuuki-Asuna) *(régi!)*
 - [ffmpeg](https://ffmpeg.org/download.html)
 - [VideoReDo TVSuite](https://ncore.pro/t/3248269) | [béta buildek](https://www.videoredo.net/msgBoard/index.php?resources/videoredo-tvsuite-v6-beta.3/)
 - [tsMuxer](https://github.com/justdan96/tsMuxer/releases)
