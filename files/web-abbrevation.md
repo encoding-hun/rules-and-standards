@@ -17,6 +17,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | telekomtvgo.hu                  | `TVGO`    |
 | tv2play.hu                      | `TV2`     |
 | viasat3.hu                      | `VST3`    |
+| scream.hu                       | `SCRM`    |
 ## Nemzetközi (BTN Web Content Guidelines alapján)
 | Oldal                           | Rövidítés |
 | :-                              | :-        |
