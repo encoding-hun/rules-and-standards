@@ -6,7 +6,7 @@
 - [DGMPGDec](http://rationalqm.us/dgmpgdec/)
 - x264
   - [vanilla r3107](https://artifacts.videolan.org/x264/release-win64/)
-  - [tMod r3106+49](https://emma.cloud.tabdigital.eu/s/rrHWew8eH8R8ezc) | [mirror](https://drive.google.com/drive/folders/18UzdSN66G0I646w9sP1qsCZuPO52CwYP)
+  - [tMod r3107+47](https://emma.cloud.tabdigital.eu/s/rrHWew8eH8R8ezc) | [mirror](https://drive.google.com/drive/folders/18UzdSN66G0I646w9sP1qsCZuPO52CwYP)
     - <details>
       <summary>Különbségek jpsdr buildjéhez képest</summary>
 
@@ -20,14 +20,14 @@
         - rbsp_alignment_zero_bit
     </details>
   - [tMod r3107+58 (jpsdr)](https://github.com/jpsdr/x264/releases)
-  - [Patman r3094+13](https://github.com/Patman86/x264-Mod-by-Patman/releases)
+  - [Patman r3107+9](https://github.com/Patman86/x264-Mod-by-Patman/releases)
   - [aMod r3101+20](https://github.com/DJATOM/x264-aMod/releases)
-  - [MABS build r3106](https://www.mediafire.com/?bxvu1vvld31k1)
+  - [MABS build r3107](https://www.mediafire.com/?bxvu1vvld31k1)
 - x265
   - [vanilla 3.5+102](http://msystem.waw.pl/x265)
   - [jpsdr-Patman 3.5+103](https://github.com/jpsdr/x265/releases)
   - [aMod 3.5+131](https://github.com/DJATOM/x265-aMod/releases)
-  - [Patman 3.5+37+12](https://github.com/Patman86/x265-Mod-by-Patman/releases) *(régi!)*
+  - [Patman 3.5+104+15](https://github.com/Patman86/x265-Mod-by-Patman/releases)
   - [Yuuki 3.5+2](https://down.7086.in/x265-Yuuki-Asuna) *(régi!)*
 - [ffmpeg](https://ffmpeg.org/download.html)
 - [VideoReDo TVSuite](https://ncore.pro/t/3248269) | [béta buildek](https://www.videoredo.net/msgBoard/index.php?resources/videoredo-tvsuite-v6-beta.3/)
@@ -37,7 +37,7 @@
 
 ### AviSynth+
 - [AviSynth+ official build](https://github.com/AviSynth/AviSynthPlus/releases) | [béta buildek](https://forum.doom9.org/showthread.php?t=181351)
-- [Avisynth+ 3.7.x (r3877) clang build](https://gitlab.com/uvz/AviSynthPlus-Builds)
+- [Avisynth+ 3.7.3 (r4001) clang build](https://gitlab.com/uvz/AviSynthPlus-Builds)
   - ~7%-kal gyorsabb az official buildnél.
   - A telepítéséhez először telepítsük az official buildet, majd futtassuk az `avisynth_updater.bat` fájlt admin módban.
 - [AvsPmod](https://github.com/gispos/AvsPmod/releases)
