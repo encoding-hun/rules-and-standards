@@ -36,7 +36,7 @@ def main():
     t2 = gettime('series-and-movies-x264-hd.md')
     t3 = gettime('series-and-movies-x265-hd-uhd.md')
     t4 = gettime('series-and-movies-remux.md')
-    t5 = gettime('files/web-abbrevation.md')
+    t5 = gettime('files/web-abbreviation.md')
     print(f'modification dates:\nSD    : [not bold cyan]{t1}[/not bold cyan]\nHD    : [not bold cyan]{t1}[/not bold cyan]\nUHD   : [not bold cyan]{t1}[/not bold cyan]\nRemux : [not bold cyan]{t1}[/not bold cyan]')
     readme = f'''## A magyar release-ek készítésénél követendő szabályok
 | kategória                                                      | utolsó frissítés | érvényben   |
