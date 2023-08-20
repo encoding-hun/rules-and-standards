@@ -1,6 +1,6 @@
 Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen release készítője választhat egyet a forrás 2-4 betűjének egymás után történő felhasználásával. (Pl.: `sonymax.hu` -> `SMAX`, `eszinhaz.hu` -> `ESZH`)
 
-## Hazai
+## Hazai csapatok által hozzáadott rövidítések
 | Oldal                           | Rövidítés |
 | :-                              | :-        |
 | hu.axn.com                      | `AXNP`    |
@@ -18,7 +18,10 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | tv2play.hu                      | `TV2`     |
 | viasat3.hu                      | `VST3`    |
 | scream.hu                       | `SCRM`    |
-## Nemzetközi (BTN Web Content Guidelines alapján)
+| kanald.com.tr                   | `KNLD`    |
+| izle7.com                       | `IZLE`    |
+| directone.hu                    | `DRTE`    |
+## Nemzetközi rövidítések (BTN Web Content Guidelines alapján)
 | Oldal                           | Rövidítés |
 | :-                              | :-        |
 | 7plus                           | `7P  `    |
