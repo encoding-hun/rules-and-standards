@@ -5,7 +5,7 @@
 - [DGDecNV](http://rationalqm.us/dgdecnv/binaries/)
 - [DGMPGDec](http://rationalqm.us/dgmpgdec/)
 - x264
-  - [vanilla r3107](https://artifacts.videolan.org/x264/release-win64/)
+  - [vanilla r3144](https://artifacts.videolan.org/x264/release-win64/)
   - [tMod r3107+47](https://emma.cloud.tabdigital.eu/s/rrHWew8eH8R8ezc) | [mirror](https://drive.google.com/drive/folders/18UzdSN66G0I646w9sP1qsCZuPO52CwYP)
     - <details>
       <summary>Különbségek jpsdr buildjéhez képest</summary>
@@ -24,10 +24,10 @@
   - [aMod r3101+20](https://github.com/DJATOM/x264-aMod/releases)
   - [MABS build r3107](https://www.mediafire.com/?bxvu1vvld31k1)
 - x265
-  - [vanilla 3.5+102](http://msystem.waw.pl/x265)
-  - [jpsdr-Patman 3.5+103](https://github.com/jpsdr/x265/releases)
+  - [vanilla 3.5+110](http://msystem.waw.pl/x265)
+  - [Patman 3.5+147+17](https://github.com/Patman86/x265-Mod-by-Patman/releases)
   - [aMod 3.5+131](https://github.com/DJATOM/x265-aMod/releases)
-  - [Patman 3.5+104+15](https://github.com/Patman86/x265-Mod-by-Patman/releases)
+  - [jpsdr-Patman 3.5+106](https://github.com/jpsdr/x265/releases)
   - [Yuuki 3.5+2](https://down.7086.in/x265-Yuuki-Asuna) *(régi!)*
 - [ffmpeg](https://ffmpeg.org/download.html)
 - [VideoReDo TVSuite](https://ncore.pro/t/3248269) | [béta buildek](https://www.videoredo.net/msgBoard/index.php?resources/videoredo-tvsuite-v6-beta.3/)
@@ -76,11 +76,11 @@
   - [official](https://github.com/Aegisub/Aegisub/releases) *(régi!)*
 - [Notepad++](https://notepad-plus-plus.org/downloads/)
 - Subtitle WorkShop
-  - [6.1.4](https://sourceforge.net/projects/subtitle-workshop-classic) | [mirror](https://www.videohelp.com/software/Subtitle-Workshop)
+  - [6.2.4](https://sourceforge.net/projects/subtitle-workshop-classic) | [mirror](https://www.videohelp.com/software/Subtitle-Workshop)
   - [6.0b official](http://subworkshop.sourceforge.net/) *(régi!)*
 
 # NFO
-- [PabloDraw](http://picoe.ca/products/pablodraw) | [GitHub](https://github.com/cwensley/pablodraw/releases)
+- [PabloDraw](https://github.com/cwensley/pablodraw/releases)
 - [Moebius](https://github.com/blocktronics/moebius/releases)
 - [neovim](https://github.com/neovim/neovim/releases)
   - A helyes megjelenítéshez a `~/.config/nvim/init.vim` fájlba rakjuk be a következő sort: `autocmd BufReadPre *.nfo :setlocal fileencodings=cp437,utf-8`
