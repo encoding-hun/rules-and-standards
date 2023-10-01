@@ -11,7 +11,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | lifetv.hu                       | `LFTV`    |
 | mediaklikk.hu                   | `MKLK`    |
 | archivum.mtva.hu                | `MTVA`    |
-| rtlmost.hu                      | `RTLM`    |
+| rtlplusz.hu (korábban `RTLM`)   | `RTLP`    |
 | sonymax.hu                      | `SMAX`    |
 | spilerextra.hu                  | `SPLR`    |
 | telekomtvgo.hu                  | `TVGO`    |
@@ -100,7 +100,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | Global                          | `GLBL`    |
 | GloboSat Play                   | `GLOB`    |
 | go90                            | `GO90`    |
-| Google Play                     | `PLAY` (korábban `GP`) |
+| Google Play (korábban `GP`)     | `PLAY`    |
 | Hallmark                        | `HLMK`    |
 | HBO GO/Now                      | `HBO `    |
 | HBO Max                         | `HMAX`    |
