@@ -5,8 +5,8 @@
 - [DGDecNV](http://rationalqm.us/dgdecnv/binaries/)
 - [DGMPGDec](http://rationalqm.us/dgmpgdec/)
 - x264
-  - [vanilla r3144](https://artifacts.videolan.org/x264/release-win64/)
-  - [tMod r3107+47](https://emma.cloud.tabdigital.eu/s/rrHWew8eH8R8ezc) | [mirror](https://drive.google.com/drive/folders/18UzdSN66G0I646w9sP1qsCZuPO52CwYP)
+  - [vanilla r3153](https://artifacts.videolan.org/x264/release-win64/)
+  - [tMod r3144+47](https://emma.cloud.tabdigital.eu/s/rrHWew8eH8R8ezc) | [mirror](https://drive.google.com/drive/folders/18UzdSN66G0I646w9sP1qsCZuPO52CwYP)
     - <details>
       <summary>Különbségek jpsdr buildjéhez képest</summary>
 
@@ -76,7 +76,7 @@
   - [official](https://github.com/Aegisub/Aegisub/releases) *(régi!)*
 - [Notepad++](https://notepad-plus-plus.org/downloads/)
 - Subtitle WorkShop
-  - [6.2.4](https://sourceforge.net/projects/subtitle-workshop-classic) | [mirror](https://www.videohelp.com/software/Subtitle-Workshop)
+  - [6.2.5](https://sourceforge.net/projects/subtitle-workshop-classic) | [mirror](https://www.videohelp.com/software/Subtitle-Workshop)
   - [6.0b official](http://subworkshop.sourceforge.net/) *(régi!)*
 
 # NFO
