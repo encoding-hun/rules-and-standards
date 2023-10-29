@@ -280,8 +280,8 @@
     - 11.2.1) A kész felirat lehetőleg kevés, érthetőséget nem zavaró helyesírási hibát tartalmazhat, de törekedjünk, hogy ne legyen benne hiba.
     - 11.2.2) A felismertetett feliraton javasolt spellchecker / helyesírás-ellenőrző lefuttatása.
   - 11.3) A feliratokat tartalmaznia kell az mkv-nak, de opcionálisan mellette is meghagyhatóak az `SRT` formátumúak.
-  - 11.4) Amennyiben HDR formátumról származó PGS-SUP feliratot teszünk SDR 2160p encode-ra, úgy a fényerejét 60%-al meg kell növelni.
-  - 11.5) Amennyiben SDR formátumról származó PGS-SUP feliratot teszünk HDR encode-ra, úgy a fényerejét 60%-al le kell csökkenteni.
+  - 11.4) Amennyiben HDR formátumról származó PGS-SUP feliratot teszünk SDR 2160p encode-ra, úgy a fényerejét 60%-kal kell megnövelni.
+  - 11.5) Amennyiben SDR formátumról származó PGS-SUP feliratot teszünk HDR encode-ra, úgy a fényerejét 60%-ra kell lecsökkenteni.
   - 11.6) Kötelező feliratok, amennyiben elérhetőek: magyar forced, magyar, eredeti forced, eredeti.
   - 11.7) Magyar filmek esetén ajánlott az angol nyelvű felirat (ha van) megtartása is.
   - 11.8) A lemezen elérhető, főcímhez tartozó feliratokat `.srt` formátumban KÖTELEZŐ muxolni. PGS-SUP feliratok használata opcionális.
