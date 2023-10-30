@@ -196,6 +196,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | Vudu                            | `VUDU`    |
 | W Network                       | `WNET`    |
 | Waipu                           | `WAIP`    |
+| Warhammer TV                    | `WHTV`    |
 | WatchMe                         | `WME `    |
 | WWE Network                     | `WWEN`    |
 | Xbox Video                      | `XBOX`    |
