@@ -201,7 +201,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | WWE Network                     | `WWEN`    |
 | Xbox Video                      | `XBOX`    |
 | Yahoo                           | `YHOO`    |
-| YouTube Movies                  | See Google Play |
+| YouTube Movies                  | lásd Google Play |
 | YouTube Premium                 | `RED `    |
 | YouTube TV                      | `YTTV`    |
 | ZDF                             | `ZDF `    |
