@@ -10,6 +10,8 @@
 
 ## [Nuke indokok](/nuke-reasons.md)
 
+## [Gyenge minőségű encode-ok](/files/encodes-to-avoid.md)
+
 ## [Toolok](/files/tools.md)
 
 ## Csapatok, akik aláírták és tudomásul vették (ábécé sorrendben) - 19 csapat ([link](https://github.com/encoding-hun/rules-and-standards/issues/14))
