@@ -1,4 +1,4 @@
-Az alábbi csapatok által készített encodeokat érdemes kerülni:
+Az alábbi csapatok által készített encode-okat érdemes kerülni:
 
 | Csapat                | Ok                                                                                |
 | :-                    | :-                                                                                |
