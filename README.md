@@ -2,7 +2,7 @@
 | kategória                                                      | utolsó frissítés | érvényben   |
 | :-                                                             | :-               | :-          |
 | [**x264 SD és 480p**](/series-and-movies-x264-sd-and-480p.md)  | 2023.09.17.      | 2020.02.19. |
-| [**x264 HD**](/series-and-movies-x264-hd.md)                   | 2023.09.17.      | 2020.02.19. |
+| [**x264 HD**](/series-and-movies-x264-hd.md)                   | 2024.02.27.      | 2020.02.19. |
 | [**x265 UHD-HD**](/series-and-movies-x265-hd-uhd.md)           | 2023.10.29.      | 2020.06.14. |
 | [**REMUX**](/series-and-movies-remux.md)                       | 2023.10.31.      | 2020.06.14. |
 | [**> WEB-es rövidítések listája**](/files/web-abbreviation.md) | 2023.10.31.      | 2021.01.06. |
