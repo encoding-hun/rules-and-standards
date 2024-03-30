@@ -216,19 +216,19 @@
     - 9.6.1) 1.0: `AAC`
     - 9.6.2) 2.0: `AAC` (ajánlott), `AC3` (`DD`)
       - 9.6.2.1) `AC3` (`DD`) esetén a forrással megegyező bitráta vagy jobb forrás esetén 192-256 kbps elfogadott.
-    - 9.6.3) 5.1: `AC3` (`DD`)
-      - 9.6.3.1) 640 kbps, ha jobb forrásból készül, vagy az eredetivel megegyező (pl. DVD esetén).
+    - 9.6.3) 5.1: `AC3` (`DD`) 640 kbps, ha jobb forrásból készül, vagy az eredetivel megegyező (pl. DVD esetén).
   - 9.7) Kizárólag stúdió által készített surround hangok használhatóak fel, házilag felkevertek tilosak. TV-s surround hang esetén mindig győződjünk meg, hogy valódi surround-e, amennyiben nem, downmixeljük. Pl.: `ffmpeg -i input.ac3 -ac 2 -f sox - | sox -p -S -b 24 --norm=-1 output.wav`
-  - 9.8) A hangsávok eredeti csatornaszámát meg kell tartani!
-    - 9.8.1) Kivétel 8 csatornás hangok esetén, ahol a core-t kell megtartani vagy egy 6 csatornás `DD@640`-et kell készíteni.
-    - 9.8.2) Sorozatok esetében surround hangok downmixelhetőek 2.0-ra.
-  - 9.9) A maximális megengedett hangcsúszás 100 ms.
-  - 9.10) Audiokommentár megtartása csak csak akkor megengedett, ha kizárólag SD (DVD, PDTV, SD WEB-DL) forrás érhető el, formátuma kizárólag `AAC` lehet és maximum 2.0.
-  - 9.11) Amennyiben a forrás audió megtartható újrakódolás nélkül, úgy annak újrakódolása tilos. (pl. a forrás megengedett formátumú és nem kell nyújtani.)
-  - 9.12) Egy másik forrásból származó hang akkor számít jobb minőségűnek, hogyha a lowpass (cutoff) frekvencia 16 kHz alatt legalább 1 kHz-el, 16 kHz felett legalább 1.5 kHz-el magasabb, és a többlet adat nem sztochasztikus (dithering miatt belekerülő) zaj. Ha ez teljesül, akkor készíthető új release, egyéb esetben `dupe`. Kérdéses esetekben proofként egy-egy spektrum mutatása szükséges a két hangról.
-    - 9.12.1) Ez alól kivétel, hogyha az alacsonyabb lowpass-szel rendelkező hang minősége hallhatóan jobb.
-    - 9.12.2) További kivételt képez, hogyha jobb forrásból elérhető a hang és a bitrátakülönbség meghaladja a 192 kbps-t `DD` és `DTS` esetén, vagy a `128` kbps-t `DD+` és `AAC` esetén. `DD+` és `DD` hangok bitrátáinak összehasonlítása a 10.9-es pontban rögzítettek szerint `1.7`-es szorzófaktorral történik. `AAC` és `DD` között ugyanezt az átváltást használjuk. Például egy `DD@448`-as DVD hang mindig cserélhető egy BD-ről származó `DD@640`-re.
-  - 9.13) A hangok sorrendje:
+  - 9.8) A hangsávok eredeti csatornaszámát meg kell tartani, kivéve:
+    - 9.8.1) 8 csatornás hangok esetén, ahol a core-t kell megtartani vagy egy 6 csatornás `DD@640`-et kell készíteni.
+    - 9.8.2) sorozatok és több hangsávú filmek esetében maximum 2.0 hang használható.
+  - 9.9) `READ.NFO`/`PROPER` esetén egy hangsávos release cserélhető több hangsávosra (pl. `HUN` -> `HUN.ENG`), de fordítva nem.
+  - 9.10) A maximális megengedett hangcsúszás 100 ms.
+  - 9.11) Audiokommentár megtartása csak csak akkor megengedett, ha kizárólag SD (DVD, PDTV, SD WEB-DL) forrás érhető el, formátuma kizárólag `AAC` lehet és maximum 2.0.
+  - 9.12) Amennyiben a forrás audió megtartható újrakódolás nélkül, úgy annak újrakódolása tilos. (pl. a forrás megengedett formátumú és nem kell nyújtani.)
+  - 9.13) Egy másik forrásból származó hang akkor számít jobb minőségűnek, hogyha a lowpass (cutoff) frekvencia 16 kHz alatt legalább 1 kHz-el, 16 kHz felett legalább 1.5 kHz-el magasabb, és a többlet adat nem sztochasztikus (dithering miatt belekerülő) zaj. Ha ez teljesül, akkor készíthető új release, egyéb esetben `dupe`. Kérdéses esetekben proofként egy-egy spektrum mutatása szükséges a két hangról.
+    - 9.13.1) Ez alól kivétel, hogyha az alacsonyabb lowpass-szel rendelkező hang minősége hallhatóan jobb.
+    - 9.13.2) További kivételt képez, hogyha jobb forrásból elérhető a hang és a bitrátakülönbség meghaladja a 192 kbps-t `DD` és `DTS` esetén, vagy a `128` kbps-t `DD+` és `AAC` esetén. `DD+` és `DD` hangok bitrátáinak összehasonlítása a 10.9-es pontban rögzítettek szerint `1.7`-es szorzófaktorral történik. `AAC` és `DD` között ugyanezt az átváltást használjuk. Például egy `DD@448`-as DVD hang mindig cserélhető egy BD-ről származó `DD@640`-re.
+  - 9.14) A hangok sorrendje:
     - magyar (ha van)
     - eredeti (opcionális; ha nincs magyar kötelező)
     - angol (ha az eredeti nem ez; opcionális)

@@ -227,12 +227,11 @@
   - 9.6) Megengedett hangformátumok:
     - 9.6.1) 1.0: `AAC`
     - 9.6.2) 2.0: `AAC` (ajánlott), `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`)
-      - 9.6.2.1) `AC3` (`DD`) esetén a forrással megegyező bitráta vagy jobb forrás esetén 192-256 kbps elfogadott.
+      - 9.6.2.1) `AC3` (`DD`) esetén a forrással megegyező bitráta vagy jobb forrás esetén 192-384 kbps elfogadott. Lossy források esetén ajánlott a 192-256 kbps, míg 384 kbps lossless források esetén.
     - 9.6.3) 5.1: `AC3` (`DD`), `E-AC3` (`DD+`/`DDP`), `AAC`
       - 9.6.3.1) `AC3` (`DD`) 640 kbps, ha jobb forrásból készül, vagy az eredetivel megegyező (pl. DVD esetén).
-      - 9.6.3.2) `E-AC3` (`DD+`/`DDP`) 960-1152 kbps, ha jobb forrásból készül, vagy az eredetivel megegyező.
-    - 9.6.4) 7.1: `E-AC3` (`DD+`/`DDP`)
-      - 9.6.4.1) 1280-1536 kbps, ha jobb forrásból készül, vagy az eredetivel megegyező.
+      - 9.6.3.2) `E-AC3` (`DD+`/`DDP`) 128-192 kbps/csatorna (768-1152 kbps), ha jobb forrásból készül, vagy az eredetivel megegyező.
+    - 9.6.4) 7.1: `E-AC3` (`DD+`/`DDP`) 128-192 kbps/csatorna (1280-1536 kbps), ha jobb forrásból készül, vagy az eredetivel megegyező.
   - 9.7) Kizárólag stúdió által készített surround hangok használhatóak fel, házilag felkevertek tilosak. TV-s surround hang esetén mindig győződjünk meg, hogy valódi surround-e, amennyiben nem, downmixeljük. Pl.: `ffmpeg -i input.ac3 -ac 2 -f sox - | sox -p -S -b 24 --norm=-1 output.wav`
   - 9.8) `2160p` esetén lossless hangok is megengedettek, pl.: `FLAC`, `TrueHD`, `DTS-HD.MA` és `DTS-X`.
   - 9.9) Más formátumok, pl. 5.1-es `AAC` vagy lossy `DTS` használata (ha az érintetlen forráson nem érhető el jobb) esetén KÖTELEZŐ `DD@640` (2 csatorna esetén `DD@256` vagy `AAC`) compatibility track készítése. Ide értendőek a 9.8-as pontban felsorolt formátumok is.
