@@ -78,6 +78,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | DisneyNOW                       | `DSNY`    |
 | DisneyLife                      | `DSNL`    |
 | Disney+                         | `DSNP`    |
+| Disney+ MENA (apps.disney...)   | `APPS`    |
 | DIY Network                     | `DIY `    |
 | Doc Club                        | `DOCC`    |
 | Dropout                         | `DRPO`    |
