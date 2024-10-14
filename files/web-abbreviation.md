@@ -12,6 +12,7 @@ Amennyiben nincs még rövidítés egy adott oldalhoz, úgy az első ilyen relea
 | mediaklikk.hu                   | `MKLK`    |
 | archivum.mtva.hu                | `MTVA`    |
 | rtlplusz.hu (korábban `RTLM`)   | `RTLP`    |
+| hu.selekt.tv                    | `SLKT`    |
 | sonymax.hu                      | `SMAX`    |
 | spilerextra.hu                  | `SPLR`    |
 | telekomtvgo.hu                  | `TVGO`    |
