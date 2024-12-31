@@ -5,7 +5,7 @@
 | [**x264 HD**](/series-and-movies-x264-hd.md)                   | 2024.03.30.      | 2020.02.19. |
 | [**x265 UHD-HD**](/series-and-movies-x265-hd-uhd.md)           | 2024.03.30.      | 2020.06.14. |
 | [**REMUX**](/series-and-movies-remux.md)                       | 2024.03.30.      | 2020.06.14. |
-| [**> WEB-es rövidítések listája**](/files/web-abbreviation.md) | 2023.10.31.      | 2021.01.06. |
+| [**> WEB-es rövidítések listája**](/files/web-abbreviation.md) | 2024.10.14.      | 2021.01.06. |
 | **DVD, MP3 és lossless audio** (korábbi szabályzat érvényben)  |                  |             |
 
 ## [Nuke indokok](/nuke-reasons.md)

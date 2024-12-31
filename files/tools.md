@@ -5,8 +5,8 @@
 - [DGDecNV](http://rationalqm.us/dgdecnv/binaries/)
 - [DGMPGDec](http://rationalqm.us/dgmpgdec/)
 - x264
-  - [vanilla r3179](https://artifacts.videolan.org/x264/release-win64/)
-  - [tMod r3144+47](https://emma.cloud.tabdigital.eu/s/rrHWew8eH8R8ezc) | [mirror](https://drive.google.com/drive/folders/18UzdSN66G0I646w9sP1qsCZuPO52CwYP)
+  - [vanilla r3203](https://artifacts.videolan.org/x264/release-win64/)
+  - [tMod r3198+50](https://emma.cloud.tabdigital.eu/s/rrHWew8eH8R8ezc) | [mirror](https://drive.google.com/drive/folders/18UzdSN66G0I646w9sP1qsCZuPO52CwYP)
     - <details>
       <summary>Különbségek jpsdr buildjéhez képest</summary>
 
@@ -19,15 +19,15 @@
         - weightp 2 for Blu-ray
         - rbsp_alignment_zero_bit
     </details>
-  - [tMod r3179+58 (jpsdr)](https://github.com/jpsdr/x264/releases)
-  - [Patman r3172+9](https://github.com/Patman86/x264-Mod-by-Patman/releases)
+  - [tMod r3192+68 (jpsdr)](https://github.com/jpsdr/x264/releases)
+  - [Patman r3198+7](https://github.com/Patman86/x264-Mod-by-Patman/releases)
   - [aMod r3101+20](https://github.com/DJATOM/x264-aMod/releases)
-  - [MABS build r3179](https://www.mediafire.com/?bxvu1vvld31k1)
+  - [MABS build r3198](https://www.mediafire.com/?bxvu1vvld31k1)
 - x265
-  - [vanilla 3.5+112](http://msystem.waw.pl/x265)
-  - [Patman 3.5+153+15](https://github.com/Patman86/x265-Mod-by-Patman/releases)
-  - [aMod 3.5+131](https://github.com/DJATOM/x265-aMod/releases)
-  - [jpsdr-Patman 3.5+113](https://github.com/jpsdr/x265/releases)
+  - [vanilla 4.1+54](http://msystem.waw.pl/x265)
+  - [Patman 4.1+54+9](https://github.com/Patman86/x265-Mod-by-Patman/releases)
+  - [aMod 3.6+30](https://github.com/DJATOM/x265-aMod/releases)
+  - [jpsdr-Patman 4.1+54](https://github.com/jpsdr/x265/releases)
   - [Yuuki 3.5+2](https://down.7086.in/x265-Yuuki-Asuna) *(régi!)*
 - [ffmpeg](https://ffmpeg.org/download.html)
 - [VideoReDo TVSuite](https://ncore.pro/t/3248269) | [béta buildek](https://www.videoredo.net/msgBoard/index.php?resources/videoredo-tvsuite-v6-beta.3/)
@@ -37,7 +37,7 @@
 
 ### AviSynth+
 - [AviSynth+ official build](https://github.com/AviSynth/AviSynthPlus/releases) | [béta buildek](https://forum.doom9.org/showthread.php?t=181351)
-- [Avisynth+ 3.7.3 (r4062) clang build](https://gitlab.com/uvz/AviSynthPlus-Builds)
+- [Avisynth+ 3.7.3 (r4096) clang build](https://gitlab.com/uvz/AviSynthPlus-Builds)
   - ~7%-kal gyorsabb az official buildnél.
   - A telepítéséhez először telepítsük az official buildet, majd futtassuk az `avisynth_updater.bat` fájlt admin módban.
 - [AvsPmod](https://github.com/gispos/AvsPmod/releases)
@@ -76,7 +76,7 @@
   - [official](https://github.com/Aegisub/Aegisub/releases) *(régi!)*
 - [Notepad++](https://notepad-plus-plus.org/downloads/)
 - Subtitle WorkShop
-  - [6.2.8](https://sourceforge.net/projects/subtitle-workshop-classic) | [mirror](https://www.videohelp.com/software/Subtitle-Workshop)
+  - [6.3.3](https://sourceforge.net/projects/subtitle-workshop-classic) | [mirror](https://www.videohelp.com/software/Subtitle-Workshop)
   - [6.0b official](http://subworkshop.sourceforge.net/) *(régi!)*
 
 # NFO
