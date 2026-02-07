@@ -59,6 +59,7 @@
 - [Dolby Media Encoder v3.3.0](https://ncore.pro/t/3370723) | [macOS](https://ncore.pro/t/3370724)
 - [Dolby Reference Player v3.2.0](https://ncore.pro/t/3379271) | [macOS](https://ncore.pro/t/3379272)
 - [qaac, fdkaac, sox](https://cloud01.opsdata.ch/index.php/s/CWptD6kwGSSisHi)
+- [truehdd](https://github.com/truehdd/truehdd)
 - [Audacity](https://drive.google.com/file/d/1D_RFVYeRzGLObhrLnMYm3SNZfcAOL-jO)
   - ebben a custom buildben ki van kapcsolva ffmpeg `-drc_scale`-je.
   - ffmpeg libek letöltése innen: [LINK](https://github.com/88keyz/Zeranoe/releases/tag/20200831-4a11a6f-w32-shared)
@@ -71,9 +72,9 @@
 - [VisualSubSync-Enhanced](https://github.com/Red5goahead/VisualSubSync-Enhanced/releases)
 - [Gaupol](https://otsaloma.io/gaupol/)
 - AegiSub
-  - [Daydream Cafe Edition](https://github.com/Ristellise/AegisubDC/releases)
-  - [TypesettingTools](https://github.com/TypesettingTools/Aegisub) | [buildek](https://thevacuumof.space/builds/)
-  - [official](https://github.com/Aegisub/Aegisub/releases) *(régi!)*
+  - [official](https://github.com/TypesettingTools/Aegisub)
+  - [arch1t3cht](https://github.com/arch1t3cht/Aegisub/releases)
+    - Tartalmaz új funkciókat, amik még nincsenek az eredetiben.
 - [Notepad++](https://notepad-plus-plus.org/downloads/)
 - Subtitle WorkShop
   - [6.3.3](https://sourceforge.net/projects/subtitle-workshop-classic) | [mirror](https://www.videohelp.com/software/Subtitle-Workshop)
